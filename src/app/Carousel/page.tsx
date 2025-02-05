@@ -4,7 +4,6 @@
 // import Link from "next/link";
 // import { text } from 'stream/consumers';
 
-
 // const Carousel = () => {
 //     const images = [
 //         {
@@ -59,7 +58,6 @@
 //           text:"AGILE"
 //         }
 //       ];
-      
 
 //   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -131,199 +129,136 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
-import web from "../../../public/assets/img/web-technology.svg";
-import whitewave from "../../../public/assets/img/white-wave.png";
 import Image from "next/image";
-import { Box, Grid, Typography, Button } from '@mui/material';
-import rorbanner from '../../../public/assets/img/ror-banner.svg'
-import slider3 from '../../../public/assets/img/slider3.png'
-import style from "./page.module.css";
-import slider5 from '../../../public/assets/img/scholarship.png'
-import slider4 from '../../../public/assets/img/right.png'
-import slider6 from '../../../public/assets/img/start-up.svg'
-import slider7 from '../../../public/assets/img/right2.png'
+import { Box, Grid, Typography, Button } from "@mui/material";
+import styles from "./page.module.css";
+import whitewave from "../../../public/assets/img/white-wave.png";
+
 const Carousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
-  console.log(slideIndex,"dfdsd");
 
   const Carouseldata = [
-    {title: "Best Ruby on Rails Development Company",
-      
-      backgroundColor:"#650909",
-      backgroundImage:"url(/assets/img/ror-banner.svg)",
-      des:"Get scalable, secure, and well-supported features web applications by embracing exclusive Ruby on rails development services from InfoKodetechnologies. As one of the top specialists in ROR development services.",
-      button:" Read More"
-    },
-    {title: " Web development",
-      backgroundColor:"#340F3D",
-      backgroundImage:"url(/assets/img/web-technology.svg)",
-      des:"For offering enhanced user experience and result-oriented solutions we are having unmat capabilities. A team of experienced web developers at InfoKoders technologies works dedicatedly to produce web solutions that can help to grow your business.",
-      button:"Read More"
-    },
-    
-    {title: " We are start-up uplifters",
-      backgroundColor : "#3c004b",
-      backgroundImage:"url(/assets/img/web-technology.svg)",
-      des:" Fulfill your tech and non-tech startup dreams through embracing winning technological solutions from a successful tech team holding up a track record of developing 100+ innovative tech products for start-ups over 5+ years.",
-      button:"Get the Recognition with us "
+    {
+      title: "Best Ruby on Rails Development Company",
+      backgroundColor: "#650909",
+      backgroundImage: "url(/assets/img/ror-banner.svg)",
+      des: "Get scalable, secure, and well-supported features web applications by embracing exclusive Ruby on rails development services from InfoKodetechnologies. As one of the top specialists in ROR development services.",
+      button: "Read More",
     },
     {
-      title:" Let your enterprise rock with our world-class technological services",
-      backgroundColor:"#364F6E",
-      backgroundImage:"url(/assets/img/right.png)",
-       des:"InfoKoders technologies is admired as a leading software Development Company for exceeding business goals consistently thereby offering end-to-end web, mobile, and software development services.",
-       button:"Technologize with us"
-      },
-      {
-        title:" A Online Scholarship Management Platform",
-        backgroundColor:"#032B44",
-        backgroundImage:"url(/assets/img/scholarship.png)",
-        des:" A Minneapolis-based start-up wished to eradicate the student’s  financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the  process school is paid, helping deserving students, and effective management of award programs.",
-         button:" Read More"
-      },
-      {
-        title:"Startup",
-        backgroundColor:"#340F3D",
-        backgroundImage:"url(/assets/img/start-up.svg)",
-        des:" Navigating the tech and Non- tech Start-ups towards success heights with our durable software development solutions. We are here to breathe life into your start-up dreams. InfoKoders Technologies is been recognized as a one-stop source to embrace winning software development solutions at a budget-friendly cost.",
-        button:"Read More"
-      },
-      {
-        title:"Agile Developments",
-        backgroundColor:"#032B44",
-        backgroundImage:"url(/assets/img/right2.png)",
-        des:"We follow Agile Development Process, which enables us to deliver the project with the highest   quality and a solid product.App development takes time, but by using agile development methodologies, our full-stack web developers make it look easy.",
-        button:"Read More"
-      }
-    
+      title: "Web Development",
+      backgroundColor: "#340F3D",
+      backgroundImage: "url(/assets/img/web-technology.svg)",
+      des: "For offering enhanced user experience and result-oriented solutions we are having unmat capabilities. A team of experienced web developers at InfoKoders technologies works dedicatedly to produce web solutions that can help to grow your business.",
+      button: "Read More",
+    },
+    {
+      title: "We are start-up uplifters",
+      backgroundColor: "#3c004b",
+      backgroundImage: "url(/assets/img/web-technology.svg)",
+      des: " Fulfill your tech and non-tech startup dreams through embracing winning technological solutions from a successful tech team holding up a track record of developing 100+ innovative tech products for start-ups over 5+ years.",
+      button: "Get the Recognition with us",
+    },
+    {
+      title: "Enterprise Technology Services",
+      backgroundColor: "#364F6E",
+      backgroundImage: "url(/assets/img/right.png)",
+      des: "InfoKoders technologies is admired as a leading software Development Company for exceeding business goals consistently thereby offering end-to-end web, mobile, and software development services.",
+      button: "Technologize with us",
+    },
+    {
+      title: "Online Scholarship Management Platform",
+      backgroundColor: "#032B44",
+      backgroundImage: "url(/assets/img/schlorshipimage.png)",
+      des: " A Minneapolis-based start-up wished to eradicate the student’s  financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the  process school is paid, helping deserving students, and effective management of award programs.",
+      button: "Read More",
+    },
+    {
+      title: "Startup Growth",
+      backgroundColor: "#340F3D",
+      backgroundImage: "url(/assets/img/start-up.svg)",
+      des: " Navigating the tech and Non- tech Start-ups towards success heights with our durable software development solutions. We are here to breathe life into your start-up dreams. InfoKoders Technologies is been recognized as a one-stop source to embrace winning software development solutions at a budget-friendly cost.",
+      button: "Read More",
+    },
+    {
+      title: "Agile Developments",
+      backgroundColor: "#032B44",
+      backgroundImage: "url(/assets/img/right2.png)",
+      des: "We follow Agile Development Process, which enables us to deliver the project with the highest   quality and a solid product.App development takes time, but by using agile development methodologies, our full-stack web developers make it look easy.",
+      button: "Read More",
+    },
+  ];
+  const totalSlides = Carouseldata.length;
 
-  ]
+  const nextSlide = () => setSlideIndex((prev) => (prev + 1) % totalSlides);
+  const prevSlide = () =>
+    setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+  const goToSlide = (index) => setSlideIndex(index);
 
-  const nextSlide = () => {
-    setSlideIndex((prevIndex) => (prevIndex === 6 ? 0 :prevIndex + 1)
-     
-  );
-  };
-
-  const prevSlide = () => {
-    setSlideIndex((prevIndex) => (prevIndex - 1 + Carouseldata.length) % Carouseldata.length);
-
-  };
-
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const goToSlide = (index) => {
-    setSlideIndex(index);
-  };
+  // useEffect(() => {
+  //   const interval = setInterval(nextSlide, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
-    <>
-    <div className={style.slideshowcontainer}>
-   
-        
-      
-     {Carouseldata?.map((item,index)=>( 
-    <div
-    key={index}
-    
-    >
-    <Box sx={{
-        backgroundColor: item?.backgroundColor,
-        display: slideIndex === index ? "flex" : "none",
-        justifyContent: "space-between",
-        color: "white",
-         paddingTop: "30px",
-        width: "100%",
-        height: "600px",
-        
-      }}
-    >
-      
+    <div className={styles.slideshowcontainer}>
+      {Carouseldata.map((item, index) => (
+        <Box
+          key={index}
+          className={styles.slide}
+          style={{
+            backgroundColor: item.backgroundColor,
+            display: slideIndex === index ? "flex" : "none",
+          }}
+        >
+          <Grid container spacing={2} className={styles.gridContainer}>
+            <Grid item xs={12} md={7} className={styles.textContainer}>
+              <Typography variant="h4" className={styles.title}>
+                {item.title}
+              </Typography>
+              <Image
+                src={whitewave}
+                alt="White Wave"
+                width={200}
+                height={100}
+              />
+              <Typography variant="body1" className={styles.description}>
+                {item.des}
+              </Typography>
+              <Button variant="contained" className={styles.button}>
+                {item.button}
+              </Button>
+            </Grid>
+            <Grid item xs={12} md={5} className={styles.imageContainer}>
+              <Box
+                className={styles.backgroundImage}
+                style={{ backgroundImage: item.backgroundImage }}
+              />
+            </Grid>
+          </Grid>
+        </Box>
+      ))}
 
-
-      <Grid container spacing={3} sx={{padding:"0 20px 0 20px",paddingTop:{sm:"10px",xs:"8px" }}}>
-     
-        
-          <Grid item xs={12} md={7} sx={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
-          <Typography variant="h3" fontSize={{sm:"3rem",xs:"2rem"}} >
-          {item?.title}
-          </Typography>
-          <Image src={whitewave} alt="White Wave" width={200} height={100} />
-          <Box sx={{ mt: 3,  }}>
-            <Typography variant="body1">
-            {item?.des}
-            </Typography>
-          </Box>
-          <Box sx={{ mt: 3 }}>
-            <Button
-              variant="contained"
-              sx={{
-                
-                padding: "12px 25px 12px 25px",
-                textTransform:"capitalize",
-                borderRadius:"4px",
-                borderColor: "1px solid transparent",
-                color:"#181836",
-                backgroundColor:"#ffffff",
-               
-                "&:hover":{backgroundColor:"#181836",color:"#ffffff",border:"1px solid rgb(255, 255, 255)"}
-              }}
-            >
-              {item?.button}
-            </Button>
-          </Box>
-        </Grid>
-      
-        <Grid item xs={12} md={5} sx={{ display: "flex", justifyContent: "center",order: { xs: 4 } }}>
-          <Box
-            sx={{
-              backgroundImage: item?.backgroundImage,
-            //   position: "relative",
-             
-              width: "80%",
-              
-              height: { xs: "300px", md: "100%" },
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              backgroundRepeat:'no-repeat',
-              transition: "all 0.5s ease",
-            }}
-          >
-          
-          </Box>
-        </Grid>
-  
-      </Grid>
-    </Box> 
-
-           
-     
-     
-      <a className={style.prev} onClick={prevSlide}>
+      <a className={styles.prev} onClick={prevSlide}>
         &#10094;
       </a>
-      <a className={style.next} onClick={nextSlide}>
+      <a className={styles.next} onClick={nextSlide}>
         &#10095;
       </a>
+
+      <div className={styles.dotsContainer}>
+        {Carouseldata.map((_, index) => (
+          <span
+            key={index}
+            className={`${styles.dot} ${
+              slideIndex === index ? styles.active : ""
+            }`}
+            onClick={() => goToSlide(index)}
+          ></span>
+        ))}
       </div>
-    ))}
-      <div style={{ textAlign: "center" }}>
-        <span className={style.dot} onClick={() => goToSlide(0)}></span>
-        <span className={style.dot} onClick={() => goToSlide(1)}></span>
-        <span className={style.dot} onClick={() => goToSlide(2)}></span>
-        <span className={style.dot} onClick={() => goToSlide(3)}></span>
-        <span className={style.dot} onClick={() => goToSlide(4)}></span>
-        <span className={style.dot} onClick={() => goToSlide(5)}></span>
-        <span className={style.dot} onClick={()=>goToSlide(6)}></span>
-      </div>
-      </div>
-     
-    
-  
-    </>
+    </div>
   );
 };
+
 export default Carousel;
