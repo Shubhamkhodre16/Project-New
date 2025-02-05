@@ -10,6 +10,7 @@ import OurProcess from "../../components/layout/contact form/OurProcess";
 import Testinomials from "../../components/layout/contact form/Testinomials";
 import OurBlog from "../../components/layout/contact form/OurBlog";
 import Footer from "./Footer/page";
+import HomeContent from "./HomeContent/HomeContent";
 
 
 export default function Home() {
@@ -122,8 +123,9 @@ export default function Home() {
 
 
        <Carousel />
-
+       <HomeContent/>
        <OurProcess/>    
+       
        <Testinomials/>
        <OurBlog/>
 
