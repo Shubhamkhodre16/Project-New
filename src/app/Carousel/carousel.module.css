@@ -1,0 +1,149 @@
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.contentContainer {
+  width: 40%;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Circular';
+  /* margin-right: 30px; */
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #899394;
+}
+
+.description1 {
+  font-size: 0.7rem;
+  color: #899394;
+  margin-bottom: 10px;
+}
+
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+.carouselInner {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselItem {
+  min-width: 100%;
+  box-sizing: border-box;
+  /* height: 800px; */
+}
+
+.mobileFrame {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.carouselControl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.carouselControl.prev {
+  left: 10px;
+}
+
+.carouselControl.next {
+  right: 10px;
+}
+
+.carouselControl:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .carouselContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .contentContainer {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    width: 100%;
+  margin-left: 0px;
+
+  }
+
+  .description1 {
+    display: none;
+  }
+
+  .carouselControl {
+    top: 90%;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .carouselControl.prev {
+    left: 20px;
+  }
+
+  .carouselControl.next {
+    right: 20px;
+  }
+  .mobileFrame {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .button {
+    display: inline-flex;
+  }
+  /* .carouselItem {
+    margin-right: 10px;
+  } */
+}

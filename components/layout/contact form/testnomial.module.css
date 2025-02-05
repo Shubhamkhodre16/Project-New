@@ -1,0 +1,114 @@
+.text{
+    color: #181836;
+    display: block;
+    font-size: 90px;
+    font-weight: 600;
+    left: -150px;
+    margin-bottom: 0;
+    transform: translateY(-30%) rotate(-90deg);
+    word-break: unset;
+    z-index: 4;
+    margin-top: 200px;
+    /* top:220%; */
+    opacity: 0.1;
+    position: absolute;
+    text-transform: lowercase;
+}
+.main{
+    margin-top: 100px;
+    
+}
+.para{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+.heading{
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    
+    text-align: center;
+    
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    /* position: relative; */
+    padding: 0px 0px 100px 0px;
+    background-image: url("../../../public/assets/img/home-bg-07.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+ 
+  
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+    height: 400px;
+    margin: auto;
+  }
+  
+  .carouselInner {  
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    gap: 60px; /* Added gap between containers */
+  }
+  
+  .carouselItem {
+    /* min-width: 47.8%;
+    max-width: 50%; */
+    width: 536px;
+    height: 317px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+    box-shadow: 6px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-top: 20px;
+    color: #650909;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .carouselItem {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+  
