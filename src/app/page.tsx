@@ -24,7 +24,7 @@ export default function Home() {
       </header>
 
       <main className="mt-10 flex flex-col items-center  mb-20 ">
-        <Box
+        {/* <Box
           display="flex"
           flexDirection={{ xs: "column", md: "row" }}
           alignItems="center"
@@ -50,8 +50,8 @@ export default function Home() {
           </Typography>
 
           {/* <LordIcon/> */}
-        </Box>
-        <Box
+        {/* </Box>  */}
+        {/* <Box
           display="flex"
           flexDirection={{ xs: "column", md: "row" }}
           alignItems="center"
@@ -68,8 +68,8 @@ export default function Home() {
           >
             Driving Digital Innovation with Modern Web Technologies
           </Typography>
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -91,8 +91,8 @@ export default function Home() {
             leader, we help our clients become fluidic, innovative, and
             digital-first companies to win in their respective fields.
           </Typography>
-        </Box>
-<Box sx={{marginBottom:"70px"}} >
+        </Box> */}
+{/* <Box sx={{marginBottom:"70px"}} >
   
 <Link href="/contact">
           <Button
@@ -114,7 +114,7 @@ export default function Home() {
         </Link>
 
 
-</Box>
+</Box> */}
 
     
 
