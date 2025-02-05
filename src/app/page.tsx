@@ -116,15 +116,9 @@ export default function Home() {
 
 </Box>
 
-        {/* Uncomment when needed */}
-       {/* <Box
-       sx={{marginTop:"20px", marginBottom:"500px"}}
-       >  */}
+    
 
-       {/* <Box sx={{margin:"50px"}} >
-       <OurProcess/>
-       
-       </Box> */}
+      
 
 
        <Carousel />
