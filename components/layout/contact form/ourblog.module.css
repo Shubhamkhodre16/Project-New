@@ -87,7 +87,12 @@
       max-width: 100%;
       min-width: 70%;
     }
-    
+    .header{
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+  
+    } 
     .card {
       width: 100%;
       min-width: 70%;
