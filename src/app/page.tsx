@@ -125,7 +125,6 @@ export default function Home() {
        <Carousel />
        <HomeContent/>
        <OurProcess/>    
-       
        <Testinomials/>
        <OurBlog/>
 
