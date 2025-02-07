@@ -1,0 +1,804 @@
+/* Our Blog Css  */
+
+.blogContainer {
+    padding: 20px;
+    margin: 20px;
+    /* background-image: url("../../../public/assets/img/home-bg-10-1.png"); */
+  }
+  .blogContainer1{
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    /* background-image: url("../../../public/assets/img/home-bg-10-1.png"); */
+
+  }
+  .header1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .gridItem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Default card styles */
+  .card {
+    width: 100%;
+    min-width: 65%;
+
+    height: 300px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 43%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+  }
+  
+  .contentBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .title1 {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 3px;
+  }
+  
+  .readMore {
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+  }
+  .header{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+
+  }
+  /* Responsive styling */
+  
+  /* On smaller screens, show only one large card */
+  @media (max-width: 976px) {
+    .gridItem {
+      max-width: 100%;
+      min-width: 70%;
+    }
+    .header{
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      margin-left: 7%;
+  
+    } 
+    .card {
+      width: 100%;
+      min-width: 70%;
+
+      height: 350px;
+    }
+  
+    .cardImage {
+      height: 350px;
+    }
+  }
+  
+
+  /* Our Process css  */
+
+  /* Main Container */
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1000px; */
+    margin: auto;
+    padding: 60px;
+    margin-top: 50px;
+  }
+
+  .gridContainer1{
+    column-gap: 18px;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "NovemberPro", sans-serif;
+    color: #650909;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Bullets Container - ensures bullets are arranged correctly */
+  .bulletsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    position: relative;
+  }
+  
+  /* Each Bullet/Text Container */
+  .stepContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: left;
+    column-gap: 10%;
+    width: 100%;
+    max-width: 13%;  /* Increased max-width for larger screens */
+    position: relative;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  /* Bullet Styling */
+  .bullets {
+    height: 50px;
+    width: 50px;
+    background-color: #181836;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 42px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
+  }
+  
+  /* Dashed Line After Bullet (Connecting the Point) */
+  .bullets::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 390%;  /* Adjusted to allow for longer dashed lines */
+    height: 1px;
+    border-bottom: 2px dashed #e9ecef;
+    z-index: 1;
+  }
+  
+  /* Header Text */
+  .header {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "NovemberPro", sans-serif;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Description Text */
+  .description {
+    font-size: 14px;
+    color: #555;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1124px) {
+    .bulletsContainer {
+      justify-content: space-evenly; /* Evenly space out the bullets */
+    }
+  
+    .stepContainer {
+      max-width: 150px; 
+      margin-top: 10%;
+      /* display: block; */
+      /* Adjust for slightly larger screen widths */
+    }
+  
+    .description {
+      font-size: 16px;  /* Slightly larger font for readability */
+    }
+  }
+  
+  @media (max-width: 668px) {
+    /* Bullets container should wrap and be centered */
+    .gridContainer{
+      align-items: flex-start;
+    }
+    .bulletsContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust step container for smaller screens */
+    .stepContainer {
+      max-width: 100%;
+      margin-bottom: 20px;
+      padding: 2px;
+    }
+  
+    .bullets {
+      width: 40px;  /* Make bullets smaller for mobile screens */
+      height: 40px;
+      font-size: 18px;
+      line-height: 36px;
+    }
+  
+    .header {
+      font-size: 16px;  /* Smaller font size for better fit */
+    }
+  
+    .description {
+      font-size: 14px;  /* Smaller description for mobile */
+    }
+  
+    /* Dashed line should not stretch too much */
+    .bullets::before {
+      width: 350px;  /* Reduced dashed line length */
+    }
+  }
+  
+  @media (max-width: 512px) {
+    /* Full width step containers */
+    .gridContainer{
+      align-items: flex-start;
+    }
+    .bulletsContainer {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .stepContainer {
+      max-width: 100%;
+      margin-bottom: 10px;
+      padding: 2px;  
+      /* Reduced margin for mobile */
+    }
+  
+    /* Bullets even smaller on very small screens */
+    .bullets {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    /* Adjust descriptions for better legibility on small screens */
+    .description {
+      font-size: 12px;
+      text-align: flex-start;
+      margin-top: 10px;
+    }
+  
+    /* Dashed line more compact for very small screens */
+    .bullets::before {
+      width: 270px;  /* Shortened dashed line */
+    }
+  }
+
+  /* Testimonials css */
+
+   
+ 
+ 
+ 
+ .text{
+    color: #181836;
+    display: block;
+    font-size: 100px;
+    font-weight: 600;
+    left: -220px;
+    margin-bottom: 0;
+    -webkit-transform: translateY(-58%) rotate(-90deg);
+            transform: translateY(-58%) rotate(-90deg);
+    word-break: unset;
+    z-index: 4;
+    margin-top: 100px;
+    /* top: 20%; */
+    opacity: 0.1;
+    position: absolute;
+    text-transform: lowercase;
+  }
+  .main{
+      margin-top: 100px;
+      width: 100%;
+      align-items: center;
+      
+  }
+  .para{
+      font-size: 16px;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 80px;
+      padding: 10px;
+  }
+  .heading{
+      font-weight: bold;
+      color: black;
+      font-size: 25px;
+      
+      text-align: center;
+      
+  }
+  
+
+  
+   
+    
+    .carousel {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+       overflow: hidden; 
+      position: relative;
+      height: 400px;
+      margin: auto;
+      padding: 50px;
+      min-height: 90%;
+    }
+    
+    .hiddenItem {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    }
+    
+    .carouselInner {  
+      display: flex;
+      flex-direction: row;
+      transition: transform 0.5s ease-in-out;
+      gap: 30px; 
+      /* / padding-left: 60px; / */
+      /* / padding-right: 60px; / */
+      padding: 12px;
+      position: relative;
+      left:15%;
+      right: 15%;
+    }
+    
+    .carouselItem {
+       min-width: 40.8%;
+       max-width: 50%;  
+        /* width: 40%;  */
+      /* width: 536px !important ;  */
+      height: 317px;
+      box-sizing: border-box;
+      padding: 20px;
+      background: white;
+      box-shadow: 6px 4px 6px 4px rgba(0, 0, 0, 0.1);
+      /* / border: 1px solid grey; / */
+      border-radius: 10px;
+      text-align: center;
+    }
+    
+    .avatar {
+      width: 90px;
+      height: 90px;
+      margin: auto;
+      justify-content: center;
+    }
+    
+    .title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 10px 0;
+      margin-top: 20px;
+      color: #650909;
+    }
+    
+    .description {
+      font-size: 1rem;
+      color: #555;
+    }
+    
+    /* / Responsive Design / */
+   /* / For large screens, show 2 items / */
+  @media (min-width: 768px) {
+    .carouselInner {
+      display: flex;
+    }
+    .gridContainer1 {
+      /* width: 600px; */
+      left: 0%;
+      right: 0%;
+    padding: 20px 20px;
+  
+    }
+  
+    .slideContent{
+      width: 90%; 
+      min-width: 60%;
+      text-align: center;
+    }
+  
+    .slideItem{
+      width: 450px; 
+      min-width: 40%;
+    }
+  
+    .carouselItem {
+      width: 50%; 
+    }
+    .carouselInner{
+      left: 0%;
+      right: 0%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .carouselInner {
+      display: flex;
+    }
+    .gridContainer1 {
+      width: 600px;
+      left: 0%;
+      right: 0%;
+    padding: 20px 20px;
+    left: 0%;
+    right: 0%;
+  
+    }
+    .slideContent{
+      width: 50%; 
+      min-width: 42%;
+    }
+  
+    .slideItem{
+      width: 50%; 
+      min-width: 42%;
+    }
+    .carouselInner {
+      left: 0%;
+      right: 0%;
+  
+    }
+    .carouselItem {
+      width: 50%; 
+      min-width: 42%;
+    }
+  }
+  
+  /* / For smaller screens, show 1 item / */
+  @media (max-width: 967px) {
+    .carouselInner {
+      display: grid;
+    }
+    .gridContainer1 {
+      width: 600px;
+      left: 0%;
+      right: 0%;
+    padding: 20px 20px;
+  
+    }
+    .text{
+      display: none;
+    }
+  
+    .carousel {
+      height: 800px;
+    }
+  
+    .carouselItem {
+      width: 100%; 
+      min-width: 50%;
+    } 
+  } 
+  
+    
+  
+  .slideshowcontainer {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    /* justify-content: space-between; */
+  
+    overflow: hidden;
+  
+    /* display: flex; */
+      /* align-items: center; */
+      /* justify-content: center; */
+      /* width: 100%; */
+      /* max-width: 100%; */
+      /* margin: auto; */
+      /* margin-top: 100px; */
+      /* position: relative; */
+      /* overflow: hidden; */
+      /* / position: relative; / */
+      /* padding: 0px 0px 100px 0px; */
+      background-image: url("../../public/assets/img/home-bg-07.png");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  
+  .slide {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+     /* margin-left: 20px; */
+    min-height: 100px;
+    transition: opacity 0.5s ease-in-out;
+    min-width: 500px;
+    /* max-width: 400px; */
+  
+  
+    /* display: flex;
+    flex-direction: row;
+     overflow: hidden; 
+    position: relative;
+    margin: auto;
+    padding: 50px;
+    min-height: 90%; */
+  }
+  
+  .gridContainer1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping if items exceed width */
+    /* justify-content: space-between; */
+    padding: 20px 20px;
+    min-width: 95%;
+    gap: 20px;
+  
+  
+    /* display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+   /* gap: 30px;   */
+  
+    position: relative;
+    left:10%;
+    right: 10%; 
+  }
+  
+  .slideItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    text-align: center;
+    /* margin: 1px; */
+  
+    background-color: white;
+      /* margin: 30px 5px 35px 5px; */
+      border-radius: 15px;
+      /* padding: 30px 25px; */
+      box-shadow: 8px 8px 30px 0 #2a437126;
+      /* height: 80%; */
+  }
+  
+  .slideContent {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 14px;
+    padding: 14px 0 14px 0;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    color: #181836;
+    background-color: #ffffff;
+    margin-top: 16px;
+  }
+  
+  .button:hover {
+    background-color: #181836;
+    color: #ffffff;
+  }
+  
+  .backgroundImage {
+    width: 100%;
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .dotsContainer {
+    text-align: center;
+    margin-top: -35px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #8f2525;
+  }
+  
+  /* Responsive for small screens */
+  @media screen and (max-width: 900px) {
+    .slide {
+      flex-direction: column;
+    }
+    
+    .gridContainer1 {
+      flex-direction: column;
+      padding: 20px;
+      left: 0%;
+      right: 0%;
+      align-items: center;
+    }
+  
+    /* .slideItem {
+      width: 100%;
+    } */
+    .slideContent{
+      width: 90%; 
+      min-width: 60%;
+      text-align: center;
+    }
+  
+    .slideItem{
+      width: 650px; 
+      min-width: 60%;
+    }
+  
+    .backgroundImage {
+      height: 200px;
+    }
+  
+    .prev,
+    .next {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    .text{
+      display: none;
+    }
+  
+    .gridContainer1 {
+      flex-direction: column;
+      padding: 20px;
+      left: 0%;
+      right: 0%;
+      align-items: center;
+      /* left: 5%; */
+      right: 5%;
+    }
+    .slideContent{
+      width: 90%; 
+      min-width: 60%;
+      text-align: center;
+    }
+  
+    .slideItem{
+      width: 450px; 
+      min-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 512px) {
+    .text{
+      display: none;
+    }
+  
+    .gridContainer1 {
+      flex-direction: column;
+      /* padding: 20px; */
+      left: 0%;
+      right: 0%;
+      align-items: center;
+      /* left: 5%;
+      right: 5%; */
+    }
+    .slideContent{
+      width: 90%; 
+      min-width: 60%;
+      text-align: center;
+    }
+  
+    .slideItem{
+      width: 350px; 
+      min-width: 40%;
+      padding: auto;
+      left: 0%;
+      right: 0%;
+      /* margin-left: 10px; */
+    }
+  }
+  
+  @media screen and (max-width: 512px) {
+    .text{
+      display: none;
+    }
+  
+    .gridContainer1 {
+      flex-direction: column;
+      padding: 20px;
+      left: 0%;
+      right: 0%;
+      align-items: center;
+      /* left: 5%;
+      right: 5%; */
+    }
+    .slideContent{
+      width: 90%; 
+      min-width: 60%;
+      text-align: center;
+    }
+  
+    .slideItem{
+      width: 350px; 
+      min-width: 40%;
+      left: -5%;
+      right: 0%;
+    }
+  }
+  
