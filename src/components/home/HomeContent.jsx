@@ -3,7 +3,7 @@ import { Typography,Box, CardContent } from '@mui/material'
 import Grid2 from '@mui/material/Grid2'
 import Image from 'next/image'
 import aboutbanner from "../../../public/assets/img/ror-banner.png";
-import CardSection from '../../app/CardSection/CardSection';
+import CardSection from '../../app/career/CardSection';
 import Card from '@mui/material/Card';
 import Link from 'next/link';
 import Divider from '@mui/material/Divider';

@@ -1,12 +1,12 @@
 "use client";
 
-import Carousel from "./Carousel/page";
+import Carousel from "../components/home/Carousel";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import OurProcess from "../components/home/OurProcess";
 import Testinomials from "../components/home/Testinomials";
 import OurBlog from "../components/home/OurBlog";
-import Footer from "./Footer/page";
+import Footer from "../components/footer/page";
 import HomeContent from "../components/home/Homecontent";
 
 

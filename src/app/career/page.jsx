@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeForm from "../../../components/layout/contact form/ResumeForm"
+import ResumeForm from "../../components/contact/ResumeForm"
 
 const page = () => {
   return (

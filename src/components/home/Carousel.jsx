@@ -131,7 +131,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Box, Grid, Typography, Button } from "@mui/material";
-import styles from "./page.module.css";
+import styles from "../../styles/caroussel.module.css";
 import whitewave from "../../../public/assets/img/white-wave.png";
 
 const Carousel = () => {

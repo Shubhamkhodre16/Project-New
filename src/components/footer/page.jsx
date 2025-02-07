@@ -1,6 +1,6 @@
 import React from "react";
 import {Box, Typography } from "@mui/material";
-import styles from "./footer.module.css";
+import styles from "../../styles/footer.module.css";
 import Grid from "@mui/material/Grid2";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
