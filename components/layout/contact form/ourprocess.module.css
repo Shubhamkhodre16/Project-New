@@ -4,10 +4,14 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: auto;
-    padding: 20px;
+    padding: 60px;
     margin-top: 50px;
+  }
+
+  .gridContainer{
+    column-gap: 12px;
   }
   
   /* Title Styling */
@@ -28,7 +32,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
+    width: 90%;
     position: relative;
   }
   
@@ -37,11 +41,13 @@
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: center;
+    align-items: left;
+    column-gap: 10%;
     width: 100%;
-    max-width: 120px;  /* Increased max-width for larger screens */
+    max-width: 13%;  /* Increased max-width for larger screens */
     position: relative;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
   }
   
   /* Bullet Styling */
@@ -70,7 +76,7 @@
     left: 100%;
     width: 390%;  /* Adjusted to allow for longer dashed lines */
     height: 1px;
-    border-bottom: 2px dashed black;
+    border-bottom: 2px dashed #e9ecef;
     z-index: 1;
   }
   
@@ -80,7 +86,7 @@
     font-size: 18px;
     font-family: "NovemberPro", sans-serif;
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left;
   }
   
   /* Description Text */
@@ -88,17 +94,20 @@
     font-size: 14px;
     color: #555;
     max-width: 300px;
-    text-align: center;
+    text-align: left;
   }
   
   /* Responsive Design */
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     .bulletsContainer {
       justify-content: space-evenly; /* Evenly space out the bullets */
     }
   
     .stepContainer {
-      max-width: 150px;  /* Adjust for slightly larger screen widths */
+      max-width: 150px; 
+      margin-top: 10%;
+      /* display: block; */
+      /* Adjust for slightly larger screen widths */
     }
   
     .description {
@@ -106,8 +115,11 @@
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 668px) {
     /* Bullets container should wrap and be centered */
+    .gridContainer{
+      align-items: flex-start;
+    }
     .bulletsContainer {
       flex-direction: column;
       align-items: center;
@@ -117,6 +129,7 @@
     .stepContainer {
       max-width: 100%;
       margin-bottom: 20px;
+      padding: 2px;
     }
   
     .bullets {
@@ -131,26 +144,31 @@
     }
   
     .description {
-      font-size: 12px;  /* Smaller description for mobile */
+      font-size: 14px;  /* Smaller description for mobile */
     }
   
     /* Dashed line should not stretch too much */
     .bullets::before {
-      width: 300%;  /* Reduced dashed line length */
+      width: 350px;  /* Reduced dashed line length */
     }
   }
   
   @media (max-width: 512px) {
     /* Full width step containers */
+    .gridContainer{
+      align-items: flex-start;
+    }
     .bulletsContainer {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       width: 100%;
     }
   
     .stepContainer {
       max-width: 100%;
-      margin-bottom: 10px;  /* Reduced margin for mobile */
+      margin-bottom: 10px;
+      padding: 2px;  
+      /* Reduced margin for mobile */
     }
   
     /* Bullets even smaller on very small screens */
@@ -164,13 +182,13 @@
     /* Adjust descriptions for better legibility on small screens */
     .description {
       font-size: 12px;
-      text-align: center;
+      text-align: flex-start;
       margin-top: 10px;
     }
   
     /* Dashed line more compact for very small screens */
     .bullets::before {
-      width: 200%;  /* Shortened dashed line */
+      width: 270px;  /* Shortened dashed line */
     }
   }
   
