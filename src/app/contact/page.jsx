@@ -5,7 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import ContactForm from '../../components/contact/ContactForm';
 import styles from './../../styles/Contact.module.css'
-import Footer from '../Footer/page';
+import Footer from '../../components/footer/page';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const page = () => {

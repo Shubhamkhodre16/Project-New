@@ -1,8 +1,8 @@
 "use client"
 import React from 'react';
 // import OurProcess from '../../../components/layout/contact form/OurProcess';
-import Testimonials from '../../../components/layout/contact form/Testinomials';
-import OurBlog from '../../../components/layout/contact form/OurBlog';
+// import Testimonials from '../../components/layout/contactForm/Testinomials';
+import OurBlog from '../../components/home/OurBlog';
 
 const page = () => {
   return (
