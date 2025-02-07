@@ -195,10 +195,10 @@ const Carousel = () => {
     setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   const goToSlide = (index) => setSlideIndex(index);
 
-  // useEffect(() => {
-  //   const interval = setInterval(nextSlide, 5000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className={styles.slideshowcontainer}>

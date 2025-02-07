@@ -1,17 +1,27 @@
+
+
+
+
 "use client";
-import { useState, useEffect } from "react";
-import styles from "./testnomial.module.css";
+
+import React, { useState, useEffect } from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import Image from "next/image";
+import { Box, Grid, Typography, Button } from "@mui/material";
+import styles from "./testnomial.module.css";
+
 
 const Testimonials = () => {
-  const images = [
+  const [slideIndex, setSlideIndex] = useState(0);
+
+    const Carouseldata = [
     {
       src: "https://www.partner2simplify.com.au/wp-content/uploads/2021/02/ror-development-one-img.jpg",
       alt: "ROR",
       title: "Dan McCarty",
       description:
-       " It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible."
+        " It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
     {
       src: "https://miro.medium.com/v2/resize:fit:1200/0*M4bxiCIjcTK-2Xr6.jpeg",
@@ -34,15 +44,13 @@ const Testimonials = () => {
       description:
         "It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
-    ,
     {
       src: "https://media.licdn.com/dms/image/v2/D5612AQGzYwD8vD5__w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697912996343?e=2147483647&v=beta&t=t-nvba-Y1-xZCMjj1Rorc-PQ9GR2lmVx-qQeSgBO3wY",
       alt: "Enterprise Solutions",
-      title: " Alex Ong",
+      title: "Alex Ong",
       description:
         "The app has got overwhelming responses from our users. They like how it looks and feels, as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
-    
     {
       src: "https://media.licdn.com/dms/image/v2/D5612AQGzYwD8vD5__w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697912996343?e=2147483647&v=beta&t=t-nvba-Y1-xZCMjj1Rorc-PQ9GR2lmVx-qQeSgBO3wY",
       alt: "Enterprise Solutions",
@@ -52,56 +60,80 @@ const Testimonials = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(currentIndex,"currrr");
+
+  const totalSlides = Math.ceil(Carouseldata.length / 2); // Show two slides at a time
+
+  const nextSlide = () => setSlideIndex((prev) => (prev + 1) % totalSlides);
+  const prevSlide = () =>
+    setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+  const goToSlide = (index) => setSlideIndex(index);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex + 1 >= images.length ? 0 : prevIndex + 2
-      );
-    }, 3000); // Adjusted timing for smoother transitions
-
-    return () => clearInterval(timer);
-  }, [images.length]);
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <>
-      <div className={styles.main}>
-        <h2 className={styles.heading}>TESTIMONIALS</h2>
-        <span className={styles.para}>
-          Our beloved clients shared their thrilling experience on how our
-          product development and services helped them to set a benchmark in
-          their business realm
-        </span>
+   <>
+   <div  >
+
+   <Grid 
+        container 
+        spacing={4}
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center"
+      >
+        <Grid item xs={12} sm={10} md={8} lg={8}>
+          <Typography className={styles.heading}>Testimonial</Typography>
+          <Typography className={styles.para}>
+            Our beloved clients shared their thrilling experience on how our
+            product development and services helped them to set a benchmark in
+            their business realm.
+          </Typography>
+        </Grid>
+      </Grid>
         <span className={styles.text}>TESTIMONIALS</span>
 
-        <div className={styles.carouselContainer}>
-          <div className={styles.carousel}>
-            <div
-              className={styles.carouselInner}
-              style={{
-                transform: `translateX(-${currentIndex * 34}%)`,
-              }}
-            >
-              {images.map((image, index) => (
-                <div key={index} className={styles.carouselItem}>
-                  <Stack alignItems="center" spacing={2}>
-                    <Avatar
-                      alt={image.alt}
-                      src={image.src}
-                      className={styles.avatar}
-                    />
-                  </Stack>
-                  <h3 className={styles.title}>{image.title}</h3>
-                  <p className={styles.description}>{image.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+        <div className={styles.slideshowcontainer}>
+      
+      {Array.from({ length: totalSlides }).map((_, index) => {
+        const firstItem = index * 2;
+        const secondItem = firstItem + 1;
+
+        return (
+          <Box
+            key={index}
+            className={styles.slide}
+            style={{
+              display: slideIndex === index ? "flex" : "none",
+            }}
+          >
+            <Grid container xs={12} md={4} lg={6} spacing={2} className={styles.gridContainer}>
+              {[firstItem, secondItem].map((itemIndex) =>
+                Carouseldata[itemIndex] ? (
+                  <Grid item xs={12} md={4} lg={5} key={itemIndex} className={styles.slideItem}>
+                          <Box  className={styles.slideContent}>
+        <Stack alignItems="center" spacing={2}>
+          <Avatar alt={Carouseldata[itemIndex].alt} src={Carouseldata[itemIndex].src} className={styles.avatar} />
+        </Stack>
+        <Typography variant="h6" className={styles.title}>
+          {Carouseldata[itemIndex].title}
+        </Typography>
+        <Typography variant="body2" className={styles.description}>
+          {Carouseldata[itemIndex].description}
+        </Typography>
+      </Box>
+                  </Grid>
+                ) : null
+              )}
+            </Grid>
+          </Box>
+        );
+      })}
+    </div>
+   </div>
+   </>
   );
 };
 
