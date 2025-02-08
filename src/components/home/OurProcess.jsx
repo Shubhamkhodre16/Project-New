@@ -51,14 +51,14 @@ const processSteps = [
 const OurProcess = () => {
   return (
     <div className={styles.carouselContainer}>
-      <Typography className={styles.title}>OUR PROCESS</Typography>
+      <Typography className={styles.processtitle}>OUR PROCESS</Typography>
 
       {/* Grid Layout */}
-      <Grid  container className={styles.gridContainer}>
+      <Grid  lg={12}  container className={styles.gridContainer}>
   {processSteps.map((step, index) => (
     <Grid   key={index} className={styles.stepContainer}>
       <div className={styles.bullets}>{index + 1}</div>
-      <div className={styles.header}>{step.title}</div>
+      <div className={styles.headerprocess}>{step.title}</div>
       <p className={styles.description}>
         {step.description}
       </p>

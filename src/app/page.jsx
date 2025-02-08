@@ -21,7 +21,7 @@ export default function Home() {
         />
       </header>
 
-      <main className="mt-10 flex flex-col items-center  mb-20 ">
+      <main className="flex flex-col items-center   ">
         {/* <Box
           display="flex"
           flexDirection={{ xs: "column", md: "row" }}

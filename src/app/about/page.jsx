@@ -1,16 +1,12 @@
 "use client"
 import React from 'react';
-// import OurProcess from '../../../components/layout/contact form/OurProcess';
-// import Testimonials from '../../components/layout/contactForm/Testinomials';
-import OurBlog from '../../components/home/OurBlog';
+import ImagePart from "../../components/about/ImagePart";
 
 const page = () => {
   return (
-    <div style={{marginTop:"100px"}} >
+    <div  >
 
-{/* <OurProcess/> */}
-{/* <Testimonials/> */}
-<OurBlog/>
+<ImagePart/>
       
       </div>
   )

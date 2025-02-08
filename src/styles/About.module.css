@@ -1,0 +1,243 @@
+/* Default Styles */
+.background {
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../public/assets/img/slide3.webp");
+}
+
+.about {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 20% 0;
+}
+
+.achieving {
+    background-image: url("../../public/assets/img/bg-shape1-home5.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 100px 0;
+    /* display: flex; */
+}
+
+.container {
+    width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+    min-width: 80%;
+    padding: 0 10%;
+    gap: 10%;
+    align-items: center;
+}
+
+.titledata {
+    text-align: left;
+    max-width: 1300px;
+    width: 50%;
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.image {
+    vertical-align: middle;
+}
+
+.mainhead {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181836;
+    margin-bottom: 8px;
+    padding-bottom: 30px;
+}
+
+.des, .des1 {
+    font-size: 18px;
+}
+
+.des1 {
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* who we  */
+
+.whowe {
+    background-image: url("../../public//assets/img//home-bg-10-1.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #ececec;
+    padding: 100px 0px 40px 0px;
+}
+.whoContainer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:  0 10% ;
+    display: flex;
+    gap: 50px;
+
+}
+.whoweLeft{
+  text-align: left;
+  
+}
+.whoweRight{
+    text-align: left;
+
+}
+.whoweHeading{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+  /* Core Values Css  */
+
+.coreMain{
+    background-color: #181836;
+    background-position: center right;
+}
+.coreContainer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ececec;
+    padding: 3% 7%;
+}
+.coreBox{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5%;
+
+}
+.coreBox1{
+    box-shadow: 1px white;
+    border-radius: 10px;
+    color: #333;
+    background-color: #ececec;
+    padding: 5%;
+
+
+}
+.coresubcont{
+    text-align: center;
+}
+.coresubcont1{
+    text-align: left;
+}
+
+
+/* Our Usps */
+
+.uspMain{
+    /* background-color: #ececec; */
+}
+
+.uspContainer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* color: #ececec; */
+    padding: 3% 7%;
+
+}
+
+.uspBox {
+    display: flex;        /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;  /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    text-align: center;   /* Centers text inside Typography */
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 5%;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+
+.uspBox:hover {
+    border-color: #ebebeb;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    background-color: white;
+}
+
+
+  /* Vissson and misson  */
+
+
+  .visionMissonContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:  0 10% ;
+    display: flex;
+    gap: 50px;
+    /* flex-direction: column;  */
+    align-items: center;  /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    text-align: center;
+  }
+
+  .visionLeft{
+    text-align: left;
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+    .container { max-width: 1320px; }
+}
+
+@media (max-width: 1200px) {
+    .container { max-width: 1140px; }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+        flex-direction: column;
+        row-gap: 50px;
+
+    }
+    .whoContainer{
+        flex-direction: column;
+    }
+    .titledata { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .container { max-width: 720px; }
+    .mainhead {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .des, .des1 {
+        font-size: 14px;
+    }
+    .container{
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container { max-width: 540px; }
+    .mainhead {
+        font-size: 18px;
+    }
+    .des, .des1 {
+        font-size: 13px;
+    }
+    .container{
+        row-gap: 40px;
+    }
+}
