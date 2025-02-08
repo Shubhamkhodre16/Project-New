@@ -1,8 +1,7 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import styles from "../../styles/Home.module.css";
-
+import Grid2 from "@mui/material/Grid2";
 
 const processSteps = [
   {
@@ -54,18 +53,19 @@ const OurProcess = () => {
       <Typography className={styles.processtitle}>OUR PROCESS</Typography>
 
       {/* Grid Layout */}
-      <Grid  lg={12}  container className={styles.gridContainer}>
-  {processSteps.map((step, index) => (
-    <Grid   key={index} className={styles.stepContainer}>
-      <div className={styles.bullets}>{index + 1}</div>
-      <div className={styles.headerprocess}>{step.title}</div>
-      <p className={styles.description}>
-        {step.description}
-      </p>
-    </Grid>
-  ))}
-</Grid>
-
+      <Grid2 container spacing={2} className={styles.gridContainer}>
+        {processSteps.map((step, index) => (
+          <Grid2
+            size={{ xs:12, sm: 6, lg: 6, xl: 12 }}
+            key={index}
+            className={styles.stepContainer}
+          >
+            <div className={styles.bullets}>{index + 1}</div>
+            <div className={styles.headerprocess}>{step.title}</div>
+            <p className={styles.description}>{step.description}</p>
+          </Grid2>
+        ))}
+      </Grid2>
     </div>
   );
 };
