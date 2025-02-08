@@ -120,7 +120,7 @@
     /* max-width: 1000px; */
     margin: auto;
     padding: 60px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   .gridContainer1{
@@ -128,7 +128,7 @@
   }
   
   /* Title Styling */
-  .title {
+  .processtitle {
     font-weight: bold;
     font-size: 24px;
     font-family: "NovemberPro", sans-serif;
@@ -194,7 +194,7 @@
   }
   
   /* Header Text */
-  .header {
+  .headerprocess {
     font-weight: bold;
     font-size: 18px;
     font-family: "NovemberPro", sans-serif;
@@ -217,14 +217,26 @@
     }
   
     .stepContainer {
-      max-width: 150px; 
-      margin-top: 10%;
+      max-width: 48%; 
+      /* margin-top: 10%; */
       /* display: block; */
       /* Adjust for slightly larger screen widths */
     }
   
     .description {
-      font-size: 16px;  /* Slightly larger font for readability */
+      font-size: 16px; 
+      max-width: 100%; /* Slightly larger font for readability */
+    }
+
+    .bullets::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 990%;  /* Adjusted to allow for longer dashed lines */
+      height: 1px;
+      border-bottom: 2px dashed #e9ecef;
+      z-index: 1;
     }
   }
   
@@ -262,7 +274,7 @@
   
     /* Dashed line should not stretch too much */
     .bullets::before {
-      width: 350px;  /* Reduced dashed line length */
+      width: 420px;  /* Reduced dashed line length */
     }
   }
   
@@ -415,7 +427,7 @@
       color: #650909;
     }
     
-    .description {
+    .description1 {
       font-size: 1rem;
       color: #555;
     }
@@ -519,7 +531,7 @@
     position: relative;
     margin: auto;
     width: 100%;
-    /* justify-content: space-between; */
+    justify-content: center;
   
     overflow: hidden;
   
@@ -545,10 +557,10 @@
     text-align: center;
     width: 100%;
     height: 100%;
-     /* margin-left: 20px; */
+     margin-left: 20px;
     min-height: 100px;
     transition: opacity 0.5s ease-in-out;
-    min-width: 500px;
+    /* min-width: 500px; */
     /* max-width: 400px; */
   
   
@@ -682,6 +694,8 @@
   @media screen and (max-width: 900px) {
     .slide {
       flex-direction: column;
+      min-width: none;
+      margin-left: 20px;
     }
     
     .gridContainer1 {

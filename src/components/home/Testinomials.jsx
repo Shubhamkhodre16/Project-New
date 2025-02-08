@@ -1,7 +1,3 @@
-
-
-
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -11,11 +7,10 @@ import Stack from "@mui/material/Stack";
 import { Box, Grid, Typography } from "@mui/material";
 import styles from "../../styles/Home.module.css";
 
-
 const Testimonials = () => {
-  const [slideIndex, setSlideIndex] = useState(0);  
+  const [slideIndex, setSlideIndex] = useState(0);
 
-    const Carouseldata = [
+  const Carouseldata = [
     {
       src: "https://www.partner2simplify.com.au/wp-content/uploads/2021/02/ror-development-one-img.jpg",
       alt: "ROR",
@@ -60,7 +55,6 @@ const Testimonials = () => {
     },
   ];
 
-
   const totalSlides = Math.ceil(Carouseldata.length / 2); // Show two slides at a time
 
   const nextSlide = () => setSlideIndex((prev) => (prev + 1) % totalSlides);
@@ -74,67 +68,86 @@ const Testimonials = () => {
   }, []);
 
   return (
-   <>
-   <div  style={{width:"100%"}}  >
-
-   <Grid 
-  container 
-  spacing={4}
-  justifyContent="center"
-  alignItems="center"
-  textAlign="center"
-  sx={{ px: 10 }} // Adds horizontal padding for better spacing
->
-  <Grid item xs={12} sm={10} md={8} lg={6}>
-    <Typography className={styles.heading}>Testimonial</Typography>
-    <Typography className={styles.para}>
-      Our beloved clients shared their thrilling experience on how our
-      product development and services helped them to set a benchmark in
-      their business realm.
-    </Typography>
-  </Grid>
-</Grid>
+    <>
+      <div style={{ width: "100%" }}>
+        <Grid
+          container
+          spacing={4}
+          justifyContent="center"
+          alignItems="center"
+          textAlign="center"
+          sx={{ px: 10 }} // Adds horizontal padding for better spacing
+        >
+          <Grid item xs={12} sm={10} md={8} lg={6}>
+            <Typography className={styles.heading}>Testimonial</Typography>
+            <Typography className={styles.para}>
+              Our beloved clients shared their thrilling experience on how our
+              product development and services helped them to set a benchmark in
+              their business realm.
+            </Typography>
+          </Grid>
+        </Grid>
         <span className={styles.text}>TESTIMONIALS</span>
 
         <div className={styles.slideshowcontainer}>
-      
-      {Array.from({ length: totalSlides }).map((_, index) => {
-        const firstItem = index * 2;
-        const secondItem = firstItem + 1;
+          {Array.from({ length: totalSlides }).map((_, index) => {
+            const firstItem = index * 2;
+            const secondItem = firstItem + 1;
 
-        return (
-          <Box
-            key={index}
-            className={styles.slide}
-            style={{
-              display: slideIndex === index ? "flex" : "none",
-            }}
-          >
-            <Grid container xs={12} md={4} lg={6} spacing={2} className={styles.gridContainer1}>
-              {[firstItem, secondItem].map((itemIndex) =>
-                Carouseldata[itemIndex] ? (
-                  <Grid item xs={12} md={4} lg={5} key={itemIndex} className={styles.slideItem}>
-                          <Box  className={styles.slideContent}>
-        <Stack alignItems="center" spacing={2}>
-          <Avatar alt={Carouseldata[itemIndex].alt} src={Carouseldata[itemIndex].src} className={styles.avatar} />
-        </Stack>
-        <Typography variant="h6" className={styles.title}>
-          {Carouseldata[itemIndex].title}
-        </Typography>
-        <Typography variant="body2" className={styles.description}>
-          {Carouseldata[itemIndex].description}
-        </Typography>
-      </Box>
-                  </Grid>
-                ) : null
-              )}
-            </Grid>
-          </Box>
-        );
-      })}
-    </div>
-   </div>
-   </>
+            return (
+              <Box
+                key={index}
+                className={styles.slide}
+                style={{
+                  display: slideIndex === index ? "flex" : "none",
+                }}
+              >
+                <Grid
+                  container
+                  xs={12}
+                  md={4}
+                  lg={6}
+                  spacing={2}
+                  className={styles.gridContainer1}
+                >
+                  {[firstItem, secondItem].map((itemIndex) =>
+                    Carouseldata[itemIndex] ? (
+                      <Grid
+                        item
+                        xs={12}
+                        md={4}
+                        lg={5}
+                        key={itemIndex}
+                        className={styles.slideItem}
+                      >
+                        <Box className={styles.slideContent}>
+                          <Stack alignItems="center" spacing={2}>
+                            <Avatar
+                              alt={Carouseldata[itemIndex].alt}
+                              src={Carouseldata[itemIndex].src}
+                              className={styles.avatar}
+                            />
+                          </Stack>
+                          <Typography variant="h6" className={styles.title}>
+                            {Carouseldata[itemIndex].title}
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            className={styles.description1}
+                          >
+                            {Carouseldata[itemIndex].description}
+                          </Typography>
+                        </Box>
+                      </Grid>
+                    ) : null
+                  )}
+                </Grid>
+              </Box>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
 };
 
