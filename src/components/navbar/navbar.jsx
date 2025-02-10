@@ -97,6 +97,7 @@ const Navbar = () => {
                           borderRadius: pathname === path ? "5%" : "",
                         }}
                         primary={name}
+                        className={styles.navText}
                       />
                     </Link>
                   </ListItem>
@@ -126,11 +127,12 @@ const Navbar = () => {
                     cursor: "pointer",
                     transition: "color 0.3s",
                     // "&:hover": { color: "#650909" },
-                    backgroundColor: pathname === path ? "#181836" : "transparent",
+                    backgroundColor: pathname === path ? "#3333" : "transparent",
                     color: pathname === path ? "#fff" : isFixed ? "black" : "white",
                     padding: pathname === path ? "10px 20px" : "5px 15px",
-                    borderRadius: pathname === path ? "5%" : "",
+                    borderRadius: pathname === path ? "10px" : "",
                   }}
+                  className={styles.navText}
                 >
                   {name}
                 </Typography>

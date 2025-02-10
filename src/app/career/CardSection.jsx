@@ -45,8 +45,8 @@ const CardSection = () => {
     <>
   <Box>
   <Grid2 container className={styles.cardContainer} spacing={5}>
-   {cardData?.map((item)=>(
-     <Grid2 className={styles.cardClass}  size={{ xs: 12,lg:4,md:6,sm:12 }}  >
+   {cardData?.map((item,index)=>(
+     <Grid2 className={styles.cardClass}  key={index}  size={{ xs: 12,lg:4,md:6,sm:12 }}  >
             <Card
               sx={{
                 // maxWidth: 345,
