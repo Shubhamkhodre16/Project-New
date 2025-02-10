@@ -56,13 +56,13 @@ const OurProcess = () => {
       <Grid2 container spacing={2} className={styles.gridContainer}>
         {processSteps.map((step, index) => (
           <Grid2
-            size={{ xs:12, sm: 6, lg: 6, xl: 12 }}
+            size={{ xs: 12, sm: 6, lg: 6, xl: 12 }}
             key={index}
             className={styles.stepContainer}
           >
             <div className={styles.bullets}>{index + 1}</div>
             <div className={styles.headerprocess}>{step.title}</div>
-            <p className={styles.description}>{step.description}</p>
+            <p className={styles.OurProcessdescription}>{step.description}</p>
           </Grid2>
         ))}
       </Grid2>

@@ -7,6 +7,7 @@ import Image from 'next/image'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import rightarrow from "../../../public/assets/img/arrow-right.svg";
+import styles from "../../styles/HomeContent.module.css"
 
 const CardSection = () => {
     const cardData=[{
@@ -42,16 +43,16 @@ const CardSection = () => {
 ]
   return (
     <>
-    <Grid2 container spacing={2} sx={{ display:"flex",justifyContent:"center",alignItems:"center" }}>
+  <Box>
+  <Grid2 container className={styles.cardContainer} spacing={5}>
    {cardData?.map((item)=>(
-     <Grid2 sx={{display:"flex", justifyContent:"center", alignItems:"center", marginX:{lg:"10px" ,md:"0px",sm:"0px"}, marginBottom:"20px" }}  size={{ xs: 12,lg:3,md:4,sm:6 }}  >
-          <Box >
+     <Grid2 className={styles.cardClass}  size={{ xs: 12,lg:4,md:6,sm:12 }}  >
             <Card
               sx={{
-                maxWidth: 345,
-                maxHeight:345,
+                // maxWidth: 345,
+                maxHeight:395,
                 minHeight:200,
-                minWidth:200,
+                // minWidth:200,
                 
                 borderRadius: "18px",
                 border: "1px solid transparent ",
@@ -80,6 +81,7 @@ const CardSection = () => {
                     }}
                   > 
                     <CardMedia
+                    className={styles.cardImage}
                       sx={{
                         width: "70%",
                         transition: "transform 0.3s ease",
@@ -96,13 +98,16 @@ const CardSection = () => {
                 <CardContent>
                   <Typography
                     gutterBottom
+                    className={styles.titledrive}
                     variant="h5"
                     component="div"
-                    sx={{ textAlign: "center" }}
+                    sx={{ textAlign: "center" , fontSize:{xs:"22px"} }}
                   >
                     {item.title}
                   </Typography>
-                  <Typography variant="body2" sx={{ textAlign: "center" }}>
+                  <Typography 
+                    className={styles.desdrive}
+                  variant="body2" sx={{ textAlign: "center" , padding:"0 5px", fontSize:{xs:"14px"}}}>
                    {item.desc}
                   </Typography>
                   <Typography
@@ -120,11 +125,11 @@ const CardSection = () => {
               
             
             </Card>
-          </Box>
         </Grid2>
         
           ))}
          </Grid2>
+  </Box>
     </>
   )
 }

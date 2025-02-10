@@ -1,189 +1,140 @@
-import React from 'react'
-import { Typography,Box, CardContent } from '@mui/material'
-import Grid2 from '@mui/material/Grid2'
-import Image from 'next/image'
+"use client";
+import React from "react";
+import { Typography, Box, CardContent } from "@mui/material";
+import Grid2 from "@mui/material/Grid2";
+import Image from "next/image";
 import aboutbanner from "../../../public/assets/img/ror-banner.png";
-import CardSection from '../../app/career/CardSection';
-import Card from '@mui/material/Card';
-import Link from 'next/link';
-import Divider from '@mui/material/Divider';
+import CardSection from "../../app/career/CardSection";
+import Card from "@mui/material/Card";
+import Link from "next/link";
+import Divider from "@mui/material/Divider";
 import DataBackup from "../../../public/assets/img/DataBackup.gif";
 import customers from "../../../public/assets/img/customers.gif";
 import globle from "../../../public/assets/img/globle.gif";
 import teammember from "../../../public/assets/img/teammember.gif";
-import CardMedia from '@mui/material/CardMedia';
+import CardMedia from "@mui/material/CardMedia";
 import dataprotect from "../../../public/assets/img/dataprotections.gif";
 import agileDevelop from "../../../public/assets/img/agiledevelopment.gif";
 import customersupport from "../../../public/assets/img/customersupport.gif";
-import Industry from './Industry';
+import Industry from "./Industry";
+import styles from "../../styles/HomeContent.module.css";
 const HomeContent = () => {
-
   return (
     <>
-            {/* Who We Are  section */}
-         <Box
-        sx={{
-          backgroundImage: "url(assets/img/bg-shape1-home5.png)",
-          backgroundPosition: "center right",
-          backgroundRepeat: "no-repeat",
-        //   padding: "100px 0px 100px 0px",
-          paddingTop: { sm: "20px", xs: "20px" },
-          marginY:"50px",
-          
-        }}
-      >
+      {/* Who We Are  section */}
+
+      <Box>
         <Grid2
-          container
           sx={{
-           
-            display:"flex",
-            justifyContent:"center"
+            backgroundImage: "url(assets/img/bg-shape1-home5.png)",
+            backgroundPosition: "center right",
+            backgroundRepeat: "no-repeat",
+            paddingTop: { sm: "20px", xs: "20px" },
+            marginY: "50px",
           }}
         >
-          <Grid2
-            size={{ xs: 12 ,lg:4, md: 6 }}
-            sx={{ display: "flex", justifyContent: "right" }}
-          >
-            <Image
-              src={aboutbanner}
-              alt="About Us"
-              width={700}
-              height={550}
-              // layout="intrinsic"
-            />
-          </Grid2>
-
-          <Grid2
-            size={{ xs: 12,lg:6, md: 6 }}
-            sx={{
-            //   display: "flex",
-            //   flexDirection: "column",
-              //justifyContent: "start",
-             
-            }}
-          >
-            <Box sx={{padding:"15px"}} >
-              <Typography
-                variant="h5"
-                sx={{
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  color: " #650909",
-                  //fontSize: { sm: 30, xs: 26, md: 40 },
-                  textAlign: {
-                    sm: "center",
-                    xs: "center",
-                    md: "left",
-                    lg: "left",
-                  },
-                  marginBottom:"20px"
-                }}
-                
-              >
-                Who We Are
-              </Typography>
-            </Box>
-            <Box>
-              <Typography
-                variant="body2"
-               
-                sx={{
-                  fontWeight: "bold",
-                  color: "#000",
-                  paddingBottom: "10px",
-                 
-                  lineHeight:"1.2",
-                  fontSize: { lg:"35px",sm: "20px", xs: "18px" },
-                  
-                }}
-              
-              >
-                Recognized as the Best Ruby on Rails and Product Engineering
-                Company
-              </Typography>
-            </Box>
-            <Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: { lg: "20px", md: "18px", sm: "16px", xs: "14px" },
-                   lineHeight: "1.5",
-                  color: "#333",
-                  marginBottom:"1rem"
-                 
-                }}
-              >
-                As today’s competitive world stepping into digital approaches,
-                and digital transformation becoming more than a buzzword, it’s
-                become essential than ever for your business to collaborate with
-                the top software application development company that serves
-                valuable tech development services and solutions at an
-                economical budget. This is where InfoKoders technologies comes
-                in!
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: { lg: "20px", md: "18px", sm: "16px", xs: "14px" },
-                  lineHeight: "1.5",
-                 color: "#333",
-                 marginBottom:"1rem"
-                }}
-              >
-                InfoKoders technologies is the unmatched destination to embrace
-                exceptional Software development and business-centric
-                technological solutions. Whether you're a startup, SMB, or a
-                large corporation, we can help you plan your digital path with
-                expert consultancy, services, and solutions. Make the most from
-                our long-standing expertise and imagine the endless digital
-                possibilities.
-              </Typography>
-            </Box>
+          <Grid2 className={styles.whoweContainer}>
+            <Grid2 container spacing={5}>
+              <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
+                <Image
+                  src={aboutbanner}
+                  alt="About Us"
+                  width={700}
+                  height={550}
+                  // layout="intrinsic"
+                />
+              </Grid2>
+              <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
+                <Typography
+                  className={styles.whoTitle}
+                  sx={{
+                    fontSize: {
+                      lg: "40px",
+                      md: "25px",
+                      sm: "20px",
+                      xs: "18px",
+                    },
+                  }}
+                >
+                  Who we are
+                </Typography>
+                <Typography
+                  className={styles.whoSubTitle}
+                  sx={{
+                    fontSize: {
+                      lg: "35px",
+                      md: "22px",
+                      sm: "18px",
+                      xs: "15px",
+                    },
+                  }}
+                >
+                  {" "}
+                  Recognized as the Best Ruby on Rails and Product Engineering
+                  Company
+                </Typography>
+                <Typography className={styles.whoDes}>
+                  {" "}
+                  As today’s competitive world stepping into digital approaches,
+                  and digital transformation becoming more than a buzzword, it’s
+                  become essential than ever for your business to collaborate
+                  with the top software application development company that
+                  serves valuable tech development services and solutions at an
+                  economical budget. This is where InfoKoders technologies comes
+                  in!
+                </Typography>
+                <Typography className={styles.whoDes}>
+                  InfoKoders technologies is the unmatched destination to
+                  embrace exceptional Software development and business-centric
+                  technological solutions. Whether you're a startup, SMB, or a
+                  large corporation, we can help you plan your digital path with
+                  expert consultancy, services, and solutions. Make the most
+                  from our long-standing expertise and imagine the endless
+                  digital possibilities.
+                </Typography>
+              </Grid2>
+            </Grid2>
           </Grid2>
         </Grid2>
       </Box>
-            {/* //How We Drive Business? */}
-      <Grid2
-          container
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: "40px",
-          
-          }}
-        >
-          <Grid2 size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
-            <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-              How We Drive Business?
-            </Typography>
 
-            <Typography
-              variant="body1"
-              sx={{
-                fontSize: { lg: "20px", md: "18px", sm: "15px", xs: "12px" },
-              }}
-            >
-              We bring the right scope of services that drives impact by
-              unlocking next-gen analytics and effectively transform your
-              business operations.
-            </Typography>
-          </Grid2>
+      {/* //How We Drive Business? */}
+
+      <Grid2 container className={styles.driveContent}>
+        <Grid2 sx={{ textAlign: "center", padding: "0 10%" }}>
+          <Typography className={styles.driveHeader} variant="h5">
+            How We Drive Business?
+          </Typography>
+
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: { lg: "20px", md: "18px", sm: "18px", xs: "15px" },
+            }}
+            className={styles.drivecontent}
+          >
+            We bring the right scope of services that drives impact by unlocking
+            next-gen analytics and effectively transform your business
+            operations.
+          </Typography>
         </Grid2>
-        {/* card section */}
-        <CardSection/>
-        {/*Our key Morals that draw your trust*/}
-        <Grid2
+      </Grid2>
+      {/* card section */}
+      <CardSection />
+      {/*Our key Morals that draw your trust*/}
+      <Grid2
+        className={styles.keybackground}
         sx={{
           backgroundImage: "url(assets/img/bg-shape1-home5.png)",
           backgroundPosition: "center right",
           backgroundRepeat: "no-repeat",
-          marginTop:"40px"
+          marginTop: "40px",
         }}
       >
         <Grid2
           container
           spacing={3}
+          className={styles.keyMoaral}
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -191,25 +142,27 @@ const HomeContent = () => {
           }}
         >
           <Grid2
-            size={{ xs: 12, sm: 6, md: 4, lg: 3 }}
+            size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
             sx={{ marginTop: "70px" }}
           >
             <Typography
-              variant="h4"
+              // variant="h4"
               sx={{
-                fontWeight: "bold",
+                // fontWeight: "bold",
                 fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "20px" },
                 marginBottom: { sm: "10px", xs: "10px" },
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
+              className={styles.keyMoaralHead}
             >
               Our key Morals that draw your trust
             </Typography>
             <Typography
+              className={styles.keyMoaralDes}
               variant="body1"
               sx={{
                 lineHeight: "1.5",
-                fontSize: { lg: "18px", md: "16px", sm: "12px" },
+                fontSize: { lg: "18px", md: "16px", sm: "15px", xs: "14px" },
                 marginBottom: "20px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
@@ -238,7 +191,7 @@ const HomeContent = () => {
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box sx={{ fontWeight: "bold" }}>
+              <Box className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     {" "}
@@ -269,7 +222,7 @@ const HomeContent = () => {
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box sx={{ fontWeight: "bold" }}>
+              <Box className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     {" "}
@@ -299,7 +252,7 @@ const HomeContent = () => {
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box sx={{ fontWeight: "bold" }}>
+              <Box className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     <li>100 %</li>
@@ -329,7 +282,7 @@ const HomeContent = () => {
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box sx={{ fontWeight: "bold" }}>
+              <Box className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     <li>100 +</li>
@@ -343,7 +296,7 @@ const HomeContent = () => {
             </Box>
           </Grid2>
           <Grid2
-            size={{ xs: 12, sm: 6, md: 4, lg: 3 }}
+            size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
             sx={{ marginTop: "50px" }}
           >
             <Box>
@@ -352,7 +305,6 @@ const HomeContent = () => {
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
-                 
                   transition: "   border 0.3s ease",
                   "&:hover": {
                     borderColor: " #ebebeb",
@@ -363,53 +315,51 @@ const HomeContent = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  flexDirection:"column",
+                  flexDirection: "column",
                   paddingY: "60px",
                   marginBottom: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
-              
-                  <Link href="">
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: "20px",
+                <Link href="">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      padding: "20px",
 
-                        "&:hover": {
-                          backgroundColor: "white !important",
-                        },
-                      }}
-                    >
-                      <CardMedia
-                        sx={{ width: "30%" }}
-                        component="img"
-                        height="60px"
-                        width="80px"
-                        image="./assets/img/DataBackup.gif"
-                      />
+                      "&:hover": {
+                        backgroundColor: "white !important",
+                      },
+                    }}
+                  >
+                    <CardMedia
+                      sx={{ width: "30%" }}
+                      component="img"
+                      height="60px"
+                      width="80px"
+                      image="./assets/img/DataBackup.gif"
+                    />
 
-                      {/* <lord-icon  src={databackups} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/>  */}
-                    </Box>
-                  </Link>
+                    {/* <lord-icon  src={databackups} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/>  */}
+                  </Box>
+                </Link>
 
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h4"
-                      component="div"
-                      sx={{ textAlign: "center" }}
-                    >
-                      Data Backups
-                    </Typography>
-                    <Typography variant="body2" sx={{ textAlign: "center" }}>
-                      The first imperative step in our product development
-                      process is gathering requirements and analyzing it.
-                    </Typography>
-                  </CardContent>
-                
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h4"
+                    component="div"
+                    className={styles.card1Header}
+                  >
+                    Data Backups
+                  </Typography>
+                  <Typography className={styles.card1SubHeader} variant="body2">
+                    The first imperative step in our product development process
+                    is gathering requirements and analyzing it.
+                  </Typography>
+                </CardContent>
               </Card>
             </Box>
 
@@ -428,46 +378,44 @@ const HomeContent = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  flexDirection:"column",
+                  flexDirection: "column",
                   paddingY: "60px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
-               
-                  <Link href="">
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: "30px",
-                      }}
-                    >
-                      <CardMedia
-                        sx={{ width: "30%" }}
-                        component="img"
-                        height="60px"
-                        image="/assets/img/dataprotections.gif"
-                        alt="backup"
-                      />
-                    </Box>
-                  </Link>
+                <Link href="">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      padding: "30px",
+                    }}
+                  >
+                    <CardMedia
+                      sx={{ width: "30%" }}
+                      component="img"
+                      height="60px"
+                      image="/assets/img/dataprotections.gif"
+                      alt="backup"
+                    />
+                  </Box>
+                </Link>
 
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h4"
-                      component="div"
-                      sx={{ textAlign: "center" }}
-                    >
-                      Data protection
-                    </Typography>
-                    <Typography variant="body2" sx={{ textAlign: "center" }}>
-                      The first imperative step in our product development
-                      process is gathering requirements and analyzing it.
-                    </Typography>
-                  </CardContent>
-               
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h4"
+                    component="div"
+                    className={styles.card1Header}
+                  >
+                    Data protection
+                  </Typography>
+                  <Typography className={styles.card1SubHeader} variant="body2">
+                    The first imperative step in our product development process
+                    is gathering requirements and analyzing it.
+                  </Typography>
+                </CardContent>
               </Card>
             </Box>
           </Grid2>
@@ -489,47 +437,45 @@ const HomeContent = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  flexDirection:"column",
+                  flexDirection: "column",
                   paddingY: "60px",
                   marginBottom: "20px",
                 }}
               >
-                
-                  <Link href="">
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: "20px",
-                      }}
-                    >
-                      <CardMedia
-                        sx={{ width: "30%" }}
-                        component="img"
-                        height="60px"
-                        image="/assets/img/agiledevelopment.gif"
-                        alt="backup"
-                      />
-                    </Box>
-                  </Link>
+                <Link href="">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      padding: "20px",
+                    }}
+                  >
+                    <CardMedia
+                      sx={{ width: "30%" }}
+                      component="img"
+                      height="60px"
+                      image="/assets/img/agiledevelopment.gif"
+                      alt="backup"
+                    />
+                  </Box>
+                </Link>
 
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h4"
-                      component="div"
-                      sx={{ textAlign: "center" }}
-                    >
-                      Agile development
-                    </Typography>
-                    <Typography variant="body2" sx={{ textAlign: "center" }}>
-                      We follow Agile Development Process, which enables us to
-                      deliver the project with the highest quality and a solid
-                      product.
-                    </Typography>
-                  </CardContent>
-               
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h4"
+                    component="div"
+                    className={styles.card1Header}
+                  >
+                    Agile development
+                  </Typography>
+                  <Typography className={styles.card1SubHeader} variant="body2">
+                    We follow Agile Development Process, which enables us to
+                    deliver the project with the highest quality and a solid
+                    product.
+                  </Typography>
+                </CardContent>
               </Card>
             </Box>
             <Box>
@@ -537,7 +483,7 @@ const HomeContent = () => {
               <Card
                 sx={{
                   borderRadius: "18px",
-                  
+
                   border: "1px solid transparent ",
                   transition: "   border 0.3s ease",
                   "&:hover": {
@@ -549,57 +495,55 @@ const HomeContent = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  flexDirection:"column",
+                  flexDirection: "column",
                   paddingY: "60px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
-                
-                  <Link href="">
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: "20px",
-                      }}
-                    >
-                      <CardMedia
-                        sx={{ width: "30%" }}
-                        component="img"
-                        height="60px"
-                        image="/assets/img/customersupport.gif"
-                        alt="backup"
-                      />
-                    </Box>
-                  </Link>
+                <Link href="">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      padding: "20px",
+                    }}
+                  >
+                    <CardMedia
+                      sx={{ width: "30%" }}
+                      component="img"
+                      height="60px"
+                      image="/assets/img/customersupport.gif"
+                      alt="backup"
+                    />
+                  </Box>
+                </Link>
 
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h4"
-                      component="div"
-                      sx={{ textAlign: "center" }}
-                    >
-                      Friendly Support
-                    </Typography>
-                    <Typography variant="body2" sx={{ textAlign: "center" }}>
-                      When it comes to providing beneficial support, you will
-                      never across a team like InfoKoders software. We are
-                      always there for clients right from the project idea
-                      discussion to launch
-                    </Typography>
-                  </CardContent>
-               
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h4"
+                    component="div"
+                    className={styles.card1Header}
+                  >
+                    Friendly Support
+                  </Typography>
+                  <Typography className={styles.card1SubHeader} variant="body2">
+                    When it comes to providing beneficial support, you will
+                    never across a team like InfoKoders software. We are always
+                    there for clients right from the project idea discussion to
+                    launch
+                  </Typography>
+                </CardContent>
               </Card>
             </Box>
           </Grid2>
         </Grid2>
       </Grid2>
       {/* Industries we serve */}
-      <Industry/>
+      <Industry />
     </>
-  )
-}
+  );
+};
 
-export default HomeContent
+export default HomeContent;

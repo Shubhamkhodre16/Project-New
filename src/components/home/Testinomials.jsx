@@ -76,11 +76,12 @@ const Testimonials = () => {
           justifyContent="center"
           alignItems="center"
           textAlign="center"
+          marginTop="30px"
           sx={{ px: 10 }} // Adds horizontal padding for better spacing
         >
           <Grid item xs={12} sm={10} md={8} lg={6}>
-            <Typography className={styles.heading}>Testimonial</Typography>
-            <Typography className={styles.para}>
+            <Typography className={styles.testimonialHeading}>Testimonial</Typography>
+            <Typography className={styles.testimonialPara}>
               Our beloved clients shared their thrilling experience on how our
               product development and services helped them to set a benchmark in
               their business realm.
@@ -128,7 +129,7 @@ const Testimonials = () => {
                               className={styles.avatar}
                             />
                           </Stack>
-                          <Typography variant="h6" className={styles.title}>
+                          <Typography variant="h6" className={styles.cardTitle}>
                             {Carouseldata[itemIndex].title}
                           </Typography>
                           <Typography
