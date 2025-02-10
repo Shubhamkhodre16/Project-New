@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import styles from "../../styles/About.module.css";
 import Navbar from "../navbar/Navbar";
+import Grid from "@mui/material/Grid2";
 import aboutimg from "../../../public/assets/img/about-img.jpg";
 import Image from "next/image";
 import CardMedia from "@mui/material/CardMedia";
@@ -74,15 +75,15 @@ const ImagePart = () => {
   return (
     <>
       <Box>
-        <Grid2 id="carousel" className={styles.background}>
+        <Grid id="carousel" className={styles.background}>
           <Navbar />
           <Typography className={styles.about}>About us</Typography>
-        </Grid2>
+        </Grid>
         {/* Achiving Section  */}
-        <Grid2 className={styles.achieving}>
-          <Grid2 className={styles.container}>
-            <Grid2 container className={styles.titledata}>
-              <Typography className={styles.mainhead}>
+        <Grid className={styles.achieving}>
+          <Grid className={styles.container}>
+            <Grid container className={styles.titledata}>
+              <Typography  fontSize={{xs:"20px", sm:"22px", md:"22px", lg:"22px", xl:"35px"}} className={styles.mainhead}>
                 Vision achieving Software, App and web Development Company
               </Typography>
               <Typography className={styles.des}>
@@ -96,18 +97,18 @@ const ImagePart = () => {
                 minds whose DNA echoes to bring victory to your businesses with
                 authentic software, apps, and Software development solutions.
               </Typography>
-            </Grid2>
-            <Grid2 className={styles.image}>
-              <Image src={aboutimg} alt="White Wave" width={500} height={100} />
-            </Grid2>
-          </Grid2>
-        </Grid2>
+            </Grid>
+            <Grid className={styles.image}>
+              <Image src={aboutimg} alt="White Wave" width={468} height={100} />
+            </Grid>
+          </Grid>
+        </Grid>
 
         {/* Who we section */}
 
-        <Grid2 className={styles.whowe}>
-          <Grid2 className={styles.whoContainer}>
-            <Grid2 className={styles.whoweLeft}>
+        <Grid className={styles.whowe}>
+          <Grid className={styles.whoContainer}>
+            <Grid className={styles.whoweLeft}>
               <Typography className={styles.whoweHeading}>
                 Who we are and what we do
               </Typography>
@@ -120,8 +121,8 @@ const ImagePart = () => {
                 solutions, Heroku Cloud solutions, Mobile app development, and
                 many more.
               </Typography>
-            </Grid2>
-            <Grid2 className={styles.whoweRight}>
+            </Grid>
+            <Grid className={styles.whoweRight}>
               <Typography className={styles.whoweHeading}>
                 An unbelievable story of 2+ years
               </Typography>
@@ -142,15 +143,15 @@ const ImagePart = () => {
                 and creativity ensure that we never become stagnant in our
                 approach to dealing with new challenges.
               </Typography>
-            </Grid2>
-          </Grid2>
-        </Grid2>
+            </Grid>
+          </Grid>
+        </Grid>
 
         {/* Core value Section  */}
 
-        <Grid2 className={styles.coreMain}>
-          <Grid2 className={styles.coreContainer}>
-            <Grid2 className={styles.coreQuote}>
+        <Grid className={styles.coreMain}>
+          <Grid className={styles.coreContainer}>
+            <Grid className={styles.coreQuote}>
               <Typography className={styles.coreTitle}>
                 Our Core Values
               </Typography>
@@ -159,42 +160,42 @@ const ImagePart = () => {
                 technocrats, and incredibly creative beings using our knowledge
                 and experience to create user-centric products
               </Typography>
-            </Grid2>
-            <Grid2 container spacing={3} className={styles.coresubcont1}>
+            </Grid>
+            <Grid container spacing={4} className={styles.coresubcont1}>
               {coreValues?.map((item, index) => (
-                <Grid2
+                <Grid
                   size={{ xs: 12, sm: 12, lg: 4 }}
                   className={styles.coreBox}
                   key={index}
                 >
                   <Typography>{item?.title}</Typography>
                   <Typography>{item?.desc}</Typography>
-                </Grid2>
+                </Grid>
               ))}
-            </Grid2>
-            <Grid2>
+            </Grid>
+            <Grid>
               <Typography>Number that roars our capabilities</Typography>
-            </Grid2>
-            <Grid2 container spacing={3} className={styles.coresubcont}>
+            </Grid>
+            <Grid container spacing={3} className={styles.coresubcont}>
               {coreStats?.map((item, index) => (
-                <Grid2
+                <Grid
                   size={{ xs: 12, sm: 12, lg: 3 }}
                   className={styles.coreBox1}
                   key={index}
                 >
                   <Typography>{item?.value}</Typography>
                   <Typography>{item?.desc}</Typography>
-                </Grid2>
+                </Grid>
               ))}
-            </Grid2>
-          </Grid2>
-        </Grid2>
+            </Grid>
+          </Grid>
+        </Grid>
 
         {/* Our Usps  */}
 
-        <Grid2 className={styles.uspMain}>
-          <Grid2 className={styles.uspContainer}>
-            <Grid2 className={styles.coreQuote}>
+        <Grid className={styles.uspMain}>
+          <Grid className={styles.uspContainer}>
+            <Grid className={styles.coreQuote}>
               <Typography className={styles.coreTitle}>
                 Our Core Values
               </Typography>
@@ -203,10 +204,10 @@ const ImagePart = () => {
                 technocrats, and incredibly creative beings using our knowledge
                 and experience to create user-centric products
               </Typography>
-            </Grid2>
-            <Grid2 container spacing={4} className={styles.coresubcont}>
+            </Grid>
+            <Grid container spacing={4} className={styles.coresubcont}>
               {uspValues?.map((item, index) => (
-                <Grid2
+                <Grid
                   size={{ xs: 12, sm: 12, lg: 4 }}
                   key={index}
                   className={styles.uspBox}
@@ -219,16 +220,16 @@ const ImagePart = () => {
 
                   <Typography>{item?.title}</Typography>
                   <Typography>{item?.description}</Typography>
-                </Grid2>
+                </Grid>
               ))}
-            </Grid2>
-          </Grid2>
-        </Grid2>
+            </Grid>
+          </Grid>
+        </Grid>
 
         {/* Our Vision and Mission  */}
-        <Grid2 className={styles.whowe}>
-          <Grid2 container className={styles.visionMissonContainer}>
-            <Grid2 size= {{ xs: 12, sm: 12, lg: 6 }} className={styles.visionLeft}>
+        <Grid className={styles.whowe}>
+          <Grid container className={styles.visionMissonContainer}>
+            <Grid size= {{ xs: 12, sm: 12,  lg: 6 }} className={styles.visionLeft}>
               <Typography>Our Mission & Vision</Typography>
               <Typography>Mission</Typography>
               <Typography>
@@ -242,14 +243,14 @@ const ImagePart = () => {
                 empowers and influences everyone and also allows us to steadily
                 develop our inner selves.
               </Typography>
-            </Grid2>
-            <Grid2 className={styles.visionRight}>
+            </Grid>
+            <Grid className={styles.visionRight}>
              
-            <Image src={startup} alt="logo" width={400} height={500}  />
+            <Image src={startup} alt="logo" width={468} height={489}  />
 
-            </Grid2>
-          </Grid2>
-        </Grid2>
+            </Grid>
+          </Grid>
+        </Grid>
 
         {/* Our Footer  */}
 

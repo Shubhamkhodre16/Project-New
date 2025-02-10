@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "NovemberPro";
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+    src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NovemberPro-Reg";
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* Default Styles */
+.background {
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../public/assets/img/case-study.png");
+}
+
+.case{
+    text-align: center;
+    /* font-size: 35px; */
+    font-weight: bold;
+    color: aliceblue;
+    font-family: "NovemberPro";
+    padding: 20% 0;
+}
+
+.container{
+    width: 100%;
+    margin: 80px auto 50px;
+    /* display: flex; */
+    min-width: 80%;
+    padding: 0 5% ;
+    height: 100%;
+    gap: 100px;
+}
+
+.studiesMain{
+
+}
+.tabOption{
+    font-size: 25px;
+    font-family: "NovemberPro";
+
+}
+.studyCards{
+    margin-top:50px;
+}
+.activeTab{
+    color: red;
+}
+
+.cardBox{
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;  /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    /* text-align: center;    */
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    height: 400px;
+}
+
+
+
+
+
+
+/* Services Parts */
+  /* Client Achivement  */
+.mainAchivement{
+   background-color: #181836;
+   padding: 100px 0 100px 0;
+}
+
+.achivementContainer{
+    color: white;   
+    width: 100%;
+    text-align: center;
+    padding: 0 8%;
+}
+.achiveData{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.brightness{
+    background: #fff;
+    padding: 18px 13px;
+    border-radius: 50%;
+    /* width: 70;
+    height: 50; */
+    color: red;
+}
+
+ /* Integrated tech Stack */
+
+.techMain{
+   margin-top: 40px;
+}
+.techHeading{
+    font-size: 23px;
+    text-align: left;
+    font-family: "NovemberPro";
+    padding-bottom: 30px;
+
+}
+.techContainer{
+    text-align: start;
+    /* padding: 5%; */
+}
+.techBox{
+    background-color: #fff;
+    box-shadow: 1px white;
+    border-radius: 10px;
+    color: #181836;
+    padding: 5%;
+
+    text-align: left;
+}
+
+
+
+/* The Solutions  */
+
+.solutionsMain{
+    background-color: #181836;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.solutionContainer{
+    padding: 0 10%;
+    color: #fff;
+    width: 100%;
+    padding: 5% ;
+}
+.solutionHeading{
+    font-family: "NovemberPro";
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+
+
+/* Client and Product Goals  */
+
+.productMain{
+   width: 100%;
+}
+.productContainer{
+    /* padding: 0 10%; */
+    /* color: #fff; */
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+}
+
+.productHeading{
+    font-family: "NovemberPro";
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.productData{
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;  /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    /* text-align: center;    */
+    display: flex;
+}
+
+
+
+/* Working of the Portal:  */
+
+
+
+
+
+/* Features  */
+
+.featuresMain{
+  background-color: #f8f9fd;
+  padding: 100px 0 0 0;
+}
+.featureContainer{
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+}
+
+.featureHeader{
+    font-family: "NovemberPro";
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.featureBox{
+    display: flex;        /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically */
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: #fff;
+}
+
+
+  /* Contact Container  */
+
+  .contactMain{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   
+  }
+
+  .gridContainer{
+    margin: 5% 10%;
+    padding: 5% 10%;
+    column-gap: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    /* background-size: cover; */
+    background-image: url("../../public/assets/img/case-study.png");
+    color:#fff;
+    text-align: center;
+
+  }

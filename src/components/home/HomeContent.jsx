@@ -16,6 +16,7 @@ import dataprotect from "../../../public/assets/img/dataprotections.gif";
 import agileDevelop from "../../../public/assets/img/agiledevelopment.gif";
 import customersupport from "../../../public/assets/img/customersupport.gif";
 import Industry from './Industry';
+import styles from "../../styles/Home.module.css"
 const HomeContent = () => {
 
   return (
@@ -54,6 +55,7 @@ const HomeContent = () => {
           </Grid2>
 
           <Grid2
+
             size={{ xs: 12,lg:6, md: 6 }}
             sx={{
             //   display: "flex",
@@ -62,13 +64,17 @@ const HomeContent = () => {
              
             }}
           >
-            <Box sx={{padding:"15px"}} >
+            <Box 
+            
+            sx={{padding:"15px"}} >
               <Typography
                 variant="h5"
+                className={styles.whoweeeee}
+
                 sx={{
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  color: " #650909",
+                  // textTransform: "uppercase",
+                  // fontWeight: "bold",
+                  // color: " #650909",
                   //fontSize: { sm: 30, xs: 26, md: 40 },
                   textAlign: {
                     sm: "center",

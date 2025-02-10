@@ -44,11 +44,12 @@
 
 .container {
     width: 100%;
-    margin: 50px auto 0;
+    /* margin: 50px auto 0; */
     display: flex;
     min-width: 80%;
-    padding: 0 10%;
-    gap: 10%;
+    padding: 0 10% ;
+    height: 100%;
+    gap: 100px;
     align-items: center;
 }
 
@@ -65,7 +66,7 @@
 }
 
 .mainhead {
-    font-size: 35px;
+    /* font-size: 35px; */
     color: #181836;
     margin-bottom: 8px;
     padding-bottom: 30px;
@@ -73,8 +74,10 @@
     font-weight: 800;
 }
 
-.des, .des1 {
+.des {
     font-size: 18px;
+    font-family: "NovemberPro-Reg" !important;
+    font-weight: bolder;
 }
 
 .des1 {
@@ -235,7 +238,7 @@
 @media (max-width: 768px) {
     .container { max-width: 720px; }
     .mainhead {
-        font-size: 30px;
+        /* font-size: 30px; */
         padding-bottom: 20px;
     }
     .des, .des1 {
@@ -248,9 +251,6 @@
 
 @media (max-width: 576px) {
     .container { max-width: 540px; }
-    .mainhead {
-        font-size: 18px;
-    }
     .des, .des1 {
         font-size: 13px;
     }
