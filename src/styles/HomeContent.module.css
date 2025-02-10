@@ -71,6 +71,12 @@
       .keybackground{
         padding: 0 3%;
        }
+       .keyMoaral{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       }
       }
   
   @media (min-width: 900px) { /* md */

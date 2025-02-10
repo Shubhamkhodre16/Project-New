@@ -149,7 +149,7 @@ const HomeContent = () => {
               // variant="h4"
               sx={{
                 // fontWeight: "bold",
-                fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "20px" },
+                fontSize: { lg: "30px", md: "30px", sm: "30px", xs: "20px" },
                 marginBottom: { sm: "10px", xs: "10px" },
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
@@ -296,8 +296,8 @@ const HomeContent = () => {
             </Box>
           </Grid2>
           <Grid2
-            size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
-            sx={{ marginTop: "50px" }}
+            size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
+            sx={{ marginTop: "60px" }}
           >
             <Box>
               {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
@@ -313,10 +313,11 @@ const HomeContent = () => {
                   },
                   margin: "auto",
                   display: "flex",
+                  minHeight: "440px",
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "60px",
+                  paddingY: "32px",
                   marginBottom: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
@@ -352,6 +353,14 @@ const HomeContent = () => {
                     variant="h4"
                     component="div"
                     className={styles.card1Header}
+                    sx={{
+                      fontSize: {
+                        lg: "25px",
+                        md: "25px",
+                        sm: "20px",
+                        xs: "20px",
+                      },
+                    }}
                   >
                     Data Backups
                   </Typography>
@@ -379,7 +388,8 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "60px",
+                  paddingY: "32px",
+                  minHeight: "440px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
@@ -408,6 +418,14 @@ const HomeContent = () => {
                     variant="h4"
                     component="div"
                     className={styles.card1Header}
+                    sx={{
+                      fontSize: {
+                        lg: "25px",
+                        md: "25px",
+                        sm: "20px",
+                        xs: "20px",
+                      },
+                    }}
                   >
                     Data protection
                   </Typography>
@@ -419,7 +437,10 @@ const HomeContent = () => {
               </Card>
             </Box>
           </Grid2>
-          <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+          <Grid2
+            size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
+            sx={{ marginTop: "60px" }}
+          >
             <Box>
               {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
@@ -438,7 +459,8 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "60px",
+                  paddingY: "20px",
+                  minHeight: "440px",
                   marginBottom: "20px",
                 }}
               >
@@ -467,6 +489,14 @@ const HomeContent = () => {
                     variant="h4"
                     component="div"
                     className={styles.card1Header}
+                    sx={{
+                      fontSize: {
+                        lg: "25px",
+                        md: "25px",
+                        sm: "20px",
+                        xs: "20px",
+                      },
+                    }}
                   >
                     Agile development
                   </Typography>
@@ -496,7 +526,9 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "60px",
+                  paddingY: "20px",
+                  minHeight: "440px",
+                  marginTop: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
@@ -525,6 +557,14 @@ const HomeContent = () => {
                     variant="h4"
                     component="div"
                     className={styles.card1Header}
+                    sx={{
+                      fontSize: {
+                        lg: "25px",
+                        md: "25px",
+                        sm: "20px",
+                        xs: "20px",
+                      },
+                    }}
                   >
                     Friendly Support
                   </Typography>
