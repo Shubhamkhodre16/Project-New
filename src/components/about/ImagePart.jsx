@@ -8,7 +8,8 @@ import Image from "next/image";
 import CardMedia from "@mui/material/CardMedia";
 import Footer from "../footer/page";
 import startup from "../../../public/assets/img/about-img.jpg"
-
+import AdjustIcon from '@mui/icons-material/Adjust';
+import vissionandmission from "../../../public/assets/img/vissionandmission.png"
 const ImagePart = () => {
   const coreValues = [
     {
@@ -26,7 +27,7 @@ const ImagePart = () => {
   ];
 
   const coreStats = [
-    { value: "2+", desc: "Years of experience in software development" },
+    { value: "2+", desc: "Years of experience in Software development and technologies" },
     { value: "50+", desc: "Software engineers and technical staff" },
     { value: "100+", desc: "Software designed, developed, and deployed" },
     { value: "100%", desc: "Customer satisfaction" },
@@ -37,37 +38,37 @@ const ImagePart = () => {
       title: "Proficiency",
       description:
         "We hold great experience and knowledge of working with the world's top brands and leaders.",
-      // image: "./assets/img/Proficiency.gif",
+       image: "./assets/img/Proficiency.gif",
     },
     {
       title: "Standard process-oriented",
       description:
         "We use high-end processes for each task while keeping an overall view of the projects in mind.",
-      // image: "./assets/img/StandardProcess.gif",
+      image: "./assets/img/StandardProcess.gif",
     },
     {
       title: "No unexpected Results",
       description:
         "We maintain transparency in our work to keep unexpected outcomes at bay.",
-      // image: "./assets/img/NoUnexpectedResults.gif",
+       image: "./assets/img/barChart.gif",
     },
     {
       title: "Mindfulness",
       description:
         "We dedicate ourselves to working for your company in order to ensure the smooth completion of projects while avoiding any unexpected hazards.",
-      // image: "./assets/img/Mindfulness.gif",
+       image: "./assets/img/customers.gif",
     },
     {
       title: "Committed support",
       description:
         "We are ambitious about our industry and enjoy what we do. We provide regular updates, phone calls, and product demonstrations to ensure our clients' satisfaction.",
-      // image: "./assets/img/CommittedSupport.gif",
+       image: "./assets/img/dataprotections.gif",
     },
     {
       title: "Customer satisfaction",
       description:
         "Customer satisfaction is our foremost priority, which contributes to continuous improvement for maintaining and improving client satisfaction.",
-      // image: "./assets/img/CustomerSatisfaction.gif",
+       image: "./assets/img/teammember.gif",
     },
   ];
 
@@ -82,14 +83,16 @@ const ImagePart = () => {
         <Grid2 className={styles.achieving}>
           <Grid2 className={styles.container}>
             <Grid2 container className={styles.titledata}>
-              <Typography className={styles.mainhead}>
+              <Typography className={styles.mainhead}variant="h2" >
                 Vision achieving Software, App and web Development Company
               </Typography>
               <Typography className={styles.des}>
                 Pledge to outshine the businesses with customer-winning
                 technological and Software development.
+                </Typography>
                 <br />
                 <br />
+                <Typography className={styles.dess}>
                 InfoKoders technologies is a partner of innovation and a ray of
                 hope for diverse world’s leading enterprises, SME’S and
                 technology channellers. We bring together a team of passionate
@@ -105,13 +108,13 @@ const ImagePart = () => {
 
         {/* Who we section */}
 
-        <Grid2 className={styles.whowe}>
+        <Grid2 size={{xs:12,sm:12,md:4,lg:3}} className={styles.whowe}>
           <Grid2 className={styles.whoContainer}>
             <Grid2 className={styles.whoweLeft}>
-              <Typography className={styles.whoweHeading}>
+              <Typography className={styles.whoweHeading} variant="h2">
                 Who we are and what we do
               </Typography>
-              <Typography>
+              <Typography className={styles.subheading} variant="body1">
                 InfoKoders technologies is an exclusive digital transformation
                 studio that provides remarkable solutions across the digital
                 value chain. We take a spotlight in providing out-of-the-box
@@ -121,13 +124,13 @@ const ImagePart = () => {
                 many more.
               </Typography>
             </Grid2>
-            <Grid2 className={styles.whoweRight}>
+            <Grid2  className={styles.whoweRight}>
               <Typography className={styles.whoweHeading}>
                 An unbelievable story of 2+ years
               </Typography>
-              <Typography>
+              <Typography className={styles.subheading} variant="body1">
                 {" "}
-                * Since day one we measure our success with our client success,
+                <AdjustIcon className={styles.adjustIcon}/> Since day one we measure our success with our client success,
                 have faith in our kick-butt skills, and swear by the computer
                 code. Shaping out an exclusive digital solution is not our work,
                 it’s our duty. Within a short period, we have successfully
@@ -135,9 +138,9 @@ const ImagePart = () => {
                 part and eventually became prominent in the Software development
                 realm
               </Typography>
-              <Typography>
+              <Typography className={styles.subheading} variant="body1">
                 {" "}
-                * Our ultimate focus is on client satisfaction which has been
+                <AdjustIcon className={styles.adjustIcon}/> Our ultimate focus is on client satisfaction which has been
                 the key differentiator for our company. Our inquisitive nature
                 and creativity ensure that we never become stagnant in our
                 approach to dealing with new challenges.
@@ -152,7 +155,7 @@ const ImagePart = () => {
           <Grid2 className={styles.coreContainer}>
             <Grid2 className={styles.coreQuote}>
               <Typography className={styles.coreTitle}>
-                Our Core Values
+               <span className={styles.our} > Our</span>  Core Values
               </Typography>
               <Typography className={styles.coreDescription}>
                 We are an enthusiastic team of nerd minds, pro coders,
@@ -167,13 +170,13 @@ const ImagePart = () => {
                   className={styles.coreBox}
                   key={index}
                 >
-                  <Typography>{item?.title}</Typography>
-                  <Typography>{item?.desc}</Typography>
+                  <Typography className={styles.coreBoxTitle}>{item?.title}</Typography>
+                  <Typography className={styles.coreBoxDesc} >{item?.desc}</Typography>
                 </Grid2>
               ))}
             </Grid2>
             <Grid2>
-              <Typography>Number that roars our capabilities</Typography>
+              <Typography variant="h2"  className={styles.capabilities}>Number that roars our capabilities</Typography>
             </Grid2>
             <Grid2 container spacing={3} className={styles.coresubcont}>
               {coreStats?.map((item, index) => (
@@ -182,8 +185,8 @@ const ImagePart = () => {
                   className={styles.coreBox1}
                   key={index}
                 >
-                  <Typography>{item?.value}</Typography>
-                  <Typography>{item?.desc}</Typography>
+                  <Typography variant="h2" className={styles.coreBox1Value}>{item?.value}</Typography>
+                  <Typography  className={styles.coreBox1Desc} >{item?.desc}</Typography>
                 </Grid2>
               ))}
             </Grid2>
@@ -191,7 +194,7 @@ const ImagePart = () => {
         </Grid2>
 
         {/* Our Usps  */}
-
+    
         <Grid2 className={styles.uspMain}>
           <Grid2 className={styles.uspContainer}>
             <Grid2 className={styles.coreQuote}>
@@ -214,11 +217,11 @@ const ImagePart = () => {
                   <CardMedia
                     sx={{ width: "80px", height: "80px", marginBottom: "10px" }}
                     component="img"
-                    image="./assets/img/DataBackup.gif"
+                    image={item?.image}
                   />
 
-                  <Typography>{item?.title}</Typography>
-                  <Typography>{item?.description}</Typography>
+                  <Typography className={styles.uspBoxTitle} variant="h5">{item?.title}</Typography>
+                  <Typography className={styles.uspBoxDesc} >{item?.description}</Typography>
                 </Grid2>
               ))}
             </Grid2>
@@ -229,23 +232,23 @@ const ImagePart = () => {
         <Grid2 className={styles.whowe}>
           <Grid2 container className={styles.visionMissonContainer}>
             <Grid2 size= {{ xs: 12, sm: 12, lg: 6 }} className={styles.visionLeft}>
-              <Typography>Our Mission & Vision</Typography>
-              <Typography>Mission</Typography>
-              <Typography>
-                To disrupt the outdated processes of tech or nontech business
+              <Typography className={styles.visionleftTitle} variant="h2" >Our Mission & Vision</Typography>
+              <Typography className={styles.visionLeftSubTitle} >Mission</Typography>
+              <Typography className={styles.visionDesc}>
+              <AdjustIcon className={styles.adjustIcon}/> To disrupt the outdated processes of tech or nontech business
                 with innovative and modern solutions.
               </Typography>
 
-              <Typography>Vision</Typography>
-              <Typography>
-                To keep up with the latest and most promising technology that
+              <Typography className={styles.visionLeftSubTitle}>Vision</Typography>
+              <Typography className={styles.visionDesc}>
+              <AdjustIcon className={styles.adjustIcon}/>To keep up with the latest and most promising technology that
                 empowers and influences everyone and also allows us to steadily
                 develop our inner selves.
               </Typography>
             </Grid2>
             <Grid2 className={styles.visionRight}>
              
-            <Image src={startup} alt="logo" width={400} height={500}  />
+            <Image src={vissionandmission} alt="logo" width={400} height={500}  />
 
             </Grid2>
           </Grid2>
