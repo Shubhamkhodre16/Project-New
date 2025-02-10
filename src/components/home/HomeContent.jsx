@@ -28,14 +28,14 @@ const HomeContent = () => {
           backgroundRepeat: "no-repeat",
         //   padding: "100px 0px 100px 0px",
           paddingTop: { sm: "20px", xs: "20px" },
-          marginY:"50px"
+          marginY:"50px",
+          
         }}
       >
         <Grid2
           container
           sx={{
-            paddingLeft: { lg: "30px", md: "20px", sm: "10px", xs: "5px" },
-            paddingRight: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+           
             display:"flex",
             justifyContent:"center"
           }}
@@ -91,10 +91,10 @@ const HomeContent = () => {
                   fontWeight: "bold",
                   color: "#000",
                   paddingBottom: "10px",
-
+                 
                   lineHeight:"1.2",
                   fontSize: { lg:"35px",sm: "20px", xs: "18px" },
-                  textAlign: { sm: "center", lg: "left", md: "left" },
+                  
                 }}
               
               >
