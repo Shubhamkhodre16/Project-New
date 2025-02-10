@@ -8,13 +8,17 @@ import VuejsIcon from '../../../public/assets/img/vuejsIcon.png'
 import TypeScript from '../../../public/assets/img/typescript.png'
 import ReactIcon from '../../../public/assets/img/reactjs.png'
 import HTML5 from '../../../public/assets/img/html.png'
-import JavaScript from '../../../public/assets/img/javascript.png'
+import JavaScript from '../../../public/assets/img/javascripts.jpg'
 import nodejs from '../../../public/assets/img/node-js.png'
 import RoR from '../../../public/assets/img/roricon.png'
 import mongo from '../../../public/assets/img/mongoDbIcon.png'
 import postsql from '../../../public/assets/img/postsql.png'
 import Redis from '../../../public/assets/img/redis.png'
-import AWSServices from '../../../public/assets/img/aws.png'
+import awsCloudServices from '../../../public/assets/img/awsCloudServices.png'
+import GoogleCloudServices from '../../../public/assets/img/GoogleCloudServices.png'
+import DigitalOcean from '../../../public/assets/img/Digital Ocean.png'
+import herokuicon from '../../../public/assets/img/herokuicon.png'
+import engineYard from '../../../public/assets/img/engine.png'
 const Services = () => {
   return (
     <>
@@ -196,6 +200,8 @@ const Services = () => {
                 borderRadius: "50%",
                 padding: "10px",
                 marginBottom: "10px",
+                minHeight:"70px",
+                 minWidth:"70px",
               }}
               width={70}
               height={70}
@@ -368,8 +374,10 @@ const Services = () => {
               style={{
                 border: "1px dotted black",
                 borderRadius: "50%",
-                 
+                 minHeight:"70px",
+                 minWidth:"70px",
                 marginBottom: "10px",
+                padding:"10px"
               }}
              
               width={70}
@@ -450,13 +458,14 @@ const Services = () => {
           <span style={{ display:"flex",flexDirection:"column",alignItems:"center", textAlign: "center",paddingBottom:"22px" }}>
           
             <Image
-              src={AWSServices}
+              src={awsCloudServices}
               style={{
                 border: "1px dotted black",
                 borderRadius: "50%",
                 padding: "10px",
                 marginBottom: "10px",
-              
+                minHeight:"70px",
+                 minWidth:"70px"
              
               }}
               width={70}
@@ -471,13 +480,14 @@ const Services = () => {
           <span style={{display:"flex",alignItems:"center",flexDirection:'column', textAlign: "center", paddingBottom:"22px" }}>
            
             <Image
-              src={AWSServices}
+              src={DigitalOcean}
               style={{
                 border: "1px dotted black",
                 borderRadius: "50%",
                 padding: "10px",
                 marginBottom: "10px",
-              
+                minHeight:"70px",
+                 minWidth:"70px"
              
               }}
               width={70}
@@ -495,13 +505,14 @@ const Services = () => {
           <span style={{display:"flex",alignItems:"center",flexDirection:"column", textAlign: "center" ,paddingBottom:"22px" }}>
         
             <Image
-              src={AWSServices}
+              src={engineYard}
               style={{
                 border: "1px dotted black",
                 borderRadius: "50%",
                 padding: "10px",
                 marginBottom: "10px",
-            
+                 minHeight:"70px",
+                 minWidth:"70px"
                
               }}
               width={70}
@@ -525,13 +536,14 @@ const Services = () => {
           <span style={{display:"flex", flexDirection:"column", textAlign:"center",alignItems:"center"}}>
         
            <Image
-              src={AWSServices}
+              src={GoogleCloudServices}
               style={{
                 border: "1px dotted black",
                 borderRadius: "50%",
                 padding: "10px",
                 marginBottom: "10px",
-               
+                minHeight:"70px",
+                 minWidth:"70px"
                
               }}
               width={70}
@@ -547,17 +559,19 @@ const Services = () => {
           <span style={{textAlign:"center", display:"flex",flexDirection:"column",alignItems:"center" }}>
             
             <Image
-              src={AWSServices}
+              src={herokuicon}
               style={{
                 border: "1px dotted black",
                 borderRadius: "50%",
                 padding: "10px",
                 marginBottom: "10px",
-               
+                 minHeight:"70px",
+                 minWidth:"70px"
                 
               }}
               width={70}
               height={70}
+
               alt="Heroku"
               
             />
