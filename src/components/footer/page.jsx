@@ -21,16 +21,17 @@ const Footer = () => {
   return (
     <section>
       <Box
+      className={styles.footerMain}
         sx={{
           backgroundColor: "#101010",
           color: "#fff",
-          padding: "0 60px 30px 60px",
+          padding: "0 60px 30px 13%",
           fontFamily: "circular",
         }}
       >
           <Grid container  sx={{justifyContent:"space-between", padding:"30px"}} spacing={4}>
             {/* Go To  */}
-            <Grid columnSpacing={{xs:12, sm:6, md:3}} >
+            <Grid size={{xs:12,sm:12,md:6,lg:4}} >
               <Typography variant="h6" className={styles.head1}>
                 GO TO
               </Typography>
@@ -96,7 +97,7 @@ const Footer = () => {
               </ul>
             </Grid>
             {/* Our Services  */}
-            <Grid columnSpacing={{xs:12,sm:6,md:3}}>
+            <Grid size={{xs:12,sm:6,md:6,lg:4}}>
               <Typography variant="h6" className={styles.head1}>
                 OUR SERVICES
               </Typography>
@@ -170,7 +171,7 @@ const Footer = () => {
 
             {/* Enquires  */}
 
-            <Grid columnSpacing={{xs:12,sm:6,md:3}}>
+            <Grid size={{xs:12,sm:12,md:6,lg:4}}>
                 <Typography variant="h6" className={styles.head1}>
                   BUSINESS ENQURIES
                 </Typography>
