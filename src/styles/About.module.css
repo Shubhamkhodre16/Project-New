@@ -21,17 +21,20 @@
     top: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: center top;
+    background-size: cover ;
+    background-color: #000000;
+   
     background-image: url("../../public/assets/img/slide3.webp");
 }
 
 .about {
     text-align: center;
-    font-size: 60px;
+    font-size: 22px;
     font-weight: bold;
-    color: aliceblue;
+    color: #ffffff;
     padding: 20% 0;
+    font-family: "NovemberPro";
 }
 
 .achieving {
@@ -49,7 +52,7 @@
     min-width: 80%;
     padding: 0 10%;
     gap: 10%;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .titledata {
@@ -65,19 +68,32 @@
 }
 
 .mainhead {
-    font-size: 35px;
+    font-size: 28px;
     color: #181836;
     margin-bottom: 8px;
     padding-bottom: 30px;
     font-family: "NovemberPro";
-    font-weight: 800;
+    font-weight: bold;
+    
 }
 
-.des, .des1 {
-    font-size: 18px;
+.des {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.5;
+    font-family: "NovemberPro-Reg";
+  ;
 }
+.dess{
+    font-size: 24px;
+    line-height: 1.5;
+    color:#333;
+    font-family: "NovemberPro-Reg";
 
+}
 .des1 {
+    font-size: 18px;
     color: #333;
     margin-bottom: 16px;
 }
@@ -89,21 +105,29 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-color: #ececec;
-    padding: 100px 0px 40px 0px;
+    padding: 80px 0px 40px 0px;
+  
+    
+    
 }
 .whoContainer{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding:  0 10% ;
+    padding: 100px 80px 40px 80px;
     display: flex;
     gap: 50px;
+    align-items: center;
+   
+   
 
 }
 .whoweLeft{
   text-align: left;
-  
+
+  align-items: center;
+ 
 }
 .whoweRight{
     text-align: left;
@@ -111,9 +135,21 @@
 }
 .whoweHeading{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    font-family:NovemberPro ;
+    line-height: 1.2;
+    color: #181836;
+    padding-bottom: 12px;
 }
-
+.subheading{
+    font-size: 22px;
+    font-family: NovemberPro-Reg;
+    color:#333;
+    line-height: 1.5;
+}
+.adjustIcon{
+    color:#650909
+}
   /* Core Values Css  */
 
 .coreMain{
@@ -122,26 +158,87 @@
 }
 .coreContainer{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    
+    /* text-align: center; */
     color: #ececec;
-    padding: 3% 7%;
+    padding: 6% 16% ;
+    display :flex;
+    /* justify-content:center ; 
+    align-items: center; */
+      
+    flex-direction: column;
+   
 }
 .coreBox{
-    border: 1px solid white;
+    border: 1px solid #ebebeb;
     border-radius: 10px;
-    padding: 5%;
+    padding: 22px 27px 0px 27px;
+    margin: 0 0 20px 0;
+    /* height: 300px ; */
+    
 
+}
+.coresubcont1{
+    padding-bottom: 80px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.capabilities{
+    padding-top: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: NovemberPro;
+    padding-bottom: 40px;
+    
+}
+
+/* @media (max-width: 1200px) {
+    .coreBox{
+        height: 230px ;
+    }
+}
+@media (max-width:600px) {
+    .coreBox{
+        height: 300px;
+    }
+} */
+.coreBoxTitle{
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    font-family:NovemberPro ;
+    font-size: 26px;
+}
+.coreBoxDesc{
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: NovemberPro-Reg;
+    padding-top: 15px;
+    color: #ffffff;
+    padding-bottom: 20px;
 }
 .coreBox1{
     box-shadow: 1px white;
     border-radius: 10px;
-    color: #333;
-    background-color: #ececec;
-    padding: 5%;
+    color:#181836;
+    background-color:#ffffff;
+    padding: 24px 24px 24px 24px;
+    
 
 
+}
+.coreBox1Value{
+     font-weight: bold;
+     line-height: 1.2;
+     font-family: NovemberPro;
+     font-size: 22px;
+     padding-bottom: 10px;
+}
+.coreBox1Desc{
+    line-height: 1.5;
+    font-family: NovemberPro-Reg;
+    font-size: 18px;
 }
 .coresubcont{
     text-align: center;
@@ -149,7 +246,30 @@
 .coresubcont1{
     text-align: left;
 }
-
+ .our{
+    color: #650909;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: NovemberPro;
+ }
+ .coreTitle{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center  ;
+    font-family: NovemberPro;
+    padding-bottom: 1.5rem;
+ }
+ .coreDescription{
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: NovemberPro-Reg;
+    padding-bottom: 1.5rem;
+ }
 
 /* Our Usps */
 
@@ -175,7 +295,8 @@
     text-align: center;   /* Centers text inside Typography */
     border: 1px solid #ebebeb;
     border-radius: 10px;
-    padding: 5%;
+    padding: 6%;
+    
     /* transition: all 0.3s ease-in-out; */
 }
 
@@ -186,21 +307,33 @@
     transform: scale(1.05);
     background-color: white;
 }
-
+.uspBoxTitle{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    font-family: NovemberPro;
+}
+.uspBoxDesc{
+    font-size: 18px;
+    color:#333;
+    line-height: 1.5;
+    font-family: NovemberPro-Reg;
+}
 
   /* Vissson and misson  */
 
 
   .visionMissonContainer {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     text-align: center;
-    padding:  0 10% ;
+    padding: 20px 0px 40px 0px;
     display: flex;
     gap: 50px;
     /* flex-direction: column;  */
-    align-items: center;  /* Centers items horizontally */
+      /* Centers items horizontally */
     justify-content: center; /* Centers items vertically */
     text-align: center;
   }
@@ -208,8 +341,32 @@
   .visionLeft{
     text-align: left;
   }
-
-
+  .visionleftTitle{
+    padding-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    color:#181836;
+    font-family: NovemberPro;
+  }
+  .visionLeftSubTitle{
+     font-size: 26px;
+     font-weight: bold;
+    font-family: NovemberPro-Reg;
+     color:#333;
+     line-height: 1.5;
+  }
+.visionDesc{
+    font-size: 24px;
+    color:#333;
+    line-height: 1.5;
+    font-family: NovemberPro-Reg;
+    padding-bottom: 40px;
+}
+.visionRight{
+    display: flex;
+    align-items: center;
+}
 /* Responsive Styles */
 @media (max-width: 1400px) {
     .container { max-width: 1320px; }
