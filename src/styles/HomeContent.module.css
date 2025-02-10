@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "NovemberPro";
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+    src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NovemberPro-Reg";
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+    /* .whowebackground{
+        background-image: url("../../public/assets/");
+        background-position: center right;
+        background-repeat: no-repeat;
+    } */
+    .whoweContainer{
+      width: 100%;
+      padding: 0 5%;
+    }
+
+  .whoTitle {
+    font-family: "NovemberPro";
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #650909;
+    margin-bottom: 20px;
+  }
+  .whoSubTitle{
+    font-family: "NovemberPro";
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+
+
+  }
+
+  .whoDes{
+    font-family: "NovemberPro-Reg";
+    padding: 0px 0px 30px 0px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .whoTitle {
+    font-size: 26px; /* Default for mobile */
+    text-align: center;
+  }
+  
+  @media (min-width: 600px) { /* sm */
+    .whoTitle {
+      font-size: 30px;
+    }
+   
+  }
+  @media (max-width: 600px) { /* sm */
+    .keybackground{
+      padding: 0 5%;
+     }
+    }
+
+    @media (max-width: 1200px) { /* sm */
+      .keybackground{
+        padding: 0 3%;
+       }
+      }
+  
+  @media (min-width: 900px) { /* md */
+    .whoTitle {
+      font-size: 35px;
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 1200px) { /* lg */
+    .whoTitle {
+      font-size: 40px;
+    }
+  }
+  
+
+
+  /* Drive  */
+
+  .driveContent{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: "NovemberPro";
+    /* padding: 0% 5%; */
+    width: 100%;
+
+
+  }
+
+  .driveHeader{
+    font-family: "NovemberPro";
+    font-weight: 600;
+    width: 100%;
+    color: #333;
+
+   
+  }
+
+  .drivecontent{
+    font-family: "NovemberPro-Reg";
+    color: #333;
+
+
+  }
+  .cardContainer{
+    padding: 2% 10%;
+
+  }
+  .cardClass{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 900px) { /* sm */
+    .cardContainer{
+      padding: 2% 15%;
+  
+    }
+    .cardImage{
+      width: 40%;
+    }
+    .cardCss{
+      max-height: 0;
+    }
+    }
+
+    @media (max-width: 512px) { /* sm */
+      .cardContainer{
+        padding: 2% 8%;
+    
+      }
+      }
+
+  .titledrive{
+    font-family: "NovemberPro";
+    font-weight: 600;
+    color: #333;
+
+  }
+
+  .desdrive{
+    font-family: "NovemberPro-Reg";
+    font-size: 16px;
+    color: #333;
+
+
+  }
+
+
+  /* Our Key Morals  */
+
+  .keybackground{
+
+  }
+
+  .keyMoaralHead{
+    font-family: "NovemberPro";
+    font-weight: 600;
+    color: #333;
+
+  }
+  .keyMoaralDes{
+    font-family: "NovemberPro-Reg";
+    color: #333;
+
+
+  }
+  .fontSty{
+    font-family: "NovemberPro";
+    font-weight: 600;
+    color: #333;
+
+  }
+
+  .card1Header{
+    text-align: center;
+    font-family: "NovemberPro";
+    font-weight: 600;
+    color: #333;
+
+  }
+  .card1SubHeader{
+    font-family: "NovemberPro-Reg";
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+
+  }
+
+
+  /* Industries we serve  */
+
+  .industryBackground{
+    background-color: #181836;
+    width: 100%;
+    padding : 60px 40px 60px 40px;
+    margin-top: 30px;
+  }
+  .industryContainer{
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .industryCards{
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 3% 5%;
+  gap: 15px;
+  border-radius: 10px;
+  /* min-width: 250px; */
+  /* width: 100%; */
+  }
+
+  @media (max-width:600px) {
+    .industryCards{
+      width: 350px;
+    }
+  }
+
+  .industryHeader{
+    font-family: "NovemberPro";
+margin-bottom: 40px;
+text-align: center;
+color: #fff;
+
+
+  }
+
+  .industryCount{
+margin-bottom: 20px;
+font-family: "NovemberPro";
+
+  }
+
+  .industryName{
+   text-transform: uppercase;
+   font-family: "NovemberPro-Reg";
+
+  }

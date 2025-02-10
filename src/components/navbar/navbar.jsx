@@ -24,7 +24,7 @@ const pages = [
   { name: "Services", path: "/services" },
   { name: "Blog", path: "/blog" },
   { name: "Start Up", path: "/startup" },
-  { name: "Careers", path: "/career" },
+  // { name: "Careers", path: "/career" },
   { name: "Contact Us", path: "/contact" },
 ];
 
@@ -69,15 +69,15 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent: "flex-end" }}>
-            <IconButton size="large" aria-label="menu" onClick={handleOpenDrawer} color="black">
-              <MenuIcon />
+            <IconButton  size="large" aria-label="menu" onClick={handleOpenDrawer}  color="white">
+              <MenuIcon  />
             </IconButton>
 
             {/* Drawer Sidebar */}
             <Drawer PaperProps={{ sx: { width: "300px" } }} anchor="left" open={drawerOpen} onClose={handleCloseDrawer}>
               <Box sx={{ display: "flex" }}>
                 <Link onClick={handleCloseDrawer} href="/" passHref>
-                  <Image src={logo} alt="logo" width={150} height={20} style={{ margin: "20px" }} />
+                  <Image src={logo} alt="logo" width={150} height={20}  style={{ margin: "20px"  }} />
                 </Link>
                 <span onClick={handleCloseDrawer}>
                   <CloseIcon sx={{ margin: "12px", marginLeft: "60px" }} />
@@ -90,7 +90,7 @@ const Navbar = () => {
                     <Link href={path} passHref style={{ textDecoration: "none", color: "inherit" }}>
                       <ListItemText
                         sx={{
-                          "&:hover": { color: "#650909" },
+                          // "&:hover": { color: "#650909" },
                           backgroundColor: pathname === path ? "#181836" : "transparent",
                           color: pathname === path ? "#fff" : "black",
                           padding: pathname === path ? "10px 20px" : "5px 15px",
@@ -125,7 +125,7 @@ const Navbar = () => {
                     textDecoration: "none",
                     cursor: "pointer",
                     transition: "color 0.3s",
-                    "&:hover": { color: "#650909" },
+                    // "&:hover": { color: "#650909" },
                     backgroundColor: pathname === path ? "#181836" : "transparent",
                     color: pathname === path ? "#fff" : isFixed ? "black" : "white",
                     padding: pathname === path ? "10px 20px" : "5px 15px",

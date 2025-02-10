@@ -17,8 +17,8 @@
 /* Our Blog Css  */
 
 .blogContainer {
-    padding: 20px;
-    margin: 20px;
+    padding: 0 7%;
+    margin:30px 0 30px 0;
     /* background-image: url("../../../public/assets/img/home-bg-10-1.png"); */
   }
   .blogContainer1{
@@ -43,8 +43,7 @@
   .card {
     width: 100%;
     min-width: 65%;
-
-    height: 300px;
+    height: 100%;
     position: relative;
     transition: transform 0.3s ease-in-out;
   }
@@ -84,17 +83,24 @@
     font-size: 17px;
     font-weight: bold;
     padding: 3px;
+    font-family: "NovemberPro";
+
   }
+
   
   .readMore {
     color: white;
     font-size: 13px;
     padding: 5px;
+    font-family: "NovemberPro-Reg";
+
   }
-  .header{
+  .blogHeader{
     font-weight: bold;
     font-size: 30px;
     text-align: left;
+    font-family: "NovemberPro";
+
 
   }
   /* Responsive styling */
@@ -212,18 +218,20 @@
   /* Header Text */
   .headerprocess {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "NovemberPro", sans-serif;
     margin-bottom: 5px;
     text-align: left;
   }
   
   /* Description Text */
-  .description {
-    font-size: 14px;
+  .OurProcessdescription {
+    font-size: 16px;
     color: #555;
     max-width: 300px;
     text-align: left;
+    font-family: "NovemberPro-Reg";
+
   }
   
   /* Responsive Design */
@@ -249,7 +257,7 @@
       position: absolute;
       top: 50%;
       left: 100%;
-      width: 990%;  /* Adjusted to allow for longer dashed lines */
+      width: 600%;  /* Adjusted to allow for longer dashed lines */
       height: 1px;
       border-bottom: 2px dashed #e9ecef;
       z-index: 1;
@@ -343,7 +351,7 @@
     color: #181836;
     display: block;
     font-size: 100px;
-    font-weight: 600;
+    font-weight: bolder;
     left: -220px;
     margin-bottom: 0;
     -webkit-transform: translateY(-58%) rotate(-90deg);
@@ -352,9 +360,11 @@
     z-index: 4;
     margin-top: 100px;
     /* top: 20%; */
-    opacity: 0.1;
+    opacity: 0.1; 
     position: absolute;
     text-transform: lowercase;
+    font-family: "NovemberPro-Reg";
+
   }
   .main{
       margin-top: 100px;
@@ -362,17 +372,21 @@
       align-items: center;
       
   }
-  .para{
-      font-size: 16px;
+  .testimonialPara{
+      font-size: 18px;
       text-align: center;
-      font-weight: 500;
+      font-weight: 600;
       margin-bottom: 80px;
       padding: 10px;
+    font-family: "NovemberPro-Reg";
+
   }
-  .heading{
+  .testimonialHeading{
       font-weight: bold;
       color: black;
       font-size: 25px;
+    font-family: "NovemberPro", sans-serif;
+
       
       text-align: center;
       
@@ -435,17 +449,20 @@
       justify-content: center;
     }
     
-    .title {
-      font-size: 1.4rem;
+    .cardTitle {
+      font-size: 14px;
       font-weight: bold;
+      font-family: "NovemberPro";
       margin: 10px 0;
       margin-top: 20px;
       color: #650909;
     }
     
     .description1 {
-      font-size: 1rem;
+      font-size: 14px;
       color: #555;
+      font-family: "NovemberPro-Reg";
+
     }
     
     /* / Responsive Design / */
@@ -832,3 +849,35 @@
     }
   }
   
+
+  /* Services  */
+
+  .serviceHeader{
+    font-family: "NovemberPro";
+    font-weight: 800;
+    margin-bottom: 15px;
+
+  }
+  .serviceSubHeader{
+    font-family: "NovemberPro-Reg";
+
+  }
+  .frontendfontSize{
+    font-family: "NovemberPro";
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .frontDesfontSize{
+    font-family: "NovemberPro-Reg";
+    margin-bottom: 10px;
+    
+  }
+  .devlopOpt{
+    font-family: "NovemberPro-Reg";
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    margin-top: 20px;
+
+  }
