@@ -8,7 +8,7 @@ import Testinomials from "../components/home/Testinomials";
 import OurBlog from "../components/home/OurBlog";
 import Footer from "../components/footer/page";
 import HomeContent from "../components/home/Homecontent";
-
+import Services from "../components/home/Services"
 
 export default function Home() {
   return (
@@ -121,7 +121,8 @@ export default function Home() {
 
        <Carousel />
        <HomeContent/>
-       <OurProcess/>    
+       <OurProcess/> 
+       <Services/>   
        <Testinomials/>
        <OurBlog/>
 
