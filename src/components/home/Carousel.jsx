@@ -28,7 +28,7 @@ const Carousel = () => {
       title: "We are start-up uplifters",
       backgroundColor: "#3c004b",
       backgroundImage: "url(/assets/img/web-technology.svg)",
-      des: " Fulfill your tech and non-tech startup dreams through embracing winning technological solutions from a successful tech team holding up a track record of developing 100+ innovative tech products for start-ups over 5+ years.",
+      des: "Fulfill your tech and non-tech startup dreams through embracing winning technological solutions from a successful tech team holding up a track record of developing 100+ innovative tech products for start-ups over 5+ years.",
       button: "Get the Recognition with us",
     },
     {
@@ -42,14 +42,14 @@ const Carousel = () => {
       title: "Online Scholarship Management Platform",
       backgroundColor: "#032B44",
       backgroundImage: "url(/assets/img/schlorshipimage.png)",
-      des: " A Minneapolis-based start-up wished to eradicate the student’s  financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the  process school is paid, helping deserving students, and effective management of award programs.",
+      des: "A Minneapolis-based start-up wished to eradicate the student’s  financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the  process school is paid, helping deserving students, and effective management of award programs.",
       button: "Read More",
     },
     {
       title: "Startup Growth",
       backgroundColor: "#340F3D",
       backgroundImage: "url(/assets/img/start-up.svg)",
-      des: " Navigating the tech and Non- tech Start-ups towards success heights with our durable software development solutions. We are here to breathe life into your start-up dreams. InfoKoders Technologies is been recognized as a one-stop source to embrace winning software development solutions at a budget-friendly cost.",
+      des: "Navigating the tech and Non- tech Start-ups towards success heights with our durable software development solutions. We are here to breathe life into your start-up dreams. InfoKoders Technologies is been recognized as a one-stop source to embrace winning software development solutions at a budget-friendly cost.",
       button: "Read More",
     },
     {

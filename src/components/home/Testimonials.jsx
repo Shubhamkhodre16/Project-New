@@ -15,21 +15,21 @@ const Testimonials = () => {
       alt: "ROR",
       title: "Dan McCarty",
       description:
-        " It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
+        "It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
     {
       src: "https://cindytalks.com/wp-content/uploads/2023/10/Maria-salinas-breaking-barriers.jpeg",
       alt: "Web Development",
       title: "Maria Elena",
       description:
-        "  The app has got overwhelming responses from our users. They like how it looks and feels as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
+        "The app has got overwhelming responses from our users. They like how it looks and feels as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
     {
-      src: "https://www.chinadaily.com.cn/sports/images/attachement/jpg/site1/20160325/eca86bd9d543185ed40204.jpg ",
+      src: "https://www.chinadaily.com.cn/sports/images/attachement/jpg/site1/20160325/eca86bd9d543185ed40204.jpg",
       alt: "Start-up",
       title: "Johan Cruyff",
       description:
-        "   I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
+        "I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
     },
     {
       src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRliNy8utS5Yo6lgCaUkK2d6lKGX9rBPJ8ipw&s",
@@ -46,20 +46,20 @@ const Testimonials = () => {
         "The app has got overwhelming responses from our users. They like how it looks and feels, as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
     {
-      src: "https://www.chinadaily.com.cn/sports/images/attachement/jpg/site1/20160325/eca86bd9d543185ed40204.jpg ",
+      src: "https://www.chinadaily.com.cn/sports/images/attachement/jpg/site1/20160325/eca86bd9d543185ed40204.jpg",
       alt: "Enterprise Solutions",
       title: "Enrico Cruyff",
       description:
-        " I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
+        "I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
     },
   ];
 
   const totalSlides = Math.ceil(CarouselData.length / 2); // Show two slides at a time
 
   const nextSlide = () => setSlideIndex((prev) => (prev + 1) % totalSlides);
-  const prevSlide = () =>
-    setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
-  const goToSlide = (index) => setSlideIndex(index);
+  // const prevSlide = () =>
+  //   setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+  // const goToSlide = (index) => setSlideIndex(index);
 
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
