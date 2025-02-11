@@ -1,12 +1,17 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import { Drawer, List, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import CloseIcon from "@mui/icons-material/Close";
@@ -16,11 +21,10 @@ import styles from "../../styles/Navbar.module.css";
 import logo from "../../../public/assets/img/logo-color.png";
 import logo1 from "../../../public/assets/img/logo.png";
 
-
 const pages = [
   { name: "Home", path: "/" },
   { name: "About us", path: "/about" },
-  { name: "Case Studies", path: "/caseStudies" },
+  { name: "Case Studies", path: "/case-studies" },
   { name: "Services", path: "/services" },
   { name: "Blog", path: "/blog" },
   { name: "Start Up", path: "/startup" },
@@ -35,7 +39,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Scrolling... Y offset:", window.scrollY);
       setIsFixed(window.scrollY > 0);
     };
 
@@ -51,7 +54,7 @@ const Navbar = () => {
   return (
     <AppBar
       sx={{
-        backgroundColor: isFixed ? "white" : "transparent",
+        backgroundColor: isFixed ? "#fff" : "transparent",
         boxShadow: isFixed ? "0px 2px 10px rgba(0, 0, 0, 0.1)" : "none",
         position: isFixed ? "fixed" : "absolute",
         top: 0,
@@ -60,38 +63,75 @@ const Navbar = () => {
         zIndex: 1000,
       }}
     >
-      <Container sx={{ padding: "10px", height: "110px" }} maxWidth="xl">
+      <Container
+        className={styles.navbarContainer}
+        sx={{ padding: "10px", height: "110px" }}
+        maxWidth="xl"
+      >
         <Toolbar disableGutters>
           <Link href="/" passHref>
-            <Image src={ isFixed ? logo : logo1} alt="logo" className={styles.logo} />
+            <Image
+              src={isFixed ? logo : logo1}
+              alt="logo"
+              className={styles.logo}
+            />
           </Link>
 
           {/* Mobile Menu */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent: "flex-end" }}>
-            <IconButton  style={{backgroundColor:"#fff"}} size="large" aria-label="menu" onClick={handleOpenDrawer}  color="white">
-              <MenuIcon  />
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              justifyContent: "flex-end",
+            }}
+          >
+            <IconButton
+              style={{ backgroundColor: "#fff" }}
+              size="large"
+              aria-label="menu"
+              onClick={handleOpenDrawer}
+              color="white"
+            >
+              <MenuIcon />
             </IconButton>
 
             {/* Drawer Sidebar */}
-            <Drawer PaperProps={{ sx: { width: "300px" } }} anchor="left" open={drawerOpen} onClose={handleCloseDrawer}>
+            <Drawer
+              PaperProps={{ sx: { width: "300px" } }}
+              anchor="left"
+              open={drawerOpen}
+              onClose={handleCloseDrawer}
+            >
               <Box sx={{ display: "flex" }}>
                 <Link onClick={handleCloseDrawer} href="/" passHref>
-                  <Image src={logo} alt="logo" width={150} height={20}  style={{ margin: "20px"  }} />
+                  <Image
+                    src={logo}
+                    alt="logo"
+                    width={150}
+                    height={20}
+                    style={{ margin: "20px" }}
+                  />
                 </Link>
                 <span onClick={handleCloseDrawer}>
                   <CloseIcon sx={{ margin: "12px", marginLeft: "60px" }} />
                 </span>
               </Box>
 
-              <List sx={{ margin: "20px", fontSize: "16px", fontWeight: "bold" }}>
+              <List
+                sx={{ margin: "20px", fontSize: "16px", fontWeight: "bold" }}
+              >
                 {pages.map(({ name, path }) => (
                   <ListItem key={name} onClick={handleCloseDrawer}>
-                    <Link href={path} passHref style={{ textDecoration: "none", color: "inherit" }}>
+                    <Link
+                      href={path}
+                      passHref
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       <ListItemText
                         sx={{
-                          // "&:hover": { color: "#650909" },
-                          backgroundColor: pathname === path ? "#181836" : "transparent",
-                          color: pathname === path ? "#fff" : "black",
+                          backgroundColor:
+                            pathname === path ? "#181836" : "transparent",
+                          color: pathname === path ? "#fff" : "#333",
                           padding: pathname === path ? "10px 20px" : "5px 15px",
                           borderRadius: pathname === path ? "5%" : "",
                         }}
@@ -113,34 +153,40 @@ const Navbar = () => {
               display: { xs: "none", md: "flex" },
               justifyContent: "flex-end",
               marginRight: "50px",
+              marginTop: "10px",
             }}
           >
             {pages.map(({ name, path }) => (
               <Link key={name} href={path} passHref>
                 <Typography
-  sx={{
-    my: 2,
-    mx: 1.2,
-    fontSize: "16px",
-    fontWeight: "bold",
-    textDecoration: "none",
-    cursor: "pointer",
-    transition: "color 0.3s, background-color 0.3s",
-    backgroundColor: pathname === path ? (isFixed ? "black" : "white") : "transparent",
-    color: pathname === path 
-      ? isFixed 
-        ? "white" 
-        : "black" 
-      : isFixed 
-        ? "black" 
-        : "white",
-    padding: pathname === path ? "10px 20px" : "5px 15px",
-    borderRadius: pathname === path ? "5%" : "",
-  }}
->
-  {name}
-</Typography>
-
+                  sx={{
+                    my: 2,
+                    mx: 1.2,
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    textDecoration: "none",
+                    cursor: "pointer",
+                    transition: "color 0.3s, background-color 0.3s",
+                    backgroundColor:
+                      pathname === path
+                        ? isFixed
+                          ? "#333"
+                          : "#fff"
+                        : "transparent",
+                    color:
+                      pathname === path
+                        ? isFixed
+                          ? "#fff"
+                          : "#333"
+                        : isFixed
+                        ? "#333"
+                        : "#fff",
+                    padding: pathname === path ? "10px 20px" : "5px 15px",
+                    borderRadius: pathname === path ? "5%" : "",
+                  }}
+                >
+                  {name}
+                </Typography>
               </Link>
             ))}
           </Box>

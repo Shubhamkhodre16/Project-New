@@ -1,3 +1,4 @@
+"use client"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // import '@november-pro/font/style.css'; // Or the correct path to the CSS file

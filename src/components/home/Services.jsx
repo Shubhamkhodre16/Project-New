@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Grid2 from "@mui/material/Grid2";
 import { Typography, Box } from "@mui/material";
@@ -88,9 +89,8 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
-                color:"#333"
-
+                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                color: "#333",
               }}
             >
               <span style={{ color: "#650909" }}>Frontend </span>development
@@ -122,7 +122,7 @@ const Services = () => {
                 <Image
                   src={angular}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -138,7 +138,7 @@ const Services = () => {
                 <Image
                   src={VuejsIcon}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -153,7 +153,7 @@ const Services = () => {
                 <Image
                   src={TypeScript}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -182,7 +182,7 @@ const Services = () => {
                 <Image
                   src={ReactIcon}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -198,7 +198,7 @@ const Services = () => {
                 <Image
                   src={HTML5}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -213,7 +213,7 @@ const Services = () => {
                 <Image
                   src={JavaScript}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -245,10 +245,8 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
-                color:"#333"
-
-
+                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                color: "#333",
               }}
             >
               <span style={{ color: "#650909" }}>Backend </span>development
@@ -281,7 +279,7 @@ const Services = () => {
                 <Image
                   src={nodejs}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -310,7 +308,7 @@ const Services = () => {
                 <Image
                   src={RoR}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -353,10 +351,8 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
-                color:"#333"
-
-
+                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                color: "#333",
               }}
             >
               <span style={{ color: "#650909" }}>Database </span>development
@@ -382,7 +378,7 @@ const Services = () => {
                 <Image
                   src={mongo}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -398,7 +394,7 @@ const Services = () => {
                 <Image
                   src={postsql}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     minHeight: "70px",
                     minWidth: "70px",
@@ -429,7 +425,7 @@ const Services = () => {
                 <Image
                   src={Redis}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -459,9 +455,8 @@ const Services = () => {
               variant="body1"
               className={styles.frontendfontSize}
               sx={{
-                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
-                color:"#333"
-
+                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                color: "#333",
               }}
             >
               <span style={{ color: "#650909" }}>Cloud </span>services
@@ -496,7 +491,7 @@ const Services = () => {
                 <Image
                   src={awsCloudServices}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -521,7 +516,7 @@ const Services = () => {
                 <Image
                   src={DigitalOcean}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -547,7 +542,7 @@ const Services = () => {
                 <Image
                   src={engineYard}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -585,7 +580,7 @@ const Services = () => {
                 <Image
                   src={GoogleCloudServices}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
@@ -609,7 +604,7 @@ const Services = () => {
                 <Image
                   src={herokuicon}
                   style={{
-                    border: "1px dotted black",
+                    border: "1px dotted  #333",
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
