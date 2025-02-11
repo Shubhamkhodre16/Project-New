@@ -25,14 +25,14 @@ const Footer = () => {
         sx={{
           backgroundColor: "#101010",
           color: "#fff",
-          padding: "0 60px 30px 13%",
+          // padding: "0 60px 30px 10%",
           fontFamily: "circular",
         }}
       >
           <Grid container  sx={{justifyContent:"space-between", padding:"30px"}} spacing={4}>
             {/* Go To  */}
             <Grid size={{xs:12,sm:12,md:6,lg:4}} >
-              <Typography variant="h6" className={styles.head1}>
+              <Typography sx={{marginLeft:"15px"}} variant="h6" className={styles.head1}>
                 GO TO
               </Typography>
               <ul className={styles.ui}>
@@ -194,7 +194,9 @@ const Footer = () => {
                   </li>
                 </ul>
               {/* <Grid></Grid> */}
-              <Typography variant="h6" className={styles.head1}>
+              <Typography
+               sx={{marginTop:"20px"}}
+              variant="h6" className={styles.head1}>
                 HR ENQURIES
               </Typography>
               <ul className={styles.ui}>
