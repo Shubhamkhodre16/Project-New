@@ -3,19 +3,16 @@ import React from "react";
 import { Typography, Box, CardContent } from "@mui/material";
 import Grid2 from "@mui/material/Grid2";
 import Image from "next/image";
-import aboutbanner from "../../../public/assets/img/ror-banner.png";
+import aboutBanner from "../../../public/assets/img/ror-banner.png";
 import CardSection from "../../app/career/CardSection";
 import Card from "@mui/material/Card";
 import Link from "next/link";
 import Divider from "@mui/material/Divider";
 import DataBackup from "../../../public/assets/img/DataBackup.gif";
 import customers from "../../../public/assets/img/customers.gif";
-import globle from "../../../public/assets/img/globle.gif";
-import teammember from "../../../public/assets/img/teammember.gif";
+import global from "../../../public/assets/img/global.gif";
+import teamMember from "../../../public/assets/img/teamMember.gif";
 import CardMedia from "@mui/material/CardMedia";
-import dataprotect from "../../../public/assets/img/dataprotections.gif";
-import agileDevelop from "../../../public/assets/img/agiledevelopment.gif";
-import customersupport from "../../../public/assets/img/customersupport.gif";
 import Industry from "./Industry";
 import styles from "../../styles/HomeContent.module.css";
 const HomeContent = () => {
@@ -37,11 +34,10 @@ const HomeContent = () => {
             <Grid2 container spacing={5}>
               <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Image
-                  src={aboutbanner}
+                  src={aboutBanner}
                   alt="About Us"
                   width={700}
                   height={550}
-                  // layout="intrinsic"
                 />
               </Grid2>
               <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
@@ -146,9 +142,7 @@ const HomeContent = () => {
             sx={{ marginTop: "70px" }}
           >
             <Typography
-              // variant="h4"
               sx={{
-                // fontWeight: "bold",
                 fontSize: { lg: "30px", md: "30px", sm: "30px", xs: "20px" },
                 marginBottom: { sm: "10px", xs: "10px" },
                 textAlign: { lg: "left", sm: "center", xs: "center" },
@@ -181,7 +175,13 @@ const HomeContent = () => {
                 marginBottom: "10px",
               }}
             >
-              <Image src={DataBackup} alt="" height={80} width={60} />
+              <Image
+                style={{ width: "23%" }}
+                src={DataBackup}
+                alt=""
+                height={80}
+                width={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
@@ -212,7 +212,13 @@ const HomeContent = () => {
                 marginX: { sm: "10px", xs: "8px" },
               }}
             >
-              <Image src={customers} alt="" width={80} height={60} />
+              <Image
+                style={{ width: "23%" }}
+                src={customers}
+                alt=""
+                width={80}
+                height={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
@@ -224,7 +230,7 @@ const HomeContent = () => {
               />
               <Box className={styles.fontSty}>
                 <ul>
-                  <Box sx={{ fontSize: "24px",marginTop:"10px" }}>
+                  <Box sx={{ fontSize: "24px", marginTop: "10px" }}>
                     {" "}
                     <li>200 +</li>
                   </Box>
@@ -242,7 +248,13 @@ const HomeContent = () => {
                 marginBottom: "10px",
               }}
             >
-              <Image src={globle} alt="" width={80} height={60} />
+              <Image
+                style={{ width: "23%" }}
+                src={global}
+                alt=""
+                width={80}
+                height={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
@@ -272,7 +284,13 @@ const HomeContent = () => {
                 marginX: { sm: "10px", xs: "8px" },
               }}
             >
-              <Image src={teammember} alt="" width={80} height={60} />
+              <Image
+                style={{ width: "23%" }}
+                src={teamMember}
+                alt=""
+                width={80}
+                height={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
@@ -300,7 +318,6 @@ const HomeContent = () => {
             sx={{ marginTop: "60px" }}
           >
             <Box>
-              {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
                 sx={{
                   borderRadius: "18px",
@@ -331,7 +348,7 @@ const HomeContent = () => {
                       padding: "20px",
 
                       "&:hover": {
-                        backgroundColor: "white !important",
+                        backgroundColor: "#fff !important",
                       },
                     }}
                   >
@@ -339,11 +356,8 @@ const HomeContent = () => {
                       sx={{ width: "40%" }}
                       component="img"
                       height="70px"
-                      
                       image="./assets/img/DataBackup.gif"
                     />
-
-                    {/* <lord-icon  src={databackups} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/>  */}
                   </Box>
                 </Link>
 
@@ -406,7 +420,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/dataprotections.gif"
+                      image="/assets/img/dataProtections.gif"
                       alt="backup"
                     />
                   </Box>
@@ -442,7 +456,6 @@ const HomeContent = () => {
             sx={{ marginTop: "60px" }}
           >
             <Box>
-              {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
                 sx={{
                   borderRadius: "18px",
@@ -477,7 +490,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/agiledevelopment.gif"
+                      image="/assets/img/agileDevelopment.gif"
                       alt="backup"
                     />
                   </Box>
@@ -509,7 +522,6 @@ const HomeContent = () => {
               </Card>
             </Box>
             <Box>
-              {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
                 sx={{
                   borderRadius: "18px",

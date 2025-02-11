@@ -1,16 +1,15 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-// import Image from "next/image";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import styles from "../../styles/Home.module.css";
 
 const Testimonials = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const Carouseldata = [
+  const CarouselData = [
     {
       src: "https://infusionforhealth.com/wp-content/uploads/2021/01/Dan-McCarty-Headshot.jpg",
       alt: "ROR",
@@ -55,7 +54,7 @@ const Testimonials = () => {
     },
   ];
 
-  const totalSlides = Math.ceil(Carouseldata.length / 2); // Show two slides at a time
+  const totalSlides = Math.ceil(CarouselData.length / 2); // Show two slides at a time
 
   const nextSlide = () => setSlideIndex((prev) => (prev + 1) % totalSlides);
   const prevSlide = () =>
@@ -76,11 +75,13 @@ const Testimonials = () => {
           justifyContent="center"
           alignItems="center"
           textAlign="center"
-          marginTop="30px"
+          marginTop="50px"
           sx={{ px: 10 }} // Adds horizontal padding for better spacing
         >
-          <Grid item xs={12} sm={10} md={8} lg={6}>
-            <Typography className={styles.testimonialHeading}>Testimonials</Typography>
+          <Grid item size={{ xs: 12, sm: 10, md: 8, lg: 6 }}>
+            <Typography className={styles.testimonialHeading}>
+              Testimonials
+            </Typography>
             <Typography className={styles.testimonialPara}>
               Our beloved clients shared their thrilling experience on how our
               product development and services helped them to set a benchmark in
@@ -90,7 +91,7 @@ const Testimonials = () => {
         </Grid>
         <span className={styles.text}>TESTIMONIALS</span>
 
-        <div className={styles.slideshowcontainer}>
+        <div className={styles.slideContainer}>
           {Array.from({ length: totalSlides }).map((_, index) => {
             const firstItem = index * 2;
             const secondItem = firstItem + 1;
@@ -105,38 +106,34 @@ const Testimonials = () => {
               >
                 <Grid
                   container
-                  xs={12}
-                  md={4}
-                  lg={6}
+                  size={{ xs: 12, md: 4, lg: 6 }}
                   spacing={2}
                   className={styles.gridContainer1}
                 >
                   {[firstItem, secondItem].map((itemIndex) =>
-                    Carouseldata[itemIndex] ? (
+                    CarouselData[itemIndex] ? (
                       <Grid
                         item
-                        xs={12}
-                        md={4}
-                        lg={5}
+                        size={{ xs: 12, md: 4, lg: 6 }}
                         key={itemIndex}
                         className={styles.slideItem}
                       >
                         <Box className={styles.slideContent}>
                           <Stack alignItems="center" spacing={2}>
                             <Avatar
-                              alt={Carouseldata[itemIndex].alt}
-                              src={Carouseldata[itemIndex].src}
+                              alt={CarouselData[itemIndex].alt}
+                              src={CarouselData[itemIndex].src}
                               className={styles.avatar}
                             />
                           </Stack>
                           <Typography variant="h6" className={styles.cardTitle}>
-                            {Carouseldata[itemIndex].title}
+                            {CarouselData[itemIndex].title}
                           </Typography>
                           <Typography
                             variant="body2"
                             className={styles.description1}
                           >
-                            {Carouseldata[itemIndex].description}
+                            {CarouselData[itemIndex].description}
                           </Typography>
                         </Box>
                       </Grid>

@@ -1,76 +1,77 @@
-import React from 'react'
-import Grid2  from '@mui/material/Grid2'
-import { Box,Typography } from '@mui/material'
-import Card from '@mui/material/Card'
-import Link from 'next/link'
-import Image from 'next/image'
-import CardMedia from '@mui/material/CardMedia'
-import CardContent from '@mui/material/CardContent'
+"use client";
+import React from "react";
+import Grid2 from "@mui/material/Grid2";
+import { Box, Typography } from "@mui/material";
+import Card from "@mui/material/Card";
+import Link from "next/link";
+import Image from "next/image";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
 import rightarrow from "../../../public/assets/img/arrow-right.svg";
-import styles from "../../styles/HomeContent.module.css"
+import styles from "../../styles/HomeContent.module.css";
 
 const CardSection = () => {
-    const cardData=[{
-        image:"/assets/img/ror-min.png",
-        title:" ROR Development",
-        desc:"We are saving the applications that are not meant to go off the rails. Let’s get your business on track"
+  const cardData = [
+    {
+      image: "/assets/img/ror-min.png",
+      title: " ROR Development",
+      desc: "We are saving the applications that are not meant to go off the rails. Let’s get your business on track",
     },
-       {
-        image:"/assets/img/react-min.png",
-        title:" React JS Development",
-        desc:" Speeding up the development process with react js enables the delivery of feature-rich and user-friendly apps"
-       },
-       {
-        image:"/assets/img/amazon-min.png",
-        title:" Amazon Services",
-        desc:" Providing all the spheres of cloud services with a true revolutionary approach to cloud computing known as AWS"
-       },
-       {
-        image:"/assets/img/node-min.png",
-        title:"Node Development",
-        desc:"Creating a real-time application, an IoT device, or a high-traffic website through Node.js,a choice for lower development costs"
-       },
-       {
-        image:"/assets/img/heroku-min.png",
-        title:" Heroku Development",
-        desc:" Availing the Heroku (Paas) platform for building, running, and operating applications securely in the cloud"
-       },
-       {
-        image:"/assets/img/angular-min.png",
-        title:"Angular Development",
-        desc:"The innovations in the digital space today are making lives easier and faster and leaving customers with more choices"
-       }
-]
+    {
+      image: "/assets/img/react-min.png",
+      title: " React JS Development",
+      desc: " Speeding up the development process with react js enables the delivery of feature-rich and user-friendly apps",
+    },
+    {
+      image: "/assets/img/amazon-min.png",
+      title: " Amazon Services",
+      desc: " Providing all the spheres of cloud services with a true revolutionary approach to cloud computing known as AWS",
+    },
+    {
+      image: "/assets/img/node-min.png",
+      title: "Node Development",
+      desc: "Creating a real-time application, an IoT device, or a high-traffic website through Node.js,a choice for lower development costs",
+    },
+    {
+      image: "/assets/img/heroku-min.png",
+      title: " Heroku Development",
+      desc: " Availing the Heroku (Paas) platform for building, running, and operating applications securely in the cloud",
+    },
+    {
+      image: "/assets/img/angular-min.png",
+      title: "Angular Development",
+      desc: "The innovations in the digital space today are making lives easier and faster and leaving customers with more choices",
+    },
+  ];
   return (
     <>
-  <Box>
-  <Grid2 container className={styles.cardContainer} spacing={5}>
-   {cardData?.map((item,index)=>(
-     <Grid2 className={styles.cardClass}  key={index}  size={{ xs: 12,lg:4,md:6,sm:12 }}  >
-            <Card
-              sx={{
-                // maxWidth: 345,
-                maxHeight:395,
-                minHeight:200,
-                // minWidth:200,
-                
-                borderRadius: "18px",
-                border: "1px solid transparent ",
-                transition: "border 0.3s ease",
-                paddingBottom:"40px",
-               
-                "&:hover": {
-                  borderColor: " #ebebeb",
-                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)",
-                  transform: "scale(1.05)",
-                },
-               
-                
-              
-               
-              }}
+      <Box>
+        <Grid2 container className={styles.cardContainer} spacing={5}>
+          {cardData?.map((item, index) => (
+            <Grid2
+              className={styles.cardClass}
+              key={index}
+              size={{ xs: 12, lg: 4, md: 6, sm: 12 }}
             >
-             
+              <Card
+                sx={{
+                  // maxWidth: 345,
+                  maxHeight: 395,
+                  minHeight: 200,
+                  // minWidth:200,
+
+                  borderRadius: "18px",
+                  border: "1px solid transparent ",
+                  transition: "border 0.3s ease",
+                  paddingBottom: "40px",
+
+                  "&:hover": {
+                    borderColor: " #ebebeb",
+                    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)",
+                    transform: "scale(1.05)",
+                  },
+                }}
+              >
                 <Link href="">
                   <Box
                     sx={{
@@ -79,9 +80,9 @@ const CardSection = () => {
                       alignItems: "center",
                       padding: "20px",
                     }}
-                  > 
+                  >
                     <CardMedia
-                    className={styles.cardImage}
+                      className={styles.cardImage}
                       sx={{
                         width: "70%",
                         transition: "transform 0.3s ease",
@@ -101,14 +102,20 @@ const CardSection = () => {
                     className={styles.titledrive}
                     variant="h5"
                     component="div"
-                    sx={{ textAlign: "center" , fontSize:{xs:"22px"} }}
+                    sx={{ textAlign: "center", fontSize: { xs: "22px" } }}
                   >
                     {item.title}
                   </Typography>
-                  <Typography 
+                  <Typography
                     className={styles.desdrive}
-                  variant="body2" sx={{ textAlign: "center" , padding:"0 5px", fontSize:{xs:"14px"}}}>
-                   {item.desc}
+                    variant="body2"
+                    sx={{
+                      textAlign: "center",
+                      padding: "0 5px",
+                      fontSize: { xs: "14px" },
+                    }}
+                  >
+                    {item.desc}
                   </Typography>
                   <Typography
                     sx={{
@@ -122,16 +129,13 @@ const CardSection = () => {
                     </Link>
                   </Typography>
                 </CardContent>
-              
-            
-            </Card>
-        </Grid2>
-        
+              </Card>
+            </Grid2>
           ))}
-         </Grid2>
-  </Box>
+        </Grid2>
+      </Box>
     </>
-  )
-}
+  );
+};
 
-export default CardSection
+export default CardSection;

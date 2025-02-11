@@ -52,7 +52,6 @@
     min-width: 80%;
     padding: 0 10%;
     gap: 10%;
-    /* align-items: center; */
 }
 
 .titledata {
@@ -159,7 +158,6 @@
 .coreContainer{
     width: 100%;
     
-    /* text-align: center; */
     color: #ececec;
     padding: 6% 16% ;
     display :flex;
@@ -219,7 +217,7 @@
     padding-bottom: 20px;
 }
 .coreBox1{
-    box-shadow: 1px white;
+    box-shadow: 1px #fff;
     border-radius: 10px;
     color:#181836;
     background-color:#ffffff;
@@ -305,7 +303,7 @@
     border-color: #ebebeb;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
-    background-color: white;
+    background-color: #fff;
 }
 .uspBoxTitle{
     font-size: 1.25rem;

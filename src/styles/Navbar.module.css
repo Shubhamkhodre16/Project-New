@@ -24,6 +24,9 @@
       width: 190px;
       height: 27px;
     }
+    .navbarContainer{
+      height: 90px;
+    }
   }
   
   @media (max-width: 1000px) {
