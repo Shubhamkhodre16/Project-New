@@ -59,7 +59,14 @@ const Industry = () => {
       <Box className={styles.industryBackground}>
         <Grid className={styles.industryContainer}>
           <Typography
-            fontSize={{ xs: "22px", sm: "35px", md: "35px", lg: "35px" }}
+             sx={{
+              fontSize: {
+                lg: "40px",
+                md: "35px",
+                sm: "30px",
+                xs: "28px",
+              },
+            }}
             className={styles.industryHeader}
           >
             Industries we serve

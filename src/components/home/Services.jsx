@@ -37,7 +37,12 @@ const Services = () => {
           <Typography
             variant="h4"
             sx={{
-              fontSize: { lg: "35px", md: "22px", sm: "20px", xs: "18px" },
+              fontSize: {
+                lg: "35px",
+                md: "25px",
+                sm: "25px",
+                xs: "20px",
+              },
             }}
             className={styles.serviceHeader}
           >
@@ -49,7 +54,12 @@ const Services = () => {
             className={styles.serviceSubHeader}
             variant="body1"
             sx={{
-              fontSize: { lg: "16px", md: "16px", sm: "15px", xs: "15px" },
+              fontSize: {
+                lg: "20px",
+                md: "18px",
+                sm: "18px",
+                xs: "16px",
+              },
             }}
           >
             It doesn’t matter what tech resources you are looking for, we
@@ -66,7 +76,7 @@ const Services = () => {
         spacing={3}
         sx={{
           justifyContent: "center",
-          maxWidth: "1200px",
+          // maxWidth: "1200px",
           margin: "0 auto",
           paddingBottom: "30px",
           paddingLeft: "3.3%",
@@ -84,18 +94,33 @@ const Services = () => {
             justifyContent: "center",
           }}
         >
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid2 
+          textAlign={{xs:"center",sm:"center", md:"left", lg:"left"}}
+          size={{ xs: 12, md: 6 }}>
             <Typography
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
+                  fontSize: {
+                    lg: "32px",
+                    md: "23px",
+                    sm: "23px",
+                    xs: "20px",
+                  },
                 color: "#333",
               }}
             >
               <span style={{ color: "#650909" }}>Frontend </span>development
             </Typography>
-            <Typography className={styles.frontDesfontSize} variant="body1">
+            <Typography className={styles.frontDesfontSize} 
+            sx={{
+              fontSize: {
+                lg: "18px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },}}
+            >
               Avail top-notch app development services by hiring our skillful
               front-end developers that have delivered game-changing solutions.
             </Typography>
@@ -106,7 +131,8 @@ const Services = () => {
               Own your team
             </Link>
           </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          <Grid2 
+          size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -261,6 +287,7 @@ const Services = () => {
         </Grid2>
         <Grid2
           size={{ xs: 12, md: 6 }}
+          textAlign={{xs:"center",sm:"center", md:"left", lg:"left"}}
           sx={{
             padding: "20px",
             border: "1px solid #ebebeb",
@@ -275,13 +302,26 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
-                color: "#333",
-              }}
+                fontSize: {
+                  lg: "32px",
+                  md: "23px",
+                  sm: "23px",
+                  xs: "20px",
+                },
+              color: "#333",
+            }}
             >
               <span style={{ color: "#650909" }}>Backend </span>development
             </Typography>
-            <Typography variant="body1" className={styles.frontDesfontSize}>
+            <Typography 
+            sx={{
+              fontSize: {
+                lg: "18px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },}}
+            className={styles.frontDesfontSize}>
               Attract your end-customers by picking our offshore development
               team notable for developing solutions that deliver outstanding
               user experience
@@ -293,7 +333,7 @@ const Services = () => {
               Own your team
             </Link>
           </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+         <Grid2 size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -364,7 +404,7 @@ const Services = () => {
         spacing={3}
         sx={{
           justifyContent: "center",
-          maxWidth: "1200px",
+          // maxWidth: "1200px",
           margin: "0 auto",
           paddingBottom: "30px",
           paddingLeft: "3.3%",
@@ -373,6 +413,7 @@ const Services = () => {
       >
         <Grid2
           size={{ xs: 12, md: 6 }}
+          textAlign={{xs:"center",sm:"center", md:"left", lg:"left"}}
           sx={{
             padding: "20px",
             border: "1px solid #ebebeb",
@@ -387,13 +428,26 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
-                color: "#333",
-              }}
+                fontSize: {
+                  lg: "32px",
+                  md: "23px",
+                  sm: "23px",
+                  xs: "20px",
+                },
+              color: "#333",
+            }}
             >
               <span style={{ color: "#650909" }}>Database </span>development
             </Typography>
-            <Typography className={styles.frontDesfontSize} variant="body1">
+            <Typography
+            sx={{
+              fontSize: {
+                lg: "18px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },}}
+            className={styles.frontDesfontSize} variant="body1">
               Our offshore developers gather, organize, and extract key insights
               from massive amounts of data.
             </Typography>
@@ -495,6 +549,7 @@ const Services = () => {
         </Grid2>
         <Grid2
           size={{ xs: 12, md: 6 }}
+          textAlign={{xs:"center",sm:"center", md:"left", lg:"left"}}
           sx={{
             padding: "20px",
             border: "1px solid #ebebeb",
@@ -509,13 +564,26 @@ const Services = () => {
               variant="body1"
               className={styles.frontendfontSize}
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
-                color: "#333",
-              }}
+                fontSize: {
+                  lg: "32px",
+                  md: "23px",
+                  sm: "23px",
+                  xs: "20px",
+                },
+              color: "#333",
+            }}
             >
               <span style={{ color: "#650909" }}>Cloud </span>services
             </Typography>
-            <Typography variant="body1" className={styles.frontDesfontSize}>
+            <Typography 
+            sx={{
+              fontSize: {
+                lg: "18px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },}}
+            className={styles.frontDesfontSize}>
               Cloud services provide users with duplicating and scaling, great
               flexibility, resources to balance the requirements of users and
               hosted applications and solutions.
@@ -667,8 +735,8 @@ const Services = () => {
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
-                    minHeight: "70px",
-                    minWidth: "70px",
+                    minHeight: "60px",
+                    minWidth: "60px",
                   }}
                   width={70}
                   height={70}
