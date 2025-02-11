@@ -89,7 +89,7 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
                 color: "#333",
               }}
             >
@@ -118,7 +118,13 @@ const Services = () => {
                 },
               }}
             >
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={angular}
                   style={{
@@ -134,7 +140,13 @@ const Services = () => {
                 Angular
               </span>
 
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={VuejsIcon}
                   style={{
@@ -149,7 +161,7 @@ const Services = () => {
                 />
                 Vue.js
               </span>
-              <span style={{ textAlign: "center" }}>
+              <span style={{ textAlign: "center", fontSize: "14px" }}>
                 <Image
                   src={TypeScript}
                   style={{
@@ -178,7 +190,13 @@ const Services = () => {
                 },
               }}
             >
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={ReactIcon}
                   style={{
@@ -194,7 +212,13 @@ const Services = () => {
                 React
               </span>
 
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={HTML5}
                   style={{
@@ -209,7 +233,13 @@ const Services = () => {
                 />
                 HTML5
               </span>
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={JavaScript}
                   style={{
@@ -245,7 +275,7 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
                 color: "#333",
               }}
             >
@@ -275,7 +305,13 @@ const Services = () => {
                 },
               }}
             >
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={nodejs}
                   style={{
@@ -304,7 +340,7 @@ const Services = () => {
                 },
               }}
             >
-              <span style={{ textAlign: "center" }}>
+              <span style={{ textAlign: "center", fontSize: "14px" }}>
                 <Image
                   src={RoR}
                   style={{
@@ -351,7 +387,7 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
                 color: "#333",
               }}
             >
@@ -374,7 +410,13 @@ const Services = () => {
                 },
               }}
             >
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={mongo}
                   style={{
@@ -390,7 +432,13 @@ const Services = () => {
                 MongoDB
               </span>
 
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={postsql}
                   style={{
@@ -421,7 +469,13 @@ const Services = () => {
                 },
               }}
             >
-              <span style={{ textAlign: "center", marginBottom: "10px" }}>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                }}
+              >
                 <Image
                   src={Redis}
                   style={{
@@ -455,7 +509,7 @@ const Services = () => {
               variant="body1"
               className={styles.frontendfontSize}
               sx={{
-                fontSize: { xs: "18px", md: "28px", sm: "24px", lg: "35px" },
+                fontSize: { xs: "18px", md: "24px", sm: "22px", lg: "32px" },
                 color: "#333",
               }}
             >
@@ -486,6 +540,7 @@ const Services = () => {
                   alignItems: "center",
                   textAlign: "center",
                   paddingBottom: "22px",
+                  fontSize: "14px",
                 }}
               >
                 <Image
@@ -511,6 +566,7 @@ const Services = () => {
                   flexDirection: "column",
                   textAlign: "center",
                   paddingBottom: "22px",
+                  fontSize: "14px",
                 }}
               >
                 <Image
@@ -537,6 +593,7 @@ const Services = () => {
                   flexDirection: "column",
                   textAlign: "center",
                   paddingBottom: "22px",
+                  fontSize: "14px",
                 }}
               >
                 <Image
@@ -575,6 +632,7 @@ const Services = () => {
                   flexDirection: "column",
                   textAlign: "center",
                   alignItems: "center",
+                  fontSize: "14px",
                 }}
               >
                 <Image
@@ -599,6 +657,7 @@ const Services = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
+                  fontSize: "14px",
                 }}
               >
                 <Image

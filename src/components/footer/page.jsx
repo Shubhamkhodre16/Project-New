@@ -3,16 +3,13 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import styles from "../../styles/footer.module.css";
 import Grid from "@mui/material/Grid2";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Link from "next/link";
-import Divider from "@mui/material/Divider";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import logo from "../../../public/assets/img/logo.png";
 
