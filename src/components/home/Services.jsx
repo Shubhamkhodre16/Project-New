@@ -88,7 +88,9 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "24px", lg: "35px" },
+                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
+                color:"#333"
+
               }}
             >
               <span style={{ color: "#650909" }}>Frontend </span>development
@@ -243,7 +245,10 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "24px", lg: "35px" },
+                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
+                color:"#333"
+
+
               }}
             >
               <span style={{ color: "#650909" }}>Backend </span>development
@@ -348,7 +353,10 @@ const Services = () => {
               className={styles.frontendfontSize}
               variant="body1"
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "24px", lg: "35px" },
+                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
+                color:"#333"
+
+
               }}
             >
               <span style={{ color: "#650909" }}>Database </span>development
@@ -451,7 +459,9 @@ const Services = () => {
               variant="body1"
               className={styles.frontendfontSize}
               sx={{
-                fontSize: { xs: "18px", md: "24px", sm: "24px", lg: "35px" },
+                fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
+                color:"#333"
+
               }}
             >
               <span style={{ color: "#650909" }}>Cloud </span>services
