@@ -34,7 +34,11 @@ const OurBlog = () => {
   return (
     <Box className={styles.blogContainer}>
       <Grid className={styles.blogContainer1}>
-        <Typography className={styles.blogHeader}>
+        <Typography className={styles.blogHeader}
+          sx={{fontSize:{
+            xs:"20px",sm:"25px", lg:"30px"
+          }}}
+        >   
           Our Blogs & Case Studies
         </Typography>
         {/* <Typography className={styles.header1} >Case Study</Typography> */}

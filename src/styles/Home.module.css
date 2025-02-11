@@ -99,6 +99,7 @@
     font-weight: bold;
     font-size: 30px;
     text-align: left;
+    color: #333;
     font-family: "NovemberPro";
 
 
@@ -222,6 +223,7 @@
     font-family: "NovemberPro", sans-serif;
     margin-bottom: 5px;
     text-align: left;
+    color: #333;
   }
   
   /* Description Text */
@@ -379,11 +381,12 @@
       margin-bottom: 80px;
       padding: 10px;
     font-family: "NovemberPro-Reg";
+    color: #333;
 
   }
   .testimonialHeading{
       font-weight: bold;
-      color: black;
+      color: #333;
       font-size: 25px;
     font-family: "NovemberPro", sans-serif;
 
@@ -856,6 +859,7 @@
     font-family: "NovemberPro";
     font-weight: 800;
     margin-bottom: 15px;
+    color: #333;
 
   }
   .serviceSubHeader{

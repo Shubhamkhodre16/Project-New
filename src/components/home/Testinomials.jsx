@@ -12,42 +12,42 @@ const Testimonials = () => {
 
   const Carouseldata = [
     {
-      src: "https://www.partner2simplify.com.au/wp-content/uploads/2021/02/ror-development-one-img.jpg",
+      src: "https://infusionforhealth.com/wp-content/uploads/2021/01/Dan-McCarty-Headshot.jpg",
       alt: "ROR",
       title: "Dan McCarty",
       description:
         " It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
     {
-      src: "https://miro.medium.com/v2/resize:fit:1200/0*M4bxiCIjcTK-2Xr6.jpeg",
+      src: "https://cindytalks.com/wp-content/uploads/2023/10/Maria-salinas-breaking-barriers.jpeg",
       alt: "Web Development",
       title: "Maria Elena",
       description:
         "  The app has got overwhelming responses from our users. They like how it looks and feels as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
     {
-      src: "https://businessconsultingagency.com/wp-content/uploads/2023/09/leveraging-expert-guidance.jpg",
+      src: "https://www.chinadaily.com.cn/sports/images/attachement/jpg/site1/20160325/eca86bd9d543185ed40204.jpg ",
       alt: "Start-up",
       title: "Johan Cruyff",
       description:
         "   I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
     },
     {
-      src: "https://media.licdn.com/dms/image/v2/D5612AQGzYwD8vD5__w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697912996343?e=2147483647&v=beta&t=t-nvba-Y1-xZCMjj1Rorc-PQ9GR2lmVx-qQeSgBO3wY",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRliNy8utS5Yo6lgCaUkK2d6lKGX9rBPJ8ipw&s",
       alt: "Enterprise Solutions",
       title: "Dana Midby",
       description:
         "It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
     {
-      src: "https://media.licdn.com/dms/image/v2/D5612AQGzYwD8vD5__w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697912996343?e=2147483647&v=beta&t=t-nvba-Y1-xZCMjj1Rorc-PQ9GR2lmVx-qQeSgBO3wY",
+      src: "https://yt3.googleusercontent.com/SfWlHmeuJNs36FLH8aakSn4h_jagOGs96sT2bp5nfa6aBIKco0okddyluHbFEbKlXcbFDTxI=s900-c-k-c0x00ffffff-no-rj",
       alt: "Enterprise Solutions",
       title: "Alex Ong",
       description:
         "The app has got overwhelming responses from our users. They like how it looks and feels, as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
     {
-      src: "https://media.licdn.com/dms/image/v2/D5612AQGzYwD8vD5__w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697912996343?e=2147483647&v=beta&t=t-nvba-Y1-xZCMjj1Rorc-PQ9GR2lmVx-qQeSgBO3wY",
+      src: "https://www.chinadaily.com.cn/sports/images/attachement/jpg/site1/20160325/eca86bd9d543185ed40204.jpg ",
       alt: "Enterprise Solutions",
       title: "Enrico Cruyff",
       description:
@@ -80,7 +80,7 @@ const Testimonials = () => {
           sx={{ px: 10 }} // Adds horizontal padding for better spacing
         >
           <Grid item xs={12} sm={10} md={8} lg={6}>
-            <Typography className={styles.testimonialHeading}>Testimonial</Typography>
+            <Typography className={styles.testimonialHeading}>Testimonials</Typography>
             <Typography className={styles.testimonialPara}>
               Our beloved clients shared their thrilling experience on how our
               product development and services helped them to set a benchmark in

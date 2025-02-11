@@ -35,17 +35,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const carousel = document.getElementById("carousel");
-      if (carousel) {
-        const carouselBottom = carousel.getBoundingClientRect().bottom;
-        setIsFixed(carouselBottom <= window.innerHeight * 0.1);
-      }
+      console.log("Scrolling... Y offset:", window.scrollY);
+      setIsFixed(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const handleOpenDrawer = () => setDrawerOpen(true);
   const handleCloseDrawer = () => setDrawerOpen(false);
 
@@ -61,7 +60,7 @@ const Navbar = () => {
         zIndex: 1000,
       }}
     >
-      <Container sx={{ padding: "10px", height: "90px" }} maxWidth="xl">
+      <Container sx={{ padding: "10px", height: "110px" }} maxWidth="xl">
         <Toolbar disableGutters>
           <Link href="/" passHref>
             <Image src={ isFixed ? logo : logo1} alt="logo" className={styles.logo} />
@@ -69,7 +68,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent: "flex-end" }}>
-            <IconButton  size="large" aria-label="menu" onClick={handleOpenDrawer}  color="white">
+            <IconButton  style={{backgroundColor:"#fff"}} size="large" aria-label="menu" onClick={handleOpenDrawer}  color="white">
               <MenuIcon  />
             </IconButton>
 
@@ -107,6 +106,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <Box
+            className={styles.navAlign}
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
@@ -117,23 +117,29 @@ const Navbar = () => {
             {pages.map(({ name, path }) => (
               <Link key={name} href={path} passHref>
                 <Typography
-                  sx={{
-                    my: 2,
-                    mx: 1.2,
-                    fontSize: "16px",
-                    fontWeight: "bold",
-                    textDecoration: "none",
-                    cursor: "pointer",
-                    transition: "color 0.3s",
-                    // "&:hover": { color: "#650909" },
-                    backgroundColor: pathname === path ? "#181836" : "transparent",
-                    color: pathname === path ? "#fff" : isFixed ? "black" : "white",
-                    padding: pathname === path ? "10px 20px" : "5px 15px",
-                    borderRadius: pathname === path ? "5%" : "",
-                  }}
-                >
-                  {name}
-                </Typography>
+  sx={{
+    my: 2,
+    mx: 1.2,
+    fontSize: "16px",
+    fontWeight: "bold",
+    textDecoration: "none",
+    cursor: "pointer",
+    transition: "color 0.3s, background-color 0.3s",
+    backgroundColor: pathname === path ? (isFixed ? "black" : "white") : "transparent",
+    color: pathname === path 
+      ? isFixed 
+        ? "white" 
+        : "black" 
+      : isFixed 
+        ? "black" 
+        : "white",
+    padding: pathname === path ? "10px 20px" : "5px 15px",
+    borderRadius: pathname === path ? "5%" : "",
+  }}
+>
+  {name}
+</Typography>
+
               </Link>
             ))}
           </Box>
