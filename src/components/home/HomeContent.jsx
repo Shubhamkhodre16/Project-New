@@ -186,7 +186,7 @@ const HomeContent = () => {
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "20%",
+                  width: "25%",
                   marginY: 5,
                   transform: "rotate(90deg)",
                 }}
@@ -224,7 +224,7 @@ const HomeContent = () => {
               />
               <Box className={styles.fontSty}>
                 <ul>
-                  <Box sx={{ fontSize: "24px" }}>
+                  <Box sx={{ fontSize: "24px",marginTop:"10px" }}>
                     {" "}
                     <li>200 +</li>
                   </Box>
@@ -336,10 +336,10 @@ const HomeContent = () => {
                     }}
                   >
                     <CardMedia
-                      sx={{ width: "30%" }}
+                      sx={{ width: "40%" }}
                       component="img"
-                      height="60px"
-                      width="80px"
+                      height="70px"
+                      
                       image="./assets/img/DataBackup.gif"
                     />
 
