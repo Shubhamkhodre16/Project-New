@@ -79,7 +79,7 @@ export default function ContactForm() {
           textAlign: "center",
           fontSize: "25px",
           fontWeight: "bold",
-          fontFamily: "circular",
+          fontFamily: "NovemberPro",
           color: "#650909",
           mb: 2,
         }}
@@ -192,7 +192,10 @@ export default function ContactForm() {
               startAdornment: (
                 <InputAdornment
                   position="start"
-                  style={{ marginBottom: "28px" }}
+                  style={{
+                    marginBottom: "28px",
+                    fontFamily: "NovemberPro-Reg",
+                  }}
                 >
                   <MessageIcon />
                 </InputAdornment>
@@ -219,11 +222,12 @@ export default function ContactForm() {
             px: 3,
             py: 1,
             textTransform: "capitalize",
-            backgroundColor: "#650909",
+            backgroundColor: "#333",
+            fontFamily: "NovemberPro-Reg",
             "&:hover": {
               backgroundColor: "#fff",
-              border: "1px solid #650909",
-              color: "#650909",
+              border: "1px solid #333",
+              color: "#333",
             },
           }}
           type="submit"

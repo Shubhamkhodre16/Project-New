@@ -75,14 +75,31 @@ const Testimonials = () => {
           justifyContent="center"
           alignItems="center"
           textAlign="center"
-          marginTop="50px"
-          sx={{ px: 10 }} // Adds horizontal padding for better spacing
+          marginTop="80px"
         >
           <Grid item size={{ xs: 12, sm: 10, md: 8, lg: 6 }}>
-            <Typography className={styles.testimonialHeading}>
+            <Typography
+              sx={{
+                fontSize: {
+                  lg: "32px",
+                  md: "25px",
+                  sm: "25px",
+                  xs: "20px",
+                },
+              }}
+            className={styles.testimonialHeading}>
               Testimonials
             </Typography>
-            <Typography className={styles.testimonialPara}>
+            <Typography
+                sx={{
+                  fontSize: {
+                    lg: "20px",
+                    md: "18px",
+                    sm: "18px",
+                    xs: "16px",
+                  },
+                }}
+            className={styles.testimonialPara}>
               Our beloved clients shared their thrilling experience on how our
               product development and services helped them to set a benchmark in
               their business realm.

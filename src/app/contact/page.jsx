@@ -18,19 +18,19 @@ const page = () => {
           <div className={styles.containerInner}>
             <div className={styles.row}>
               <div className="col-md-8">
-                {/* <div className='ps-20  text-left md:text-left md:font-size:20px ' >
-                <h1 className={styles.h1}>Contact Us</h1>
-              </div> */}
+                <div className="ps-20 text-left md:text-center  md:text-[60px] sm:text-[0px] lg:text-[60px]">
+                  <h1 className={styles.h1}>Contact Us</h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="p-10 mt-10">
-        <span className="text-[35px] font-[Circular] text-[#650909] text-center font-bold flex justify-center items-center h-[20] ">
+        <span className="text-[30px] font-[NovemberPro] text-[#650909] text-center font-bold flex justify-center items-center h-[20]">
           Every great deal starts with a simple conversation
         </span>
-        <span className="text-[25px] font-[Circular] text-center flex justify-center items-center h-[20] ">
+        <span className="text-[25px] font-[NovemberPro-Reg] font-bold text-center flex justify-center items-center h-[20] ">
           Want to do a Project with us? Let’s talk!
         </span>
       </div>
@@ -39,29 +39,27 @@ const page = () => {
          */}
 
         <div
-          style={{ fontFamily: "circular" }}
-          className="flex flex-col p-10 py-12 border border-gray-100 rounded-lg shadow-lg m-4 md:m-0 md:mr-4 md:w-1/2 font-circular"
+          className="flex flex-col  p-10 py-12 border border-gray-100 rounded-lg shadow-lg m-4 md:m-0 md:mr-4 md:w-1/2 font-circular"
         >
-          <span className="text-[#650909] text-[25px] font-bold mb-10 text-center">
+          <span className="text-[#650909] font-[NovemberPro] text-[25px] font-bold mb-10 text-center">
             Contact Details
           </span>
-          <span className="flex items-center mb-4 text-center md:text-left">
-            <LocationOnIcon className="mr-2 mb-5" />
+          <span className="flex items-center font-[NovemberPro-Reg] mb-4 text-center md:text-left">
+            <LocationOnIcon className="mr-2 self-start mb-5" />
             213, Satguru Parinay Opp. C21 mall, <br /> AB Rd Indore, MP 452001,
             IN
           </span>
-          <span className="flex items-center text-center md:text-left">
+          <span className="flex items-center font-[NovemberPro-Reg] text-center md:text-left">
             <EmailIcon className="mr-2" /> hr@infokoders.com
           </span>
-          <span className="flex items-center mt-5 ">
+          <span className="flex items-center font-[NovemberPro-Reg] mt-5 ">
             <LocalPhoneIcon className="mr-2 " />
             0731-4105427
           </span>
-          <span className="flex items-center text-center md:text-left mt-5 ">
-            <LinkedInIcon className="mr-2" /> InfoKoders Technologies Private
-            Limited
+          <span className="flex items-start font-[NovemberPro-Reg] md:text-left mt-5">
+            <LinkedInIcon className="mr-2 self-start" />
+            InfoKoders Technologies Private Limited
           </span>
-          <div className={styles.details}></div>
         </div>
         <div className="flex flex-col px-2  border border-gray-100 rounded-lg shadow-lg m-4 md:m-0 md:ml-4 md:w-1/2">
           <ContactForm />

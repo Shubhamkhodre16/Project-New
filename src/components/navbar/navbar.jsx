@@ -86,7 +86,10 @@ const Navbar = () => {
             }}
           >
             <IconButton
-              style={{ backgroundColor: "#fff" }}
+              style={{
+                backgroundColor: isFixed ? "#333" : "#fff",
+                color: isFixed ? "#fff" : "#333",
+              }}
               size="large"
               aria-label="menu"
               onClick={handleOpenDrawer}
@@ -165,6 +168,7 @@ const Navbar = () => {
                     fontSize: "16px",
                     fontWeight: "bold",
                     textDecoration: "none",
+                    fontFamily: "NovemberPro-Reg",
                     cursor: "pointer",
                     transition: "color 0.3s, background-color 0.3s",
                     backgroundColor:

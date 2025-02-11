@@ -199,11 +199,23 @@
   .card1SubHeader{
     font-family: "NovemberPro-Reg";
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     color: #333;
 
   }
 
+  @media (min-width: 1200px) and (max-width: 1250px) {
+    .cardHeight {
+      height: 380px;
+      min-height: 380px;
+    }
+  }
+  @media (min-width: 1250px) and (max-width: 1400px) {
+    .cardHeight {
+      height: 370px;
+      min-height: 370px;
+    }
+  }
 
   /* Industries we serve  */
 

@@ -40,15 +40,17 @@ const HomeContent = () => {
                   height={550}
                 />
               </Grid2>
-              <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
+              <Grid2
+                 textAlign={{sm:"center", md:"left" }}
+              size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Typography
                   className={styles.whoTitle}
                   sx={{
                     fontSize: {
                       lg: "40px",
-                      md: "25px",
-                      sm: "20px",
-                      xs: "18px",
+                      md: "35px",
+                      sm: "30px",
+                      xs: "25px",
                     },
                   }}
                 >
@@ -59,9 +61,9 @@ const HomeContent = () => {
                   sx={{
                     fontSize: {
                       lg: "35px",
-                      md: "22px",
-                      sm: "18px",
-                      xs: "15px",
+                      md: "25px",
+                      sm: "25px",
+                      xs: "20px",
                     },
                   }}
                 >
@@ -69,8 +71,18 @@ const HomeContent = () => {
                   Recognized as the Best Ruby on Rails and Product Engineering
                   Company
                 </Typography>
-                <Typography className={styles.whoDes}>
+                <Typography
+                 sx={{
+                  fontSize: {
+                    lg: "20px",
+                    md: "18px",
+                    sm: "18px",
+                    xs: "16px",
+                  },
+                }}
+                className={styles.whoDes}>
                   {" "}
+              
                   As today’s competitive world stepping into digital approaches,
                   and digital transformation becoming more than a buzzword, it’s
                   become essential than ever for your business to collaborate
@@ -79,7 +91,16 @@ const HomeContent = () => {
                   economical budget. This is where InfoKoders technologies comes
                   in!
                 </Typography>
-                <Typography className={styles.whoDes}>
+                <Typography 
+                    sx={{
+                      fontSize: {
+                        lg: "20px",
+                        md: "18px",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                    }}
+                className={styles.whoDes}>
                   InfoKoders technologies is the unmatched destination to
                   embrace exceptional Software development and business-centric
                   technological solutions. Whether you're a startup, SMB, or a
@@ -98,14 +119,28 @@ const HomeContent = () => {
 
       <Grid2 container className={styles.driveContent}>
         <Grid2 sx={{ textAlign: "center", padding: "0 10%" }}>
-          <Typography className={styles.driveHeader} variant="h5">
+          <Typography className={styles.driveHeader}
+             sx={{
+              fontSize: {
+                lg: "35px",
+                md: "25px",
+                sm: "25px",
+                xs: "20px",
+              },
+            }}
+          >
             How We Drive Business?
           </Typography>
 
           <Typography
             variant="body1"
             sx={{
-              fontSize: { lg: "20px", md: "18px", sm: "18px", xs: "15px" },
+              fontSize: {
+                lg: "20px",
+                md: "18px",
+                sm: "18px",
+                xs: "16px",
+              },
             }}
             className={styles.drivecontent}
           >
@@ -139,7 +174,7 @@ const HomeContent = () => {
         >
           <Grid2
             size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
-            sx={{ marginTop: "70px" }}
+            sx={{ marginTop: "62px" }}
           >
             <Typography
               sx={{
@@ -157,7 +192,7 @@ const HomeContent = () => {
               sx={{
                 lineHeight: "1.5",
                 fontSize: { lg: "18px", md: "16px", sm: "15px", xs: "14px" },
-                marginBottom: "20px",
+                marginBottom: "28px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
             >
@@ -170,6 +205,7 @@ const HomeContent = () => {
                 display: "flex",
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
+                borderRadius:"10px",
                 padding: "20px",
                 marginX: { sm: "10px", xs: "8px" },
                 marginBottom: "10px",
@@ -207,6 +243,7 @@ const HomeContent = () => {
                 display: "flex",
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
+                borderRadius:"10px",
                 paddingY: "20px",
                 marginBottom: "10px",
                 marginX: { sm: "10px", xs: "8px" },
@@ -244,6 +281,7 @@ const HomeContent = () => {
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
                 padding: "20px",
+                borderRadius:"10px",
                 marginX: { sm: "10px", xs: "8px" },
                 marginBottom: "10px",
               }}
@@ -280,6 +318,7 @@ const HomeContent = () => {
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
                 padding: "20px",
+                borderRadius:"10px",
                 marginBottom: "10px",
                 marginX: { sm: "10px", xs: "8px" },
               }}
@@ -315,10 +354,11 @@ const HomeContent = () => {
           </Grid2>
           <Grid2
             size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
-            sx={{ marginTop: "60px" }}
+            sx={{ marginTop: "70px" }}
           >
             <Box>
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
@@ -330,11 +370,13 @@ const HomeContent = () => {
                   },
                   margin: "auto",
                   display: "flex",
-                  minHeight: "440px",
+                  minHeight: "400px",
+                  maxHeight: "410px",
+
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "32px",
+                  // paddingY: "23px",
                   marginBottom: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
@@ -369,7 +411,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -378,7 +420,7 @@ const HomeContent = () => {
                   >
                     Data Backups
                   </Typography>
-                  <Typography className={styles.card1SubHeader} variant="body2">
+                  <Typography className={styles.card1SubHeader} >
                     The first imperative step in our product development process
                     is gathering requirements and analyzing it.
                   </Typography>
@@ -388,6 +430,7 @@ const HomeContent = () => {
 
             <Box>
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
@@ -402,8 +445,10 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "32px",
-                  minHeight: "440px",
+                  // paddingY: "23px",
+                  minHeight: "400px",
+                  maxHeight: "410px",
+
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
@@ -434,7 +479,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -453,10 +498,11 @@ const HomeContent = () => {
           </Grid2>
           <Grid2
             size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
-            sx={{ marginTop: "60px" }}
+            sx={{ marginTop: "70px" }}
           >
             <Box>
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
@@ -472,8 +518,9 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "20px",
-                  minHeight: "440px",
+                  // paddingY: "23px",
+                  minHeight: "400px",
+                  maxHeight: "410px",
                   marginBottom: "20px",
                 }}
               >
@@ -504,7 +551,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -523,6 +570,7 @@ const HomeContent = () => {
             </Box>
             <Box>
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
 
@@ -538,8 +586,9 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "20px",
-                  minHeight: "440px",
+                  // paddingY: "23px",
+                  minHeight: "400px",
+                  maxHeight: "410px",
                   marginTop: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
@@ -571,7 +620,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -580,7 +629,7 @@ const HomeContent = () => {
                   >
                     Friendly Support
                   </Typography>
-                  <Typography className={styles.card1SubHeader} variant="body2">
+                  <Typography className={styles.card1SubHeader} >
                     When it comes to providing beneficial support, you will
                     never across a team like InfoKoders software. We are always
                     there for clients right from the project idea discussion to

@@ -149,7 +149,7 @@
   /* Title Styling */
   .processtitle {
     font-weight: bold;
-    font-size: 24px;
+    /* font-size: 24px; */
     font-family: "NovemberPro", sans-serif;
     color: #650909;
     letter-spacing: 2px;
@@ -185,7 +185,7 @@
   .bullets {
     height: 50px;
     width: 50px;
-    background-color: #181836;
+    background-color: #333;
     border-radius: 50%;
     border: 4px solid #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -366,9 +366,7 @@
       
   }
   .testimonialPara{
-      font-size: 18px;
       text-align: center;
-      font-weight: 600;
       margin-bottom: 80px;
       padding: 10px;
     font-family: "NovemberPro-Reg";
@@ -378,7 +376,6 @@
   .testimonialHeading{
       font-weight: bold;
       color: #333;
-      font-size: 25px;
     font-family: "NovemberPro", sans-serif;
 
       
@@ -832,4 +829,14 @@
     display: flex;
     margin-top: 20px;
 
+  }
+  @media (max-width:900px){
+    .devlopOpt{
+      font-family: "NovemberPro-Reg";
+      align-items: center;
+      gap: 10%;
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+    }
   }
