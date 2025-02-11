@@ -1,24 +1,24 @@
-import React from 'react'
-import Grid2  from '@mui/material/Grid2'
-import { Typography,Box } from '@mui/material'
-import Image from 'next/image'
-import Link from 'next/link'
-import angular from '../../../public/assets/img/angular-icon.png'
-import VuejsIcon from '../../../public/assets/img/vuejsIcon.png'
-import TypeScript from '../../../public/assets/img/typescript.png'
-import ReactIcon from '../../../public/assets/img/reactjs.png'
-import HTML5 from '../../../public/assets/img/html.png'
-import JavaScript from '../../../public/assets/img/javascripts.jpg'
-import nodejs from '../../../public/assets/img/node-js.png'
-import RoR from '../../../public/assets/img/roricon.png'
-import mongo from '../../../public/assets/img/mongoDbIcon.png'
-import postsql from '../../../public/assets/img/postsql.png'
-import Redis from '../../../public/assets/img/redis.png'
-import awsCloudServices from '../../../public/assets/img/awsCloudServices.png'
-import GoogleCloudServices from '../../../public/assets/img/GoogleCloudServices.png'
-import DigitalOcean from '../../../public/assets/img/Digital Ocean.png'
-import herokuicon from '../../../public/assets/img/herokuicon.png'
-import engineYard from '../../../public/assets/img/engine.png'
+import React from "react";
+import Grid2 from "@mui/material/Grid2";
+import { Typography, Box } from "@mui/material";
+import Image from "next/image";
+import Link from "next/link";
+import angular from "../../../public/assets/img/angular-icon.png";
+import VuejsIcon from "../../../public/assets/img/vuejsIcon.png";
+import TypeScript from "../../../public/assets/img/typescript.png";
+import ReactIcon from "../../../public/assets/img/reactjs.png";
+import HTML5 from "../../../public/assets/img/html.png";
+import JavaScript from "../../../public/assets/img/javascripts.jpg";
+import nodejs from "../../../public/assets/img/node-js.png";
+import RoR from "../../../public/assets/img/roricon.png";
+import mongo from "../../../public/assets/img/mongoDbIcon.png";
+import postsql from "../../../public/assets/img/postsql.png";
+import Redis from "../../../public/assets/img/redis.png";
+import awsCloudServices from "../../../public/assets/img/awsCloudServices.png";
+import GoogleCloudServices from "../../../public/assets/img/GoogleCloudServices.png";
+import DigitalOcean from "../../../public/assets/img/Digital Ocean.png";
+import herokuicon from "../../../public/assets/img/herokuicon.png";
+import engineYard from "../../../public/assets/img/engine.png";
 import styles from "../../styles/Home.module.css";
 const Services = () => {
   return (
@@ -68,6 +68,8 @@ const Services = () => {
           maxWidth: "1200px",
           margin: "0 auto",
           paddingBottom: "30px",
+          paddingLeft: "3.3%",
+          paddingRight: "3.3%",
         }}
       >
         <Grid2
@@ -88,6 +90,7 @@ const Services = () => {
               sx={{
                 fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
                 color:"#333"
+
               }}
             >
               <span style={{ color: "#650909" }}>Frontend </span>development
@@ -214,8 +217,8 @@ const Services = () => {
                     borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
-                    minHeight:"70px",
-                    minWidth:"70px",
+                    minHeight: "70px",
+                    minWidth: "70px",
                   }}
                   width={70}
                   height={70}
@@ -244,6 +247,7 @@ const Services = () => {
               sx={{
                 fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
                 color:"#333"
+
 
               }}
             >
@@ -329,6 +333,8 @@ const Services = () => {
           maxWidth: "1200px",
           margin: "0 auto",
           paddingBottom: "30px",
+          paddingLeft: "3.3%",
+          paddingRight: "3.3%",
         }}
       >
         <Grid2
@@ -349,6 +355,7 @@ const Services = () => {
               sx={{
                 fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
                 color:"#333"
+
 
               }}
             >
@@ -393,11 +400,10 @@ const Services = () => {
                   style={{
                     border: "1px dotted black",
                     borderRadius: "50%",
-                    minHeight:"70px",
-                    minWidth:"70px",
+                    minHeight: "70px",
+                    minWidth: "70px",
                     marginBottom: "10px",
-                    padding:"10px"
-
+                    padding: "10px",
                   }}
                   width={70}
                   height={70}
@@ -455,6 +461,7 @@ const Services = () => {
               sx={{
                 fontSize: { xs:"18px", md: "28px", sm: "24px", lg: "35px" },
                 color:"#333"
+
               }}
             >
               <span style={{ color: "#650909" }}>Cloud </span>services
@@ -487,14 +494,14 @@ const Services = () => {
                 }}
               >
                 <Image
-                   src={awsCloudServices}
-                   style={{
-                     border: "1px dotted black",
-                     borderRadius: "50%",
-                     padding: "10px",
-                     marginBottom: "10px",
-                     minHeight:"70px",
-                      minWidth:"70px"
+                  src={awsCloudServices}
+                  style={{
+                    border: "1px dotted black",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    marginBottom: "10px",
+                    minHeight: "70px",
+                    minWidth: "70px",
                   }}
                   width={70}
                   height={70}
@@ -512,14 +519,15 @@ const Services = () => {
                 }}
               >
                 <Image
-                 src={DigitalOcean}
-                 style={{
-                   border: "1px dotted black",
-                   borderRadius: "50%",
-                   padding: "10px",
-                   marginBottom: "10px",
-                   minHeight:"70px",
-                    minWidth:"70px"                  }}
+                  src={DigitalOcean}
+                  style={{
+                    border: "1px dotted black",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    marginBottom: "10px",
+                    minHeight: "70px",
+                    minWidth: "70px",
+                  }}
                   width={70}
                   height={70}
                   alt="Digital Ocean"
@@ -537,14 +545,14 @@ const Services = () => {
                 }}
               >
                 <Image
-                      src={engineYard}
-                      style={{
-                        border: "1px dotted black",
-                        borderRadius: "50%",
-                        padding: "10px",
-                        marginBottom: "10px",
-                         minHeight:"70px",
-                         minWidth:"70px"
+                  src={engineYard}
+                  style={{
+                    border: "1px dotted black",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    marginBottom: "10px",
+                    minHeight: "70px",
+                    minWidth: "70px",
                   }}
                   width={70}
                   height={70}
@@ -575,14 +583,14 @@ const Services = () => {
                 }}
               >
                 <Image
-                 src={GoogleCloudServices}
-                 style={{
-                   border: "1px dotted black",
-                   borderRadius: "50%",
-                   padding: "10px",
-                   marginBottom: "10px",
-                   minHeight:"70px",
-                    minWidth:"70px"
+                  src={GoogleCloudServices}
+                  style={{
+                    border: "1px dotted black",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    marginBottom: "10px",
+                    minHeight: "70px",
+                    minWidth: "70px",
                   }}
                   width={70}
                   height={70}
@@ -599,14 +607,14 @@ const Services = () => {
                 }}
               >
                 <Image
-                   src={herokuicon}
-                   style={{
-                     border: "1px dotted black",
-                     borderRadius: "50%",
-                     padding: "10px",
-                     marginBottom: "10px",
-                      minHeight:"70px",
-                      minWidth:"70px"
+                  src={herokuicon}
+                  style={{
+                    border: "1px dotted black",
+                    borderRadius: "50%",
+                    padding: "10px",
+                    marginBottom: "10px",
+                    minHeight: "70px",
+                    minWidth: "70px",
                   }}
                   width={70}
                   height={70}

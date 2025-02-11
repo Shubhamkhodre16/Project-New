@@ -96,6 +96,7 @@ const Navbar = () => {
                           borderRadius: pathname === path ? "5%" : "",
                         }}
                         primary={name}
+                        className={styles.navText}
                       />
                     </Link>
                   </ListItem>
