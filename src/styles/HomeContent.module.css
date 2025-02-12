@@ -206,14 +206,14 @@
 
   @media (min-width: 1200px) and (max-width: 1250px) {
     .cardHeight {
-      height: 380px;
-      min-height: 380px;
+      height: 375px;
+      min-height: 375px;
     }
   }
-  @media (min-width: 1250px) and (max-width: 1400px) {
+  @media (min-width: 1250px) and (max-width: 1500px) {
     .cardHeight {
-      height: 370px;
-      min-height: 370px;
+      height: 375px;
+      min-height: 375px;
     }
   }
 
