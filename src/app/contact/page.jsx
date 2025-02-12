@@ -39,9 +39,9 @@ const page = () => {
          */}
 
         <div
-          className="flex flex-col  p-10 py-12 border border-gray-100 rounded-lg shadow-lg m-4 md:m-0 md:mr-4 md:w-1/2 font-circular"
+          className={`flex flex-col p-10 py-12 border border-gray-100 rounded-lg shadow-lg m-4 md:m-0 md:mr-4 md:w-1/2 font-circular ${styles.details}`}
         >
-          <span className="text-[#650909] font-[NovemberPro] text-[25px] font-bold mb-10 text-center">
+          <span className="text-[#333] font-[NovemberPro] text-[25px] font-bold mb-10 text-center">
             Contact Details
           </span>
           <span className="flex items-center font-[NovemberPro-Reg] mb-4 text-center md:text-left">
@@ -56,7 +56,7 @@ const page = () => {
             <LocalPhoneIcon className="mr-2 " />
             0731-4105427
           </span>
-          <span className="flex items-start font-[NovemberPro-Reg] md:text-left mt-5">
+          <span className="flex items-start font-[NovemberPro-Reg] md:text-left mt-5 " style={{marginBottom:"160px"}} >
             <LinkedInIcon className="mr-2 self-start" />
             InfoKoders Technologies Private Limited
           </span>

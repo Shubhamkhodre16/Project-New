@@ -101,7 +101,7 @@ const Carousel = () => {
               <Typography variant="body1" className={styles.description}>
                 {item.des}
               </Typography>
-              <Button variant="contained" className={styles.button}>
+              <Button variant="contained" sx={{backgroundColor:"#fff", color:"#333"}} className={styles.button}>
                 {item.button}
               </Button>
             </Grid2>
