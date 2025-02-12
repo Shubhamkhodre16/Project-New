@@ -66,11 +66,9 @@
 }
 .details{
     background-image: url('../../public/assets/img/home-bg-10-1.png');
-   
     background-repeat: no-repeat;
     background-position: right bottom;
-    
-    padding: 100px 50px;
+    padding: 50px 50px;
     height: 100%;
     
 }

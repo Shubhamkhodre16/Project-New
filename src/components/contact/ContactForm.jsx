@@ -80,7 +80,7 @@ export default function ContactForm() {
           fontSize: "25px",
           fontWeight: "bold",
           fontFamily: "NovemberPro",
-          color: "#650909",
+          color: "#333",
           mb: 2,
         }}
       >
