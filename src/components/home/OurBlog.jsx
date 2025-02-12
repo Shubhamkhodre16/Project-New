@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Card,
@@ -8,7 +9,6 @@ import {
 } from "@mui/material";
 import styles from "../../styles/Home.module.css";
 import Grid from "@mui/material/Grid2"; // Import the CSS module
-// import { url } from 'inspector';
 
 const OurBlog = () => {
   const blogContent = [
@@ -34,14 +34,18 @@ const OurBlog = () => {
   return (
     <Box className={styles.blogContainer}>
       <Grid className={styles.blogContainer1}>
-        <Typography className={styles.blogHeader}
-          sx={{fontSize:{
-            xs:"20px",sm:"25px", lg:"30px"
-          }}}
-        >   
+        <Typography
+          className={styles.blogHeader}
+          sx={{
+            fontSize: {
+              xs: "20px",
+              sm: "25px",
+              lg: "30px",
+            },
+          }}
+        >
           Our Blogs & Case Studies
         </Typography>
-        {/* <Typography className={styles.header1} >Case Study</Typography> */}
       </Grid>
       <Grid container spacing={2} justifyContent="center">
         {blogContent?.map((item, index) => (

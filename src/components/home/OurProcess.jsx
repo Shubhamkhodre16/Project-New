@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Typography } from "@mui/material";
 import styles from "../../styles/Home.module.css";
@@ -50,7 +51,16 @@ const processSteps = [
 const OurProcess = () => {
   return (
     <div className={styles.carouselContainer}>
-      <Typography className={styles.processtitle}>OUR PROCESS</Typography>
+      <Typography 
+       sx={{
+        fontSize: {
+          lg: "40px",
+          md: "35px",
+          sm: "30px",
+          xs: "25px",
+        },
+      }}
+      className={styles.processtitle}>OUR PROCESS</Typography>
 
       {/* Grid Layout */}
       <Grid2 container spacing={2} className={styles.gridContainer}>

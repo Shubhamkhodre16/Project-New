@@ -3,19 +3,16 @@ import React from "react";
 import { Typography, Box, CardContent } from "@mui/material";
 import Grid2 from "@mui/material/Grid2";
 import Image from "next/image";
-import aboutbanner from "../../../public/assets/img/ror-banner.png";
+import aboutBanner from "../../../public/assets/img/ror-banner.png";
 import CardSection from "../../app/career/CardSection";
 import Card from "@mui/material/Card";
 import Link from "next/link";
 import Divider from "@mui/material/Divider";
 import DataBackup from "../../../public/assets/img/DataBackup.gif";
 import customers from "../../../public/assets/img/customers.gif";
-import globle from "../../../public/assets/img/globle.gif";
-import teammember from "../../../public/assets/img/teammember.gif";
+import global from "../../../public/assets/img/global.gif";
+import teamMember from "../../../public/assets/img/teamMember.gif";
 import CardMedia from "@mui/material/CardMedia";
-import dataprotect from "../../../public/assets/img/dataprotections.gif";
-import agileDevelop from "../../../public/assets/img/agiledevelopment.gif";
-import customersupport from "../../../public/assets/img/customersupport.gif";
 import Industry from "./Industry";
 import styles from "../../styles/HomeContent.module.css";
 const HomeContent = () => {
@@ -37,22 +34,23 @@ const HomeContent = () => {
             <Grid2 container spacing={5}>
               <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Image
-                  src={aboutbanner}
+                  src={aboutBanner}
                   alt="About Us"
                   width={700}
                   height={550}
-                  // layout="intrinsic"
                 />
               </Grid2>
-              <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
+              <Grid2
+                 textAlign={{sm:"center", md:"left" }}
+              size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Typography
                   className={styles.whoTitle}
                   sx={{
                     fontSize: {
                       lg: "40px",
-                      md: "25px",
-                      sm: "20px",
-                      xs: "18px",
+                      md: "35px",
+                      sm: "30px",
+                      xs: "25px",
                     },
                   }}
                 >
@@ -63,9 +61,9 @@ const HomeContent = () => {
                   sx={{
                     fontSize: {
                       lg: "35px",
-                      md: "22px",
-                      sm: "18px",
-                      xs: "15px",
+                      md: "25px",
+                      sm: "25px",
+                      xs: "20px",
                     },
                   }}
                 >
@@ -73,8 +71,18 @@ const HomeContent = () => {
                   Recognized as the Best Ruby on Rails and Product Engineering
                   Company
                 </Typography>
-                <Typography className={styles.whoDes}>
+                <Typography
+                 sx={{
+                  fontSize: {
+                    lg: "20px",
+                    md: "18px",
+                    sm: "18px",
+                    xs: "16px",
+                  },
+                }}
+                className={styles.whoDes}>
                   {" "}
+              
                   As today’s competitive world stepping into digital approaches,
                   and digital transformation becoming more than a buzzword, it’s
                   become essential than ever for your business to collaborate
@@ -83,7 +91,16 @@ const HomeContent = () => {
                   economical budget. This is where InfoKoders technologies comes
                   in!
                 </Typography>
-                <Typography className={styles.whoDes}>
+                <Typography 
+                    sx={{
+                      fontSize: {
+                        lg: "20px",
+                        md: "18px",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                    }}
+                className={styles.whoDes}>
                   InfoKoders technologies is the unmatched destination to
                   embrace exceptional Software development and business-centric
                   technological solutions. Whether you're a startup, SMB, or a
@@ -102,14 +119,28 @@ const HomeContent = () => {
 
       <Grid2 container className={styles.driveContent}>
         <Grid2 sx={{ textAlign: "center", padding: "0 10%" }}>
-          <Typography className={styles.driveHeader} variant="h5">
+          <Typography className={styles.driveHeader}
+             sx={{
+              fontSize: {
+                lg: "35px",
+                md: "25px",
+                sm: "25px",
+                xs: "20px",
+              },
+            }}
+          >
             How We Drive Business?
           </Typography>
 
           <Typography
             variant="body1"
             sx={{
-              fontSize: { lg: "20px", md: "18px", sm: "18px", xs: "15px" },
+              fontSize: {
+                lg: "20px",
+                md: "18px",
+                sm: "18px",
+                xs: "16px",
+              },
             }}
             className={styles.drivecontent}
           >
@@ -143,14 +174,13 @@ const HomeContent = () => {
         >
           <Grid2
             size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
-            sx={{ marginTop: "70px" }}
+            sx={{ marginTop: "62px" }}
           >
             <Typography
-              // variant="h4"
               sx={{
-                // fontWeight: "bold",
                 fontSize: { lg: "30px", md: "30px", sm: "30px", xs: "20px" },
                 marginBottom: { sm: "10px", xs: "10px" },
+                marginLeft:"18px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
               className={styles.keyMoaralHead}
@@ -162,8 +192,9 @@ const HomeContent = () => {
               variant="body1"
               sx={{
                 lineHeight: "1.5",
+                marginLeft:"18px",
                 fontSize: { lg: "18px", md: "16px", sm: "15px", xs: "14px" },
-                marginBottom: "20px",
+                marginBottom: "28px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
             >
@@ -176,22 +207,29 @@ const HomeContent = () => {
                 display: "flex",
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
+                borderRadius:"10px",
                 padding: "20px",
                 marginX: { sm: "10px", xs: "8px" },
                 marginBottom: "10px",
               }}
             >
-              <Image src={DataBackup} alt="" height={80} width={60} />
+              <Image
+                style={{ width: "22%" }}
+                src={DataBackup}
+                alt=""
+                height={80}
+                width={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "25%",
+                  width: "22%",
                   marginY: 5,
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box sx={{paddingRight:"5px"}}   className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     {" "}
@@ -207,24 +245,32 @@ const HomeContent = () => {
                 display: "flex",
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
+                borderRadius:"10px",
                 paddingY: "20px",
                 marginBottom: "10px",
                 marginX: { sm: "10px", xs: "8px" },
               }}
             >
-              <Image src={customers} alt="" width={80} height={60} />
+              <Image
+                style={{ width: "20%", marginRight:"10px" }}
+                src={customers}
+                alt=""
+                width={80}
+                height={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
                   width: "20%",
-                  marginY: 5,
+                  marginTop: "45px",
+                  marginLeft:"4px",
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box sx={{paddingRight:"10px"}} className={styles.fontSty}>
                 <ul>
-                  <Box sx={{ fontSize: "24px",marginTop:"10px" }}>
+                  <Box sx={{ fontSize: "24px", marginTop: "10px" }}>
                     {" "}
                     <li>200 +</li>
                   </Box>
@@ -238,21 +284,30 @@ const HomeContent = () => {
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
                 padding: "20px",
+                borderRadius:"10px",
                 marginX: { sm: "10px", xs: "8px" },
                 marginBottom: "10px",
               }}
             >
-              <Image src={globle} alt="" width={80} height={60} />
+              <Image
+                style={{ width: "22%" }}
+                src={global}
+                alt=""
+                width={80}
+                height={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "20%",
-                  marginTop: "38px",
+                  width: "22%",
+                  marginTop: "45px",
+                  // marginLeft:"4px",
+
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box  sx={{paddingRight:"7px"}} className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     <li>100 %</li>
@@ -267,41 +322,47 @@ const HomeContent = () => {
                 display: "flex",
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
+                borderRadius:"10px",
                 padding: "20px",
-                marginBottom: "10px",
                 marginX: { sm: "10px", xs: "8px" },
+                marginBottom: "10px",
               }}
             >
-              <Image src={teammember} alt="" width={80} height={60} />
+              <Image
+                style={{ width: "22%" }}
+                src={teamMember}
+                alt=""
+                height={80}
+                width={60}
+              />
               <Divider
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "20%",
-                  marginY: 5,
+                  width: "22%",
+                  marginTop: "45px",
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box  sx={{paddingRight:"28px"}} className={styles.fontSty}>
                 <ul>
-                  <Box sx={{ fontSize: "24px" }}>
+                  <Box sx={{ fontSize: "24px"}}>
+                    {" "}
                     <li>100 +</li>
                   </Box>
-                  <Box>
-                    <li>Team</li>
-                    <li> Members</li>
-                  </Box>
+                  <li>Team</li>
+                  <li>Members</li>
                 </ul>
               </Box>
             </Box>
           </Grid2>
           <Grid2
             size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
-            sx={{ marginTop: "60px" }}
+            sx={{ marginTop: "70px" }}
           >
             <Box>
-              {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
@@ -313,11 +374,13 @@ const HomeContent = () => {
                   },
                   margin: "auto",
                   display: "flex",
-                  minHeight: "440px",
+                  minHeight: "387.5px",
+                  maxHeight: "410px",
+
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "32px",
+                  // paddingY: "23px",
                   marginBottom: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
@@ -331,7 +394,7 @@ const HomeContent = () => {
                       padding: "20px",
 
                       "&:hover": {
-                        backgroundColor: "white !important",
+                        backgroundColor: "#fff !important",
                       },
                     }}
                   >
@@ -339,11 +402,8 @@ const HomeContent = () => {
                       sx={{ width: "40%" }}
                       component="img"
                       height="70px"
-                      
                       image="./assets/img/DataBackup.gif"
                     />
-
-                    {/* <lord-icon  src={databackups} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/>  */}
                   </Box>
                 </Link>
 
@@ -355,7 +415,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -364,7 +424,7 @@ const HomeContent = () => {
                   >
                     Data Backups
                   </Typography>
-                  <Typography className={styles.card1SubHeader} variant="body2">
+                  <Typography className={styles.card1SubHeader} >
                     The first imperative step in our product development process
                     is gathering requirements and analyzing it.
                   </Typography>
@@ -374,6 +434,7 @@ const HomeContent = () => {
 
             <Box>
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
@@ -388,8 +449,10 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "32px",
-                  minHeight: "440px",
+                  // paddingY: "23px",
+                  minHeight: "387.5px",
+                  maxHeight: "410px",
+
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
@@ -406,7 +469,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/dataprotections.gif"
+                      image="/assets/img/dataProtections.gif"
                       alt="backup"
                     />
                   </Box>
@@ -420,7 +483,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -439,11 +502,11 @@ const HomeContent = () => {
           </Grid2>
           <Grid2
             size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
-            sx={{ marginTop: "60px" }}
+            sx={{ marginTop: "70px" }}
           >
             <Box>
-              {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
                   border: "1px solid transparent ",
@@ -459,8 +522,9 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "20px",
-                  minHeight: "440px",
+                  // paddingY: "23px",
+                  minHeight: "387.5px",
+                  maxHeight: "410px",
                   marginBottom: "20px",
                 }}
               >
@@ -477,7 +541,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/agiledevelopment.gif"
+                      image="/assets/img/agileDevelopment.gif"
                       alt="backup"
                     />
                   </Box>
@@ -491,7 +555,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -509,8 +573,8 @@ const HomeContent = () => {
               </Card>
             </Box>
             <Box>
-              {/* <LordIcon  src={technologyjson} trigger="loop" colors="primary:#121331,secondary:#650909" stroke="30" sx={{width:"150px",height:"150px"}}/> */}
               <Card
+              className={styles.cardHeight}
                 sx={{
                   borderRadius: "18px",
 
@@ -526,8 +590,9 @@ const HomeContent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  paddingY: "20px",
-                  minHeight: "440px",
+                  // paddingY: "23px",
+                  minHeight: "387.5px",
+                  maxHeight: "410px",
                   marginTop: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
@@ -559,7 +624,7 @@ const HomeContent = () => {
                     className={styles.card1Header}
                     sx={{
                       fontSize: {
-                        lg: "25px",
+                        lg: "20px",
                         md: "25px",
                         sm: "20px",
                         xs: "20px",
@@ -568,7 +633,7 @@ const HomeContent = () => {
                   >
                     Friendly Support
                   </Typography>
-                  <Typography className={styles.card1SubHeader} variant="body2">
+                  <Typography className={styles.card1SubHeader} >
                     When it comes to providing beneficial support, you will
                     never across a team like InfoKoders software. We are always
                     there for clients right from the project idea discussion to

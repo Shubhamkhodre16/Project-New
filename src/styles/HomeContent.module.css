@@ -15,11 +15,6 @@
   }
   
   
-    /* .whowebackground{
-        background-image: url("../../public/assets/");
-        background-position: center right;
-        background-repeat: no-repeat;
-    } */
     .whoweContainer{
       width: 100%;
       padding: 0 5%;
@@ -103,7 +98,6 @@
     margin-top: 60px;
     margin-bottom: 40px;
     font-family: "NovemberPro";
-    /* padding: 0% 5%; */
     width: 100%;
 
 
@@ -205,11 +199,23 @@
   .card1SubHeader{
     font-family: "NovemberPro-Reg";
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     color: #333;
 
   }
 
+  @media (min-width: 1200px) and (max-width: 1250px) {
+    .cardHeight {
+      height: 375px;
+      min-height: 375px;
+    }
+  }
+  @media (min-width: 1250px) and (max-width: 1500px) {
+    .cardHeight {
+      height: 375px;
+      min-height: 375px;
+    }
+  }
 
   /* Industries we serve  */
 
@@ -234,8 +240,6 @@
   padding: 3% 5%;
   gap: 15px;
   border-radius: 10px;
-  /* min-width: 250px; */
-  /* width: 100%; */
   }
 
   @media (max-width:600px) {
