@@ -180,6 +180,7 @@ const HomeContent = () => {
               sx={{
                 fontSize: { lg: "30px", md: "30px", sm: "30px", xs: "20px" },
                 marginBottom: { sm: "10px", xs: "10px" },
+                marginLeft:"18px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
               className={styles.keyMoaralHead}
@@ -191,6 +192,7 @@ const HomeContent = () => {
               variant="body1"
               sx={{
                 lineHeight: "1.5",
+                marginLeft:"18px",
                 fontSize: { lg: "18px", md: "16px", sm: "15px", xs: "14px" },
                 marginBottom: "28px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
@@ -212,7 +214,7 @@ const HomeContent = () => {
               }}
             >
               <Image
-                style={{ width: "23%" }}
+                style={{ width: "22%" }}
                 src={DataBackup}
                 alt=""
                 height={80}
@@ -222,12 +224,12 @@ const HomeContent = () => {
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "25%",
+                  width: "22%",
                   marginY: 5,
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box sx={{paddingRight:"5px"}}   className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     {" "}
@@ -250,7 +252,7 @@ const HomeContent = () => {
               }}
             >
               <Image
-                style={{ width: "23%" }}
+                style={{ width: "20%", marginRight:"10px" }}
                 src={customers}
                 alt=""
                 width={80}
@@ -261,11 +263,12 @@ const HomeContent = () => {
                 sx={{
                   border: "1px solid #ebebeb",
                   width: "20%",
-                  marginY: 5,
+                  marginTop: "45px",
+                  marginLeft:"4px",
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box sx={{paddingRight:"10px"}} className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px", marginTop: "10px" }}>
                     {" "}
@@ -287,7 +290,7 @@ const HomeContent = () => {
               }}
             >
               <Image
-                style={{ width: "23%" }}
+                style={{ width: "22%" }}
                 src={global}
                 alt=""
                 width={80}
@@ -297,12 +300,14 @@ const HomeContent = () => {
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "20%",
-                  marginTop: "38px",
+                  width: "22%",
+                  marginTop: "45px",
+                  // marginLeft:"4px",
+
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box  sx={{paddingRight:"7px"}} className={styles.fontSty}>
                 <ul>
                   <Box sx={{ fontSize: "24px" }}>
                     <li>100 %</li>
@@ -317,37 +322,36 @@ const HomeContent = () => {
                 display: "flex",
                 justifyContent: "center",
                 border: "2px solid #ebebeb",
-                padding: "20px",
                 borderRadius:"10px",
-                marginBottom: "10px",
+                padding: "20px",
                 marginX: { sm: "10px", xs: "8px" },
+                marginBottom: "10px",
               }}
             >
               <Image
-                style={{ width: "23%" }}
+                style={{ width: "22%" }}
                 src={teamMember}
                 alt=""
-                width={80}
-                height={60}
+                height={80}
+                width={60}
               />
               <Divider
                 variant="middle"
                 sx={{
                   border: "1px solid #ebebeb",
-                  width: "20%",
-                  marginY: 5,
+                  width: "22%",
+                  marginTop: "45px",
                   transform: "rotate(90deg)",
                 }}
               />
-              <Box className={styles.fontSty}>
+              <Box  sx={{paddingRight:"28px"}} className={styles.fontSty}>
                 <ul>
-                  <Box sx={{ fontSize: "24px" }}>
+                  <Box sx={{ fontSize: "24px"}}>
+                    {" "}
                     <li>100 +</li>
                   </Box>
-                  <Box>
-                    <li>Team</li>
-                    <li> Members</li>
-                  </Box>
+                  <li>Team</li>
+                  <li>Members</li>
                 </ul>
               </Box>
             </Box>
@@ -370,7 +374,7 @@ const HomeContent = () => {
                   },
                   margin: "auto",
                   display: "flex",
-                  minHeight: "400px",
+                  minHeight: "387.5px",
                   maxHeight: "410px",
 
                   justifyContent: "center",
@@ -446,7 +450,7 @@ const HomeContent = () => {
                   alignItems: "center",
                   flexDirection: "column",
                   // paddingY: "23px",
-                  minHeight: "400px",
+                  minHeight: "387.5px",
                   maxHeight: "410px",
 
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
@@ -519,7 +523,7 @@ const HomeContent = () => {
                   alignItems: "center",
                   flexDirection: "column",
                   // paddingY: "23px",
-                  minHeight: "400px",
+                  minHeight: "387.5px",
                   maxHeight: "410px",
                   marginBottom: "20px",
                 }}
@@ -587,7 +591,7 @@ const HomeContent = () => {
                   alignItems: "center",
                   flexDirection: "column",
                   // paddingY: "23px",
-                  minHeight: "400px",
+                  minHeight: "387.5px",
                   maxHeight: "410px",
                   marginTop: "30px",
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
