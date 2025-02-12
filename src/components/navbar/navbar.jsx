@@ -24,7 +24,7 @@ import logo1 from "../../../public/assets/img/logo.png";
 const pages = [
   { name: "Home", path: "/" },
   { name: "About us", path: "/about" },
-  { name: "Case Studies", path: "/case-studies" },
+  { name: "Case Studies", path: "/studies" },
   { name: "Services", path: "/services" },
   { name: "Blog", path: "/blog" },
   { name: "Start Up", path: "/startup" },
