@@ -7,9 +7,9 @@ import aboutimg from "../../../public/assets/img/about-img.jpg";
 import Image from "next/image";
 import CardMedia from "@mui/material/CardMedia";
 import Footer from "../footer/page";
-import startup from "../../../public/assets/img/about-img.jpg"
-import AdjustIcon from '@mui/icons-material/Adjust';
 import vissionandmission from "../../../public/assets/img/vissionandmission.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleDot } from '@fortawesome/free-solid-svg-icons';
 const ImagePart = () => {
   const coreValues = [
     {
@@ -22,7 +22,7 @@ const ImagePart = () => {
     },
     {
       title: "Innovation and Creativity",
-      desc: "The ability to think outside the box consistently, even when it borders on the bizarre, is how the world evolves and innovates.",
+      desc: "The ability to think outside the box consistently, even when it borders on the bizarre, is how the world revolutionize.",
     },
   ];
 
@@ -77,22 +77,22 @@ const ImagePart = () => {
       <Box>
         <Grid2 id="carousel" className={styles.background}>
           <Navbar />
-          <Typography className={styles.about}>About us</Typography>
+          <Typography variant="h1" className={styles.about}>About us</Typography>
         </Grid2>
         {/* Achiving Section  */}
         <Grid2 className={styles.achieving}>
           <Grid2 className={styles.container}>
-            <Grid2 container className={styles.titledata}>
-              <Typography className={styles.mainhead}variant="h2" >
+            <Grid2 className={styles.titledata}>
+              <Typography className={styles.mainhead} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}  >
                 Vision achieving Software, App and web Development Company
               </Typography>
-              <Typography className={styles.des}>
+              <Typography className={styles.maindes} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},}}>
                 Pledge to outshine the businesses with customer-winning
                 technological and Software development.
                 </Typography>
                 <br />
                 <br />
-                <Typography className={styles.dess}>
+                <Typography className={styles.maindess} sx={{fontSize:{lg:"20px",md:"20px ",sm:"18px",xs:"16px"},}}>
                 InfoKoders technologies is a partner of innovation and a ray of
                 hope for diverse world’s leading enterprises, SME’S and
                 technology channellers. We bring together a team of passionate
@@ -100,7 +100,7 @@ const ImagePart = () => {
                 authentic software, apps, and Software development solutions.
               </Typography>
             </Grid2>
-            <Grid2 className={styles.image}>
+            <Grid2 >
               <Image src={aboutimg} alt="White Wave" width={500} height={100} />
             </Grid2>
           </Grid2>
@@ -111,10 +111,10 @@ const ImagePart = () => {
         <Grid2 size={{xs:12,sm:12,md:4,lg:3}} className={styles.whowe}>
           <Grid2 className={styles.whoContainer}>
             <Grid2 className={styles.whoweLeft}>
-              <Typography className={styles.whoweHeading} variant="h2">
+              <Typography className={styles.whoweHeading} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>
                 Who we are and what we do
               </Typography>
-              <Typography className={styles.subheading} variant="body1">
+              <Typography className={styles.subheading} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},}}>
                 InfoKoders technologies is an exclusive digital transformation
                 studio that provides remarkable solutions across the digital
                 value chain. We take a spotlight in providing out-of-the-box
@@ -125,12 +125,11 @@ const ImagePart = () => {
               </Typography>
             </Grid2>
             <Grid2  className={styles.whoweRight}>
-              <Typography className={styles.whoweHeading}>
+              <Typography className={styles.whoweHeading} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>
                 An unbelievable story of 2+ years
               </Typography>
-              <Typography className={styles.subheading} variant="body1">
-                {" "}
-                <AdjustIcon className={styles.adjustIcon}/> Since day one we measure our success with our client success,
+              <Typography className={styles.subheading} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},paddingBottom:"10px"}}>
+                <FontAwesomeIcon icon={faCircleDot}    className={styles.adjustIcon}/> Since day one we measure our success with our client success,
                 have faith in our kick-butt skills, and swear by the computer
                 code. Shaping out an exclusive digital solution is not our work,
                 it’s our duty. Within a short period, we have successfully
@@ -138,9 +137,9 @@ const ImagePart = () => {
                 part and eventually became prominent in the Software development
                 realm
               </Typography>
-              <Typography className={styles.subheading} variant="body1">
+              <Typography className={styles.subheading}  sx={{fontSize:{lg:"24px ",md:"20px ",sm:"20px ",xs:"18px"},}}>
                 {" "}
-                <AdjustIcon className={styles.adjustIcon}/> Our ultimate focus is on client satisfaction which has been
+                <FontAwesomeIcon icon={faCircleDot}   className={styles.adjustIcon}/> Our ultimate focus is on client satisfaction which has been
                 the key differentiator for our company. Our inquisitive nature
                 and creativity ensure that we never become stagnant in our
                 approach to dealing with new challenges.
@@ -154,10 +153,10 @@ const ImagePart = () => {
         <Grid2 className={styles.coreMain}>
           <Grid2 className={styles.coreContainer}>
             <Grid2 className={styles.coreQuote}>
-              <Typography className={styles.coreTitle}>
+              <Typography className={styles.ourcoreTitle} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}} >
                <span className={styles.our} > Our</span>  Core Values
               </Typography>
-              <Typography className={styles.coreDescription}>
+              <Typography className={styles.ourcoreDescription} sx={{fontSize:{lg:"24px ",md:"20px ",sm:"20px ",xs:"18px"},}} >
                 We are an enthusiastic team of nerd minds, pro coders,
                 technocrats, and incredibly creative beings using our knowledge
                 and experience to create user-centric products
@@ -170,13 +169,13 @@ const ImagePart = () => {
                   className={styles.coreBox}
                   key={index}
                 >
-                  <Typography className={styles.coreBoxTitle}>{item?.title}</Typography>
-                  <Typography className={styles.coreBoxDesc} >{item?.desc}</Typography>
+                  <Typography className={styles.coreBoxTitle} sx={{fontSize:{lg:"26px  ",md:"24px ",sm:"22px ",xs:"20px "},}}>{item?.title}</Typography>
+                  <Typography className={styles.coreBoxDesc} sx={{fontSize:{lg:"22px  ",md:"20px ",sm:"18px ",xs:"16px "}}} >{item?.desc}</Typography>
                 </Grid2>
               ))}
             </Grid2>
             <Grid2>
-              <Typography variant="h2"  className={styles.capabilities}>Number that roars our capabilities</Typography>
+              <Typography   className={styles.capabilities} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>Number that roars our capabilities</Typography>
             </Grid2>
             <Grid2 container spacing={3} className={styles.coresubcont}>
               {coreStats?.map((item, index) => (
@@ -185,8 +184,8 @@ const ImagePart = () => {
                   className={styles.coreBox1}
                   key={index}
                 >
-                  <Typography variant="h2" className={styles.coreBox1Value}>{item?.value}</Typography>
-                  <Typography  className={styles.coreBox1Desc} >{item?.desc}</Typography>
+                  <Typography  className={styles.coreBox1Value} sx={{fontSize:{lg:"22px ",md:"20px ",sm:"18px ",xs:"16px "}}} >{item?.value}</Typography>
+                  <Typography  className={styles.coreBox1Desc} sx={{fontSize:{lg:"20px  ",md:"18px ",sm:"16px ",xs:"16px " },}} >{item?.desc}</Typography>
                 </Grid2>
               ))}
             </Grid2>
@@ -195,16 +194,14 @@ const ImagePart = () => {
 
         {/* Our Usps  */}
     
-        <Grid2 className={styles.uspMain}>
+        <Grid2>
           <Grid2 className={styles.uspContainer}>
             <Grid2 className={styles.coreQuote}>
-              <Typography className={styles.coreTitle}>
-                Our Core Values
+              <Typography  className={styles.coreTitleUsp} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>
+              <span className={styles.OurUsp}>Our</span> USP’s   
               </Typography>
-              <Typography className={styles.coreDescription}>
-                We are an enthusiastic team of nerd minds, pro coders,
-                technocrats, and incredibly creative beings using our knowledge
-                and experience to create user-centric products
+              <Typography className={styles.coreDescriptionUsp} sx={{fontSize:{lg:"24px ",md:"20px ",sm:"20px ",xs:"18px"},}}>
+              ‘Our passion for every project that comes our way' is how the USP can be defined in a single phrase. But we believe in collaboration, and that's how we build strong bonds with clients as well as with employees.
               </Typography>
             </Grid2>
             <Grid2 container spacing={4} className={styles.coresubcont}>
@@ -215,13 +212,13 @@ const ImagePart = () => {
                   className={styles.uspBox}
                 >
                   <CardMedia
-                    sx={{ width: "80px", height: "80px", marginBottom: "10px" }}
+                    sx={{ width: "90px", height: "90px", marginBottom: "20px" }}
                     component="img"
                     image={item?.image}
                   />
 
-                  <Typography className={styles.uspBoxTitle} variant="h5">{item?.title}</Typography>
-                  <Typography className={styles.uspBoxDesc} >{item?.description}</Typography>
+                  <Typography className={styles.uspBoxTitle} sx={{fontSize:{lg:"24px ",md:"22px ",sm:"20px ",xs:"18px "}}} >{item?.title}</Typography>
+                  <Typography className={styles.uspBoxDesc} sx={{fontSize:{lg:"22px ",md:"20px ",sm:"18px ",xs:"16px "}}} >{item?.description}</Typography>
                 </Grid2>
               ))}
             </Grid2>
@@ -232,28 +229,36 @@ const ImagePart = () => {
         <Grid2 className={styles.whowe}>
           <Grid2 container className={styles.visionMissonContainer}>
             <Grid2 size= {{ xs: 12, sm: 12, lg: 6 }} className={styles.visionLeft}>
-              <Typography className={styles.visionleftTitle} variant="h2" >Our Mission & Vision</Typography>
-              <Typography className={styles.visionLeftSubTitle} >Mission</Typography>
-              <Typography className={styles.visionDesc}>
-              <AdjustIcon className={styles.adjustIcon}/> To disrupt the outdated processes of tech or nontech business
+              <Typography className={styles.visionleftTitle} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}} >Our Mission & Vision</Typography>
+              <Typography className={styles.visionLeftSubTitle} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},}}>Mission</Typography>
+              <Typography className={styles.visionDesc} sx={{fontSize:{lg:"20px",md:"20px ",sm:"18px",xs:"16px"},}}>
+                To disrupt the outdated processes of tech or nontech business
                 with innovative and modern solutions.
               </Typography>
 
-              <Typography className={styles.visionLeftSubTitle}>Vision</Typography>
-              <Typography className={styles.visionDesc}>
-              <AdjustIcon className={styles.adjustIcon}/>To keep up with the latest and most promising technology that
+              <Typography className={styles.visionLeftSubTitle} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},}}>Vision</Typography>
+              <Typography className={styles.visionDesc} sx={{fontSize:{lg:"20px",md:"20px ",sm:"18px",xs:"16px"},}}>
+                To keep up with the latest and most promising technology that
                 empowers and influences everyone and also allows us to steadily
                 develop our inner selves.
               </Typography>
             </Grid2>
             <Grid2 className={styles.visionRight}>
              
-            <Image src={vissionandmission} alt="logo" width={400} height={500}  />
+            <Image src={vissionandmission} alt="logo" width={500} height={500}  />
 
             </Grid2>
           </Grid2>
         </Grid2>
-
+        {/* Start working with InfoKoders technologies */}
+        <Grid2>
+          <Grid2 container className={styles.startWorking}>
+            <Grid2 size= {{ xs: 12, sm: 12, lg: 6 }}>
+             <Typography  className={styles.startWorkingTitle} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>Start working with <span className={styles.startWorkingSpan}>InfoKoders technologies</span></Typography>
+             <Typography className={styles.startWorkingDesc} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},}}>Look no further if you are looking for a <b>Software Development company!</b> InfoKoders is an industry leader in this niche with many years of experience.</Typography>
+            </Grid2>
+          </Grid2>
+        </Grid2>
         {/* Our Footer  */}
 
         <Footer />

@@ -17,32 +17,34 @@
 /* Default Styles */
 .background {
     width: 100%;
-    height: 600px;
+    height: 800px;
     top: 0;
     left: 0;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover ;
     background-color: #000000;
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
     background-image: url("../../public/assets/img/slide3.webp");
 }
 
 .about {
     text-align: center;
-    font-size: 22px;
+    font-size: 45px;
     font-weight: bold;
     color: #ffffff;
     padding: 20% 0;
     font-family: "NovemberPro";
 }
 
+
 .achieving {
     background-image: url("../../public/assets/img/bg-shape1-home5.png");
     background-repeat: no-repeat;
     background-position: right top;
-    padding: 100px 0;
-    /* display: flex; */
+    padding: 3% 0;
 }
 
 .container {
@@ -52,51 +54,40 @@
     min-width: 80%;
     padding: 0 10%;
     gap: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .titledata {
-    text-align: left;
     max-width: 1300px;
     width: 50%;
     flex: 0 0 auto;
     height: 100%;
 }
-
-.image {
-    vertical-align: middle;
-}
-
-.mainhead {
-    font-size: 28px;
-    color: #181836;
+.mainhead { 
+   color: #181836;
     margin-bottom: 8px;
     padding-bottom: 30px;
     font-family: "NovemberPro";
     font-weight: bold;
-    
 }
 
-.des {
-    font-size: 24px;
-    font-weight: bold;
+.maindes {
+   font-weight: bold;
     color: #333333;
     line-height: 1.5;
     font-family: "NovemberPro-Reg";
-  ;
+  
 }
-.dess{
-    font-size: 24px;
+.maindess{
+    
     line-height: 1.5;
-    color:#333;
+    color:#333333;
     font-family: "NovemberPro-Reg";
 
 }
-.des1 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 16px;
-}
-
 /* who we  */
 
 .whowe {
@@ -104,52 +95,36 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-color: #ececec;
-    padding: 80px 0px 40px 0px;
-  
-    
-    
+    padding: 60px 0px 40px 0px;
 }
 .whoContainer{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 100px 80px 40px 80px;
+     text-align: center;
+    padding: 3% 7% 3% 7%;
     display: flex;
     gap: 50px;
-    align-items: center;
-   
-   
-
 }
+
 .whoweLeft{
   text-align: left;
-
-  align-items: center;
- 
 }
 .whoweRight{
     text-align: left;
-
 }
 .whoweHeading{
     font-weight: bold;
-    font-size: 24px;
-    font-family:NovemberPro ;
+   font-family:NovemberPro ;
     line-height: 1.2;
     color: #181836;
     padding-bottom: 12px;
 }
 .subheading{
-    font-size: 22px;
-    font-family: NovemberPro-Reg;
-    color:#333;
+   font-family: NovemberPro-Reg;
+    color:#333333;
     line-height: 1.5;
 }
-.adjustIcon{
-    color:#650909
-}
-  /* Core Values Css  */
+
+/* Core Values Css  */
 
 .coreMain{
     background-color: #181836;
@@ -157,14 +132,40 @@
 }
 .coreContainer{
     width: 100%;
-    
     color: #ececec;
-    padding: 6% 16% ;
+    padding: 1%  16% 6% 16% ;
     display :flex;
-    /* justify-content:center ; 
-    align-items: center; */
-      
     flex-direction: column;
+}
+.our{
+    color: #650909;
+   
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: NovemberPro;
+ }
+ .ourcoreTitle{
+    color: #ffffff;
+   
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center  ;
+    font-family: NovemberPro;
+    padding-bottom: 1.5rem;
+ }
+ .ourcoreDescription{
+    color: #ffffff;
+    
+    line-height: 1.5;
+    text-align: center;
+    font-family: NovemberPro-Reg;
+    padding-bottom: 1.5rem;
+ }
+ .coresubcont1{
+    padding-bottom: 80px;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
    
 }
 .coreBox{
@@ -172,18 +173,30 @@
     border-radius: 10px;
     padding: 22px 27px 0px 27px;
     margin: 0 0 20px 0;
-    /* height: 300px ; */
+   
     
 
 }
-.coresubcont1{
-    padding-bottom: 80px;
-    padding-left: 0;
-    margin-left: 0;
+.coreBoxTitle{
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    font-family:NovemberPro ;
+   
 }
+
+.coreBoxDesc{
+    line-height: 1.5;
+    
+    font-family: NovemberPro-Reg;
+    padding-top: 15px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
 .capabilities{
     padding-top: 80px;
-    font-size: 24px;
+    
     font-weight: bold;
     line-height: 1.2;
     font-family: NovemberPro;
@@ -191,111 +204,78 @@
     
 }
 
-/* @media (max-width: 1200px) {
-    .coreBox{
-        height: 230px ;
-    }
+.coresubcont{
+    text-align: center;
 }
-@media (max-width:600px) {
-    .coreBox{
-        height: 300px;
-    }
-} */
-.coreBoxTitle{
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: .5rem;
-    font-family:NovemberPro ;
-    font-size: 26px;
-}
-.coreBoxDesc{
-    line-height: 1.5;
-    font-size: 18px;
-    font-family: NovemberPro-Reg;
-    padding-top: 15px;
-    color: #ffffff;
-    padding-bottom: 20px;
-}
+
+
+
 .coreBox1{
-    box-shadow: 1px #fff;
+    box-shadow: 1px #ffffff;
     border-radius: 10px;
     color:#181836;
     background-color:#ffffff;
     padding: 24px 24px 24px 24px;
-    
-
 
 }
 .coreBox1Value{
      font-weight: bold;
      line-height: 1.2;
      font-family: NovemberPro;
-     font-size: 22px;
+     
      padding-bottom: 10px;
 }
 .coreBox1Desc{
     line-height: 1.5;
     font-family: NovemberPro-Reg;
-    font-size: 18px;
+   
 }
-.coresubcont{
-    text-align: center;
-}
-.coresubcont1{
-    text-align: left;
-}
- .our{
-    color: #650909;
-    font-size: 22px;
-    line-height: 1.2;
-    font-weight: bold;
-    font-family: NovemberPro;
- }
- .coreTitle{
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: bold;
-    text-align: center  ;
-    font-family: NovemberPro;
-    padding-bottom: 1.5rem;
- }
- .coreDescription{
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 1.5;
-    text-align: center;
-    font-family: NovemberPro-Reg;
-    padding-bottom: 1.5rem;
- }
-
 /* Our Usps */
-
-.uspMain{
-    /* background-color: #ececec; */
+.coreQuote{
+    padding: 60px 0 60px 0;
 }
-
+.OurUsp{
+    color:#650909;
+    
+    font-family:NovemberPro ;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.coreTitleUsp{
+     color:#181836;
+    
+     font-family: NovemberPro;
+     margin-bottom: .5rem;
+     
+}
+.coreDescriptionUsp{
+    
+     color:#333333;
+     line-height: 1.5; 
+     font-family: NovemberPro-Reg;  
+     padding: 0% 1%;
+}
 .uspContainer{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    /* color: #ececec; */
-    padding: 3% 7%;
+   
+    padding: 3% 7% 7% 7%;
 
 }
 
 .uspBox {
-    display: flex;        /* Enables Flexbox */
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center;  /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    text-align: center;   /* Centers text inside Typography */
+    display: flex;        
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center; 
+    text-align: center;   
     border: 1px solid #ebebeb;
     border-radius: 10px;
-    padding: 6%;
+    padding: 6% 4%;
     
-    /* transition: all 0.3s ease-in-out; */
+    
 }
 
 
@@ -303,18 +283,18 @@
     border-color: #ebebeb;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .uspBoxTitle{
-    font-size: 1.25rem;
+   
     font-weight: 500;
     margin-bottom: .5rem;
     line-height: 1.2;
     font-family: NovemberPro;
 }
 .uspBoxDesc{
-    font-size: 18px;
-    color:#333;
+   
+    color:#333333;
     line-height: 1.5;
     font-family: NovemberPro-Reg;
 }
@@ -324,15 +304,13 @@
 
   .visionMissonContainer {
     width: 100%;
-    /* margin-left: auto;
-    margin-right: auto; */
+    
     text-align: center;
-    padding: 20px 0px 40px 0px;
+    padding: 20px 20px 40px 20px;
     display: flex;
-    gap: 50px;
-    /* flex-direction: column;  */
-      /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
+    gap: 60px;
+   
+    justify-content: center; 
     text-align: center;
   }
 
@@ -341,22 +319,25 @@
   }
   .visionleftTitle{
     padding-bottom: 15px;
-    font-size: 22px;
+    
     font-weight: bold;
     line-height: 1.2;
     color:#181836;
     font-family: NovemberPro;
+    
   }
+ 
   .visionLeftSubTitle{
-     font-size: 26px;
+    
      font-weight: bold;
     font-family: NovemberPro-Reg;
-     color:#333;
+     color:#333333;
      line-height: 1.5;
+     letter-spacing: 2px;
   }
 .visionDesc{
-    font-size: 24px;
-    color:#333;
+    
+    color:#333333;
     line-height: 1.5;
     font-family: NovemberPro-Reg;
     padding-bottom: 40px;
@@ -364,6 +345,30 @@
 .visionRight{
     display: flex;
     align-items: center;
+}
+/* Start working with InfoKoders technologies */
+.startWorking{
+  padding :5% 7% 5% 7%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.startWorkingSpan{
+  color: #650909;
+}
+.startWorkingTitle{
+  padding :0 0 15px 0;
+ 
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+}
+.startWorkingDesc{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  
 }
 /* Responsive Styles */
 @media (max-width: 1400px) {
@@ -390,12 +395,10 @@
 @media (max-width: 768px) {
     .container { max-width: 720px; }
     .mainhead {
-        font-size: 30px;
+       
         padding-bottom: 20px;
     }
-    .des, .des1 {
-        font-size: 14px;
-    }
+    
     .container{
         row-gap: 40px;
     }
@@ -403,13 +406,35 @@
 
 @media (max-width: 576px) {
     .container { max-width: 540px; }
-    .mainhead {
-        font-size: 18px;
-    }
-    .des, .des1 {
-        font-size: 13px;
-    }
+   
     .container{
         row-gap: 40px;
     }
+}
+@media (max-width:600px){
+  .coreBoxTitle{
+   text-align: center
+  }
+}
+@media (max-width:600px){
+  .capabilities{
+     width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top:1px;
+      text-align: center;
+  }
+}
+@media (max-width: 600px) { 
+  .visionleftTitle {
+    text-align: center;  
+    padding-left: 0;     
+    padding-right: 0;    
+    width: 100%;         
+  }
+}
+@media (max-width:600px){
+  .startWorking{
+      padding: 15% 7% 15% 7%
+  }
 }
