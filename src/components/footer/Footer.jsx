@@ -16,6 +16,24 @@ import logo from "../../../public/assets/img/logo.png";
 import Image from "next/image";
 
 const Footer = () => {
+  const goTo = [
+    { href: "/", label: "Home" },
+    { href: "/blog", label: "Blogs" },
+    { href: "/studies", label: "Case Studies" },
+    { href: "", label: "Mission & Vision" },
+    { href: "", label: "Client Testimonial" },
+  ];
+
+  const services = [
+    { href: "/", label: "Ruby on Rails" },
+    { href: "/blog", label: "React JS" },
+    { href: "/caseStudies", label: "Node JS" },
+    { href: "", label: "Angular JS" },
+    { href: "", label: "End to End Full Stack Development" },
+    { href: "", label: "UI/UX" },
+    { href: "", label: "AWS" },
+    { href: "", label: "Heroku" },
+  ];
   return (
     <section>
       <Box
@@ -41,52 +59,25 @@ const Footer = () => {
               Go to
             </Typography>
             <ul className={styles.ui}>
-              <li>
-                <Link href="/">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog ">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link href="/caseStudies">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Mission &amp; Vision
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Client Testimonial
-                </Link>
-              </li>
+              {goTo.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.href}>
+                    <span>
+                      <ChevronRightIcon />
+                    </span>{" "}
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+
+              {/* Logo Section */}
               <li className="pt-7">
                 <Link href="/" passHref>
                   <Image src={logo} alt="logo" className={styles.logo} />
                 </Link>
               </li>
 
+              {/* Footer Text */}
               <li className="pt-3">
                 <Typography
                   variant="body2"
@@ -107,70 +98,16 @@ const Footer = () => {
               Our Services
             </Typography>
             <ul className={styles.ui}>
-              <li>
-                <Link href="/">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Ruby on Rails
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog ">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  React JS
-                </Link>
-              </li>
-              <li>
-                <Link href="/caseStudies">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Node js
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Angular js
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  End to End Full Stack Development
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  UI/UX
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  AWS
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <span>
-                    <ChevronRightIcon />
-                  </span>{" "}
-                  Heroku
-                </Link>
-              </li>
+              {services.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.href}>
+                    <span>
+                      <ChevronRightIcon />
+                    </span>{" "}
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </Grid>
 

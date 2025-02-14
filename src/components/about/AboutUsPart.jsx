@@ -95,7 +95,7 @@ const AboutUsPart = () => {
                   fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
                 }}
               >
-                Vision achieving Software, App and web Development Company
+                Vision-Achieving Software, App and Web Development Company
               </Typography>
               <Typography
                 className={styles.maindes}

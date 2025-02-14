@@ -17,61 +17,65 @@ const OurCaseStudies = () => {
     {
       image: "./assets/img/homeBlog.png",
       content: "What is Ruby on Rail (ROR)",
-      path: "/studies",
+      path: "/blog",
     },
     {
       image: "./assets/img/reactNative.png",
       content: "How React Native can be a game-changer",
-      path: "/studies",
+      path: "/blog",
     },
   ];
 
   return (
-    <Box className={styles.blogContainer}>
+    <Box className={styles.blogContainer2}>
       <Grid className={styles.blogContainer1}>
-        <Typography
-          className={styles.blogHeader}
-          sx={{
-            fontSize: {
-              xs: "20px",
-              sm: "25px",
-              lg: "30px",
-            },
-          }}
-        >
-          Our Case Studies
-        </Typography>
-      </Grid>
-      <Grid container spacing={2} justifyContent="center">
-        {blogContent?.map((item, index) => (
-          <Grid
-            size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
-            key={index}
-            className={styles.gridItem}
+        <Grid>
+          <Typography
+            className={styles.blogHeader}
+            sx={{
+              fontSize: {
+                xs: "20px",
+                sm: "25px",
+                lg: "30px",
+              },
+              marginBottom: "30px",
+              marginLeft: "30px",
+            }}
           >
-            <Card className={styles.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  className={styles.cardImage}
-                  image={item.image}
-                  alt="Blog Image"
-                />
-                <Box className={styles.overlay} />
-                <Box className={styles.contentBox}>
-                  <Typography className={styles.title1}>
-                    {item.content}
-                  </Typography>
-                  <Link href={item?.path} passHref>
-                    <Typography className={styles.readMore}>
-                      Read More
+            Our Blogs
+          </Typography>
+        </Grid>
+        <Grid container spacing={2}>
+          {blogContent?.map((item, index) => (
+            <Grid
+              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+              key={index}
+              className={styles.gridItem}
+            >
+              <Card className={styles.blogCard}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    className={styles.cardImage}
+                    image={item.image}
+                    alt="Blog Image"
+                  />
+                  <Box className={styles.overlay} />
+                  <Box className={styles.contentBox}>
+                    <Typography className={styles.title1}>
+                      {item.content}
                     </Typography>
-                  </Link>
-                </Box>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        ))}
+                    <Link href={item?.path} passHref>
+                      <Typography className={styles.readMore}>
+                        Read More
+                      </Typography>
+                    </Link>
+                  </Box>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
     </Box>
   );
