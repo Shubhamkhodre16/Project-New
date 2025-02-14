@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "NovemberPro";
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+    src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NovemberPro-Reg";
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* imageSLider */
+  .imageSLider{
+        background-color: #ebebeb;
+  }
+ /* revolutionary Prototype */
+.PrototypeContainer{
+    padding: 6% 8%;
+    align-items: center;
+}
+.PrototypeImage{
+    display: flex;
+    justify-content: center;
+    
+}
+.PrototypeContent{
+   
+    text-align: left;
+   
+}
+.PrototypeTitle{
+  font-family: NovemberPro;
+  font-weight: bold;
+    line-height: 1.2;
+    color: #181836;
+    padding-bottom: 10px;
+}
+.PrototypeSubtitle{
+  font-family: NovemberPro-Reg;
+  line-height: 1.5;
+  color:#333;
+  padding-bottom: 15px;
+}
+.PrototypeButton{
+  cursor: pointer;
+  padding: 8px 18px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: #181836;
+  margin-bottom: 1rem;
+  /* border-radius: 0; */
+  font-family: NovemberPro-Reg;
+  text-transform: none;
+  
+}
+.PrototypeButton:hover{
+  cursor: pointer;
+  padding: 8px 18px;
+  border: 1px solid #181836;
+  background-color: #ffffff;
+  color: #181836;
+  margin-bottom: 1rem;
+  /* border-radius: 0; */
+  font-family: NovemberPro-Reg;
+  text-transform: none;
+}
+ /* Trusted tech partner  */
+.techPartnerContainer{
+      background-color: #f3f5f5;
+      padding: 6% 0;
+}
+.techPartner{
+   display: flex;
+  flex-direction: column; 
+ text-align: center;
+  align-items: center;
+  margin: 0 8%;
+  
+}
+
+.techPartnerTitle{
+    font-family: NovemberPro;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #181836;
+    margin: 1rem 0;
+    
+}
+.techPartnerStartup{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 1% 8%;
+   
+}
+.techPartnerLeft{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10px;
+}
+.techPartnerImage{
+  margin-bottom: 1rem;
+}
+.techPartnersTitle{
+  font-family:NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: .5rem;
+}
+.techPartnersSubTitle{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg; 
+  color:#212529;
+  text-align: left;
+}
+
+.techPartnerRight{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+}
+/* You wish we serve */
+.weServer{
+  padding: 7% 0;
+}
+.youWish{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin:0 12%;
+}
+.youWishTitle{
+  padding-bottom: 30px;
+  font-family:NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+}
+.youWishDesc{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg; 
+  color:#333;
+  line-height: 1.5;
+}
+
+/* Prototype  Card */
+.cardContainer{
+ 
+ padding: 3% 8%;
+}
+.PrototypeCard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6%;
+}
+.leftCard{
+  display: flex;
+  flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ padding: 10px;
+ 
+}
+@media (max-width:600px){
+  .leftCard{
+    align-items: center;
+    
+  }
+}
+.rightCard{
+   display: flex;
+   flex-direction: column;
+  align-items: flex-start; 
+    justify-content: center;
+    padding: 10px;
+
+}
+@media (max-width:600px){
+  .rightCard{
+    align-items: center;
+  }
+}
+
+.leftCardTitle{
+  font-family:  NovemberPro ;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.leftCardSubTitle{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  color:#333;
+  line-height: 1.5;
+  
+}
+.LeftImage, .rightImage {
+  border-radius: 30px;
+  max-width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+@media (max-width:1200px){
+  .LeftImage, .rightImage{
+    height: 400px;
+   
+  }
+}
+@media (max-width:900px){
+  .LeftImage, .rightImage{
+    height: auto;
+   
+  }
+}
+/* Advantageous Info of InfoKoders */
+.infoContainer{
+     padding: 8% 8%;
+     width: 100%;
+     background-color: #181836;
+    
+     align-items: center;
+}
+
+.infoTitle{
+  border-top:4px solid #ffffff;
+  padding-top:22px ;
+  color: #ffffff;
+  font-family:  NovemberPro ;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+.infoSubTitle{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.boxGrid{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  text-align: center;
+  }
+  @media (max-width:1200px){
+   .boxGrid{
+    flex-wrap: wrap;
+   }
+  }
+.whiteBox{
+  padding: 24px 24px 24px 24px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+ 
+  
+}
+.whiteBoxTitle{
+  color:#181836;
+  font-family:NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+.whiteBoxDesc{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  color:#212529;
+  line-height: 1.5;
+}
+/* obstacles InfoKoders */
+.obstaclesContainer{
+  padding: 8% ;
+}
+.obstaclesLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.obstaclesLeftTitle{
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: .5rem;
+}
+.obstaclesLeftDesc{
+  margin-bottom: 1rem;
+  font-family:NovemberPro-Reg; 
+  color:#333;
+  line-height: 1.5;
+}
+.obstaclesRight{
+  padding-left: 6%;
+}
+.obstaclesRightTitle{
+  padding: 3px 0;
+  font-family: NovemberPro-Reg;
+  color:#333;
+  line-height: 1.5;
+}
+.obstaclesRightIcon{
+  color: #650909;
+  margin-right: 10px;
+}
+/* Uplift your startup? */
+.upliftStartup{
+    padding: 8%;
+    width: 100%;
+    background-color: #333;
+}
+.upliftStartupTitle{
+  color: #ffffff;
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+/* @media (min-width:1200px){
+  .upliftStartupTitle{
+    padding: 0 22%;
+  }
+} */
+
+.upliftData{
+  color: #ffffff;
+  font-weight: 500;
+  margin: 1rem 0;
+  line-height: 1.2;
+  font-family: NovemberPro;;
+}
+.upliftDataDesc{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  color:#ffffff;
+  line-height: 1.5;
+}
