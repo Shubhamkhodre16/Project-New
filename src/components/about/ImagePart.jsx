@@ -111,10 +111,10 @@ const ImagePart = () => {
         <Grid2 size={{xs:12,sm:12,md:4,lg:3}} className={styles.whowe}>
           <Grid2 className={styles.whoContainer}>
             <Grid2 className={styles.whoweLeft}>
-              <Typography className={styles.whoweHeading} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>
+              <Typography className={styles.whoweHeading} sx={{fontSize:{lg:"33px",md:"26px",sm:"26px",xs:"22px"},}}>
                 Who we are and what we do
               </Typography>
-              <Typography className={styles.subheading} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},}}>
+              <Typography className={styles.subheading} sx={{fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"18px"},}}>
                 InfoKoders technologies is an exclusive digital transformation
                 studio that provides remarkable solutions across the digital
                 value chain. We take a spotlight in providing out-of-the-box
@@ -125,11 +125,11 @@ const ImagePart = () => {
               </Typography>
             </Grid2>
             <Grid2  className={styles.whoweRight}>
-              <Typography className={styles.whoweHeading} sx={{fontSize:{lg:"35px",md:"26px ",sm:"26px",xs:"22px"},}}>
+              <Typography className={styles.whoweHeading} sx={{fontSize:{lg:"33px",md:"26px",sm:"26px",xs:"22px"},}}>
                 An unbelievable story of 2+ years
               </Typography>
-              <Typography className={styles.subheading} sx={{fontSize:{lg:"24px",md:"20px ",sm:"20px",xs:"18px"},paddingBottom:"10px"}}>
-                <FontAwesomeIcon icon={faCircleDot}    className={styles.adjustIcon}/> Since day one we measure our success with our client success,
+              <Typography className={styles.subheading} sx={{fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"18px"},paddingBottom:"10px"}}>
+                <FontAwesomeIcon icon={faCircleDot}    /> Since day one we measure our success with our client success,
                 have faith in our kick-butt skills, and swear by the computer
                 code. Shaping out an exclusive digital solution is not our work,
                 it’s our duty. Within a short period, we have successfully
@@ -137,9 +137,9 @@ const ImagePart = () => {
                 part and eventually became prominent in the Software development
                 realm
               </Typography>
-              <Typography className={styles.subheading}  sx={{fontSize:{lg:"24px ",md:"20px ",sm:"20px ",xs:"18px"},}}>
+              <Typography className={styles.subheading}  sx={{fontSize:{lg:"20px",md:"20px ",sm:"20px ",xs:"18px"},}}>
                 {" "}
-                <FontAwesomeIcon icon={faCircleDot}   className={styles.adjustIcon}/> Our ultimate focus is on client satisfaction which has been
+                <FontAwesomeIcon icon={faCircleDot}   /> Our ultimate focus is on client satisfaction which has been
                 the key differentiator for our company. Our inquisitive nature
                 and creativity ensure that we never become stagnant in our
                 approach to dealing with new challenges.
@@ -218,7 +218,7 @@ const ImagePart = () => {
                   />
 
                   <Typography className={styles.uspBoxTitle} sx={{fontSize:{lg:"24px ",md:"22px ",sm:"20px ",xs:"18px "}}} >{item?.title}</Typography>
-                  <Typography className={styles.uspBoxDesc} sx={{fontSize:{lg:"22px ",md:"20px ",sm:"18px ",xs:"16px "}}} >{item?.description}</Typography>
+                  <Typography className={styles.uspBoxDesc} sx={{fontSize:{lg:"20px",md:"20px ",sm:"18px ",xs:"16px "}}} >{item?.description}</Typography>
                 </Grid2>
               ))}
             </Grid2>
