@@ -1,7 +1,10 @@
 @font-face {
   font-family: "NovemberPro";
   src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro.woff2") format("woff2");
+  src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/november-pro/NovemberPro.woff2")
+      format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,34 +12,82 @@
 @font-face {
   font-family: "NovemberPro-Reg";
   src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff")
+      format("woff"),
+    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2")
+      format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 .logo {
-    width: 200px;
-    height: 28px;
-  }
-  
-  @media (max-width: 900px) {
-    .logo {
-      width: 190px;
-      height: 27px;
-    }
-    .navbarContainer{
-      height: 90px;
-    }
-  }
-  
-  @media (max-width: 1000px) {
-    .navAlign{
-      margin-right: 0px;
-    }
-  }
+  width: 290px;
+  height: 38px;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+.navOption {
+  font-size: 17px;
+}
 
-  .navText{
-    font-family: "NovemberPro-Reg" !important;
-
+@media (max-width: 512px) {
+  .logo {
+    width: 170px !important;
+    height: 25px !important;
+    margin-left: 2% !important;
   }
-  
+  .navbarContainer {
+    height: 80px !important;
+    padding: 12px 4% 10px 4%;
+  }
+  .iconButton {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .iconButtonMenu {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 270px;
+    height: 35px;
+    margin-left: 3%;
+  }
+  .navbarContainer {
+    height: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navOption {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navOption {
+    font-size: 14px;
+    margin-left: 10%;
+    margin-right: 0px;
+  }
+  .navAlign {
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1300px) {
+  .navOption {
+    font-size: 16px;
+  }
+}
+
+.navText {
+  font-family: "NovemberPro-Reg" !important;
+}

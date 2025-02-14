@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Box, Grid2, Typography, Button } from "@mui/material";
-import styles from "../../styles/carousel.module.css";
+import styles from "../../styles/Carousel.module.css";
 import whiteWave from "../../../public/assets/img/white-wave.png";
 import Navbar from "../navbar/Navbar";
 
@@ -32,7 +32,8 @@ const Carousel = () => {
       button: "Get the Recognition with us",
     },
     {
-      title: "Enterprise Technology Services",
+      title:
+        "Let your enterprise rock with our world-class technological services",
       backgroundColor: "#364F6E",
       backgroundImage: "url(/assets/img/right.png)",
       des: "InfoKoders technologies is admired as a leading software Development Company for exceeding business goals consistently thereby offering end-to-end web, mobile, and software development services.",
@@ -84,24 +85,24 @@ const Carousel = () => {
           }}
         >
           <Grid2 container spacing={2} className={styles.gridContainer}>
-            <Grid2
-              item
-              size={{ xs: 12, md: 7 }}
-              className={styles.textContainer}
-            >
+            <Grid2 size={{ xs: 12, md: 7 }} className={styles.textContainer}>
               <Typography variant="h4" className={styles.title}>
                 {item.title}
               </Typography>
               <Image
                 src={whiteWave}
                 alt="White Wave"
-                width={200}
+                width={100}
                 height={100}
               />
               <Typography variant="body1" className={styles.description}>
                 {item.des}
               </Typography>
-              <Button variant="contained" sx={{backgroundColor:"#fff", color:"#333"}} className={styles.button}>
+              <Button
+                variant="contained"
+                sx={{ backgroundColor: "#fff", color: "#333" }}
+                className={styles.button}
+              >
                 {item.button}
               </Button>
             </Grid2>

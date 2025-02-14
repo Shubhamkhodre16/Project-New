@@ -1,245 +1,337 @@
 @font-face {
-    font-family: "NovemberPro";
-    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-    src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "NovemberPro-Reg";
-    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "NovemberPro";
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/november-pro/NovemberPro.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NovemberPro-Reg";
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff")
+      format("woff"),
+    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Default Styles */
 .background {
-    width: 100%;
-    height: 600px;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../../public/assets/img/caseStudy.png");
+  width: 100%;
+  height: 690px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/caseStudy.png");
 }
 
-.case{
-    text-align: center;
-    /* font-size: 35px; */
-    font-weight: bold;
-    color: aliceblue;
-    font-family: "NovemberPro";
-    padding: 20% 0;
+.title {
+  font-family: "NovemberPro";
+  color: #333;
+  font-size: 20px;
+}
+.CaseStudySubTitle {
+  font-family: "NovemberPro-Reg";
+  color: #333;
+  font-size: 14px;
 }
 
-.container{
-    width: 100%;
-    margin: 80px auto 50px;
-    /* display: flex; */
-    min-width: 80%;
-    padding: 0 5% ;
-    height: 100%;
-    gap: 100px;
+.case {
+  /* text-align: center; */
+  /* font-size: 35px; */
+  font-weight: bold;
+  color: aliceblue;
+  font-family: "NovemberPro";
+  padding: 250px 10%;
 }
 
-.studiesMain{
-
-}
-.tabOption{
-    font-size: 25px;
-    font-family: "NovemberPro";
-
-}
-.studyCards{
-    margin-top:50px;
-}
-.activeTab{
-    color: red;
+.container {
+  width: 100%;
+  margin: 80px auto 50px;
+  /* display: flex; */
+  min-width: 80%;
+  padding: 0 5%;
+  height: 100%;
+  gap: 100px;
 }
 
-.cardBox{
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center;  /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    /* text-align: center;    */
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    min-height: 400px;
-    height: 400px;
+/* Tabs Parts  */
+
+.studiesMain {
+}
+.tabOption {
+  font-size: 25px;
+  font-family: "NovemberPro";
+}
+.studyCards {
+  margin-top: 80px;
+}
+.studyCards1 {
+  min-height: 385px;
+  /* box-shadow: 1px #333; */
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+}
+.activeTab {
+  color: #650909;
 }
 
-
-
-
-
+.cardBox {
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  /* text-align: center;    */
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  height: 400px;
+}
 
 /* Services Parts */
-  /* Client Achivement  */
-.mainAchivement{
-   background-color: #181836;
-   padding: 100px 0 100px 0;
+/* Client Achivement  */
+.mainAchivement {
+  background: #333;
+  padding: 100px 0 100px 0;
 }
 
-.achivementContainer{
-    color: white;   
-    width: 100%;
-    text-align: center;
-    padding: 0 8%;
+.achivementContainer {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0 10%;
 }
-.achiveData{
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
+.achivetitle {
+  font-family: "NovemberPro";
+  font-weight: 800;
+  text-align: center;
 }
-
-.brightness{
-    background: #fff;
-    padding: 18px 13px;
-    border-radius: 50%;
-    /* width: 70;
-    height: 50; */
-    color: red;
+.achiveSubtitle {
+  font-family: "NovemberPro-Reg";
+  /* font-weight: 800; */
+  text-align: center;
+  margin-top: 10px;
 }
-
- /* Integrated tech Stack */
-
-.techMain{
-   margin-top: 40px;
+.achiveData {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }
-.techHeading{
-    font-size: 23px;
-    text-align: left;
-    font-family: "NovemberPro";
-    padding-bottom: 30px;
-
-}
-.techContainer{
-    text-align: start;
-    /* padding: 5%; */
-}
-.techBox{
-    background-color: #fff;
-    box-shadow: 1px white;
-    border-radius: 10px;
-    color: #181836;
-    padding: 5%;
-
-    text-align: left;
+.archiveSubData {
+  /* border: 1px solid #fff; */
+  /* border-radius: 10px; */
 }
 
+.brightness {
+  background: #fff;
+  border-radius: 50%;
+}
 
+/* Integrated tech Stack */
+
+.techMain {
+  margin-top: 80px;
+}
+.techHeading {
+  text-align: left;
+  font-family: "NovemberPro";
+  padding-bottom: 30px;
+}
+.techContainer {
+  text-align: start;
+  /* padding: 5%; */
+}
+.techBox {
+  background-color: #fff;
+  box-shadow: 1px #333;
+  border-radius: 10px;
+  color: #333;
+  padding: 5%;
+  text-align: center;
+}
 
 /* The Solutions  */
 
-.solutionsMain{
-    background-color: #181836;
-    margin-top: 20px;
-    width: 100%;
+.solutionsMain {
+  background: #333;
+  width: 100%;
+  padding: 100px 0 100px 0;
 }
 
-.solutionContainer{
-    padding: 0 10%;
-    color: #fff;
-    width: 100%;
-    padding: 5% ;
+.solutionContainer {
+  padding: 0 10%;
+  color: #fff;
+  width: 100%;
 }
-.solutionHeading{
-    font-family: "NovemberPro";
-    font-weight: 800;
-    font-size: 30px;
-    text-align: center;
-
+.solutionContent {
+  margin-top: 40px;
 }
-
-
-
-/* Client and Product Goals  */
-
-.productMain{
-   width: 100%;
-}
-.productContainer{
-    /* padding: 0 10%; */
-    /* color: #fff; */
-    width: 100%;
-    padding: 5% 10% 5% 10%;
+.solutionHeading {
+  font-family: "NovemberPro";
+  font-weight: 800;
+  text-align: center;
+  /* padding: 1.5rem; */
 }
 
-.productHeading{
-    font-family: "NovemberPro";
-    font-weight: 800;
-    font-size: 30px;
+/* Client and Product Goals & also Portal CSS  */
+
+.productMain {
+  width: 100%;
+  background: #ececec;
+  padding: 100px 0 100px 0;
+}
+.productContainer {
+  width: 100%;
+  padding: 2% 10% 2% 10%;
 }
 
-.productData{
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center;  /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    /* text-align: center;    */
-    display: flex;
+.productHeading {
+  font-family: "NovemberPro";
+  font-weight: 800;
+  color: #333;
+}
+.productDes {
+  font-family: "NovemberPro-Reg";
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.productButton {
+  color: #fff;
+  background-color: #333;
+  text-transform: capitalize;
+  font-family: "NovemberPro-Reg";
 }
 
-
+.productData {
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  display: flex;
+}
 
 /* Working of the Portal:  */
 
-
-
-
-
 /* Features  */
 
-.featuresMain{
-  background-color: #f8f9fd;
-  padding: 100px 0 0 0;
+.featuresMain {
+  background: #fff;
+  padding: 100px 0 100px 0;
 }
-.featureContainer{
-    width: 100%;
-    padding: 5% 10% 5% 10%;
+.featureContainer {
+  width: 100%;
+  padding: 0% 10%;
 }
-
-.featureHeader{
-    font-family: "NovemberPro";
-    font-weight: 800;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.featureBox{
-    display: flex;        /* Enables Flexbox */
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers items vertically */
-    border: 1px solid #ebebeb;
-    border-radius: 10px;
-    padding: 5%;
-    background-color: #fff;
+.featureCards {
+  font-family: "NovemberPro-Reg";
+  justify-content: center;
+  margin-top: 50px;
 }
 
+.featureHeader {
+  font-family: "NovemberPro";
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.featureBox {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center; /* Centers items vertically */
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 3% 5%;
+  background-color: #fff;
+}
 
-  /* Contact Container  */
+/* Contact Container  */
 
-  .contactMain{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-   
-  }
+.contactMain {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 
-  .gridContainer{
-    margin: 5% 10%;
-    padding: 5% 10%;
-    column-gap: 30%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-    /* background-size: cover; */
-    background-image: url("../../public/assets/img/caseStudy.png");
-    color:#fff;
-    text-align: center;
+.gridContainer {
+  margin: 5% 10%;
+  padding: 5% 10%;
+  column-gap: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  /* background-size: cover; */
+  background-image: url("../../public/assets/img/caseStudy.png");
+  color: #fff;
+  text-align: center;
+}
 
-  }
+.gridContainerContact {
+  margin: 5% 10%;
+  padding: 3% 10%;
+  column-gap: 30%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/getintouch.png");
+  color: #fff;
+  text-align: center;
+}
+
+/* On Schlorship Css  */
+/* 
+.backgroundSchlorship {
+  width: 100%;
+  height: 690px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/start-up-slide3.webp");
+} */
+
+.backgroundSchlorship {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/start-up-slide3.webp");
+}
+
+.backgroundSchlorship::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.imageTitle {
+  color: #650909;
+  font-family: "NovemberPro";
+  padding-top: 250px;
+  padding-bottom: 20px;
+  padding-left: 9%;
+  opacity: 0.9;
+}
+.imageSubTitle {
+  color: #fff;
+  font-family: "NovemberPro";
+  padding: 0 30% 0 9%;
+  opacity: 0.9;
+}
