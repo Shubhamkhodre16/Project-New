@@ -2,7 +2,6 @@
 import {
   Box,
   Button,
-  Grid,
   TextField,
   InputAdornment,
   Typography,
@@ -14,7 +13,7 @@ import SubjectIcon from "@mui/icons-material/Subject";
 import MessageIcon from "@mui/icons-material/Message";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import Grid2 from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid2";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -87,9 +86,9 @@ export default function ContactForm() {
         Get in Touch With Us
       </Typography>
 
-      <Grid className="mt-5" container spacing={4}>
+      <Grid className="mt-10" container spacing={6}>
         {/* First Name & Last Name */}
-        <Grid item xs={12} sm={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
           <TextField
             fullWidth
             name="firstName"
@@ -106,7 +105,7 @@ export default function ContactForm() {
             }}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
           <TextField
             fullWidth
             name="lastName"
@@ -125,7 +124,7 @@ export default function ContactForm() {
         </Grid>
 
         {/* Email, Contact & Subject */}
-        <Grid item xs={12} sm={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 4, lg: 4 }}>
           <TextField
             fullWidth
             name="email"
@@ -142,7 +141,7 @@ export default function ContactForm() {
             }}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 4, lg: 4 }}>
           <TextField
             fullWidth
             name="contact"
@@ -159,7 +158,7 @@ export default function ContactForm() {
             }}
           />
         </Grid>
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12, sm: 12, md: 4, lg: 4 }}>
           <TextField
             fullWidth
             name="subject"
@@ -178,7 +177,7 @@ export default function ContactForm() {
         </Grid>
 
         {/* Message */}
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12, sm: 12, md: 12, lg: 12 }}>
           <TextField
             fullWidth
             name="message"

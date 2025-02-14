@@ -1,108 +1,111 @@
 @font-face {
-    font-family: "NovemberPro";
-    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-    src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "NovemberPro-Reg";
-    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-    src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"), url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-.logo {
-    width: 180px;
-    height: 24px;
-  }
-  
-  @media (max-width: 900px) {
-    .logo {
-      width: 180px;
-      height: 22px;
-    }
-  }
+  font-family: "NovemberPro";
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/november-pro/NovemberPro.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @media (max-width: 975px) {
-    .footerMain {
-        padding-left: 0px !important;
-    }
+@font-face {
+  font-family: "NovemberPro-Reg";
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff")
+      format("woff"),
+    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  width: 220px;
+  height: 30px;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 180px;
+    height: 22px;
   }
-.head1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #899394;
-    font-family: 'serif';
-    margin-left: 10px;
-    font-family: "NovemberPro";
+}
+
+@media (max-width: 975px) {
+  .footerMain {
+    padding-left: 0px !important;
+  }
+}
+.subHead {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #899394;
+  font-family: "serif";
+  margin-left: 10px;
+  font-family: "NovemberPro";
 }
 
 .ui {
-    list-style-type: none;
-    padding: 0;
-    line-height: 1.8;
-    margin-left: 10px;
-    font-family: "NovemberPro-Reg";
-
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.8;
+  margin-left: 10px;
+  font-family: "NovemberPro-Reg";
 }
 
 .ui li {
-    margin: 5px 0;
-    color: #fff ;
-    font-size: 14px;
-    font-family: "NovemberPro-Reg";
-
-
+  margin: 5px 0;
+  color: #fff;
+  font-size: 14px;
+  font-family: "NovemberPro-Reg";
 }
 .ui ul {
-    color: #fff ;
-
+  color: #fff;
 }
 
 .ui a {
-    color: #fff ;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .ui a:hover {
-    color: #921a1a;
+  color: #650509;
 }
 
 .signincontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .inputcustomfooter {
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100%;
 }
 
 .footersigninbtn {
-    color: #fff;
-    border: 1px solid #323643;
-    position: absolute;
-    right: 0;
-    height: 100%;
-    padding: 19px;
-    cursor: pointer;
+  color: #fff;
+  border: 1px solid #323643;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 19px;
+  cursor: pointer;
 }
 .sendIcon {
-    position: absolute;
-    right: 10px;  /* Adjust this to control how far from the right edge */
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none; /* Prevent the icon from interfering with input */
-  }
-
+  position: absolute;
+  right: 10px; /* Adjust this to control how far from the right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the icon from interfering with input */
+}

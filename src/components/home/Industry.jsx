@@ -59,7 +59,7 @@ const Industry = () => {
       <Box className={styles.industryBackground}>
         <Grid className={styles.industryContainer}>
           <Typography
-             sx={{
+            sx={{
               fontSize: {
                 lg: "40px",
                 md: "35px",
@@ -71,7 +71,7 @@ const Industry = () => {
           >
             Industries we serve
           </Typography>
-          <Grid spacing={3} container>
+          <Grid spacing={4} container>
             {industry?.map((item, index) => (
               <Grid
                 className={styles.industryCards}

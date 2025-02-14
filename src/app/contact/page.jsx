@@ -5,7 +5,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import ContactForm from "../../components/contact/ContactForm";
 import styles from "./../../styles/Contact.module.css";
-import Footer from "../../components/footer/page";
+import Footer from "../../components/footer/Footer";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Navbar from "../../components/navbar/Navbar";
 
@@ -56,7 +56,10 @@ const page = () => {
             <LocalPhoneIcon className="mr-2 " />
             0731-4105427
           </span>
-          <span className="flex items-start font-[NovemberPro-Reg] md:text-left mt-5 " style={{marginBottom:"160px"}} >
+          <span
+            className="flex items-start font-[NovemberPro-Reg] md:text-left mt-5 "
+            style={{ marginBottom: "160px" }}
+          >
             <LinkedInIcon className="mr-2 self-start" />
             InfoKoders Technologies Private Limited
           </span>
