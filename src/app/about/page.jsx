@@ -1,15 +1,13 @@
-"use client"
-import React from 'react';
-import ImagePart from "../../components/about/ImagePart";
+"use client";
+import React from "react";
+import AboutUsPart from "../../components/about/AboutUsPart";
 
 const page = () => {
   return (
-    <div  >
+    <>
+      <AboutUsPart />
+    </>
+  );
+};
 
-<ImagePart/>
-      
-      </div>
-  )
-}
-
-export default page
+export default page;
