@@ -59,7 +59,7 @@ const OurBlog = () => {
             },
           }}
         >
-          Our Blogs & Case Studies
+          Our Case Studies
         </Typography>
       </Grid>
       <Grid container spacing={2} justifyContent="center">

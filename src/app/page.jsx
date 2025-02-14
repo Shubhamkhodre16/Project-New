@@ -28,7 +28,7 @@ export default function Home() {
         <Services />
         <TestiMonials />
         <OurBlog />
-        {/* <OurCaseStudies/>  */}
+        <OurCaseStudies/> 
       </main>
       <footer>
         <Footer />

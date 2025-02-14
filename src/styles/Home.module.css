@@ -28,6 +28,13 @@
   padding: 0 7%;
   margin: 100px 0 80px 0;
 }
+.blogContainer2 {
+  width: 100%;
+  margin: 0px 0 80px 0;
+}
+.blogContainer1{
+  padding: 0 7%;
+}
 .subBlogContainer {
   display: flex;
   margin: 30px;
@@ -46,6 +53,13 @@
 
 /* Default card styles */
 .card {
+  width: 100%;
+  min-width: 65%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.blogCard {
   width: 100%;
   min-width: 65%;
   height: 100%;
