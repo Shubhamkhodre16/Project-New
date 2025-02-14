@@ -7,7 +7,7 @@ import Navbar from "../navbar/Navbar";
 import aboutimg from "../../../public/assets/img/about-img.jpg";
 import Image from "next/image";
 import CardMedia from "@mui/material/CardMedia";
-import Footer from "../footer/page";
+import Footer from "../footer/Footer";
 import vissionandmission from "../../../public/assets/img/vissionandmission.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";

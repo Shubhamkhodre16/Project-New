@@ -65,7 +65,11 @@ const Navbar = () => {
     >
       <Container
         className={styles.navbarContainer}
-        sx={{ padding: "10px", height: "110px" }}
+        sx={{
+          padding: "10px 10% 10px 10%",
+          height: "110px",
+          maxWidth: "100% !important",
+        }}
         maxWidth="xl"
       >
         <Toolbar disableGutters>
@@ -86,16 +90,18 @@ const Navbar = () => {
             }}
           >
             <IconButton
+              className={styles.iconButton}
               style={{
                 backgroundColor: isFixed ? "#333" : "#fff",
                 color: isFixed ? "#fff" : "#333",
+                padding: "10px",
               }}
-              size="large"
+              size="medium"
               aria-label="menu"
               onClick={handleOpenDrawer}
               color="white"
             >
-              <MenuIcon />
+              <MenuIcon className={styles.iconButtonMenu} />
             </IconButton>
 
             {/* Drawer Sidebar */}
@@ -136,7 +142,7 @@ const Navbar = () => {
                             pathname === path ? "#181836" : "transparent",
                           color: pathname === path ? "#fff" : "#333",
                           padding: pathname === path ? "10px 20px" : "5px 15px",
-                          borderRadius: pathname === path ? "5%" : "",
+                          borderRadius: pathname === path ? "10px" : "",
                         }}
                         primary={name}
                         className={styles.navText}
@@ -155,17 +161,17 @@ const Navbar = () => {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               justifyContent: "flex-end",
-              marginRight: "50px",
-              marginTop: "10px",
+              marginRight: "40px",
+              marginTop: "13px",
             }}
           >
             {pages.map(({ name, path }) => (
               <Link key={name} href={path} passHref>
                 <Typography
+                  className={styles.navOption}
                   sx={{
                     my: 2,
                     mx: 1.2,
-                    fontSize: "16px",
                     fontWeight: "bold",
                     textDecoration: "none",
                     fontFamily: "NovemberPro-Reg",
@@ -186,7 +192,8 @@ const Navbar = () => {
                         ? "#333"
                         : "#fff",
                     padding: pathname === path ? "10px 20px" : "5px 15px",
-                    borderRadius: pathname === path ? "5%" : "",
+                    borderRadius: pathname === path ? "5px" : "",
+                    marginTop: pathname === path ? "6px" : "10px",
                   }}
                 >
                   {name}

@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import styles from "../../styles/Home.module.css";
+import Link from "next/link";
 import Grid from "@mui/material/Grid2"; // Import the CSS module
 
 const OurBlog = () => {
@@ -16,24 +17,38 @@ const OurBlog = () => {
       image: "./assets/img/start-up-slide1.webp",
       content:
         "A Remarkable football platform delivering in-depth soccer details",
+      path: "/studies",
     },
     {
       image: "./assets/img/start-up-slide6.webp",
       content: "A serviceable platform providing awareness of digital payments",
+      path: "/studies",
     },
     {
       image: "./assets/img/start-up-slide3.webp",
       content: "Online Scholarship",
+      path: "/studies",
     },
     {
       image: "./assets/img/start-up-slide4.webp",
       content: "A full-fledged freelance platform NPO",
+      path: "/studies",
     },
+    // {
+    //   image: "./assets/img/homeBlog.png",
+    //   content: "What is Ruby on Rail (ROR)",
+    //   path: "/studies",
+    // },
+    // {
+    //   image: "./assets/img/reactNative.png",
+    //   content: "How React Native can be a game-changer",
+    //   path: "/studies",
+    // },
   ];
 
   return (
     <Box className={styles.blogContainer}>
-      <Grid className={styles.blogContainer1}>
+      <Grid className={styles.subBlogContainer}>
         <Typography
           className={styles.blogHeader}
           sx={{
@@ -44,13 +59,12 @@ const OurBlog = () => {
             },
           }}
         >
-          Our Blogs & Case Studies
+          Our Case Studies
         </Typography>
       </Grid>
       <Grid container spacing={2} justifyContent="center">
         {blogContent?.map((item, index) => (
           <Grid
-            item
             size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
             key={index}
             className={styles.gridItem}
@@ -68,7 +82,11 @@ const OurBlog = () => {
                   <Typography className={styles.title1}>
                     {item.content}
                   </Typography>
-                  <Typography className={styles.readMore}>Read More</Typography>
+                  <Link href={item?.path} passHref>
+                    <Typography className={styles.readMore}>
+                      Read More
+                    </Typography>
+                  </Link>
                 </Box>
               </CardActionArea>
             </Card>

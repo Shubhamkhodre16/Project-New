@@ -77,7 +77,7 @@ const Testimonials = () => {
           textAlign="center"
           marginTop="80px"
         >
-          <Grid item size={{ xs: 12, sm: 10, md: 8, lg: 6 }}>
+          <Grid size={{ xs: 12, sm: 10, md: 8, lg: 6 }}>
             <Typography
               sx={{
                 fontSize: {
@@ -87,26 +87,28 @@ const Testimonials = () => {
                   xs: "20px",
                 },
               }}
-            className={styles.testimonialHeading}>
+              className={styles.testimonialHeading}
+            >
               Testimonials
             </Typography>
             <Typography
-                sx={{
-                  fontSize: {
-                    lg: "20px",
-                    md: "18px",
-                    sm: "18px",
-                    xs: "16px",
-                  },
-                }}
-            className={styles.testimonialPara}>
+              sx={{
+                fontSize: {
+                  lg: "20px",
+                  md: "18px",
+                  sm: "18px",
+                  xs: "16px",
+                },
+              }}
+              className={styles.testimonialPara}
+            >
               Our beloved clients shared their thrilling experience on how our
               product development and services helped them to set a benchmark in
               their business realm.
             </Typography>
           </Grid>
         </Grid>
-        <span className={styles.text}>TESTIMONIALS</span>
+        <span className={styles.testimonialsText}>TESTIMONIALS</span>
 
         <div className={styles.slideContainer}>
           {Array.from({ length: totalSlides }).map((_, index) => {
@@ -130,7 +132,6 @@ const Testimonials = () => {
                   {[firstItem, secondItem].map((itemIndex) =>
                     CarouselData[itemIndex] ? (
                       <Grid
-                        item
                         size={{ xs: 12, md: 4, lg: 6 }}
                         key={itemIndex}
                         className={styles.slideItem}
