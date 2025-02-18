@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from '../home/Carousel'
 import { Box, Button,  Typography } from '@mui/material'
 import Grid2 from '@mui/material/Grid2'
@@ -11,7 +11,6 @@ import techPartnerRight from '../../../public/assets/img/techPartnerRight.gif'
 import PrototypeCard from './PrototypeCard'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from '@fortawesome/free-solid-svg-icons';
-
 const Prototype = () => {
   const upliftData=[
     { 
@@ -27,8 +26,8 @@ const Prototype = () => {
       desc:"We believe in becoming successful by making struggling start-ups successful. By hiring us as your desired Product development company you will save up to 50%-70% of development costs without compromising on the quality or functionality of the product.",
      },
      {
-        title:"100% Transparency and control",
-        desc:"The transparency factor is most imperative to our organization. You’ll always be in the loop of every phase of the product development process. Right from knowing the responsibilities of each member to learning how the tasks are been achieved, you’ll be in the driver seat of your product car.",
+      title:"100% Transparency and control",
+      desc:"The transparency factor is most imperative to our organization. You’ll always be in the loop of every phase of the product development process. Right from knowing the responsibilities of each member to learning how the tasks are been achieved, you’ll be in the driver seat of your product car.",
      },
      {
       title:"Quality guarantees",
@@ -39,52 +38,85 @@ const Prototype = () => {
       desc:"Along with accomplishing the classic work, our teams have been honored for sharing profitable ideas that brought worth to their dream products"
      }
   ]
-  // const image=[
-    
-  //        "/assets/img/amazon-icon.png",
-  //        "/assets/img/herokuIcons.png",
-  //        "/assets/img/mongoDbIcon.png",
-  //        "/assets/img/node-min.png",
-  //        "/assets/img/react-min.png",
-  //        "/assets/img/redux.png",
-  //        "/assets/img/ror-min.png",
-  //        "/assets/img/salesforce.png",
-  //        "/assets/img/vuejs.png",
-  //        "/assets/img/webpack.png",
-  //        "/assets/img/htmls.png",
-  //        "/assets/img/sass.png",
-    
-  // ]
-  return (
-
+  const images=[
+   {
+      image:"/assets/img/amazon.png",
+   },
+   { 
+      image:"/assets/img/heroku.png",
+   },
+   {
+      image :"/assets/img/mongoDbs.png",
+   },
+   {
+      image:"/assets/img/node.png",
+   },  
+   {
+      image: "/assets/img/react.png",
+   },
+   { 
+      image:  "/assets/img/reduxs.png",
+   },
+   {
+      image:  "/assets/img/ror.png",
+   },
+   {
+      image:  "/assets/img/salesforce1.png",
+   },
+   {
+      image:  "/assets/img/vuejs 1.png",
+   },
+   {
+      image:  "/assets/img/webpacks.png",
+   },
+   {
+      image:"/assets/img/html1.png",
+   },
+   {
+      image: "/assets/img/sasss.png",
+   }
+  ]
+  const[currentSlide,setCurrentSlide]=useState(0);
+  const [isFirstRender, setIsFirstRender] = useState(true);
+  const totalSlides = Math.ceil(images.length/5);
+  useEffect(() => {
+    if (isFirstRender) {
+      setIsFirstRender(false);
+    }
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+    }, 3000); 
+    return () => clearInterval(intervalId); 
+  }, [ totalSlides]);
+   return (
     <>
     <Box>
-      {/* <Grid2 container className={styles.imageSLider}> 
-        <Grid2 size={{xs:12,sm:12,md:12,lg:12}}>
-          { image.map((item,index)=>(
-          <Box>
-          <Image src={item.image} alt='' width={100} height={100}/>
+      {/* { image slider} */}
+      <Grid2 container spacing={2} className={styles.imageSLider}> 
+        <Grid2 size={{xs:12,sm:12,md:12,lg:12}} className={styles.imageGrid} style={{ transform: `translateX(-${currentSlide * 20}%)`, width: '100%',    transition: isFirstRender ? 'none' : 'transform 5s ease-in-out',display:"flex" }} >
+          { images.map((item,index)=>(
+          <Box key={index} className={styles.imageBox}>
+          <Image src={item.image} alt='image' width={200} height={200}/>
           </Box>
           ))}
           </Grid2>
-         </Grid2> */}
+         </Grid2>
       {/* Prototype Section */}
        <Grid2 container  className={styles.PrototypeContainer}>
         <Grid2 size={{xs:12,sm:12,md:12,lg:6}} className={styles.PrototypeImage} >
-        
          <Image src={revolutionary} alt="revolutionary" width={600} height={300}/>
          </Grid2>
          <Grid2 size={{xs:12,sm:12,md:12,lg:6}} className={styles.PrototypeContent} >
           <Typography className={styles.PrototypeTitle} sx={{fontSize:{lg:"30px",md:"26px ",sm:"26px",xs:"22px"},}}>Navigating the tech and Non- tech Start-ups towards success heights with our durable software development solutions</Typography> 
           <Typography className={styles.PrototypeSubtitle} sx={{fontSize:{lg:"22px",md:"20px ",sm:"20px",xs:"18px"},}}>We are here to breathe life into your start-up dreams. InfoKoders Technologies is been recognized as a one-stop source to embrace winning software development solutions at a budget-friendly cost. Our ultimate aim is to shine struggling start-ups into the most successful ones that they ever dreamed of. Be it providing you with a passionate, dedicated, and expertise software development team or taking the ownership of your start-up product development into our hands we are ready to help you in every possible way that you are desiring for.</Typography>
-          <Button  className={styles.PrototypeButton} sx={{fontSize:{lg:"18px",md:"16px",sm:"16px",xs:"14px"}}} >Get a revolutionary Prototype</Button>
+          <Button  className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"}}} >Get a revolutionary Prototype</Button>
          </Grid2>
         </Grid2>
         {/* Trusted tech partner  */}
        <Grid2 container className={styles.techPartnerContainer}>
         <Grid2 size={{xs:12,sm:12,lg:12,md:12}} className={styles.techPartner} >
           <Image src={trustedPartner} alt='techPartner' width={80} height={80}/>
-          <Typography className={styles.techPartnerTitle} sx={{fontSize:{lg:"30px",md:"26px",sm:"26px",xs:"22px"}}} > A Trusted tech partner for start-ups
+          <Typography className={styles.techPartnerTitle} sx={{fontSize:{lg:"30px",md:"26px",sm:"26px",xs:"22px"},backgroundColor:"#333"}} > A Trusted tech partner for start-ups
           and start-up accelerators</Typography>
         </Grid2>
         <Grid2  className={styles.techPartnerStartup}>
@@ -93,14 +125,14 @@ const Prototype = () => {
             <Typography className={styles.techPartnersTitle} sx={{fontSize:{lg:"30px",md:"26px",sm:"26px",xs:"22px"}}}>For Start-ups</Typography>
             <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"22px",md:"20px ",sm:"20px",xs:"18px"},}} >Being a profitable product development company for start-ups, we aim for the speedy launch of products before any of your competitors set foot into the fast-paced market. Beginning from start-up culture we completely understand how challenging it is to keep an eye on every problem and address it with best-fit solutions.</Typography>
            <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"22px",md:"20px ",sm:"20px",xs:"18px"},}}>We collaborate with start-up founders, deeply understand the project concept, and brainstorm to generate unique ideas. Followed by crafting a detailed roadmap of the next steps, then getting into the product design stage. Under this stage, we attractively design the product user experience and user interface that depict your business goals and raise your end-users expectations. Lastly, we develop a quality rich and bug-free product and smoothly launch it on the market.</Typography>
-            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"18px",md:"16px",sm:"16px",xs:"14px"}}}>Let your product rock with us</Button>
+            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},backgroundColor:"#333"}}>Let your product rock with us</Button>
           </Grid2>
           <Grid2 size={{xs:12,sm:12,md:6,lg:6}} className={styles.techPartnerRight}>
             <Image src={techPartnerRight} className={styles.techPartnerImage} alt='techPartnerRight' width={80} height={80}/>
             <Typography className={styles.techPartnersTitle} sx={{fontSize:{lg:"30px",md:"26px",sm:"26px",xs:"22px"}}}>For Start-up accelerators</Typography>
             <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"22px",md:"20px ",sm:"20px",xs:"18px"},}}>Enable your start-ups to grow products while we look after the software. InfoKoders technologies can be your next-age digital transformation tech partner as are been admired for our systematic product development workflow.</Typography>
             <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"22px",md:"20px ",sm:"20px",xs:"18px"},}}>As per the reports around 20% of start-ups face failure in their initial first year due to poor technical implementation, unstructured workflow, and many other reasons. With high proficient years of software development experience, by scaling the start-ups from 0 to 2M users and holding an exceptional track record we are capable enough to be your exclusive tech partner. Full-fledged Products we have delivered for (client names) and many startups have raised the start-ups standard and helped the founders to stay on top of the competitors.</Typography>
-            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"18px",md:"16px",sm:"16px",xs:"14px",marginTop:"30px"}}}>Join hands as a tech partner</Button>
+            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px",marginTop:"30px"},backgroundColor:"#333"}}>Join hands as a tech partner</Button>
           </Grid2>
         </Grid2>
        </Grid2>
@@ -160,14 +192,12 @@ const Prototype = () => {
             </Typography>
           </Grid2>
         </Grid2>
-        
-        {/*Uplift your startup? */}
+         {/*Uplift your startup? */}
         <Grid2 container spacing={3} className={styles.upliftStartup}>
           <Grid2 size={{xs:12,sm:12,md:12,lg:12}}>
             <Typography className={styles.upliftStartupTitle} sx={{fontSize:{lg:"30px",md:"26px",sm:"26px",xs:"22px"}}} >Why choose InfoKoders Technologies to Uplift
             your startup?</Typography>
           </Grid2>
-
           <Grid2 size={{xs:12,sm:12,md:6,lg:6}} >
               {upliftData.map((item,index)=>(
                 index%2===0 && (
@@ -186,10 +216,8 @@ const Prototype = () => {
                 </div>
             )  ))}
           </Grid2>
-        
         </Grid2>
-       
-    </Box>
+       </Box>
     </>
   )
 }
