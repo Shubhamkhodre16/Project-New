@@ -37,6 +37,7 @@
     width: 170px !important;
     height: 25px !important;
     margin-left: 2% !important;
+    min-width: 170px !important;
   }
   .navbarContainer {
     height: 80px !important;

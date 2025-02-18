@@ -21,12 +21,14 @@ const BlogsContent = () => {
       description:
         "Ruby on Rail is still in the game. No matter how many websites will publish or applications may develop, even so, ROR will never lose its fame.",
       image: "./assets/img/homeBlog.png",
+      path: "/blog/content/ror",
     },
     {
       title: "How React Native can be a game-changer to your business?",
       description:
         "Put effort in making one best code and apply it anywhere”- this wise mindset is being applied in every goal-centric business since Facebook was made out from React Native one of the leading open-source networks from 2015.",
       image: "./assets/img/reactNative.png",
+      path: "/blog/content/react",
     },
   ];
   return (
@@ -42,9 +44,7 @@ const BlogsContent = () => {
             Blogs
           </Typography>
         </Grid>
-        <Grid 
-        sx={{marginBottom:"100px"}}
-        className={styles.studiesMain}>
+        <Grid sx={{ marginBottom: "100px" }} className={styles.studiesMain}>
           <Grid className={styles.container}>
             <Grid container spacing={5} className={styles.studyCards}>
               {blogsData.map((card, index) => (
@@ -61,6 +61,7 @@ const BlogsContent = () => {
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
+                      boxShadow: "none",
                     }}
                   >
                     <CardMedia
@@ -89,9 +90,9 @@ const BlogsContent = () => {
                     </CardContent>
 
                     <CardActions
-                      sx={{ paddingBottom: "25px", paddingLeft: "30px" }}
+                      sx={{ paddingBottom: "15px", paddingLeft: "15px" }}
                     >
-                      <Link href="/studies/schlorship" passHref>
+                      <Link href={card?.path} passHref>
                         <Button
                           sx={{
                             color: "#fff",
@@ -111,7 +112,7 @@ const BlogsContent = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Footer/>
+        <Footer />
       </Box>
     </>
   );

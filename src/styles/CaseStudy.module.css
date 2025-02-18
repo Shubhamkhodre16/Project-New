@@ -176,7 +176,7 @@
 .solutionsMain {
   background: #333;
   width: 100%;
-  padding: 100px 0 100px 0;
+  padding: 70px 0 100px 0;
 }
 
 .solutionContainer {
@@ -217,6 +217,12 @@
   margin-bottom: 20px;
   color: #333;
 }
+.productSubTitle {
+  font-family: "NovemberPro";
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
 .productButton {
   color: #fff;
   background-color: #333;
@@ -241,7 +247,7 @@
 }
 .featureContainer {
   width: 100%;
-  padding: 0% 10%;
+  padding: 0% 5%;
 }
 .featureCards {
   font-family: "NovemberPro-Reg";
@@ -262,7 +268,7 @@
   justify-content: center; /* Centers items vertically */
   border: 1px solid #ebebeb;
   border-radius: 10px;
-  padding: 3% 5%;
+  padding: 2% 6%;
   background-color: #fff;
 }
 
@@ -346,4 +352,92 @@
   font-family: "NovemberPro";
   padding: 0 30% 0 9%;
   opacity: 0.9;
+}
+
+/* Digital Payments  */
+
+.backgroundPayments {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/start-up-slide1.webp");
+}
+
+.backgroundPayments::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Diversity Css  */
+
+.backgroundDiversity {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/start-up-slide5.webp");
+}
+
+.backgroundDiversity::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* PlatForm Css  */
+
+.backgroundPlatform {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/start-up-slide6.webp");
+}
+
+.backgroundPlatform::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Freelance css  */
+
+.backgroundFreelance {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/start-up-slide4.webp");
+}
+
+.backgroundFreelance::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }

@@ -11,76 +11,107 @@ import Features from "../clientAchivement/Features";
 import Contact from "../clientAchivement/Contact";
 import Footer from "../../footer/Footer";
 
-const Schlorship = () => {
-  const clientData = [
-    "Financial awards are being offered by big giant organizations: Taco Bell Foundation, the Houstan Livestock Show and Rodeo, Land O Lakes, TB12 Foundation, and The University of Alaska.",
-    "Asper the info claimed by Forbes, the system declares millions in private scholarships for college students and also stated the accessibility of more than $24 million of fresh scholarship opportunities.",
-    "The platform got scaled from 0 to 3 million active users and still reaching the new heights.",
-  ];
+const PlatForm = () => {
   const CarouselData = [
     {
-      src: "/assets/img/schlorshipS1.png",
+      src: "/assets/img/footballS1.png",
       alt: "ROR",
       title: "Dan McCarty",
       description:
         "It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
     {
-      src: "/assets/img/schlorshipS2.png",
+      src: "/assets/img/footballS2.png",
       alt: "Web Development",
       title: "Maria Elena",
       description:
         "The app has got overwhelming responses from our users. They like how it looks and feels as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
     {
-      src: "/assets/img/schlorshipS3.png",
+      src: "/assets/img/footballS3.png",
       alt: "Start-up",
       title: "Johan Cruyff",
       description:
         "I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
     },
     {
-      src: "/assets/img/schlorshipS2.png",
+      src: "/assets/img/footballS1.png",
       alt: "Enterprise Solutions",
       title: "Dana Midby",
       description:
         "It was a tight deadline and a very big project. They truly helped us to streamline and automate diverse processes, which saved our staff productive time. With their exceptional solution, we can now track everything online, which has been beneficial. That's pretty incredible.",
     },
     {
-      src: "/assets/img/schlorshipS3.png",
+      src: "/assets/img/footballS4.png",
       alt: "Enterprise Solutions",
       title: "Alex Ong",
       description:
         "The app has got overwhelming responses from our users. They like how it looks and feels, as well as how simple it is to use and navigate. The features fit in well with the workflows of users. InfoKoders's Technologies team was extraordinary and went above and beyond to meet our expectations.",
     },
     {
-      src: "/assets/img/schlorshipS3.png",
+      src: "/assets/img/footballS2.png",
       alt: "Enterprise Solutions",
       title: "Enrico Cruyff",
       description:
         "I don't think you could find a better company to manage and build your ambitious project like InfoKoders technologies. I get a lot of compliments on my app, which holds multiple unique and complex development.",
     },
   ];
-  const solutionTitle = "";
+  const solutionTitle =
+    "By clearly understanding the Client mission, the InfoKoders technologies team beautifully built, designed, and launched an exceptional football web-based platform fulfilling all the needs of football lovers by enabling them to keep an eye on every football league turning up across the globe and reflects the strategies or trading knowledge.";
   const productData = [
     {
-      title: "Client and Product Goals",
-      subTitle: "",
-      des: " A Minneapolis-based start-up wished to eradicate the student’s financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the process school is paid, helping deserving students, and effective management of award programs.",
-      buttonText: "Perfectly Remodeled The Platform.",
-      imageSrc: "/assets/img/laptopMobile.png",
+      title: "Client and Business Goals",
+      subTitle:
+        "A UK-based Client presented his plan to develop a visually consistent, easy navigate, and engaging football portal that delivers A-Z insights of football matches that are going to take place around the globe.",
+      des: "The main objective of the client was to provide an online convenience to football lovers, through which they can easily learn about the complete live or past match stats without missing any details.",
+      buttonText: "Successfully achieved Client Vision.",
+      imageSrc: "/assets/img/platformproduct.png",
     },
+  ];
+  const clientSubTitle = "";
+
+  const featuresData = [
+    {
+      des: "Stay up to date",
+      subDes:
+        "The portal provides quick access to favorite championship, table standing, and complete fixtures so that the user doesn’t miss any match moment",
+    },
+    {
+      des: "Simple and Handy user interface",
+      subDes:
+        "Clean, Minimal, and attractive user interface that reflects game reviews and summary of football matches.",
+    },
+    {
+      des: "Fixture tracker",
+      subDes:
+        "Empower the football fans to track the team’s progress by switching between player and upcoming fixture.",
+    },
+    {
+      des: "Discover all leagues",
+      subDes:
+        "Users can be updated about all the upcoming leagues by accessing this feature",
+    },
+    {
+      des: "Discover all leagues",
+      subDes:
+        "Users can be updated about all the upcoming leagues by accessing this feature",
+    },
+  ];
+
+  const clientData = [
+    "Provide the precise football trading assistance to users aiming to create second income",
+    "High probability, reliable trading, and secure betting tips everything can be achieved with the platform.",
+    "Cherished as one of the best football trading platforms among football admires for the people looking to derive income from football betting and trading",
   ];
   const contactTitle = "Have a similar project idea?";
   const contactSubTitle =
     "Share your requirements and get a free consultation.";
-  const clientSubTitle =
-    " The Platform innovatively built and structured by InfoKoders technologies is now skyrocketing in USA educational space and helping millions of students to achieve their dreams";
+
   return (
     <>
       <Box>
         {/* Header and image  */}
-        <Grid id="carousel" className={styles.backgroundSchlorship}>
+        <Grid id="carousel" className={styles.backgroundPlatform}>
           <Navbar />
           <Typography
             className={styles.imageTitle}
@@ -104,25 +135,29 @@ const Schlorship = () => {
               xl: "35px",
             }}
           >
-            A Online Scholarship Management Platform - fulfilling Educational
-            Aspirations of Million Students
+            A Remarkable football platform delivering in-depth soccer details
           </Typography>
         </Grid>
         <ProductGoals productData={productData} />
-        <Solutions CarouselData={CarouselData} solutionTitle={solutionTitle} />
-        <Portal />
+        <Solutions
+          CarouselData={CarouselData}
+          solutionTitle={solutionTitle}
+          isPlatform={true}
+        />
+        {/* <Portal /> */}
         {/* Client Achivement  */}
+        <Features featuresData={featuresData} isBiodiversity={true} />
         <ClientAchivement
           clientData={clientData}
           clientSubTitle={clientSubTitle}
-          isSchlorship={true}
         />
-        {/* <Features /> */}
+
         <Contact title={contactTitle} subTitle={contactSubTitle} />
+
         <Footer />
       </Box>
     </>
   );
 };
 
-export default Schlorship;
+export default PlatForm;

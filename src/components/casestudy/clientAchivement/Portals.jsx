@@ -12,7 +12,11 @@ const Portal = () => {
         sx={{ background: "#f8f9fd !important" }}
         className={styles.productMain}
       >
-        <Grid container spacing={10} className={styles.productContainer}>
+        <Grid
+          container
+          spacing={{ xs: 3, sm: 3, md: 10, lg: 10 }}
+          className={styles.productContainer}
+        >
           <Grid size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
             <Typography
               fontSize={{ lg: "35px", md: "26px ", sm: "30px", xs: "22px" }}
