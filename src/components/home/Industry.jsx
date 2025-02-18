@@ -64,7 +64,7 @@ const Industry = () => {
                 lg: "40px",
                 md: "35px",
                 sm: "30px",
-                xs: "28px",
+                xs: "26px",
               },
             }}
             className={styles.industryHeader}

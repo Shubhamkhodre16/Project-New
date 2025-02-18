@@ -29,30 +29,35 @@ const CaseStudy = () => {
         description:
           "A Minneapolis-based start-up wished to eradicate the student’s financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the process school is paid, helping deserving students, and effective management of award programs.",
         image: "./assets/img/start-up-slide3.webp",
+        path: "/studies/services/schlorship",
       },
       {
         title: "A serviceable platform providing awareness of digital payments",
         description:
           "Digital payments are accelerating the entrepreneur’s profitability by facilitating them to carry out financial transactions with customers, suppliers, and the governments in a more effective,safer, and cheaper way.",
         image: "./assets/img/start-up-slide1.webp",
+        path: "/studies/services/digital",
       },
       {
         title: "A full fledged freelance platform",
         description:
           "In this digital age, millions of specialists worldwide diverted from the 9 to 5 hectic work culture to freelancing/ flexible remote work for smooth maintenance of work-life balance. A tremendous number of enterprises, small start-ups as well as big companies are leveraging this smart opportunity of getting associated with freelancers in order to get their work done quickly and affordably.",
         image: "./assets/img/start-up-slide4.webp",
+        path: "/studies/services/freelance",
       },
       {
         title: "World’s Popular Biodiversity Assessment tool",
         description:
           "A UK based Client came up with the innovative mission of developin an incredible Biodiversity data collection platform for instructing the decision-makers about geographic information of global biodiversity.",
         image: "./assets/img/start-up-slide5.webp",
+        path: "/studies/services/diversity",
       },
       {
         title: "A Remarkable football platform",
         description:
           "A UK-based Client presented his plan to develop a visually consistent, easy navigate, and engaging football portal that delivers A-Z insights of football matches that are going to take place around the globe.The main objective of the client was to provide an online convenience to football lovers, through which they can easily learn about the complete live or past match stats without missing any details.",
         image: "./assets/img/start-up-slide6.webp",
+        path: "/studies/services/platform",
       },
     ],
     Industries: [
@@ -61,12 +66,14 @@ const CaseStudy = () => {
         description: "Containerization with Docker for scalable applications.",
         image: "./assets/img/start-up-slide1.webp",
         category: "Educations",
+        path: "/studies/services/diversity",
       },
       {
         title: "React",
         description: "Build modern UI with React and Next.js.",
         image: "./assets/img/start-up-slide3.webp",
         category: "Hospitals",
+        path: "/studies/services/diversity",
       },
     ],
     Technologies: [
@@ -74,11 +81,13 @@ const CaseStudy = () => {
         title: "React",
         description: "Build modern UI with React and Next.js.",
         image: "./assets/img/start-up-slide3.webp",
+        path: "/studies/services/diversity",
       },
       {
         title: "Node.js",
         description: "Backend services with Node.js and Express.",
         image: "./assets/img/start-up-slide3.webp",
+        path: "/studies/services/diversity",
       },
     ],
   };
@@ -192,6 +201,7 @@ const CaseStudy = () => {
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
+                      boxShadow: "none",
                     }}
                   >
                     <CardMedia
@@ -220,9 +230,9 @@ const CaseStudy = () => {
                     </CardContent>
 
                     <CardActions
-                      sx={{ paddingBottom: "25px", paddingLeft: "30px" }}
+                      sx={{ paddingBottom: "15px", paddingLeft: "15px" }}
                     >
-                      <Link href="/studies/schlorship" passHref>
+                      <Link href={card?.path} passHref>
                         <Button
                           sx={{
                             color: "#fff",

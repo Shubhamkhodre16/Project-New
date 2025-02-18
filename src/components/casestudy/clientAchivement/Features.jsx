@@ -5,22 +5,7 @@ import { Typography, Box, Button } from "@mui/material";
 import Image from "next/image";
 import DataBackup from "../../../../public/assets/img/DataBackup.gif";
 
-const Features = () => {
-  const featuresData = [
-    {
-      des: "The platform provides advisory services to member priorities for digital payments",
-    },
-    {
-      des: "Share action-oriented research and foster peer learning",
-    },
-    {
-      des: "Conduct advocacy at a national, regional, and global level",
-    },
-    {
-      des: "Provide awareness of digital payments through content sharing",
-    },
-  ];
-
+const Features = ({ isBiodiversity = false, featuresData }) => {
   return (
     <>
       <Box className={styles.featuresMain}>
@@ -31,7 +16,7 @@ const Features = () => {
               fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}
               className={styles.solutionHeading}
             >
-              Features
+              {isBiodiversity ? "Product Highlights" : "Features"}
             </Typography>
           </Grid>
 
@@ -47,6 +32,11 @@ const Features = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
+                  "&:hover": {
+                    borderColor: " #ebebeb",
+                    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)",
+                    transform: "scale(1.05)",
+                  },
                 }}
               >
                 <Image
@@ -62,10 +52,20 @@ const Features = () => {
                   sx={{
                     color: "#333",
                     fontSize: "22px",
-                    fontFamily: "NovemberPro-Reg",
+                    fontFamily: "NovemberPro",
+                    fontWeight: "bold",
                   }}
                 >
                   {item?.des}
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "#333",
+                    fontSize: "18px",
+                    fontFamily: "NovemberPro-Reg",
+                  }}
+                >
+                  {item?.subDes}
                 </Typography>
               </Grid>
             ))}

@@ -82,9 +82,9 @@ const Footer = () => {
                 <Typography
                   variant="body2"
                   sx={{
-                    fontSize: "12px",
+                    fontSize: "13px",
                     fontFamily: "NovemberPro-Reg",
-                    color: "#7e818e",
+                    color: "#899394",
                   }}
                 >
                   © 2025 InfoKoders Technologies. All Rights Reserved.
@@ -160,18 +160,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li style={{ marginLeft: "10px " }} className="pt-4">
-                <Link href="">
-                  <InstagramIcon sx={{ width: "30px", height: "30px" }} />
-                </Link>
                 <Link href="https://in.linkedin.com/company/infokoders-technologies">
                   <LinkedInIcon sx={{ width: "30px", height: "30px" }} />
                 </Link>
                 <Link href="https://www.facebook.com/infokoders">
                   <FacebookIcon sx={{ width: "30px", height: "30px" }} />
                 </Link>
-                <Link href="https://www.facebook.com/infokoders">
+                {/* <Link href="https://www.facebook.com/infokoders">
                   <TwitterIcon sx={{ width: "30px", height: "30px" }} />
                 </Link>
+                <Link href="">
+                  <InstagramIcon sx={{ width: "30px", height: "30px" }} />
+                </Link> */}
               </li>
             </ul>
           </Grid>

@@ -7,20 +7,19 @@ import brightness from "../../../../public/assets/img/arrow-right.svg";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import DataBackup from "../../../../public/assets/img/DataBackup.gif";
 
-const ClientAchivement = () => {
-  const clientData = [
-    "Financial awards are being offered by big giant organizations: Taco Bell Foundation, the Houstan Livestock Show and Rodeo, Land O Lakes, TB12 Foundation, and The University of Alaska.",
-    "Asper the info claimed by Forbes, the system declares millions in private scholarships for college students and also stated the accessibility of more than $24 million of fresh scholarship opportunities.",
-    "The platform got scaled from 0 to 3 million active users and still reaching the new heights.",
-  ];
-
+const ClientAchivement = ({
+  isSchlorship = false,
+  clientSubTitle = "",
+  isClientAchivement = false,
+  clientData,
+}) => {
   const techStack = [
     {
       title: "Frontend",
       subtle: "ReactJs/NextJS",
     },
     {
-      title: "Frontend",
+      title: "Backend",
       subtle: "Ruby on Rails",
     },
     {
@@ -45,7 +44,10 @@ const ClientAchivement = () => {
   ];
   return (
     <>
-      <Box className={styles.mainAchivement}>
+      <Box
+        sx={{ marginBottom: isSchlorship ? "100px" : "" }}
+        className={styles.mainAchivement}
+      >
         <Grid className={styles.achivementContainer}>
           <Grid>
             <Typography
@@ -58,9 +60,7 @@ const ClientAchivement = () => {
               className={styles.achiveSubtitle}
               fontSize={{ lg: "24px", md: "20px ", sm: "20px", xs: "18px" }}
             >
-              The Platform innovatively built and structured by InfoKoders
-              technologies is now skyrocketing in USA educational space and
-              helping millions of students to achieve their dreams
+              {clientSubTitle}
             </Typography>
           </Grid>
           {/* Data  */}
@@ -69,7 +69,12 @@ const ClientAchivement = () => {
               <Grid
                 className={styles.archiveSubData}
                 key={index}
-                size={{ xs: 12, sm: 12, md: 4, lg: 4 }}
+                size={{
+                  xs: 12,
+                  sm: 12,
+                  md: isClientAchivement ? 6 : 4,
+                  lg: isClientAchivement ? 6 : 4,
+                }}
               >
                 <span
                 // className={styles.brightness}
