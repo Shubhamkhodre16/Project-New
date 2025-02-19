@@ -326,7 +326,7 @@ const HomeContent = () => {
             >
               <Image
                 style={{ width: "22%" }}
-                src="/assets/img/teamMember.gif"
+                src="/assets/img/teammember.gif"
                 alt=""
                 height={80}
                 width={60}
@@ -537,7 +537,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/agileDevelopment.gif"
+                      image="/assets/img/agiledevelopment.gif"
                       alt="backup"
                     />
                   </Box>
