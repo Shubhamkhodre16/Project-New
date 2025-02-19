@@ -465,7 +465,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/dataProtections.gif"
+                      image="/assets/img/dataprotections.gif"
                       alt="backup"
                     />
                   </Box>
