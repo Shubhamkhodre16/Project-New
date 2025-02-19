@@ -81,9 +81,7 @@ const AboutUsPart = () => {
       <Box>
         <Grid id="carousel" className={styles.background}>
           <Navbar />
-          <Typography variant="h1" className={styles.about}>
-            About us
-          </Typography>
+          <Typography className={styles.about}>About us</Typography>
         </Grid>
         {/* Achiving Section  */}
         <Grid className={styles.achieving}>
