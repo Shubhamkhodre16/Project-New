@@ -309,6 +309,12 @@
   }
 }
 
+@media (min-width: 1200px) { /* Adjust breakpoint as needed */
+  .stepContainer:last-child .bullets::before {
+      content: none; /* Removes the dashed line for the last bullet */
+  }
+}
+
 @media (max-width: 512px) {
   /* Full width step containers */
   .gridContainer {
