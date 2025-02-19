@@ -28,6 +28,7 @@ import logo1 from "../../../public/assets/img/logo.png";
 const Navbar = () => {
   const pages = [
     { name: "Home", path: "/" },
+    
     { name: "About us", path: "/about" },
     { name: "Case Studies", path: "/studies" },
     {
