@@ -1,7 +1,5 @@
 "use client";
 import Carousel from "../components/home/Carousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import OurProcess from "../components/home/OurProcess";
 import TestiMonials from "../components/home/Testimonials";
 import OurBlog from "../components/home/OurBlog";
