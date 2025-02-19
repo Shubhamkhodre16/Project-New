@@ -46,7 +46,7 @@ const Prototype = () => {
       image:"/assets/img/heroku.png",
    },
    {
-      image :"/assets/img/mongoDbs.png",
+      image :"/assets/img/mongodbs.png",
    },
    {
       image:"/assets/img/node.png",

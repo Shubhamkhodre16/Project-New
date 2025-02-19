@@ -48,7 +48,7 @@ const AboutUsPart = () => {
       title: "Standard process-oriented",
       description:
         "We use high-end processes for each task while keeping an overall view of the projects in mind.",
-      image: "./assets/img/StandardProcess.gif",
+      image: "./assets/img/standardprocess.gif",
     },
     {
       title: "No unexpected Results",
