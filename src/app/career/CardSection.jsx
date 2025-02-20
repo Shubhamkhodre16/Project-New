@@ -16,31 +16,37 @@ const CardSection = () => {
       image: "/assets/img/ror-min.png",
       title: " ROR Development",
       desc: "We are saving the applications that are not meant to go off the rails. Let’s get your business on track",
+      path:"/services/ror"
     },
     {
       image: "/assets/img/react-min.png",
       title: " React JS Development",
       desc: " Speeding up the development process with react js enables the delivery of feature-rich and user-friendly apps",
+      path:"/services/react"
     },
     {
       image: "/assets/img/amazon-min.png",
       title: " Amazon Services",
       desc: " Providing all the spheres of cloud services with a true revolutionary approach to cloud computing known as AWS",
+      path:"/services/aws"
     },
     {
       image: "/assets/img/node-min.png",
       title: "Node Development",
       desc: "Creating a real-time application, an IoT device, or a high-traffic website through Node.js,a choice for lower development costs",
+      path:"/services/node"
     },
     {
       image: "/assets/img/heroku-min.png",
       title: " Heroku Development",
       desc: " Availing the Heroku (Paas) platform for building, running, and operating applications securely in the cloud",
+      path:"/services/heroku"
     },
     {
       image: "/assets/img/angular-min.png",
       title: "Angular Development",
       desc: "The innovations in the digital space today are making lives easier and faster and leaving customers with more choices",
+      path:"/services/angular"
     },
   ];
   return (
@@ -72,7 +78,7 @@ const CardSection = () => {
                   },
                 }}
               >
-                <Link href="">
+                <Link href={item?.path} passHref>
                   <Box
                     sx={{
                       display: "flex",
@@ -121,7 +127,7 @@ const CardSection = () => {
                       padding: "10px",
                     }}
                   >
-                    <Link href="">
+                    <Link href={item?.path} passHref>
                       <Image src={rightarrow} alt="" />
                     </Link>
                   </Typography>

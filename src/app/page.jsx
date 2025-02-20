@@ -15,7 +15,7 @@ export default function Home() {
       backgroundImage: "url(/assets/img/ror-banner.svg)",
       des: "Get scalable, secure, and well-supported features web applications by embracing exclusive Ruby on rails development services from InfoKodetechnologies. As one of the top specialists in ROR development services.",
       button: "Read More",
-      path:"/studies/services/schlorship"
+      path:"/services/ror"
     },
     {
       title: "Web Development",
@@ -23,7 +23,7 @@ export default function Home() {
       backgroundImage: "url(/assets/img/web-technology.svg)",
       des: "For offering enhanced user experience and result-oriented solutions we are having unmat capabilities. A team of experienced web developers at InfoKoders technologies works dedicatedly to produce web solutions that can help to grow your business.",
       button: "Read More",
-      path:"/studies/services/schlorship"
+      path:"/services/react"
     },
     {
       title: "We are start-up uplifters",
@@ -63,7 +63,7 @@ export default function Home() {
       backgroundImage: "url(/assets/img/right2.png)",
       des: "We follow Agile Development Process, which enables us to deliver the project with the highest quality and a solid product.App development takes time, but by using agile development methodologies, our full-stack web developers make it look easy.",
       button: "Read More",
-      path:"/studies/services/schlorship"
+      path:"/services/ror"
     },
   ];
   return (

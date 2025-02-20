@@ -17,22 +17,22 @@ const OurBlog = () => {
       image: "./assets/img/start-up-slide1.webp",
       content:
         "A Remarkable football platform delivering in-depth soccer details",
-      path: "/studies",
+      path: "/studies/services/digital",
     },
     {
       image: "./assets/img/start-up-slide6.webp",
       content: "A serviceable platform providing awareness of digital payments",
-      path: "/studies",
+      path: "/studies/services/platform",
     },
     {
       image: "./assets/img/start-up-slide3.webp",
       content: "Online Scholarship",
-      path: "/studies",
+      path: "/studies/services/schlorship",
     },
     {
       image: "./assets/img/start-up-slide4.webp",
       content: "A full-fledged freelance platform NPO",
-      path: "/studies",
+      path: "/studies/services/freelance",
     },
     // {
     //   image: "./assets/img/homeBlog.png",
