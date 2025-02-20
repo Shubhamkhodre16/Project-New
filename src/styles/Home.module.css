@@ -337,9 +337,9 @@
 .testimonialsText {
   color: #181836;
   display: block;
-  font-size: 100px;
+  font-size: 82px;
   font-weight: bolder;
-  left: -240px;
+  left: -205px;
   margin-bottom: 0;
   -webkit-transform: translateY(-58%) rotate(-90deg);
   transform: translateY(-58%) rotate(-90deg);
@@ -358,7 +358,7 @@
 }
 .testimonialPara {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   padding: 10px;
   font-family: "NovemberPro-Reg" !important;
   color: #333;
@@ -411,8 +411,8 @@
 }
 
 .avatar {
-  width: 90px;
-  height: 90px;
+  width: 90px !important;
+  height: 90px !important;
   margin: auto;
   justify-content: center;
 }
@@ -420,7 +420,7 @@
 .cardTitle {
   font-size: 14px;
   font-weight: bold;
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   margin: 10px 0;
   margin-top: 20px;
   color: #650909;
@@ -429,7 +429,7 @@
 .description1 {
   font-size: 14px;
   color: #555;
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
 }
 
 /* / Responsive Design / */
@@ -451,8 +451,8 @@
   }
 
   .slideItem {
-    width: 450px;
-    min-width: 40%;
+    width: 450px !important;
+    min-width: 40% !important;
   }
 
   .carouselItem {
@@ -544,12 +544,12 @@
 }
 
 .gridContainer1 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap; /* Ensures wrapping if items exceed width */
+  width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important; /* Ensures wrapping if items exceed width */
   padding: 20px 20px;
-  min-width: 95%;
-  gap: 20px;
+  min-width: 95% !important;
+  gap: 20px !important;
   position: relative;
   left: 10%;
   right: 10%;
@@ -651,11 +651,14 @@
 
 @media screen and (max-width: 1200px) {
   .gridContainer1 {
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 20px;
     left: 0%;
     right: 0%;
     align-items: center;
+  }
+  .testimonialsText {
+    display: none !important;
   }
 }
 @media screen and (max-width: 900px) {
@@ -665,7 +668,7 @@
   }
 
   .gridContainer1 {
-    flex-direction: column;
+    flex-direction: column !important; 
     padding: 20px;
     left: 0%;
     right: 0%;
@@ -699,11 +702,8 @@
     display: none;
   }
 
-  .testimonialsText {
-    display: none !important;
-  }
   .gridContainer1 {
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 20px;
     left: 0%;
     right: 0%;
@@ -728,7 +728,7 @@
   }
 
   .gridContainer1 {
-    flex-direction: column;
+    flex-direction: column !important;
     left: 0%;
     right: 0%;
     align-items: center;
@@ -757,7 +757,7 @@
   }
 
   .gridContainer1 {
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 20px;
     left: 0%;
     right: 0%;
