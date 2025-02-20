@@ -1,23 +1,4 @@
-@font-face {
-  font-family: "NovemberPro";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
-       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
-
-@font-face {
-  font-family: "NovemberPro-Reg";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 /* Default Styles */
@@ -60,8 +41,7 @@
   /* font-size: 35px; */
   font-weight: bold;
   color: aliceblue;
-  font-family: "NovemberPro";
-  padding: 250px 10%;
+  padding: 280px 10%;
 }
 
 .container {
@@ -88,7 +68,6 @@
 .studyCards1 {
   min-height: 385px;
   /* box-shadow: 1px #333; */
-  border-radius: 10px;
   border: 1px solid #e1e1e1;
 }
 .activeTab {

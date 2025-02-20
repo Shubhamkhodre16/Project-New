@@ -116,6 +116,7 @@ const CaseStudy = () => {
           textAlign={{ xs: "center", sm: "center", md: "left" }}
           fontSize={{ xs: "35px", md: "50px" }}
           className={styles.case}
+        sx={{fontFamily:"NovemberPro"}}
         >
           Case Studies
         </Typography>
@@ -124,7 +125,7 @@ const CaseStudy = () => {
       <Grid className={styles.studiesMain}>
         <Grid className={styles.container}>
           {/* Tabs */}
-          <Grid container className={styles.tabContainer}>
+          {/* <Grid container className={styles.tabContainer}>
             <Tabs
               value={activeTab}
               onChange={handleChange}
@@ -149,10 +150,10 @@ const CaseStudy = () => {
                 <Tab key={tab} label={tab} value={tab} />
               ))}
             </Tabs>
-          </Grid>
+          </Grid> */}
 
           {/* Subcategory Filter (Only for Industries Tab) */}
-          {activeTab === "Industries" && (
+          {/* {activeTab === "Industries" && (
             <Grid
               container
               spacing={2}
@@ -178,7 +179,7 @@ const CaseStudy = () => {
                 </Button>
               ))}
             </Grid>
-          )}
+          )} */}
 
           {/* <Grid>
           <Divider  />
@@ -202,6 +203,7 @@ const CaseStudy = () => {
                       display: "flex",
                       flexDirection: "column",
                       boxShadow: "none",
+                      borderRadius:"10px"
                     }}
                   >
                     <CardMedia
@@ -217,12 +219,16 @@ const CaseStudy = () => {
                       title={card.title}
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography className={styles.title} gutterBottom>
+                      <Typography
+                      sx={{fontFamily:"NovemberPro"}}
+                      className={styles.title} gutterBottom>
                         {card.title.length > 50
                           ? `${card.title.slice(0, 50)}...`
                           : card.title}
                       </Typography>
-                      <Typography className={styles.CaseStudySubTitle}>
+                      <Typography
+                      sx={{fontFamily:"NovemberPro-Reg"}}
+                      className={styles.CaseStudySubTitle}>
                         {card.description.length > 170
                           ? `${card.description.slice(0, 170)}...`
                           : card.description}
@@ -238,6 +244,7 @@ const CaseStudy = () => {
                             color: "#fff",
                             backgroundColor: "#333",
                             textTransform: "capitalize",
+                            fontFamily:"NovemberPro-Reg"
                           }}
                           variant="contained"
                           size="medium"

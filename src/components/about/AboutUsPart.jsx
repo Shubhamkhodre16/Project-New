@@ -233,7 +233,7 @@ const AboutUsPart = () => {
             <Grid container spacing={3} className={styles.coresubcont1}>
               {coreValues?.map((item, index) => (
                 <Grid
-                  size={{ xs: 12, sm: 12, lg: 4 }}
+                  size={{ xs: 12, sm: 12, md:6, lg: 4 }}
                   className={styles.coreBox}
                   key={index}
                 >
@@ -259,6 +259,7 @@ const AboutUsPart = () => {
                         sm: "18px",
                         xs: "16px",
                       },
+                      marginTop:"8px"
                     }}
                   >
                     {item?.desc}
@@ -279,7 +280,7 @@ const AboutUsPart = () => {
             <Grid container spacing={3} className={styles.coresubcont}>
               {coreStats?.map((item, index) => (
                 <Grid
-                  size={{ xs: 12, sm: 12, lg: 3 }}
+                  size={{ xs: 12, sm: 12, md:6, lg: 3 }}
                   className={styles.coreBox1}
                   key={index}
                 >
@@ -348,7 +349,7 @@ const AboutUsPart = () => {
             <Grid container spacing={4} className={styles.coresubcont}>
               {uspValues?.map((item, index) => (
                 <Grid
-                  size={{ xs: 12, sm: 12, lg: 4 }}
+                  size={{ xs: 12, sm: 12, md:6, lg: 4 }}
                   key={index}
                   className={styles.uspBox}
                 >
