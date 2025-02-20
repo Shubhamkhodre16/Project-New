@@ -6,6 +6,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-family: "NovemberPro";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,14 +25,15 @@ body {
 /* Custom Fonts */
 @font-face {
   font-family: "NovemberPro";
-  src: url("../fonts/novemberPro/NovemberPro.ttf");
-  font-weight: normal;
+  src: url("../fonts/novemberPro/NovemberPro.ttf") format("truetype");
+  font-weight: 400; /* Normal weight */
   font-style: normal;
 }
 
 @font-face {
-  font-family: "NovemberPro-Reg";
-  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf");
-  font-weight: normal;
+  font-family: "NovemberPro";
+  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf") format("truetype");
+  font-weight: 500; /* Slightly heavier weight */
   font-style: normal;
 }
+
