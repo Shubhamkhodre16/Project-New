@@ -218,7 +218,7 @@ const AboutUsPart = () => {
                 className={styles.ourcoreDescription}
                 sx={{
                   fontSize: {
-                    lg: "24px ",
+                    lg: "22px ",
                     md: "20px ",
                     sm: "20px ",
                     xs: "18px",
@@ -241,9 +241,9 @@ const AboutUsPart = () => {
                     className={styles.coreBoxTitle}
                     sx={{
                       fontSize: {
-                        lg: "26px  ",
-                        md: "24px ",
-                        sm: "22px ",
+                        lg: "24px",
+                        md: "22px ",
+                        sm: "24px ",
                         xs: "20px ",
                       },
                     }}
@@ -254,8 +254,8 @@ const AboutUsPart = () => {
                     className={styles.coreBoxDesc}
                     sx={{
                       fontSize: {
-                        lg: "22px",
-                        md: "20px",
+                        lg: "18px",
+                        md: "16px",
                         sm: "18px",
                         xs: "16px",
                       },
@@ -332,7 +332,7 @@ const AboutUsPart = () => {
                 className={styles.coreDescriptionUsp}
                 sx={{
                   fontSize: {
-                    lg: "24px ",
+                    lg: "22px ",
                     md: "20px ",
                     sm: "20px ",
                     xs: "18px",
