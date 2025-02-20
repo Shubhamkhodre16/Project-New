@@ -6,6 +6,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-family: "NovemberPro";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,14 +25,35 @@ body {
 /* Custom Fonts */
 @font-face {
   font-family: "NovemberPro";
-  src: url("../fonts/novemberPro/NovemberPro.ttf");
-  font-weight: normal;
+  src: url("../fonts/novemberPro/NovemberPro.ttf") format("truetype");
+  font-weight: 400; /* Normal weight */
   font-style: normal;
 }
 
 @font-face {
+  font-family: "NovemberPro";
+  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf") format("truetype");
+  font-weight: 500; /* Slightly heavier weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NovemberPro";
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
+       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: "NovemberPro-Reg";
-  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
+       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
