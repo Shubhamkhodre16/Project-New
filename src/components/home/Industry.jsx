@@ -10,7 +10,7 @@ const Industry = () => {
     {
       title: "01",
       name: "Retail & eCommerce",
-      image: "/assets/img/shoppingCart.gif",
+      image: "/assets/img/shoppingcart.gif",
     },
     {
       title: "02",

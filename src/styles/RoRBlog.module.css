@@ -1,11 +1,7 @@
-/* .rorContainer{
-    padding: 100px 0px 100px 0px;
-
-} */
 .backgroundRor {
   position: relative;
   width: 100%;
-  height: 690px;
+  height: 645px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,18 +16,144 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .imageSubTitle {
   color: #fff;
   font-family: "NovemberPro";
   padding-top: 250px;
   padding-bottom: 20px;
-  padding-left: 9%;
   opacity: 0.9;
 }
-
+.howRorContainer{
+  padding: 3% 6%;
+  background-image: url("../../public/assets/img/howror.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.howRorTitle {
+  font-family: "NovemberPro";
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+.howRorDesc{
+  padding: 10px 0 0 0;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  text-align: center;
+}
+.codeImg {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2% 0px 3% 0px;
+  flex-direction: column;
+  display: flex;
+}
+.whatRorcontainer {
+  padding: 2% 8% 3% 8%;
+  text-align: center;
+  color: #333;
+}
+.whatRorTitle{
+  font-family: "NovemberPro";
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+.whatRorDesc{
+  padding: 10px 0 0 0;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  text-align: center;
+}
+.howRorCard {
+  padding: 2% 8% ;
+}
+.goodChoiceTitle{
+  font-family: "NovemberPro";
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+.goodChoiceDesc{
+  padding: 10px 0 0 0;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  text-align: left  ;
+}
+.goodchoiceContainer{
+  padding:2% 8% ;
+}
+.cards{
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  box-shadow: 8px 8px 30px 0 #2a43712e;
+  padding: 2% 0 ;
+}
+.CardTitle{
+  font-family: NovemberPro;
+  font-weight: 500;
+  text-align: center;
+  color: #212529;
+  line-height: 1.2;
+  padding:0 5%; 
+  margin-bottom: .5rem;   
+}
+.subTitle{
+  font-family: NovemberPro;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom:.5rem ;
+  color: #650509;
+  text-align: center;
+}
+.des{
+  font-family: NovemberPro-Reg;
+  padding: 1% 6%;
+  text-align: center;
+  color:#333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.CardEnd{
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #212529;
+  font-family: NovemberPro-Reg;
+}
+.conclusionRor {
+  padding: 3% 0 3% 0;
+}
+.conclusionTitle{
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2x;
+  color: #181836;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+.conclusionDes{
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  color:#333;
+  line-height: 1.5;
+  padding: 0 8%;
+}
 /* React Native  */
-
 .backgroundReact {
   position: relative;
   width: 100%;
@@ -50,46 +172,183 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
-.whatRor {
-  padding: 100px 0 50px 0;
-  text-align: center;
-  color: #333;
+.imageSubTitleReactNative {
+  color: #fff;
+  font-family: "NovemberPro";
+  padding-top: 250px;
+  padding-bottom: 20px;
+  opacity: 0.9;
 }
-
-.howRor {
-  padding: 50px 50px 100px 50px;
-  text-align: center;
-  color: #333;
+.gameChanger{
+  padding: 6% 10% 0 10%;
+  background-image: url(/assets/img/gamechangerback.png);
+  background-repeat: no-repeat;
+  background-position: center left;
 }
-.howRorCard {
-  padding: 50px 50px 20px 50px;
-  text-align: center;
-  color: #333;
-}
-.codeImg {
+.gameChangerGrid{
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 50px 0px 50px 0px;
   flex-direction: column;
-  display: flex;
 }
-
-/* How Good RoR  */
-.cards {
+.gameChangerTitle{
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: .5rem;
+}
+.gameChangerDes{
+  padding: 10px 0 0 0;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+}
+.gameChangerButton{
+  cursor: pointer;
+  padding: 8px 18px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: #181836;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  text-transform: none;
+}
+.gameChangerButton:hover{
+  cursor: pointer;
+  padding: 8px 18px;
+  border: 1px solid #181836;
+  background-color: #ffffff;
+  color: #181836;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+  text-transform: none;
+}
+/* what is react native */
+.reactnative{
+  padding: 4% 10%;
+}
+.reactnativeGrid{
+  text-align: center;
+  flex-direction: column;
+}
+/* marketShare */
+.marketShare{
+  display: flex;
+  justify-content: center;
+  padding: 2%  8%;
+}
+/* whyReactNative */
+.whyReactNative{
+  padding: 2% 8%;
+}
+/* Why React Native?  */
+.Nativecard{
+  background-image: url(/assets/img/reactnativecard.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-bottom: 30px;
+}
+.uspBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding:  4%;
+}
+.uspBox:hover {
   border-color: #ebebeb;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
-  background-color: #ffffff;
-  padding: 1%;
-  color: #333;
-  border-radius: 10px;
 }
-
+.uspBoxTitle {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-family: NovemberPro;
+}
+.uspBoxDesc {
+  color: #333333;
+  line-height: 1.5;
+  font-family: NovemberPro-Reg;
+}
+/* Big firms that have reshaped with React Native Development */
+.reshaped{
+    padding: 4% 8%;
+    background-color: #f8f9fd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.reshapedtitle{
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  margin-bottom: 1.5rem;
+}
+.reshapedContent{
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+}
+.reshapedContentLeft{
+  color: #650909;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: NovemberPro;
+}
+.reshapedContentLeftDesc{
+  padding: 10px 0 0 0;
+  color:#333;
+  line-height: 1.5;
+  font-family: NovemberPro-Reg;
+}
+.reshapedContentRight{
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: NovemberPro;
+  color:#212529;
+  text-align: left;
+}
+.reshapedContentRightDesc{
+  padding:10px 0 0 0;
+  color:#333;
+  line-height: 1.5;
+  font-family:NovemberPro-Reg ;
+  text-align: left;
+  margin: 0 15px;
+}
+.reshapedContentLeftDescIcon{
+  padding-right: 10px;
+  font-size: 25px;
+}
 /* conclusions  */
-
-.conclusionRor {
-  padding: 100px 0 0px 0;
-  color: #333;
+.conclusion{
+  padding: 2% 8%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+.conclusionReact{
+  font-family: NovemberPro;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #181836;
+  padding:0 0 10px 0;
+}
+.conclusionReactDesc{
+  padding: 10px 0 0 0;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: NovemberPro-Reg;
+}
+
+
