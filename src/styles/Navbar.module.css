@@ -30,6 +30,13 @@
   font-size: 17px;
 }
 
+@media (max-width: 600px) {
+  .navbarContainer {
+    height: 80px !important;
+    padding: 12px 4% 10px 4% !important;
+  }
+}
+
 @media (max-width: 512px) {
   .logo {
     width: 170px !important;
@@ -37,10 +44,7 @@
     margin-left: 2% !important;
     min-width: 170px !important;
   }
-  .navbarContainer {
-    height: 80px !important;
-    padding: 12px 4% 10px 4%;
-  }
+ 
   .iconButton {
     width: 35px;
     height: 35px;
