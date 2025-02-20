@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import clsx from "clsx";
 import Navbar from "../navbar/Navbar";
 import { Typography, Box } from "@mui/material";
 import Grid from "@mui/material/Grid2";
@@ -39,6 +38,7 @@ const BlogsContent = () => {
           <Typography
             textAlign={{ xs: "center", sm: "center", md: "left" }}
             fontSize={{ xs: "35px", md: "50px" }}
+            sx={{ fontFamily: "NovemberPro" }}
             className={styles.case}
           >
             Blogs
@@ -77,12 +77,19 @@ const BlogsContent = () => {
                       title={card.title}
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography className={styles.title} gutterBottom>
+                      <Typography
+                        sx={{ fontFamily: "NovemberPro", fontSize: "20px" }}
+                        className={styles.title}
+                        gutterBottom
+                      >
                         {card.title.length > 50
                           ? `${card.title.slice(0, 50)}...`
                           : card.title}
                       </Typography>
-                      <Typography className={styles.CaseStudySubTitle}>
+                      <Typography
+                        sx={{ fontFamily: "NovemberPro-Reg", fontSize: "14px" }}
+                        className={styles.CaseStudySubTitle}
+                      >
                         {card.description.length > 170
                           ? `${card.description.slice(0, 170)}...`
                           : card.description}
@@ -98,6 +105,7 @@ const BlogsContent = () => {
                             color: "#fff",
                             backgroundColor: "#333",
                             textTransform: "capitalize",
+                            fontFamily: "NovemberPro",
                           }}
                           variant="contained"
                           size="medium"

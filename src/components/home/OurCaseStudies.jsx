@@ -17,12 +17,12 @@ const OurCaseStudies = () => {
     {
       image: "./assets/img/homeBlog.png",
       content: "What is Ruby on Rail (ROR)",
-      path: "/blog",
+      path: "/blog/content/ror",
     },
     {
       image: "./assets/img/reactNative.png",
       content: "How React Native can be a game-changer",
-      path: "/blog",
+      path: "/blog/content/react",
     },
   ];
 
