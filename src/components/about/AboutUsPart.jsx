@@ -29,7 +29,7 @@ const AboutUsPart = () => {
 
   const coreStats = [
     {
-      value: "2+",
+      value: "5+",
       desc: "Years of experience in Software development and technologies",
     },
     { value: "50+", desc: "Software engineers and technical staff" },
@@ -77,7 +77,7 @@ const AboutUsPart = () => {
   ];
 
   return (
-    <>
+    
       <Box>
         <Grid id="carousel" className={styles.background}>
           <Navbar />
@@ -106,8 +106,6 @@ const AboutUsPart = () => {
                 Pledge to outshine the businesses with customer-winning
                 technological and Software development.
               </Typography>
-              <br />
-              <br />
               <Typography
                 className={styles.maindess}
                 sx={{
@@ -162,7 +160,7 @@ const AboutUsPart = () => {
                   fontSize: { lg: "33px", md: "26px ", sm: "26px", xs: "22px" },
                 }}
               >
-                An unbelievable story of 2+ years
+                An unbelievable story of 5+ years
               </Typography>
               <Typography
                 className={styles.subheading}
@@ -256,10 +254,10 @@ const AboutUsPart = () => {
                     className={styles.coreBoxDesc}
                     sx={{
                       fontSize: {
-                        lg: "22px  ",
-                        md: "20px ",
-                        sm: "18px ",
-                        xs: "16px ",
+                        lg: "22px",
+                        md: "20px",
+                        sm: "18px",
+                        xs: "16px",
                       },
                     }}
                   >
@@ -486,7 +484,7 @@ const AboutUsPart = () => {
 
         <Footer />
       </Box>
-    </>
+    
   );
 };
 
