@@ -1,17 +1,4 @@
 
-@font-face {
-  font-family: "NovemberPro";
-  src: url("../fonts/novemberPro/NovemberPro.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NovemberPro-Reg";
-  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 
 .whoweContainer {
   width: 100%;
@@ -164,12 +151,12 @@
 }
 
 .keyMoaralHead {
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   font-weight: 600;
   color: #333;
 }
 .keyMoaralDes {
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
   color: #333;
 }
 .fontSty {
@@ -180,14 +167,14 @@
 
 .card1Header {
   text-align: center;
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   font-weight: 600;
   color: #333;
 }
 .card1SubHeader {
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
   text-align: center;
-  font-size: 15px;
+  font-size: 15px !important;
   color: #333;
 }
 
@@ -209,7 +196,7 @@
 .industryBackground {
   background-color: #333;
   width: 100%;
-  padding: 60px 40px 60px 40px;
+  padding: 40px 40px 40px 40px;
   margin-top: 30px;
 }
 .industryContainer {
@@ -237,7 +224,7 @@
 
 .industryHeader {
   font-family: "NovemberPro";
-  margin-bottom: 40px;
+  margin-bottom: 32px !important;
   text-align: center;
   color: #fff;
 }

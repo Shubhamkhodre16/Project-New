@@ -50,7 +50,9 @@ const processSteps = [
 
 const OurProcess = () => {
   return (
-    <div className={styles.carouselContainer}>
+    <div
+    style={{paddingBottom:"30px !important"}}
+    className={styles.carouselContainer}>
       <Typography 
        sx={{
         fontSize: {
