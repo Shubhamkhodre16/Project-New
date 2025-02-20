@@ -1,7 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box } from "@mui/material";
-import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 
 const AngularDevelopment = () => {

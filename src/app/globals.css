@@ -37,3 +37,23 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "NovemberPro";
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
+       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "NovemberPro-Reg";
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
+       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
