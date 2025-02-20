@@ -100,20 +100,17 @@ const CardSection = () => {
                   <Typography
                     gutterBottom
                     className={styles.titledrive}
-                    variant="h5"
                     component="div"
-                    sx={{ textAlign: "center", fontSize: { xs: "22px" } }}
                   >
                     {item.title}
                   </Typography>
                   <Typography
                     className={styles.desdrive}
-                    variant="body2"
-                    sx={{
-                      textAlign: "center",
-                      padding: "0 5px",
-                      fontSize: { xs: "14px" },
-                    }}
+                    // sx={{
+                    //   textAlign: "center",
+                    //   padding: "0 5px",
+                    //   fontSize: { xs: "14px" },
+                    // }}
                   >
                     {item.desc}
                   </Typography>
