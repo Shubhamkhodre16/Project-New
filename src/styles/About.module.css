@@ -1,29 +1,8 @@
-@font-face {
-  font-family: "NovemberPro";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
-       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "NovemberPro-Reg";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 /* Default Styles */
 .background {
   width: 100%;
-  height: 800px;
+  height: 645px;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
@@ -35,22 +14,19 @@
   align-items: center;
   background-image: url("../../public/assets/img/slide3.webp");
 }
-
 .about {
   text-align: center;
   font-weight: bold;
   color: #ffffff;
   padding: 20% 0;
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
 }
-
 .achieving {
   background-image: url("../../public/assets/img/bg-shape1-home5.png");
   background-repeat: no-repeat;
   background-position: right top;
   padding: 3% 0;
 }
-
 .container {
   width: 100%;
   margin: 50px auto 0;
@@ -62,7 +38,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .titledata {
   max-width: 1300px;
   width: 50%;
@@ -71,25 +46,23 @@
 }
 .mainhead {
   color: #181836;
-  margin-bottom: 8px;
-  padding-bottom: 30px;
-  font-family: "NovemberPro";
+  margin-bottom: 10px;
+  font-family: "NovemberPro" !important;
   font-weight: bold;
 }
-
 .maindes {
   font-weight: bold;
   color: #333333;
   line-height: 1.5;
-  font-family: "NovemberPro-Reg";
+  margin-bottom: 10px;
+  font-family: "NovemberPro-Reg" !important;
 }
 .maindess {
   line-height: 1.5;
   color: #333333;
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
 }
 /* who we  */
-
 .whowe {
   background-image: url("../../public//assets/img//home-bg-10-1.png");
   background-repeat: no-repeat;
@@ -104,7 +77,6 @@
   display: flex;
   gap: 50px;
 }
-
 .whoweLeft {
   text-align: left;
 }
@@ -113,19 +85,17 @@
 }
 .whoweHeading {
   font-weight: bold;
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
   line-height: 1.2;
   color: #181836;
   padding-bottom: 12px;
 }
 .subheading {
-  font-family: NovemberPro-Reg;
+  font-family: "NovemberPro-Reg" !important;
   color: #333333;
   line-height: 1.5;
 }
-
 /* Core Values Css  */
-
 .coreMain {
   background-color: #333;
   background-position: center right;
@@ -133,36 +103,33 @@
 .coreContainer {
   width: 100%;
   color: #ececec;
-  padding: 1% 16% 6% 16%;
+  padding: 0 16% 6% 16%;
   display: flex;
   flex-direction: column;
 }
 .our {
   color: #650909;
-
   line-height: 1.2;
   font-weight: bold;
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
 }
 .ourcoreTitle {
   color: #ffffff;
-
   line-height: 1.2;
   font-weight: bold;
   text-align: center;
-  font-family: NovemberPro;
-  padding-bottom: 1.5rem;
+  font-family: "NovemberPro" !important;
+  padding-bottom: 0.4rem;
 }
 .ourcoreDescription {
   color: #ffffff;
-
   line-height: 1.5;
   text-align: center;
-  font-family: NovemberPro-Reg;
-  padding-bottom: 1.5rem;
+  font-family: "NovemberPro-Reg" !important;
+  padding-bottom: 0.4rem;
 }
 .coresubcont1 {
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   padding-left: 0;
   margin-left: 0;
   text-align: left;
@@ -172,36 +139,30 @@
   border-radius: 10px;
   padding: 22px 27px 0px 27px;
   margin: 0 0 20px 0;
+  text-align: center;
 }
 .coreBoxTitle {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
 }
-
 .coreBoxDesc {
   line-height: 1.5;
-
-  font-family: NovemberPro-Reg;
-  padding-top: 15px;
+  font-family: "NovemberPro-Reg" !important;
   color: #ffffff;
   padding-bottom: 20px;
 }
-
 .capabilities {
-  padding-top: 80px;
-
+  padding-top: 20px;
   font-weight: bold;
   line-height: 1.2;
-  font-family: NovemberPro;
+  font-family: "NovemberPro"!important;
   padding-bottom: 40px;
 }
-
 .coresubcont {
   text-align: center;
 }
-
 .coreBox1 {
   box-shadow: 1px #ffffff;
   border-radius: 10px;
@@ -212,35 +173,32 @@
 .coreBox1Value {
   font-weight: bold;
   line-height: 1.2;
-  font-family: NovemberPro;
-
+  font-family: "NovemberPro" !important;
   padding-bottom: 10px;
 }
 .coreBox1Desc {
   line-height: 1.5;
-  font-family: NovemberPro-Reg;
+  font-family: "NovemberPro-Reg" !important;
 }
 /* Our Usps */
 .coreQuote {
-  padding: 60px 0 60px 0;
+  padding: 20px 0 10px 0;
 }
 .OurUsp {
   color: #650909;
-
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
   font-weight: bold;
   line-height: 1.2;
 }
 .coreTitleUsp {
   color: #181836;
-
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
   margin-bottom: 0.5rem;
 }
 .coreDescriptionUsp {
   color: #333333;
   line-height: 1.5;
-  font-family: NovemberPro-Reg;
+  font-family: "NovemberPro-Reg" !important;
   padding: 0% 1%;
 }
 .uspContainer {
@@ -248,10 +206,8 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
-  padding: 3% 7% 7% 7%;
+  padding: 1% 7% 7% 7%;
 }
-
 .uspBox {
   display: flex;
   flex-direction: column;
@@ -262,7 +218,6 @@
   border-radius: 10px;
   padding: 6% 4%;
 }
-
 .uspBox:hover {
   border-color: #ebebeb;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -273,43 +228,36 @@
   font-weight: 500;
   margin-bottom: 0.5rem;
   line-height: 1.2;
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
 }
 .uspBoxDesc {
   color: #333333;
   line-height: 1.5;
-  font-family: NovemberPro-Reg;
+  font-family: "NovemberPro-Reg" !important;
 }
-
 /* Vissson and misson  */
-
 .visionMissonContainer {
   width: 100%;
-
   text-align: center;
   padding: 20px 20px 40px 20px;
   display: flex;
   gap: 60px;
-
   justify-content: center;
   text-align: center;
 }
-
 .visionLeft {
   text-align: left;
 }
 .visionleftTitle {
   padding-bottom: 15px;
-
   font-weight: bold;
   line-height: 1.2;
   color: #181836;
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
 }
-
 .visionLeftSubTitle {
   font-weight: bold;
-  font-family: NovemberPro-Reg;
+  font-family: "NovemberPro-Reg" !important;
   color: #333333;
   line-height: 1.5;
   letter-spacing: 2px;
@@ -317,7 +265,7 @@
 .visionDesc {
   color: #333333;
   line-height: 1.5;
-  font-family: NovemberPro-Reg;
+  font-family:"NovemberPro-Reg" !important;
   padding-bottom: 40px;
 }
 .visionRight {
@@ -331,21 +279,19 @@
   justify-content: center;
   text-align: center;
 }
-
 .startWorkingSpan {
   color: #650909;
 }
 .startWorkingTitle {
   padding: 0 0 15px 0;
-
-  font-family: NovemberPro;
+  font-family: "NovemberPro" !important;
   font-weight: bold;
   line-height: 1.2;
   color: #181836;
 }
 .startWorkingDesc {
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
+  font-family: "NovemberPro-Reg" !important;
 }
 /* Responsive Styles */
 @media (max-width: 1400px) {
@@ -353,13 +299,11 @@
     max-width: 1320px;
   }
 }
-
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
-
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -373,25 +317,21 @@
     width: 100%;
   }
 }
-
 @media (max-width: 768px) {
   .container {
     max-width: 720px;
   }
   .mainhead {
-    padding-bottom: 20px;
+    margin-bottom: 5px;
   }
-
   .container {
     row-gap: 40px;
   }
 }
-
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
   }
-
   .container {
     row-gap: 40px;
   }
