@@ -1,4 +1,17 @@
 
+@font-face {
+  font-family: "NovemberPro";
+  src: url("../fonts/novemberPro/NovemberPro.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NovemberPro-Reg";
+  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .whoweContainer {
   width: 100%;
@@ -6,14 +19,14 @@
 }
 
 .whoTitle {
-  /* font-family: "NovemberPro"; */
+  font-family: "NovemberPro" !important;
   text-transform: uppercase;
   font-weight: 800;
   color: #650909;
   margin-bottom: 20px !important;
 }
 .whoSubTitle {
-  /* font-family: "NovemberPro"; */
+  font-family: "NovemberPro" !important;
   font-weight: 600;
   margin-bottom: 15px !important;
   color: #333;
@@ -80,20 +93,20 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 40px;
   font-family: "NovemberPro";
   width: 100%;
 }
 
 .driveHeader {
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   font-weight: 600;
   width: 100%;
   color: #333;
 }
 
-.drivecontent {
+.drivedes {
   font-family: "NovemberPro-Reg";
   color: #333;
 }
@@ -127,14 +140,17 @@
 }
 
 .titledrive {
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   font-weight: 600;
   color: #333;
+  font-size: 22px !important;
 }
 
 .desdrive {
   font-family: "NovemberPro-Reg";
-  font-size: 16px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 5px;
   color: #333;
 }
 

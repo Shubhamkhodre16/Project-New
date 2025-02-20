@@ -48,7 +48,7 @@ const HomeContent = () => {
                       sm: "30px",
                       xs: "25px",
                     },
-                  fontFamily:"NovemberPro-Reg"
+                  // fontFamily:"NovemberPro-Reg"
                   }}
                 >
                   Who we are
@@ -62,7 +62,6 @@ const HomeContent = () => {
                       sm: "25px",
                       xs: "20px",
                     },
-                  fontFamily:"NovemberPro-Reg"
                   }}
                 >
                   {" "}
@@ -77,7 +76,6 @@ const HomeContent = () => {
                     sm: "18px",
                     xs: "16px",
                   },
-                  fontFamily:"NovemberPro-Reg"
                 }}
                 className={styles.whoDes}>
                   {" "}
@@ -98,7 +96,6 @@ const HomeContent = () => {
                         sm: "18px",
                         xs: "16px",
                       },
-                  fontFamily:"NovemberPro-Reg"
                     }}
                 className={styles.whoDes}>
                   InfoKoders technologies is the unmatched destination to
@@ -133,7 +130,6 @@ const HomeContent = () => {
           </Typography>
 
           <Typography
-            variant="body1"
             sx={{
               fontSize: {
                 lg: "20px",
@@ -142,7 +138,7 @@ const HomeContent = () => {
                 xs: "16px",
               },
             }}
-            className={styles.drivecontent}
+            className={styles.drivedes}
           >
             We bring the right scope of services that drives impact by unlocking
             next-gen analytics and effectively transform your business
