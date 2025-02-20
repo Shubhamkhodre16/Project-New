@@ -155,7 +155,7 @@ const HomeContent = () => {
           backgroundImage: "url(assets/img/bg-shape1-home5.png)",
           backgroundPosition: "center right",
           backgroundRepeat: "no-repeat",
-          marginTop: "40px",
+          marginTop: "5px",
         }}
       >
         <Grid2
@@ -406,7 +406,6 @@ const HomeContent = () => {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant="h4"
                     component="div"
                     className={styles.card1Header}
                     sx={{

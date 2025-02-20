@@ -1,30 +1,10 @@
-@font-face {
-  font-family: "NovemberPro";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
-       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "NovemberPro-Reg";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 /* Our Blog Css  */
 
 .blogContainer {
   padding: 0 7%;
-  margin: 100px 0 80px 0;
+  margin: 150px 0 80px 0;
 }
 .blogContainer2 {
   width: 100%;
@@ -97,24 +77,24 @@
 
 .title1 {
   color: #fff;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 17px !important;
+  /* font-weight: bold; */
   padding: 3px;
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
 }
 
 .readMore {
   color: #fff;
-  font-size: 13px;
+  font-size: 13px !important;
   padding: 5px;
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
 }
 .blogHeader {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 30px;
   text-align: left;
   color: #333;
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
 }
 /* Responsive styling */
 
@@ -160,9 +140,9 @@
 
 /* Title Styling */
 .processtitle {
-  font-weight: bold;
+  /* font-weight: bold; */
   /* font-size: 24px; */
-  font-family: "NovemberPro", sans-serif;
+  font-family: "NovemberPro" !important;
   color: #650909;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -380,14 +360,13 @@
   text-align: center;
   margin-bottom: 80px;
   padding: 10px;
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
   color: #333;
 }
 .testimonialHeading {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #333;
-  font-family: "NovemberPro", sans-serif;
-
+  font-family: "NovemberPro" !important;
   text-align: center;
 }
 .carousel {
@@ -801,22 +780,22 @@
 /* Services  */
 
 .serviceHeader {
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 8px !important;
   color: #333;
 }
 .serviceSubHeader {
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
 }
 .frontendfontSize {
-  font-family: "NovemberPro";
+  font-family: "NovemberPro" !important;
   font-weight: 800;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
 .frontDesfontSize {
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
   margin-bottom: 10px;
 }
 .devlopOpt {

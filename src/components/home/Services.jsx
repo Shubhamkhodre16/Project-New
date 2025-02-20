@@ -30,12 +30,12 @@ const Services = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginY: "30px",
+          // marginY: "30px",
         }}
       >
-        <Grid2 sx={{ textAlign: "center", padding: "5%" }}>
+        <Grid2 sx={{ textAlign: "center", padding: "5%" , paddingBottom:"3% !important"}}>
           <Typography
-            variant="h4"
+            // variant="h4"
             sx={{
               fontSize: {
                 lg: "35px",
@@ -52,7 +52,7 @@ const Services = () => {
           </Typography>
           <Typography
             className={styles.serviceSubHeader}
-            variant="body1"
+            // variant="body1"
             sx={{
               fontSize: {
                 lg: "20px",
@@ -100,7 +100,7 @@ const Services = () => {
           >
             <Typography
               className={styles.frontendfontSize}
-              variant="body1"
+              // variant="body1"
               sx={{
                 fontSize: {
                   lg: "32px",
@@ -129,7 +129,7 @@ const Services = () => {
             </Typography>
             <Link
               href=""
-              style={{ color: "#650909", textDecoration: "underline" }}
+              style={{ color: "#650909", textDecoration: "underline", fontFamily:"NovemberPro-Reg" }}
             >
               Own your team
             </Link>
@@ -303,7 +303,7 @@ const Services = () => {
           <Grid2 size={{ xs: 12, md: 6 }}>
             <Typography
               className={styles.frontendfontSize}
-              variant="body1"
+              // variant="body1"
               sx={{
                 fontSize: {
                   lg: "32px",
@@ -426,7 +426,7 @@ const Services = () => {
           <Grid2 size={{ xs: 12, md: 6 }}>
             <Typography
               className={styles.frontendfontSize}
-              variant="body1"
+              // variant="body1"
               sx={{
                 fontSize: {
                   lg: "32px",
@@ -449,7 +449,7 @@ const Services = () => {
                 },
               }}
               className={styles.frontDesfontSize}
-              variant="body1"
+              // variant="body1"
             >
               Our offshore developers gather, organize, and extract key insights
               from massive amounts of data.
@@ -570,7 +570,7 @@ const Services = () => {
         >
           <Grid2 size={{ xs: 12, md: 6 }}>
             <Typography
-              variant="body1"
+              // variant="body1"
               className={styles.frontendfontSize}
               sx={{
                 fontSize: {

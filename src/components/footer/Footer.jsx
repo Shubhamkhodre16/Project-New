@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Go To  */}
           <Grid size={{ xs: 12, sm: 12, md: 6, lg: 4 }}>
             <Typography
-              sx={{ marginLeft: "35px" }}
+              sx={{ marginLeft: "8px" }}
               variant="h6"
               className={styles.subHead}
             >
