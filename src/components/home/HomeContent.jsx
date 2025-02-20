@@ -48,6 +48,7 @@ const HomeContent = () => {
                       sm: "30px",
                       xs: "25px",
                     },
+                  fontFamily:"NovemberPro-Reg"
                   }}
                 >
                   Who we are
@@ -61,6 +62,7 @@ const HomeContent = () => {
                       sm: "25px",
                       xs: "20px",
                     },
+                  fontFamily:"NovemberPro-Reg"
                   }}
                 >
                   {" "}
@@ -75,6 +77,7 @@ const HomeContent = () => {
                     sm: "18px",
                     xs: "16px",
                   },
+                  fontFamily:"NovemberPro-Reg"
                 }}
                 className={styles.whoDes}>
                   {" "}
@@ -95,6 +98,7 @@ const HomeContent = () => {
                         sm: "18px",
                         xs: "16px",
                       },
+                  fontFamily:"NovemberPro-Reg"
                     }}
                 className={styles.whoDes}>
                   InfoKoders technologies is the unmatched destination to
