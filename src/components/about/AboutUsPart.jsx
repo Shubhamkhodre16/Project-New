@@ -48,7 +48,7 @@ const AboutUsPart = () => {
       title: "Standard process-oriented",
       description:
         "We use high-end processes for each task while keeping an overall view of the projects in mind.",
-      image: "./assets/img/StandardProcess.gif",
+      image: "./assets/img/standardprocess.gif",
     },
     {
       title: "No unexpected Results",
@@ -81,7 +81,7 @@ const AboutUsPart = () => {
       <Box>
         <Grid id="carousel" className={styles.background}>
           <Navbar />
-          <Typography variant="h1" className={styles.about}>
+          <Typography sx={{ fontSize: "45px" }} className={styles.about}>
             About us
           </Typography>
         </Grid>

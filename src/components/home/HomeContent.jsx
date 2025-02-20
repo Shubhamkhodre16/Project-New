@@ -8,10 +8,6 @@ import CardSection from "../../app/career/CardSection";
 import Card from "@mui/material/Card";
 import Link from "next/link";
 import Divider from "@mui/material/Divider";
-import DataBackup from "../../../public/assets/img/DataBackup.gif";
-import customers from "../../../public/assets/img/customers.gif";
-import global from "../../../public/assets/img/global.gif";
-import teamMember from "../../../public/assets/img/teamMember.gif";
 import CardMedia from "@mui/material/CardMedia";
 import Industry from "./Industry";
 import styles from "../../styles/HomeContent.module.css";
@@ -215,7 +211,7 @@ const HomeContent = () => {
             >
               <Image
                 style={{ width: "22%" }}
-                src={DataBackup}
+                src="/assets/img/DataBackup.gif"
                 alt=""
                 height={80}
                 width={60}
@@ -253,7 +249,7 @@ const HomeContent = () => {
             >
               <Image
                 style={{ width: "20%", marginRight:"10px" }}
-                src={customers}
+                src="/assets/img/customers.gif"
                 alt=""
                 width={80}
                 height={60}
@@ -291,7 +287,7 @@ const HomeContent = () => {
             >
               <Image
                 style={{ width: "22%" }}
-                src={global}
+                src="/assets/img/global.gif"
                 alt=""
                 width={80}
                 height={60}
@@ -330,7 +326,7 @@ const HomeContent = () => {
             >
               <Image
                 style={{ width: "22%" }}
-                src={teamMember}
+                src="/assets/img/teammember.gif"
                 alt=""
                 height={80}
                 width={60}
@@ -469,7 +465,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/dataProtections.gif"
+                      image="/assets/img/dataprotections.gif"
                       alt="backup"
                     />
                   </Box>
@@ -541,7 +537,7 @@ const HomeContent = () => {
                       sx={{ width: "30%" }}
                       component="img"
                       height="60px"
-                      image="/assets/img/agileDevelopment.gif"
+                      image="/assets/img/agiledevelopment.gif"
                       alt="backup"
                     />
                   </Box>

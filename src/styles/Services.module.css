@@ -1,0 +1,154 @@
+.backgroundRor {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/rorheader.png");
+}
+
+.backgroundRor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.imageTitle {
+  color: #fff;
+  font-family: "NovemberPro";
+  padding-top: 250px;
+  padding-bottom: 20px;
+  padding-left: 9%;
+  opacity: 0.9;
+}
+.imageSubTitle {
+  color: #fff;
+  font-family: "NovemberPro-Reg";
+  padding: 0 30% 0 9%;
+  opacity: 0.9;
+}
+
+.backgroundReact {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/reactheader.png");
+}
+
+.backgroundReact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.backgroundNode {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/headernode.png");
+}
+
+.backgroundNode::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.backgroundAngular {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/angularheader.png");
+}
+
+.backgroundAngular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.backgroundFullStack {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/headerfullstack.png");
+}
+
+.backgroundFullStack::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.backgroundAWS {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/awsHeader1.jpg");
+}
+
+.backgroundAWS::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.backgroundHeroku {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/assets/img/herukuheader.jpg");
+}
+
+.backgroundHeroku::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}

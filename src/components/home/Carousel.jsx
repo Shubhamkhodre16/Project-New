@@ -47,13 +47,6 @@ useEffect(() => {
               <Typography variant="h4" className={styles.title}  style={{width:isStartup?'100%' :'auto',color:isStartup?'rgb(183 46 52)':'inherit',opacity:isStartup?0.8:1, fontFamily:'NovemberPro'}}>
                 {item.title}
               </Typography>
-             {!isStartup &&(
-              <Image
-                src={whiteWave}
-                alt="White Wave"
-                width={100}
-                height={100} 
-              />)}
               <Typography variant="body1" className={styles.description} style={{opacity:isStartup?0.9:1,fontSize:isStartup?'35px':'22px',fontFamily:isStartup?'NovemberPro':'NovemberPro-Reg' }}>
                 {item.des}
               </Typography>

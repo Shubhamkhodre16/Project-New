@@ -1,26 +1,24 @@
 @font-face {
   font-family: "NovemberPro";
-  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("../../public/assets/fonts/november-pro/NovemberPro.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../public/assets/fonts/november-pro/NovemberPro.woff2")
-      format("woff2");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
+       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+
 @font-face {
   font-family: "NovemberPro-Reg";
-  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff")
-      format("woff"),
-    url("../../public/assets/fonts/november-pro/NovemberPro-Reg.woff2")
-      format("woff2");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
+       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 
 /* Our Blog Css  */
 
@@ -306,6 +304,12 @@
   /* Dashed line should not stretch too much */
   .bullets::before {
     width: 420px; /* Reduced dashed line length */
+  }
+}
+
+@media (min-width: 1200px) { /* Adjust breakpoint as needed */
+  .stepContainer:last-child .bullets::before {
+      content: none; /* Removes the dashed line for the last bullet */
   }
 }
 
