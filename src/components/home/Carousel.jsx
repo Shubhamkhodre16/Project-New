@@ -55,6 +55,7 @@ const Carousel = ({ data, isStartup = false }) => {
               className={`${styles.textContainer} ${styles.startContainer}`}
             >
               <Typography
+                fontSize={{xs:"25px",sm:"25px",md:"30px",lg:"40px"}}
                 className={styles.title}
                 style={{
                   width: isStartup ? "100%" : "auto",
@@ -67,10 +68,13 @@ const Carousel = ({ data, isStartup = false }) => {
               </Typography>
               <Typography
                 className={styles.description}
+                fontSize={{xs:"18px",sm:"18px",md:"22px",lg:"22px"}}
                 style={{
                   opacity: isStartup ? 0.9 : 1,
                   fontSize: isStartup ? "35px" : "22px",
                   fontFamily: isStartup ? "NovemberPro" : "NovemberPro-Reg",
+                  marginTop:"15px",
+                  marginBottom:"15px"
                 }}
               >
                 {item.des}
