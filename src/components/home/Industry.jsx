@@ -66,6 +66,7 @@ const Industry = () => {
                 sm: "30px",
                 xs: "26px",
               },
+              fontFamily:"NovemberPro",
             }}
             className={styles.industryHeader}
           >

@@ -144,11 +144,11 @@ const Testimonials = () => {
                               className={styles.avatar}
                             />
                           </Stack>
-                          <Typography variant="h6" className={styles.cardTitle}>
+                          <Typography  
+                          className={styles.cardTitle}>
                             {CarouselData[itemIndex].title}
                           </Typography>
                           <Typography
-                            variant="body2"
                             className={styles.description1}
                           >
                             {CarouselData[itemIndex].description}

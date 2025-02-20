@@ -33,7 +33,7 @@ const Services = () => {
           // marginY: "30px",
         }}
       >
-        <Grid2 sx={{ textAlign: "center", padding: "5%" , paddingBottom:"3% !important"}}>
+        <Grid2 sx={{ textAlign: "center", padding: "3% 5%"}}>
           <Typography
             // variant="h4"
             sx={{
