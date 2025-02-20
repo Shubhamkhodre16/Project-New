@@ -5,7 +5,6 @@
     font-weight: normal;
     font-style: normal;
   }
-  
   @font-face {
     font-family: "NovemberPro-Reg";
     src: url("../../public/assets/fonts/november-pro/NovemberPro-Reg.eot");
@@ -22,14 +21,12 @@
         flex-direction: column;
         position: relative;
         overflow: hidden;
-       
   }
   .imageGrid{
     display: flex;
      flex-wrap: nowrap;
      justify-content: space-between;
-     transition: transform  5s ease-in-out ;
-     
+     transition: transform  3s ease-in-out ;
   }
   .imageBox{
     display: flex;
@@ -37,11 +34,8 @@
     align-items: center;
     height: 100%;
    flex-shrink: 0;
-   overflow: hidden;
      width: 20%; 
-    
   }
-  
  /* revolutionary Prototype */
 .PrototypeContainer{
     padding: 6% 8%;
@@ -50,7 +44,6 @@
 .PrototypeImage{
     display: flex;
     justify-content: center;
-    
 }
 .PrototypeContent{
   text-align: left;
@@ -77,7 +70,6 @@
   margin-bottom: 1rem;
   font-family: NovemberPro-Reg;
   text-transform: none;
-  
 }
 .PrototypeButton:hover{
   cursor: pointer;
@@ -100,16 +92,13 @@
  text-align: center;
   align-items: center;
   margin: 0 8%;
-  
 }
-
 .techPartnerTitle{
     font-family: NovemberPro;
     font-weight: bold;
     line-height: 1.2;
     color: #181836;
     margin: 1rem 0;
-    
 }
 .techPartnerStartup{
   display: flex;
@@ -117,7 +106,6 @@
   text-align: center;
   flex-wrap: wrap;
   padding: 1% 8%;
-   
 }
 .techPartnerLeft{
   display: flex;
@@ -172,7 +160,6 @@
   color:#333;
   line-height: 1.5;
 }
-
 /* Prototype  Card */
 .cardContainer{
    padding: 3% 8%;
@@ -190,7 +177,6 @@
  align-items: flex-start;
  justify-content: center;
  padding: 10px;
- 
 }
 @media (max-width:600px){
   .leftCard{
@@ -203,14 +189,12 @@
     align-items: flex-start; 
     justify-content: center;
     padding: 10px;
-
 }
 @media (max-width:600px){
   .rightCard{
     align-items: center;
   }
 }
-
 .leftCardTitle{
   font-family:  NovemberPro ;
   font-weight: bold;
@@ -224,7 +208,6 @@
   font-family: NovemberPro-Reg;
   color:#333;
   line-height: 1.5;
-  
 }
 .LeftImage, .rightImage {
   border-radius: 30px;
@@ -235,13 +218,11 @@
 @media (max-width:1200px){
   .LeftImage, .rightImage{
     height: 400px;
-   
   }
 }
 @media (max-width:900px){
   .LeftImage, .rightImage{
     height: auto;
-   
   }
 }
 /* Advantageous Info of InfoKoders */
@@ -251,7 +232,6 @@
      background-color: #181836;
      align-items: center;
 }
-
 .infoTitle{
   border-top:4px solid #ffffff;
   padding-top:22px ;
@@ -332,6 +312,10 @@
   color: #650909;
   margin-right: 10px;
 }
+.obs{
+  color:#650909;
+  margin-right: 10px;
+}
 /* Uplift your startup? */
 .upliftStartup{
     padding: 8%;
@@ -347,7 +331,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  
 }
 .upliftData{
   color: #ffffff;
