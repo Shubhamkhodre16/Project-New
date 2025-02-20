@@ -23,17 +23,17 @@ const HomeContent = () => {
             backgroundPosition: "center right",
             backgroundRepeat: "no-repeat",
             paddingTop: { sm: "20px", xs: "20px" },
-            marginY: "50px",
+            marginY: "20px",
           }}
         >
           <Grid2 className={styles.whoweContainer}>
             <Grid2 container spacing={5}>
-              <Grid2 size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
+              <Grid2 className={styles.whoweImage} size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Image
                   src={aboutBanner}
                   alt="About Us"
-                  width={700}
-                  height={550}
+                  width={600}
+                  height={500}
                 />
               </Grid2>
               <Grid2
@@ -71,8 +71,8 @@ const HomeContent = () => {
                 <Typography
                  sx={{
                   fontSize: {
-                    lg: "20px",
-                    md: "18px",
+                    lg: "18px",
+                    md: "16px",
                     sm: "18px",
                     xs: "16px",
                   },
@@ -91,8 +91,8 @@ const HomeContent = () => {
                 <Typography 
                     sx={{
                       fontSize: {
-                        lg: "20px",
-                        md: "18px",
+                        lg: "18px",
+                        md: "16px",
                         sm: "18px",
                         xs: "16px",
                       },
