@@ -1,14 +1,13 @@
 @font-face {
   font-family: "NovemberPro";
-  src: url("/assets/fonts/november-pro/NovemberPro");
+  src: url("../fonts/novemberPro/NovemberPro.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "NovemberPro-Reg";
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg");
+  src: url("../fonts/novemberPro/NovemberPro-Reg.ttf");
   font-weight: normal;
   font-style: normal;
 }
