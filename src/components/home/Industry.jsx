@@ -76,7 +76,7 @@ const Industry = () => {
             {industry?.map((item, index) => (
               <Grid
                 className={styles.industryCards}
-                size={{ sm: 12, md: 4, lg: 4 }}
+                size={{ sm: 12, md: 6, lg: 4 }}
                 key={index}
               >
                 {" "}
