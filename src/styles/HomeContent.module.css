@@ -23,22 +23,26 @@
   text-transform: uppercase;
   font-weight: 800;
   color: #650909;
-  margin-bottom: 20px !important;
 }
 .whoSubTitle {
   font-family: "NovemberPro" !important;
   font-weight: 600;
-  margin-bottom: 15px !important;
+  margin-bottom: 8px !important;
   color: #333;
 }
 
 .whoDes {
   font-family: "NovemberPro-Reg" !important;
-  padding: 0px 0px 30px 0px;
+  /* padding: 0px 0px 10px 0px; */
   line-height: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 400;
   color: #333;
+}
+.whoweImage{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .whoTitle {
@@ -93,8 +97,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  /* margin-top: 60px; */
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "NovemberPro";
   width: 100%;
 }
@@ -107,7 +111,7 @@
 }
 
 .drivedes {
-  font-family: "NovemberPro-Reg";
+  font-family: "NovemberPro-Reg" !important;
   color: #333;
 }
 .cardContainer {
@@ -147,8 +151,8 @@
 }
 
 .desdrive {
-  font-family: "NovemberPro-Reg";
-  font-size: 14px;
+  font-family: "NovemberPro-Reg" !important;
+  font-size: 15px;
   text-align: center;
   padding: 0 5px;
   color: #333;
