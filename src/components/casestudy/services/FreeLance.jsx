@@ -89,29 +89,32 @@ const FreeLance = () => {
           <Navbar />
           <Typography
             className={styles.imageTitle}
-            fontSize={{
+           sx={{
+            fontSize:{
               xs: "23px",
               sm: "22px",
               md: "25px",
               lg: "30px",
               xl: "30px",
-            }}
-            sx={{ paddingRight: "5% !important" }}
-            textAlign={{ xs: "center", sm: "center", md: "right", lg: "right" }}
+            },
+            fontFamily:"NovemberPro",
+            paddingRight: "5% !important",
+            textAlign:{ xs: "center", sm: "center", md: "right", lg: "right"} }}
           >
             Case Study
           </Typography>
           <Typography
             className={styles.imageSubTitle}
-            sx={{ paddingRight: "5% !important" }}
-            fontSize={{
+            sx={{ paddingRight: "5% !important", 
+            fontSize:{
               xs: "23px",
               sm: "25px",
               md: "30px",
               lg: "35px",
               xl: "35px",
-            }}
-            textAlign={{ xs: "center", sm: "center", md: "right", lg: "right" }}
+            },
+            fontFamily:"NovemberPro",
+            textAlign:{ xs: "center", sm: "center", md: "right", lg: "right"}, }}
           >
             A full fledged freelance platform connecting project owners and
             proficient freelancers

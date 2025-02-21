@@ -100,25 +100,26 @@ const DigitalPayments = () => {
           <Navbar />
           <Typography
             className={styles.imageTitle}
-            fontSize={{
+           sx={{
+            fontSize:{
               xs: "23px",
               sm: "22px",
               md: "25px",
               lg: "30px",
               xl: "30px",
-            }}
+              fontFamily:"NovemberPro",}}}
           >
             Digital Payments
           </Typography>
           <Typography
             className={styles.imageSubTitle}
-            fontSize={{
+            sx={{fontSize:{
               xs: "23px",
               sm: "25px",
               md: "30px",
               lg: "35px",
               xl: "35px",
-            }}
+              fontFamily:"NovemberPro"},}}
           >
             A serviceable platform providing awareness of digital payments
           </Typography>
