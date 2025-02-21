@@ -2,10 +2,8 @@ import React from "react";
 import styles from "../../../styles/CaseStudy.module.css";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box, Button } from "@mui/material";
-
 const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
   return (
-    <>
       <Box className={styles.contactMain}>
         <Grid
           sx={{ display: "flex" }}
@@ -48,7 +46,6 @@ const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
           </Grid>
         </Grid>
       </Box>
-    </>
   );
 };
 
