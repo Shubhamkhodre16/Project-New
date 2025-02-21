@@ -111,7 +111,7 @@ const Prototype = () => {
          <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.PrototypeContent} >
           <Typography className={styles.PrototypeTitle} sx={{fontSize:{lg:"24px",md:"22px ",sm:"24px",xs:"20px"},fontFamily: "NovemberPro"}}>Navigating the tech and Non- tech Start-ups towards success heights with our durable software development solutions</Typography> 
           <Typography className={styles.PrototypeSubtitle} sx={{fontSize:{lg:"20px",md:"18px ",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>We are here to breathe life into your start-up dreams. InfoKoders Technologies is been recognized as a one-stop source to embrace winning software development solutions at a budget-friendly cost. Our ultimate aim is to shine struggling start-ups into the most successful ones that they ever dreamed of. Be it providing you with a passionate, dedicated, and expertise software development team or taking the ownership of your start-up product development into our hands we are ready to help you in every possible way that you are desiring for.</Typography>
-          <Button  className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg" }} >Get a revolutionary Prototype</Button>
+          <Button  sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none" }} >Get a revolutionary Prototype</Button>
          </Grid>
         </Grid>
         {/* {/ Trusted tech partner  /} */}

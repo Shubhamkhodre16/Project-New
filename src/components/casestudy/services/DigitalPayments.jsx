@@ -133,11 +133,11 @@ const DigitalPayments = () => {
         {/* <Portal /> */}
         {/* Client Achivement  */}
         <Features featuresData={featuresData} />
-        <ClientAchivement
+        {/* <ClientAchivement
           isClientAchivement={true}
           clientData={clientData}
           clientSubTitle={clientSubTitle}
-        />
+        /> */}
         <Contact title={contactTitle} subTitle={contactSubTitle} />
 
         <Footer />

@@ -172,14 +172,14 @@ const ClientAchivement = ({
                   }}
                 >
                   <Image
-                    style={{ width: "40%" }}
+                    style={{ width: "45%" }}
                     src={DataBackup}
                     alt=""
                     height={80}
                     width={60}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro" }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro", fontSize:"20px" }}
                   >
                     {item?.title}
                   </Typography>

@@ -26,7 +26,7 @@ const Portal = () => {
             </Typography>
             <Typography
               className={styles.productDes}
-              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "20px", md: "16px ", sm: "18px", xs: "16px"}}}
+              sx={{fontFamily:"NovemberPro-Reg",fontSize:{ lg: "18px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               We have created a two-sided mark etplace by harnessing the
               potential of enterprise-grade technology that precisely matches
@@ -34,7 +34,7 @@ const Portal = () => {
             </Typography>
             <Typography
               className={styles.productDes}
-              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "20px", md: "16px ", sm: "18px", xs: "16px"}}}
+              sx={{fontFamily:"NovemberPro-Reg",fontSize:{ lg: "18px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               Firstly are the college students who set the foot into this portal
               to apply for private scholarships or grants and secondly are
@@ -44,7 +44,7 @@ const Portal = () => {
             </Typography>
             <Typography
               className={styles.productDes}
-              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "20px", md: "16px ", sm: "18px", xs: "16px"}}}
+              sx={{fontFamily:"NovemberPro-Reg",fontSize:{ lg: "18px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               Firstly are the college students who set the foot into this portal
               to apply for private scholarships or grants and secondly are

@@ -13,14 +13,14 @@ const Features = ({ isBiodiversity = false, featuresData }) => {
           <Grid textAlign="center">
             <Typography
               sx={{ color: "#333" }}
-              fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}
+              fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px",fontFamily:"NovemberPro" }}
               className={styles.solutionHeading}
             >
               {isBiodiversity ? "Product Highlights" : "Features"}
             </Typography>
           </Grid>
 
-          <Grid className={styles.featureCards} container spacing={5}>
+          <Grid className={styles.featureCards} container spacing={3}>
             {featuresData?.map((item, index) => (
               <Grid
                 size={{ xs: 12, sm: 12, md: 6, lg: 6 }}

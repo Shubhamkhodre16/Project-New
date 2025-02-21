@@ -56,7 +56,7 @@ const Solutions = ({
               The Solution
             </Typography>
             <Typography
-              sx={{ marginTop: "20px",fontFamily:"NovemberPro", fontSize:{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" } }}
+              sx={{ marginTop: "10px",fontFamily:"NovemberPro-Reg", fontSize:{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" } }}
               textAlign="center"
             >
               {/* <AdjustOutlinedIcon 
@@ -91,7 +91,7 @@ const Solutions = ({
                 }}
               >
                 <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
-                  <Typography>User (Individual/ Organization) Panel</Typography>
+                  <Typography sx={{fontFamily:"NovemberPro-Reg"}}>User (Individual/ Organization) Panel</Typography>
                 </Grid>
                 <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>Admin Panel</Grid>
               </Grid>
@@ -174,7 +174,7 @@ const Solutions = ({
                       <Typography
                         key={index}
                         sx={{
-                          lineHeight: 2.5,
+                          lineHeight: 1.5,
                           fontFamily:"NovemberPro-Reg"
                         }}
                         fontSize={{
@@ -200,7 +200,7 @@ const Solutions = ({
                     {speclityright?.map((item, index) => (
                       <Typography
                         sx={{
-                          lineHeight: 2.5,
+                          lineHeight: 1.5,
                           fontFamily: "NovemberPro-Reg",
                         }}
                         fontSize={{

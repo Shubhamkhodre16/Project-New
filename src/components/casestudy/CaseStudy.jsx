@@ -220,15 +220,15 @@ const CaseStudy = () => {
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
                       <Typography
-                      sx={{fontFamily:"NovemberPro"}}
+                      sx={{fontFamily:"NovemberPro",fontSize: "20px"}}
                       className={styles.title} gutterBottom>
                         {card.title.length > 50
                           ? `${card.title.slice(0, 50)}...`
                           : card.title}
                       </Typography>
                       <Typography
-                      sx={{fontFamily:"NovemberPro-Reg"}}
-                      className={styles.CaseStudySubTitle}>
+                      sx={{fontFamily:"NovemberPro-Reg", fontSize: "14px"}}
+                      className={styles.CaseStudySubTitle}> 
                         {card.description.length > 170
                           ? `${card.description.slice(0, 170)}...`
                           : card.description}
