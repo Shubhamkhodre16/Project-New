@@ -19,14 +19,14 @@ const Portal = () => {
         >
           <Grid size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
             <Typography
-              fontSize={{ lg: "35px", md: "26px ", sm: "30px", xs: "22px" }}
+            sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "30px", xs: "22px" }}}
               className={styles.productHeading}
             >
               Working of the Portal:
             </Typography>
             <Typography
               className={styles.productDes}
-              fontSize={{ lg: "20px", md: "16px ", sm: "18px", xs: "16px" }}
+              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "20px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               We have created a two-sided mark etplace by harnessing the
               potential of enterprise-grade technology that precisely matches
@@ -34,7 +34,7 @@ const Portal = () => {
             </Typography>
             <Typography
               className={styles.productDes}
-              fontSize={{ lg: "20px", md: "16px ", sm: "18px", xs: "16px" }}
+              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "20px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               Firstly are the college students who set the foot into this portal
               to apply for private scholarships or grants and secondly are
@@ -44,7 +44,7 @@ const Portal = () => {
             </Typography>
             <Typography
               className={styles.productDes}
-              fontSize={{ lg: "20px", md: "16px ", sm: "18px", xs: "16px" }}
+              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "20px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               Firstly are the college students who set the foot into this portal
               to apply for private scholarships or grants and secondly are

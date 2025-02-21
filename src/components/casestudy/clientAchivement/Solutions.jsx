@@ -50,15 +50,14 @@ const Solutions = ({
         <Grid className={styles.solutionContainer}>
           <Grid>
             <Typography
-              fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}
+              sx={{fontFamily:"NovemberPro", fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}}
               className={styles.solutionHeading}
             >
               The Solution
             </Typography>
             <Typography
-              sx={{ marginTop: "20px" }}
+              sx={{ marginTop: "20px",fontFamily:"NovemberPro", fontSize:{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" } }}
               textAlign="center"
-              fontSize={{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" }}
             >
               {/* <AdjustOutlinedIcon 
               sx={{color:"white"}}
@@ -71,8 +70,9 @@ const Solutions = ({
                 sx={{
                   marginTop: isBiodiversity ? "40px" : "20px",
                   fontWeight: isBiodiversity ? "bold" : "",
+                  fontFamily:"NovemberPro-Reg",
+                  fontSize:{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" }
                 }}
-                fontSize={{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" }}
               >
                 {isBiodiversity
                   ? "Modules of the tool"
@@ -87,6 +87,7 @@ const Solutions = ({
                   padding: "0 20%",
                   textAlign: "center",
                   marginTop: "30px",
+                  fontFamily:"NovemberPro-Reg",
                 }}
               >
                 <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
@@ -112,6 +113,7 @@ const Solutions = ({
                     md: "left",
                     lg: "left",
                   }}
+                  sx={{fontFamily:"NovemberPro-Reg"}}
                   fontSize={{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" }}
                 >
                   {/* <AdjustOutlinedIcon 
@@ -130,7 +132,7 @@ const Solutions = ({
                     lg: "left",
                   }}
                   fontSize={{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" }}
-                  sx={{ marginTop: "15px" }}
+                  sx={{ marginTop: "15px", fontFamily:"NovemberPro-Reg" }}
                 >
                   The Cloud-based platform enables the student to search and
                   apply for various private education finance schemes based on
@@ -148,6 +150,7 @@ const Solutions = ({
                     md: "left",
                     lg: "left",
                   }}
+                  sx={{fontFamily:"NovemberPro-Reg"}}
                   fontSize={{ lg: "20px", md: "18px ", sm: "18px", xs: "16px" }}
                 >
                   High tech automation functionalities integrated by our expert
@@ -157,7 +160,7 @@ const Solutions = ({
                 </Typography>
                 <Typography
                   fontSize={{ lg: "22px", md: "20px ", sm: "20px", xs: "18px" }}
-                  sx={{ marginTop: "15px", fontWeight: "800" }}
+                  sx={{ marginTop: "15px", fontWeight: "800", fontFamily:"NovemberPro" }}
                 >
                   Specifically built diverse modules depending on the specific
                   role such as
@@ -172,6 +175,7 @@ const Solutions = ({
                         key={index}
                         sx={{
                           lineHeight: 2.5,
+                          fontFamily:"NovemberPro-Reg"
                         }}
                         fontSize={{
                           lg: "16px",
