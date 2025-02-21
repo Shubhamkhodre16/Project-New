@@ -52,13 +52,13 @@ const ClientAchivement = ({
           <Grid>
             <Typography
               className={styles.achivetitle}
-              fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}
+              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px"}}}
             >
               Client Achievement
             </Typography>
             <Typography
               className={styles.achiveSubtitle}
-              fontSize={{ lg: "24px", md: "20px ", sm: "20px", xs: "18px" }}
+              sx={{fontFamily:"NovemberPro-Reg",fontSize:{  lg: "24px", md: "20px ", sm: "20px", xs: "18px"}}}
             >
               {clientSubTitle}
             </Typography>
@@ -87,8 +87,7 @@ const ClientAchivement = ({
                   />
                 </span>
                 <Typography
-                  fontSize={{ xs: "16px", sm: "16px", md: "16px", lg: "18px" }}
-                  sx={{ marginTop: "20px", fontFamily: "NovemberPro-Reg" }}
+                  sx={{ marginTop: "20px", fontFamily: "NovemberPro-Reg", fontSize:{ xs: "16px", sm: "16px", md: "16px", lg: "18px" } }}
                 >
                   {data}
                 </Typography>
@@ -100,7 +99,7 @@ const ClientAchivement = ({
           <Grid className={styles.techMain}>
             <Grid className={styles.techHeading}>
               <Typography
-                fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}
+                sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px"}}}
                 className={styles.techHeading}
               >
                 Integrated tech Stack
@@ -152,7 +151,7 @@ const ClientAchivement = ({
           <Grid className={styles.techMain}>
             <Grid className={styles.techHeading}>
               <Typography
-                fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px" }}
+                sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px"}}}
                 className={styles.techHeading}
               >
                 Project Insights

@@ -84,25 +84,25 @@ const Schlorship = () => {
           <Navbar />
           <Typography
             className={styles.imageTitle}
-            fontSize={{
+            sx={{fontFamily:"NovemberPro", fontSize:{
               xs: "23px",
               sm: "22px",
               md: "25px",
               lg: "30px",
               xl: "30px",
-            }}
+            }}}
           >
             Case Study
           </Typography>
           <Typography
             className={styles.imageSubTitle}
-            fontSize={{
+            sx={{fontFamily:"NovemberPro-Reg", fontSize:{
               xs: "23px",
               sm: "25px",
               md: "30px",
               lg: "35px",
               xl: "35px",
-            }}
+            }}}
           >
             A Online Scholarship Management Platform - fulfilling Educational
             Aspirations of Million Students
