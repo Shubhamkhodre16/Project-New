@@ -122,12 +122,12 @@ const FreeLance = () => {
         </Grid>
         <ProductGoals productData={productData} />
         <Solutions CarouselData={CarouselData} solutionTitle={solutionTitle} />
-        <Portal />
+        {/* <Portal /> */}
         {/* Client Achivement  */}
-        <ClientAchivement
+        {/* <ClientAchivement
           clientData={clientData}
           clientSubTitle={clientSubTitle}
-        />
+        /> */}
         {/* <Features /> */}
         <Contact
           title={contactTitle}

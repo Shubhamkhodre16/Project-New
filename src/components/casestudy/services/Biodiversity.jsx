@@ -149,11 +149,11 @@ const Biodiversity = () => {
         {/* <Portal /> */}
         {/* Client Achivement  */}
         <Features featuresData={featuresData} isBiodiversity={true} />
-        <ClientAchivement
+        {/* <ClientAchivement
           clientData={clientData}
           isClientAchivement={true}
           clientSubTitle={clientSubTitle}
-        />
+        /> */}
 
         <Contact title={contactTitle} subTitle={contactSubTitle} />
         <Footer />

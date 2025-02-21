@@ -149,10 +149,10 @@ const PlatForm = () => {
         {/* <Portal /> */}
         {/* Client Achivement  */}
         <Features featuresData={featuresData} isBiodiversity={true} />
-        <ClientAchivement
+        {/* <ClientAchivement
           clientData={clientData}
           clientSubTitle={clientSubTitle}
-        />
+        /> */}
 
         <Contact title={contactTitle} subTitle={contactSubTitle} />
 

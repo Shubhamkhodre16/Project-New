@@ -26,14 +26,11 @@
 }
 
 .title {
-  font-family: "NovemberPro";
   color: #333;
-  font-size: 20px;
+  
 }
 .CaseStudySubTitle {
-  font-family: "NovemberPro-Reg";
   color: #333;
-  font-size: 14px;
 }
 
 .case {
@@ -100,12 +97,10 @@
   padding: 0 10%;
 }
 .achivetitle {
-  font-family: "NovemberPro";
   font-weight: 800;
   text-align: center;
 }
 .achiveSubtitle {
-  font-family: "NovemberPro-Reg";
   /* font-weight: 800; */
   text-align: center;
   margin-top: 10px;
@@ -132,7 +127,6 @@
 }
 .techHeading {
   text-align: left;
-  font-family: "NovemberPro";
   padding-bottom: 30px;
 }
 .techContainer {
@@ -144,7 +138,7 @@
   box-shadow: 1px #333;
   border-radius: 10px;
   color: #333;
-  padding: 5%;
+  padding:2% 5%;
   text-align: center;
 }
 
@@ -153,7 +147,7 @@
 .solutionsMain {
   background: #333;
   width: 100%;
-  padding: 70px 0 100px 0;
+  padding: 40px 0 60px 0;
 }
 
 .solutionContainer {
@@ -165,7 +159,6 @@
   margin-top: 40px;
 }
 .solutionHeading {
-  font-family: "NovemberPro";
   font-weight: 800;
   text-align: center;
   /* padding: 1.5rem; */
@@ -184,12 +177,10 @@
 }
 
 .productHeading {
-  font-family: "NovemberPro";
   font-weight: 800;
   color: #333;
 }
 .productDes {
-  font-family: "NovemberPro-Reg";
   margin-top: 10px !important;
   margin-bottom: 20px !important;
   color: #333;
@@ -202,25 +193,19 @@
 }
 .productButton {
   color: #fff;
-  background-color: #333;
   text-transform: capitalize;
-  font-family: "NovemberPro-Reg";
 }
-
 .productData {
   flex-direction: column; /* Stacks items vertically */
   align-items: center; /* Centers items horizontally */
   justify-content: center; /* Centers items vertically */
   display: flex;
 }
-
 /* Working of the Portal:  */
-
 /* Features  */
-
 .featuresMain {
   background: #fff;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 50px 0;
 }
 .featureContainer {
   width: 100%;
@@ -229,7 +214,7 @@
 .featureCards {
   font-family: "NovemberPro-Reg";
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .featureHeader {
@@ -245,7 +230,7 @@
   justify-content: center; /* Centers items vertically */
   border: 1px solid #ebebeb;
   border-radius: 10px;
-  padding: 2% 6%;
+  padding: 1% 6%;
   background-color: #fff;
 }
 
@@ -295,7 +280,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/start-up-slide3.webp");
 } */
-
 .backgroundSchlorship {
   position: relative;
   width: 100%;

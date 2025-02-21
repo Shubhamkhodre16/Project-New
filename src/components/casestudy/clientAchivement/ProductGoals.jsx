@@ -38,14 +38,14 @@ const ProductGoals = ({ productData }) => {
               <Typography
                 sx={{fontFamily:"NovemberPro-Reg"}}
                 className={styles.productDes}
-                fontSize={{ lg: "20px", md: "16px ", sm: "18px", xs: "16px" }}
+                fontSize={{ lg: "18px", md: "16px ", sm: "18px", xs: "16px" }}
               >
                 {item?.subTitle}
               </Typography>
               <Typography
                 sx={{fontFamily:"NovemberPro-Reg"}}
                 className={styles.productDes}
-                fontSize={{ lg: "20px", md: "16px ", sm: "18px", xs: "16px" }}
+                fontSize={{ lg: "18px", md: "16px ", sm: "18px", xs: "16px" }}
               >
                 {item?.des}
               </Typography>
