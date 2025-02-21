@@ -5,6 +5,7 @@ import ResumeForm from "../../components/contact/ResumeForm"
 const page = () => {
   return (
     <div>
+      {/* <Navbar/> */}
       <ResumeForm/>
     </div>
   )

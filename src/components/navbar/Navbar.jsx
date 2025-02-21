@@ -46,7 +46,8 @@ const Navbar = () => {
         { name: "- Heroku", path: "/services/heroku" },
       ],
     },
-    { name: "Blog", path: "/blog" },
+    // { name: "Blog", path: "/blog" },
+    { name: "Careers", path: "/career" },
     { name: "Start Up", path: "/startup" },
     { name: "Contact Us", path: "/contact" },
   ];
