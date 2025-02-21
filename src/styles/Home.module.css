@@ -339,7 +339,7 @@
   display: block;
   font-size: 82px;
   font-weight: bolder;
-  left: -205px;
+  left: -175px;
   margin-bottom: 0;
   -webkit-transform: translateY(-58%) rotate(-90deg);
   transform: translateY(-58%) rotate(-90deg);
@@ -349,7 +349,6 @@
   opacity: 0.1;
   position: absolute;
   text-transform: lowercase;
-  font-family: "NovemberPro";
 }
 .main {
   margin-top: 100px;
@@ -568,7 +567,7 @@
 
 .slideContent {
   width: 100%;
-  padding: 30px;
+  padding: 10px !important;
   border-radius: 10px;
   color: #fff;
 }

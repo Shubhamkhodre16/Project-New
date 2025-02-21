@@ -82,7 +82,7 @@ const Carousel = ({ data, isStartup = false }) => {
               <Link href={item?.path} passHref>
                 <Button
                   variant="contained"
-                  sx={{ backgroundColor: "#fff", color: "#333" }}
+                  sx={{ backgroundColor: "#fff", color: "#333", fontFamily:"NovemberPro-Reg"}}
                   className={styles.button}
                 >
                   {item.button}
