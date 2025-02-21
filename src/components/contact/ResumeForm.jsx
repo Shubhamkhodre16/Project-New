@@ -3,20 +3,22 @@ import React, { useState } from "react";
 import {
   Box,
   Button,
-  Grid,
   InputAdornment,
   MenuItem,
   Select,
   TextField,
   Typography,
 } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
+import LinkIcon from "@mui/icons-material/Link";
 import SubjectIcon from "@mui/icons-material/Subject";
 import MessageIcon from "@mui/icons-material/Message";
+import styles from "../../styles/Careers.module.css";
 import emailjs from "emailjs-com";
-import Grid2 from "@mui/material/Grid2";
+import Navbar from "../../components/navbar/Navbar";
 
 const ResumeForm = () => {
   const [resume, setResume] = useState(null);
@@ -24,270 +26,336 @@ const ResumeForm = () => {
     firstName: "",
     email: "",
     contact: "",
-    subject: "",
+    experience: "",
     message: "",
     role: "",
     position: "",
-    // resume: null
+    profileUrl: "",
   });
 
-  console.log(resume, "form");
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const validateForm = () => {
+    const { firstName, email, contact, experience, position } = formData;
+    setIsFormValid(
+      firstName.trim() !== "" &&
+        email.trim() !== "" &&
+        contact.trim() !== "" &&
+        experience.trim() !== "" &&
+        position.trim() !== "" &&
+        resume !== null // Ensure a file is selected
+    );
+  };
 
   const handleChange = (event) => {
-    setFormData({ ...formData, [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+    setFormData((prevFormData) => {
+      const updatedFormData = { ...prevFormData, [name]: value };
+      return updatedFormData;
+    });
+  
+    // Run validation after state update
+    setTimeout(validateForm, 0);
   };
+  
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    console.log(file, "evee");
+    if (!file) return;
 
-    setResume(file);
+    // Create a temporary URL for the uploaded file
+    const fileUrl = URL.createObjectURL(file);
+
+    setResume(fileUrl); // Store the file URL instead of base64
+    validateForm();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (!resume) {
-      console.error("No file selected");
+      console.error("No file uploaded");
       return;
     }
 
-    const reader = new FileReader();
-    console.log(reader, "readeeee");
-
-    reader.onload = async (e) => {
-      const emailParams = {
-        file: reader,
-      };
-
-      emailjs
-        .sendForm(
-          "service_x299nyh",
-          "template_jknz8by",
-          emailParams,
-          "94TtzAZZ4eCvZYHzO"
-        )
-        .then(
-          (response) => {
-            console.log("Email", response);
-            setFormData({
-              firstName: "",
-              lastName: "",
-              email: "",
-              contact: "",
-              subject: "",
-              message: "",
-            });
-          },
-          (error) => {
-            console.error("Failed to send email:", error);
-          }
-        );
+    const emailParams = {
+      ...formData,
+      resumeUrl: resume, // Send the temporary URL
     };
 
-    // Read the file as a data URL
-    reader.readAsDataURL(resume);
+    emailjs
+      .send(
+        "service_x299nyh",
+        "template_jknz8by",
+        emailParams,
+        "94TtzAZZ4eCvZYHzO"
+      )
+      .then(
+        () => {
+          setFormData({
+            firstName: "",
+            email: "",
+            contact: "",
+            experience: "",
+            message: "",
+            role: "",
+            position: "",
+            profileUrl: "",
+          });
+          setResume(null);
+        },
+        (error) => {
+          console.error("Failed to send email:", error);
+        }
+      );
   };
 
   return (
-    <form
-      component="form"
-      onSubmit={handleSubmit}
-      sx={{
-        width: "100%",
-        maxWidth: 800,
-        marginTop: "20px",
-        p: 3,
-        backgroundColor: "#fff",
-      }}
-    >
-      <Typography
-        sx={{
-          textAlign: "center",
-          fontSize: "25px",
-          fontWeight: "bold",
-          fontFamily: "circular",
-          color: "#650909",
-          mb: 2,
-        }}
-      >
-        Get in Touch With Us
-      </Typography>
-      <Grid2 container spacing={4}>
-        {/* First Name & Email */}
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <TextField
-            fullWidth
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-            placeholder="First Name"
-            variant="standard"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <PersonIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid2>
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <TextField
-            fullWidth
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email Address"
-            variant="standard"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <EmailIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid2>
-
-        {/* Contact & Subject */}
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <TextField
-            fullWidth
-            name="contact"
-            value={formData.contact}
-            onChange={handleChange}
-            placeholder="Contact"
-            variant="standard"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <PhoneIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid2>
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <TextField
-            fullWidth
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            placeholder="Subject"
-            variant="standard"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SubjectIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid2>
-
-        {/* Role Dropdown */}
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <Select
-            fullWidth
-            displayEmpty
-            variant="standard"
-            name="role"
-            value={formData.role}
-            onChange={handleChange}
-          >
-            <MenuItem value="" disabled>
-              Select Role
-            </MenuItem>
-            <MenuItem value="Manager">Manager</MenuItem>
-            <MenuItem value="Employee">Employee</MenuItem>
-            <MenuItem value="Intern">Intern</MenuItem>
-          </Select>
-        </Grid2>
-
-        {/* Position Dropdown */}
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <Select
-            fullWidth
-            displayEmpty
-            variant="standard"
-            name="position"
-            value={formData.position}
-            onChange={handleChange}
-          >
-            <MenuItem value="" disabled>
-              Select Position
-            </MenuItem>
-            <MenuItem value="Software Engineer">Software Engineer</MenuItem>
-            <MenuItem value="Project Manager">Project Manager</MenuItem>
-            <MenuItem value="HR">HR</MenuItem>
-          </Select>
-        </Grid2>
-
-        {/* Upload Resume */}
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <input
-            type="file"
-            name={formData?.resume?.name}
-            onChange={handleFileChange}
-            accept=".pdf,.doc,.docx"
-          />
-        </Grid2>
-
-        {/* Message */}
-        <Grid2 size={{ xs: 12, sm: 6 }}>
-          <TextField
-            fullWidth
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Project description"
-            multiline
-            rows={2.5}
-            variant="standard"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment
-                  position="start"
-                  style={{ marginBottom: "28px" }}
-                >
-                  <MessageIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid2>
-      </Grid2>
-
-      {/* Submit Button */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          mt: 5,
-          fontFamily: "circular",
-        }}
-      >
-        <Button
-          variant="contained"
-          color="primary"
+    <Box sx={{ marginBottom: "30px" }}>
+      <Grid container className={styles.backgroundCareer}>
+        <Navbar />
+        <Typography
+          className={styles.imageTitle}
           sx={{
-            px: 3,
-            py: 1,
-            textTransform: "capitalize",
-            backgroundColor: "#650909",
-            "&:hover": {
-              backgroundColor: "#fff",
-              border: "1px solid #650909",
-              color: "#650909",
-            },
+            fontSize: "45px",
+            color: "white",
+            mt: 4,
+            fontFamily: "NovemberPro",
           }}
-          type="submit"
         >
-          Send Enquiry
-        </Button>
-      </Box>
-    </form>
+          Join Our Team
+        </Typography>
+      </Grid>
+      <Grid container justifyContent="center" sx={{ padding: "3% 10%" }}>
+        <Box
+          component="form"
+          onSubmit={handleSubmit}
+          sx={{
+            width: "100%",
+            maxWidth: 800,
+            p: 3,
+            backgroundColor: "#fff",
+            borderRadius: 2,
+            boxShadow: 3,
+          }}
+        >
+          <Typography
+            sx={{
+              fontFamily: "NovemberPro",
+            }}
+            variant="h5"
+            align="center"
+            fontWeight="bold"
+            mb={4}
+          >
+            Want to Join Our Team? Fill this form
+          </Typography>
+          <Grid container spacing={3}>
+            {[
+              { name: "firstName", label: "First Name", icon: <PersonIcon /> },
+              { name: "lastName", label: "Last Name", icon: <PersonIcon /> },
+              { name: "email", label: "Email Address", icon: <EmailIcon /> },
+              { name: "contact", label: "Contact", icon: <PhoneIcon /> },
+              // { name: "subject", label: "Subject", icon: <SubjectIcon /> },
+            ].map(({ name, label, icon }) => (
+              <Grid size={{ xs: 12, sm: 6 }} key={name}>
+                <TextField
+                  fullWidth
+                  required
+                  name={name}
+                  value={formData[name] || ""}
+                  onChange={handleChange}
+                  placeholder={label}
+                  variant="filled"
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">{icon}</InputAdornment>
+                    ),
+                    sx: {
+                      paddingBottom: "12px",
+                      backgroundColor: "#f5f5f5",
+                      fontFamily: "NovemberPro-Reg",
+                      borderRadius: 1,
+                      "&:MuiInputBase-input": {
+                        paddingTop: "18px",
+                      },
+                      "&:before, &:after": { display: "none" }, // Hides underline effects
+                    },
+                  }}
+                />
+              </Grid>
+            ))}
+
+            {/* Role and Position */}
+            {[
+              // {
+              //   name: "role",
+              //   label: "Select Role",
+              //   options: ["Manager", "Employee", "Intern"],
+              // },
+              {
+                name: "position",
+                label: "Select Position",
+                options: ["Software Engineer", "Project Manager", "HR"],
+              },
+              {
+                name: "experience",
+                label: "Select Experience",
+                options: [
+                  "Less than 1 year",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "More than 5 Years",
+                ],
+              },
+            ].map(({ name, label, options }) => (
+              <Grid size={{ xs: 12, sm: 6 }} key={name}>
+                <Select
+                  fullWidth
+                  required
+                  name={name}
+                  value={formData[name] || ""}
+                  onChange={handleChange}
+                  displayEmpty
+                  variant="filled"
+                  sx={{
+                    backgroundColor: "#f5f5f5",
+                    borderRadius: 1,
+                    paddingBottom: "12px",
+                    "&:before, &:after": { display: "none" }, // Hides underline effects
+                    "&.MuiFilledInput-root": { backgroundColor: "#f5f5f5" },
+                    "&:hover": { backgroundColor: "#f5f5f5" },
+                    fontFamily: "NovemberPro-Reg",
+                  }}
+                >
+                  <MenuItem value="" disabled>
+                    {label}
+                  </MenuItem>
+                  {options.map((option) => (
+                    <MenuItem key={option} value={option}>
+                      {option}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </Grid>
+            ))}
+
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                fullWidth
+                name="profileUrl"
+                value={formData.profileUrl || ""}
+                onChange={handleChange}
+                placeholder="LinkedIn/GitHub URL"
+                type="url" // Ensures URL format
+                variant="filled"
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <LinkIcon />{" "}
+                      {/* You can replace this with <LinkIcon /> */}
+                    </InputAdornment>
+                  ),
+                  disableUnderline: true, // Removes the underline
+                  sx: {
+                    backgroundColor: "#f5f5f5",
+                    fontFamily: "NovemberPro-Reg",
+                    borderRadius: 1,
+                    "&:before, &:after": { display: "none" }, // Hides underline effects
+                    "& input": {
+                      // padding: "10px 14px", // Ensures placeholder is aligned
+                      // lineHeight: "1.5",
+                    },
+                  },
+                }}
+              />
+            </Grid>
+
+            {/* Upload Resume */}
+            <Grid size={{ xs: 12, md: 6 }}>
+              <div
+                style={{
+                  marginBottom: "5px",
+                  fontFamily: "NovemberPro-Reg",
+                  fontSize: "16px",
+                }}
+              >
+                Upload Your CV/Resume
+              </div>
+              <input
+                type="file"
+                onChange={handleFileChange}
+                accept=".pdf,.doc,.docx"
+                style={{
+                  fontFamily: "NovemberPro-Reg",
+                  fontSize: "14px",
+                  cursor: "pointer",
+                }}
+              />
+            </Grid>
+
+            {/* Message Field */}
+            {/* <Grid size={{ xs: 12 }}>
+              <TextField
+                fullWidth
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Message"
+                multiline
+                rows={3}
+                variant="filled"
+                InputProps={{
+                  sx: {
+                    backgroundColor: "#f5f5f5",
+                    fontFamily: "NovemberPro-Reg",
+                    borderRadius: 1,
+                    "&:before, &:after": { display: "none" }, // Hides underline effects
+                  },
+                }}
+              />
+            </Grid> */}
+          </Grid>
+          <Box display="flex" justifyContent="center" mt={3}>
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                px: 3,
+                py: 1,
+                textTransform: "capitalize",
+                backgroundColor: "#333", // Gray when disabled
+                fontFamily: "NovemberPro-Reg",
+                "&:hover": {
+                  backgroundColor: "#fff",
+                  border: "1px solid #333",
+                  color: "#333",
+                },
+              }}
+              type="submit"
+              // disabled={!isFormValid}
+            >
+              Send
+            </Button>
+            {resume && (
+              <Button
+                variant="outlined"
+                onClick={() => {  
+                  const a = document.createElement("a");
+                  a.href = resume;
+                  a.download = "Resume.pdf";
+                  a.click();
+                }}
+              >
+                Download Resume
+              </Button>
+            )}
+          </Box>
+        </Box>
+      </Grid>
+    </Box>
   );
 };
 
