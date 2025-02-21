@@ -96,7 +96,7 @@ const Schlorship = () => {
           </Typography>
           <Typography
             className={styles.imageSubTitle}
-            sx={{fontFamily:"NovemberPro-Reg", fontSize:{
+            sx={{fontFamily:"NovemberPro", fontSize:{
               xs: "23px",
               sm: "25px",
               md: "30px",

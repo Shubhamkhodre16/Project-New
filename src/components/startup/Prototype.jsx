@@ -47,7 +47,7 @@ const Prototype = () => {
       image:"/assets/img/heroku.png",
    },
    {
-      image :"/assets/img/mongoDbs.png",
+      image :"/assets/img/mongodb.png",
    },
    {
       image:"/assets/img/node.png",
@@ -165,7 +165,7 @@ const Prototype = () => {
                  <Typography className={styles.whiteBoxDesc} sx={{fontSize:{lg:"18px",md:"14px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>Successfully launched tech products</Typography>
               </Grid>
               <Grid  className={styles.whiteBox}>
-                <Typography className={styles.whiteBoxTitle} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}} >2</Typography>
+                <Typography className={styles.whiteBoxTitle} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}} >5</Typography>
                 <Typography className={styles.whiteBoxDesc} sx={{fontSize:{lg:"18px",md:"14px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>Years of experience</Typography>
               </Grid>
           </Grid>

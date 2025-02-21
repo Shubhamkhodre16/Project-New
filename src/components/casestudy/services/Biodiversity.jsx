@@ -110,29 +110,31 @@ const Biodiversity = () => {
           <Navbar />
           <Typography
             className={styles.imageTitle}
-            fontSize={{
+            sx={{
+              fontSize:{
               xs: "23px",
               sm: "22px",
               md: "25px",
               lg: "30px",
-              xl: "30px",
-            }}
-            sx={{ paddingRight: "5% !important" }}
-            textAlign={{ xs: "center", sm: "center", md: "right", lg: "right" }}
+              xl: "30px",},
+            fontFamily:"NovemberPro",
+             paddingRight: "5% !important",
+            textAlign:{ xs: "center", sm: "center", md: "right", lg: "right"}, }}
           >
             Case Study
           </Typography>
           <Typography
             className={styles.imageSubTitle}
-            fontSize={{
+            sx={{
+              fontSize:{
               xs: "23px",
               sm: "25px",
               md: "30px",
               lg: "35px",
-              xl: "35px",
-            }}
-            sx={{ paddingRight: "5% !important" }}
-            textAlign={{ xs: "center", sm: "center", md: "right", lg: "right" }}
+              xl: "35px",},
+            fontFamily:"NovemberPro",
+             paddingRight: "5% !important",
+            textAlign:{ xs: "center", sm: "center", md: "right", lg: "right"}, }}
           >
             World’s Popular Biodiversity Assessment tool unleashing global
             biodiversity information
