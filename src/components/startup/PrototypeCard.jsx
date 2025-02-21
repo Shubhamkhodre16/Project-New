@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { Button, Grid2, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2"; 
 import styles from "../../styles/Startup.module.css";
 const PrototypeCard = () => {
   const cardData = [
@@ -53,12 +54,11 @@ const PrototypeCard = () => {
     },
   ];
   return (
-    <>
-      <Grid2 container spacing={3} className={styles.cardContainer}>
+      <Grid container spacing={3} className={styles.cardContainer}>
         {cardData.map((item, index) => (
           <div key={index}>
-            <Grid2 className={styles.PrototypeCard}>
-              <Grid2
+            <Grid className={styles.PrototypeCard}>
+              <Grid
                 size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
                 className={styles.leftCard}
               >
@@ -68,11 +68,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardTitle}
                       sx={{
                         fontSize: {
-                          lg: "30px",
-                          md: "20px",
-                          sm: "26px",
+                          lg: "24px",
+                          md: "22px",
+                          sm: "24px",
                           xs: "22px",
                         },
+                        fontFamily:"NovemberPro"
                       }}
                     >
                       {item.title}
@@ -81,11 +82,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardSubTitle}
                       sx={{
                         fontSize: {
-                          lg: "20px",
-                          md: "18px ",
-                          sm: "20px",
-                          xs: "18px",
+                          lg: "18px",
+                          md: "16px ",
+                          sm: "18px",
+                          xs: "16px",
                         },
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.subtitle}
@@ -94,11 +96,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardSubTitle}
                       sx={{
                         fontSize: {
-                          lg: "20px",
-                          md: "18px ",
-                          sm: "20px",
-                          xs: "18px",
+                          lg: "18px",
+                          md: "16px ",
+                          sm: "18px",
+                          xs: "16px",
                         },
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.subtitle2}
@@ -107,11 +110,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardSubTitle}
                       sx={{
                         fontSize: {
-                          lg: "20px",
-                          md: "18px ",
-                          sm: "20px",
-                          xs: "18px",
+                          lg: "18px",
+                          md: "16px ",
+                          sm: "18px",
+                          xs: "16px",
                         },
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.subtitle3}
@@ -121,11 +125,11 @@ const PrototypeCard = () => {
                       sx={{
                         fontSize: {
                           lg: "16px",
-                          md: "16px",
+                          md: "16px ",
                           sm: "16px",
                           xs: "14px",
                         },
-                        backgroundColor: "#333",
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.button}
@@ -140,8 +144,8 @@ const PrototypeCard = () => {
                     height={300}
                   />
                 )}
-              </Grid2>
-              <Grid2
+              </Grid>
+              <Grid
                 size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
                 className={styles.rightCard}
               >
@@ -160,11 +164,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardTitle}
                       sx={{
                         fontSize: {
-                          lg: "30px",
-                          md: "20px",
-                          sm: "26px",
+                          lg: "24px",
+                          md: "22px",
+                          sm: "24px",
                           xs: "22px",
                         },
+                        fontFamily:"NovemberPro"
                       }}
                     >
                       {item.title}
@@ -173,11 +178,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardSubTitle}
                       sx={{
                         fontSize: {
-                          lg: "20px",
-                          md: "18px ",
-                          sm: "20px",
-                          xs: "18px",
+                          lg: "18px",
+                          md: "16px ",
+                          sm: "18px",
+                          xs: "16px",
                         },
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.subtitle}
@@ -186,11 +192,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardSubTitle}
                       sx={{
                         fontSize: {
-                          lg: "20px",
-                          md: "18px ",
-                          sm: "20px",
-                          xs: "18px",
+                          lg: "18px",
+                          md: "16px ",
+                          sm: "18px",
+                          xs: "16px",
                         },
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.subtitle2}
@@ -199,11 +206,12 @@ const PrototypeCard = () => {
                       className={styles.leftCardSubTitle}
                       sx={{
                         fontSize: {
-                          lg: "20px",
-                          md: "18px ",
-                          sm: "20px",
-                          xs: "18px",
+                          lg: "18px",
+                          md: "16px ",
+                          sm: "18px",
+                          xs: "16px",
                         },
+                        fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.subtitle3}
@@ -217,19 +225,18 @@ const PrototypeCard = () => {
                           sm: "16px",
                           xs: "14px",
                         },
-                        backgroundColor: "#333",
+                         fontFamily:"NovemberPro-Reg"
                       }}
                     >
                       {item.button}
                     </Button>
                   </>
                 )}
-              </Grid2>
-            </Grid2>
+              </Grid>
+            </Grid>
           </div>
         ))}
-      </Grid2>
-    </>
+      </Grid>
   );
 };
 
