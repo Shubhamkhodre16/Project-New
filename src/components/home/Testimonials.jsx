@@ -108,7 +108,9 @@ const Testimonials = () => {
             </Typography>
           </Grid>
         </Grid>
-        <span className={styles.testimonialsText}>TESTIMONIALS</span>
+        <span
+        style={{fontFamily:"NovemberPro"}}
+        className={styles.testimonialsText}>TESTIMONIALS</span>
 
         <div className={styles.slideContainer}>
           {Array.from({ length: totalSlides }).map((_, index) => {
