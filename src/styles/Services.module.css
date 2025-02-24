@@ -1,13 +1,12 @@
 .backgroundRor {
   position: relative;
   width: 100%;
-  height: 690px;
+  height: 645px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url("../../public/assets/img/rorheader.png");
 }
-
 .backgroundRor::before {
   content: "";
   position: absolute;
@@ -17,10 +16,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .imageTitle {
   color: #fff;
-  font-family: "NovemberPro";
   padding-top: 250px;
   padding-bottom: 20px;
   padding-left: 9%;
@@ -28,11 +25,9 @@
 }
 .imageSubTitle {
   color: #fff;
-  font-family: "NovemberPro-Reg";
   padding: 0 30% 0 9%;
   opacity: 0.9;
 }
-
 .backgroundReact {
   position: relative;
   width: 100%;
@@ -42,7 +37,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/reactheader.png");
 }
-
 .backgroundReact::before {
   content: "";
   position: absolute;
@@ -52,7 +46,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .backgroundNode {
   position: relative;
   width: 100%;
@@ -62,7 +55,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/headernode.png");
 }
-
 .backgroundNode::before {
   content: "";
   position: absolute;
@@ -72,7 +64,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .backgroundAngular {
   position: relative;
   width: 100%;
@@ -82,7 +73,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/angularheader.png");
 }
-
 .backgroundAngular::before {
   content: "";
   position: absolute;
@@ -92,7 +82,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .backgroundFullStack {
   position: relative;
   width: 100%;
@@ -102,7 +91,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/headerfullstack.png");
 }
-
 .backgroundFullStack::before {
   content: "";
   position: absolute;
@@ -112,7 +100,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .backgroundAWS {
   position: relative;
   width: 100%;
@@ -122,7 +109,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/awsHeader1.jpg");
 }
-
 .backgroundAWS::before {
   content: "";
   position: absolute;
@@ -132,7 +118,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .backgroundHeroku {
   position: relative;
   width: 100%;
@@ -142,7 +127,6 @@
   background-size: cover;
   background-image: url("../../public/assets/img/herukuheader.jpg");
 }
-
 .backgroundHeroku::before {
   content: "";
   position: absolute;
@@ -152,3 +136,211 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
+/* RorDevelopment */
+.rubycontainer{
+  padding: 3% 8%;
+  align-items: center;
+  background-image: url('/assets/img/rorcontent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.rubyTitle{
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: .5rem;
+}
+.rubySubtitle{
+  line-height: 1.5;
+color:#333;
+padding: 15px 0 0 0;
+margin-bottom: 1rem;
+}
+/* Our ROR development solutions */
+.coreQuote {
+  padding: 25px 0 35px 0;
+}
+.OurUsp {
+  color: #650909;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.coreTitleUsp {
+  color:#ffffff;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.coreDescriptionUsp {
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 0% 1%;
+}
+.uspContainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2% 7% 7% 7%;
+  background-color: #333;
+}
+.uspBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2% 3%;
+}
+/* .uspBox:hover {
+  border-color: #ebebeb;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  background-color: #ffffff;
+} */
+.uspBoxTitle {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  color: #333;
+}
+.uspBoxDesc {
+  color: #333;
+  line-height: 1.5;
+}
+/* elect Ruby on Rails  */
+.obstaclesContainer{
+  padding: 4% 8% ;
+  background-image: url('/assets/img/rorcontent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  }
+  .obstaclesLeft{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  .obstaclesLeftTitle{
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: .5rem;
+  }
+  .obstaclesLeftDesc{
+  margin-bottom: 1rem;
+  color:#333;
+  line-height: 1.5;
+  }
+  .obstaclesRight{
+  padding-left: 6%;
+  }
+  .obstaclesRightTitle{
+  padding: 3px 0;
+  color:#333;
+   display: flex;
+  }
+  .obstaclesRightIcon{
+  color: #650909;
+  margin-right: 10px;
+  margin-top: 3px;
+  }
+/* Ror expert */
+.containerExpert{
+  background-color: #333;
+  padding: 3% 8%;
+}
+.gridExpert{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column  ;
+}
+.stackGrid{
+  padding: 4% 0;
+}
+.techContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.techBox{
+  background-color: #ffffff;
+  min-width: 220px;
+  min-height: 250px;
+  border-radius: 10px;
+}
+/* ruby and rails */
+.rubypartnerContainer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2% 8% 7% 8%
+}
+.coreTitleUsppartner{
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.coreDescriptionUsppartner{
+  line-height: 1.5;
+  padding: 0% 1%;
+  color: #333;
+}
+.uspBoxPartner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2% 3%;
+}  
+ .uspBoxPartner:hover {
+  border-color: #ebebeb;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  background-color: #ffffff;
+} 
+/* right framework for Startups */
+.frameworkContainer{
+  padding: 3% 8%;
+  background-color: #333;
+  text-align: center;
+}
+.frameworkGrid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 0;
+}
+.frameworkCard{
+  padding: 0 5%;
+}
+.frameworkCardcontent{
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 3% 5%;
+}
+.frameworktitle{
+  color: #ffffff;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.frameworkdesc{
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
