@@ -1,16 +1,5 @@
 [
   {
-    "title": "Frontend Developer",
-    "description": "To work on Frontend Projects",
-    "skills": "React Js, Next js",
-    "location": "On-Site",
-    "positions": "2",
-    "openingDate": "2025-02-24",
-    "closingDate": "2025-02-26",
-    "id": "85f3da59-6687-4c21-b8b6-a6a5469dbd0c",
-    "experience": "2 Years"
-  },
-  {
     "title": "RoR",
     "description": "To work on Ruby on Rails Projects",
     "skills": "Rails",
@@ -35,7 +24,7 @@
   {
     "title": "UI/UX Designer",
     "description": "To Design Software",
-    "skills": "Figma",
+    "skills": "Figma,canva",
     "location": "Hybrid",
     "positions": "5",
     "openingDate": "2025-02-24",
@@ -44,14 +33,14 @@
     "id": "7a8220b9-7c49-4e4a-a462-344677e83364"
   },
   {
-    "title": "dwqe",
-    "description": "dsddsd",
-    "skills": "wqq",
-    "location": "Hybrid",
-    "positions": "2",
+    "title": "New Job",
+    "description": "2",
+    "skills": "bidding,trading,communication",
+    "location": "On-Site",
+    "positions": "1",
     "openingDate": "2025-02-25",
     "closingDate": "2025-02-28",
     "experience": "2 Years",
-    "id": "ada03df4-e32d-4cb9-8fa4-11bb4f2ef2f9"
+    "id": "b6720d9b-e1ce-41da-ae83-40483dae4892"
   }
 ]
