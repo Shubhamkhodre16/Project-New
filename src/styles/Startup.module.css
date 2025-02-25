@@ -293,6 +293,14 @@ display: flex;
 justify-content: center;
 text-align: center;
 }
+.upliftDataGrid{
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  min-height: 250px;
+}
 .upliftData{
 color: #ffffff;
 font-weight: 500;

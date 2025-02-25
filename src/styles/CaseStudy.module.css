@@ -256,9 +256,11 @@
 }
 
 .gridContainerContact {
-  margin: 5% 10%;
-  padding: 3% 10%;
-  column-gap: 30%;
+  margin: 5% ;
+  padding: 3% ;
+  /* column-gap: 30%; */
+  display: flex;
+  justify-content: center;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-position: center;

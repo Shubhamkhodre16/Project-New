@@ -34,16 +34,16 @@ const Navbar = () => {
       name: "Services",
       path: "/services",
       subOptions: [
-        { name: "- Ruby on Rails", path: "/services/ror"},
-        { name: "-  React JS", path: "/services/react"},
-        { name: "- Node JS", path: "/services/node" },
-        { name: "- ANGULAR JS", path: "/services/angular" },
+        { name: " Ruby on Rails", path: "/services/ror"},
+        { name: "  React JS", path: "/services/react"},
+        { name: " Node JS", path: "/services/node" },
+        { name: " Angulars JS", path: "/services/angular" },
         {
-          name: "- End to End Full Stack Development",
+          name: " End to End Full Stack Development",
           path: "/services/fullstack",
         },
-        { name: "- AWS", path: "/services/aws" },
-        { name: "- Heroku", path: "/services/heroku" },
+        { name: " AWS", path: "/services/aws" },
+        { name: " Heroku", path: "/services/heroku" },
       ],
     },
     // { name: "Blog", path: "/blog" },
@@ -332,6 +332,7 @@ const Navbar = () => {
                     <div className={styles.dropdownMenu}>
                       {subOptions.map((sub) => (
                         <MenuItem
+                        sx={{fontFamily:"NovemberPro-Reg"}}
                           key={sub.name}
                           component={Link}
                           href={sub.path}
