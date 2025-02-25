@@ -127,14 +127,14 @@ const Prototype = () => {
             <Typography className={styles.techPartnersTitle} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily: "NovemberPro"}}>For Start-ups</Typography>
             <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"20px",md:"18px ",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}} >Being a profitable product development company for start-ups, we aim for the speedy launch of products before any of your competitors set foot into the fast-paced market. Beginning from start-up culture we completely understand how challenging it is to keep an eye on every problem and address it with best-fit solutions.</Typography>
            <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"20px",md:"18px ",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>We collaborate with start-up founders, deeply understand the project concept, and brainstorm to generate unique ideas. Followed by crafting a detailed roadmap of the next steps, then getting into the product design stage. Under this stage, we attractively design the product user experience and user interface that depict your business goals and raise your end-users expectations. Lastly, we develop a quality rich and bug-free product and smoothly launch it on the market.</Typography>
-            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none"}}>Let your product rock with us</Button>
+            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}}>Let your product rock with us</Button>
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.techPartnerRight}>
             <Image src={techPartnerRight} className={styles.techPartnerImage} alt='techPartnerRight' width={80} height={80}/>
             <Typography className={styles.techPartnersTitle} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"}}>For Start-up accelerators</Typography>
             <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"20px",md:"18px ",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>Enable your start-ups to grow products while we look after the software. InfoKoders technologies can be your next-age digital transformation tech partner as are been admired for our systematic product development workflow.</Typography>
             <Typography className={styles.techPartnersSubTitle} sx={{fontSize:{lg:"20px",md:"18px ",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>As per the reports around 20% of start-ups face failure in their initial first year due to poor technical implementation, unstructured workflow, and many other reasons. With high proficient years of software development experience, by scaling the start-ups from 0 to 2M users and holding an exceptional track record we are capable enough to be your exclusive tech partner. Full-fledged Products we have delivered for (client names) and many startups have raised the start-ups standard and helped the founders to stay on top of the competitors.</Typography>
-            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px",marginTop:"30px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none"}}>Join hands as a tech partner</Button>
+            <Button className={styles.PrototypeButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px",},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1.5rem",textTransform: "none"}}>Join hands as a tech partner</Button>
           </Grid>
         </Grid>
        </Grid>
@@ -173,7 +173,7 @@ const Prototype = () => {
         {/* {/ obstacles InfoKoders /} */}
         <Grid container spacing={3} className={styles.obstaclesContainer}>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.obstaclesLeft}>
-            <Typography className={styles.obstaclesLeftTitle}sx={{fontSize:{lg:"24px",md:"22x",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}}>What obstacles InfoKoders Technologies can tackle for startups?</Typography>
+            <Typography className={styles.obstaclesLeftTitle}sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}}>What obstacles InfoKoders Technologies can tackle for startups?</Typography>
             <Typography className={styles.obstaclesLeftDesc} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}} >In a start-up journey, you probably have come through a lot of rough paths, however, we are going turn out to be your supportive software development team that going to rescue your startup from all struggles like:</Typography>
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.obstaclesRight}>
@@ -197,25 +197,25 @@ const Prototype = () => {
          {/* Uplift your startup? */}
         <Grid container spacing={3} className={styles.upliftStartup}>
           <Grid size={{xs:12,sm:12,md:12,lg:12}}>
-            <Typography className={styles.upliftStartupTitle} sx={{fontSize:{lg:"24px",md:"22x",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}} >Why choose InfoKoders Technologies to Uplift
+            <Typography className={styles.upliftStartupTitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}} >Why choose InfoKoders Technologies to Uplift
             your startup?</Typography>
           </Grid>
-          <Grid size={{xs:12,sm:12,md:6,lg:6}} >
+          <Grid size={{xs:12,sm:12,md:6,lg:6}}  >
               {upliftData.map((item,index)=>(
                 index%2===0 && (
-                <div key={index}>
-                <Typography className={styles.upliftData} sx={{fontSize:{lg:"24px",md:"22x",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}} >{item.title}</Typography>
-                <Typography className={styles.upliftDataDesc} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>{item.desc}</Typography>
-                </div>
+                <Grid key={index} className={styles.upliftDataGrid}>
+                <Typography className={styles.upliftData} sx={{fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},fontFamily:"NovemberPro"}} >{item.title}</Typography>
+                <Typography className={styles.upliftDataDesc} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>{item.desc}</Typography>
+                </Grid>
             )  ))}
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}}  >
               {upliftData.map((item,index)=>(
                 index%2!==0 &&(
-                <div key={index}>
-                <Typography className={styles.upliftData} sx={{fontSize:{lg:"24px",md:"22x",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}}>{item.title}</Typography>
-                <Typography className={styles.upliftDataDesc} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>{item.desc}</Typography>
-                </div>
+                <Grid key={index} className={styles.upliftDataGrid}>
+                <Typography className={styles.upliftData} sx={{fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},fontFamily:"NovemberPro"}}>{item.title}</Typography>
+                <Typography className={styles.upliftDataDesc} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>{item.desc}</Typography>
+                </Grid>
             )  ))}
           </Grid>
         </Grid>
