@@ -47,8 +47,8 @@ const Navbar = () => {
       ],
     },
     // { name: "Blog", path: "/blog" },
-    { name: "Careers", path: "/career" },
     { name: "Start Up", path: "/startup" },
+    { name: "Careers", path: "/career" },
     { name: "Contact Us", path: "/contact" },
   ];
   const [drawerOpen, setDrawerOpen] = useState(false);

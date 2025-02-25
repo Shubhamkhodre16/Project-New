@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Button,
@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import PersonIcon from "@mui/icons-material/Person";
+import JobListings from "../contact/JobListings";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LinkIcon from "@mui/icons-material/Link";
@@ -19,7 +20,6 @@ import MessageIcon from "@mui/icons-material/Message";
 import styles from "../../styles/Careers.module.css";
 import emailjs from "emailjs-com";
 import Navbar from "../../components/navbar/Navbar";
-
 const ResumeForm = () => {
   const [resume, setResume] = useState(null);
   const [formData, setFormData] = useState({
@@ -69,6 +69,22 @@ const ResumeForm = () => {
     setResume(fileUrl); // Store the file URL instead of base64
     validateForm();
   };
+
+     const [jobs, setJobs] = useState([]);
+  
+      useEffect(() => {
+        const fetchJobs = async () => {
+          const response = await fetch("/api/getjobs", { cache: "no-store" });
+          if (response.ok) {
+            const data = await response.json();
+            setJobs(data);
+          } else {
+            console.error("Failed to fetch jobs");
+          }
+        };
+    
+        fetchJobs();
+      }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -125,6 +141,9 @@ const ResumeForm = () => {
           Join Our Team
         </Typography>
       </Grid>
+       <JobListings
+        jobs={jobs}
+       />
       <Grid container justifyContent="center" sx={{ padding: "3% 10%" }}>
         <Box
           component="form"
@@ -195,18 +214,19 @@ const ResumeForm = () => {
               {
                 name: "position",
                 label: "Select Position",
-                options: ["Software Engineer", "Project Manager", "HR"],
+                options: ["Frontend Developer","Backend Developer", "UI/UX Designer", "Devops Engineer", "Project Manager", "HR", "Business Development Executive","Sales Manager"],
               },
               {
                 name: "experience",
                 label: "Select Experience",
                 options: [
+                  "Fresher",
                   "Less than 1 year",
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
+                  "1 year",
+                  "2 Years",
+                  "3 Years",
+                  "4 Years",
+                  "5 Years",
                   "More than 5 Years",
                 ],
               },
@@ -248,7 +268,7 @@ const ResumeForm = () => {
                 name="profileUrl"
                 value={formData.profileUrl || ""}
                 onChange={handleChange}
-                placeholder="LinkedIn/GitHub URL"
+                placeholder="URLs"
                 type="url" // Ensures URL format
                 variant="filled"
                 InputProps={{
@@ -355,6 +375,7 @@ const ResumeForm = () => {
           </Box>
         </Box>
       </Grid>
+      {/* <JobListings/> */}
     </Box>
   );
 };
