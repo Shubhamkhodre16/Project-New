@@ -1,7 +1,7 @@
 [
   {
     "title": "RoR",
-    "description": "To work on Ruby on Rails Projects",
+    "description": "<ul><li><p><strong>Job Type:</strong> Hybrid<br><strong>Experience Required : </strong><em>Min. 3 <u>Years</u></em><br><strong>Skills Required : </strong>React js, <u>Node js</u>, <em>JavaScript,</em> HTML, css etc.</p></li><li><p><strong>No. of Positions : </strong>10<u> </u><strong><em><u>Positi</u></em></strong></p></li></ul>",
     "skills": "Rails",
     "location": "On-Site",
     "positions": "10",
@@ -12,7 +12,7 @@
   },
   {
     "title": "Backed Developer",
-    "description": "To work on the backend projects",
+    "description": "<ul><li><p><strong><em>Key Featurs</em></strong></p></li></ul><p><strong>sdsdsds</strong></p><ul><li><p><strong>sads</strong></p></li><li><p><strong>2sdds</strong></p></li><li><p><strong>sdddsds</strong></p></li><li><p></p></li></ul>",
     "skills": "Node js",
     "location": "On-Site",
     "positions": "2",
@@ -39,8 +39,19 @@
     "location": "On-Site",
     "positions": "1",
     "openingDate": "2025-02-25",
-    "closingDate": "2025-02-28",  
+    "closingDate": "2025-02-28",
     "experience": "2 Years",
     "id": "b6720d9b-e1ce-41da-ae83-40483dae4892"
+  },
+  {
+    "title": "Editor Job",
+    "description": "<p><strong>Editor Job: </strong>this is <em>editor</em> job</p>",
+    "skills": "React Js, Next js",
+    "location": "On-Site",
+    "positions": "10",
+    "openingDate": "2025-02-25",
+    "closingDate": "2025-02-27",
+    "experience": "1 Year",
+    "id": "3fd64f7a-560b-402a-b8dd-dadf669a07ef"
   }
 ]

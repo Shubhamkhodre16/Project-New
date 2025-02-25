@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Container,
   TextField,
@@ -10,10 +10,11 @@ import {
   Modal,
   IconButton,
   Select,
-  MenuItem
+  MenuItem,
+  Grid,
 } from "@mui/material";
-import Grid from "@mui/material/Grid2"
 import { Close } from "@mui/icons-material";
+import Tiptap from "../tiptap/TipTap"; // Ensure correct import
 
 export default function AddJobPost({ setOpen, open, setJobs }) {
   const [form, setForm] = useState({
@@ -24,7 +25,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
     positions: "",
     openingDate: "",
     closingDate: "",
-    experience:null
+    experience: "",
   });
 
   const fetchJobs = async () => {
@@ -36,6 +37,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
       console.error("Failed to fetch jobs");
     }
   };
+
   const handleClose = () => setOpen(false);
 
   const handleChange = (e) => {
@@ -59,6 +61,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
         positions: "",
         openingDate: "",
         closingDate: "",
+        experience: "",
       });
       fetchJobs();
       handleClose(); // Close modal after success
@@ -74,18 +77,19 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
           left: "50%",
           transform: "translate(-50%, -50%)",
           bgcolor: "white",
+          overflow: "hidden",
+          overflowY: "scroll",
           boxShadow: 24,
           p: 4,
           borderRadius: 2,
-          width: "50vw", // Adjust modal width
-          maxWidth: 600, // Limit max width for better responsiveness
+          width: "50vw",
+          maxWidth: 600,
+          maxHeight: 600,
         }}
       >
-        {/* Close Icon */}
+        {/* Header */}
         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>
-          <Typography textAlign="center" variant="h5">
-            Add New Job
-          </Typography>
+          <Typography variant="h5">Add New Job</Typography>
           <IconButton onClick={handleClose}>
             <Close />
           </IconButton>
@@ -93,8 +97,8 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
 
         {/* Job Form */}
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
-          <Grid container spacing={3}>
-            <Grid  size={{xs:12,sm:6}}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
               <TextField
                 label="Job Title"
                 name="title"
@@ -104,7 +108,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid  size={{xs:12,sm:6}}>
+            {/* <Grid item xs={12} sm={6}>
               <TextField
                 label="Skills"
                 name="skills"
@@ -114,58 +118,21 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-         
 
-         
-            <Grid  size={{xs:12,sm:6}}>
+            <Grid item xs={12} sm={6}>
               <Select
-                label="Job Type"
                 name="location"
                 value={form.location || ""}
                 onChange={handleChange}
                 required
                 fullWidth
                 displayEmpty
-                variant="filled"
+                variant="outlined"
               >
                 <MenuItem value="" disabled>
                   Select Job Type
                 </MenuItem>
-                {[
-                  "On-Site",
-                  "Hybrid",
-                  "Remote",
-                ].map((location) => (
-                  <MenuItem key={location} value={location}>
-                    {location}
-                  </MenuItem>
-                ))}
-              </Select>
-            </Grid>
-            <Grid  size={{xs:12,sm:6}}>
-              <Select
-                label="Experience"
-                name="experience"
-                value={form.experience || ""}
-                onChange={handleChange}
-                required
-                fullWidth
-                displayEmpty
-                variant="filled"
-              >
-                <MenuItem value="" disabled>
-                  Experience
-                </MenuItem>
-                {[
-                  "Freshers",
-                  "1 Year",
-                  "2 Years",
-                  "3 Years",
-                  "4 Years",
-                  "5 Years",
-                  "6 Years",
-                  "7 Years"
-                ].map((location) => (
+                {["On-Site", "Hybrid", "Remote"].map((location) => (
                   <MenuItem key={location} value={location}>
                     {location}
                   </MenuItem>
@@ -173,7 +140,28 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
               </Select>
             </Grid>
 
-            <Grid  size={{xs:12,sm:6}}>
+            <Grid item xs={12} sm={6}>
+              <Select
+                name="experience"
+                value={form.experience || ""}
+                onChange={handleChange}
+                required
+                fullWidth
+                displayEmpty
+                variant="outlined"
+              >
+                <MenuItem value="" disabled>
+                  Experience
+                </MenuItem>
+                {["Freshers", "1 Year", "2 Years", "3 Years", "4 Years", "5 Years", "6 Years", "7 Years"].map((exp) => (
+                  <MenuItem key={exp} value={exp}>
+                    {exp}
+                  </MenuItem>
+                ))}
+              </Select>
+            </Grid> */}
+
+            <Grid item xs={12} sm={6}>
               <TextField
                 label="Start Date"
                 type="date"
@@ -185,7 +173,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid  size={{xs:12,sm:6}}>
+            <Grid item xs={12} sm={6}>
               <TextField
                 label="End Date"
                 type="date"
@@ -197,7 +185,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid  size={{xs:12,sm:6}}>
+            <Grid item xs={12} sm={6}>
               <TextField
                 label="No of Positions"
                 name="positions"
@@ -208,16 +196,11 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid  size={{xs:12}}>
-              <TextField
-                label="Description"
-                name="description"
-                value={form.description}
-                onChange={handleChange}
-                required
-                multiline
-                rows={3}
-                fullWidth
+            {/* Tiptap Editor for Description */}
+            <Grid item xs={12}>
+              <Tiptap
+                content={form.description}
+                setContent={(value) => setForm({ ...form, description: value })}
               />
             </Grid>
           </Grid>

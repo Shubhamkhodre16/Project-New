@@ -237,9 +237,11 @@ const JobsListings = ({ jobs }) => {
                 <strong>Title:</strong> {selectedJob.title}
               </Typography>
               <Typography>
-                <strong>Description:</strong> {selectedJob.description}
+                {/* <strong>Description:</strong> {selectedJob.description} */}
+                <div dangerouslySetInnerHTML={{ __html: selectedJob.description}} />
+
               </Typography>
-              <Typography>
+              {/* <Typography>
                 <strong>Skills Required:</strong> {selectedJob?.skills}
               </Typography>
               <Typography>
@@ -250,7 +252,7 @@ const JobsListings = ({ jobs }) => {
                 {selectedJob.experience !== "Freshers"
                   ? `Min. 0 to ${selectedJob.experience}`
                   : selectedJob.experience}
-              </Typography>
+              </Typography> */}
 
               {/* <Typography>
                 <strong>Opening Date:</strong> {selectedJob.openingDate}
