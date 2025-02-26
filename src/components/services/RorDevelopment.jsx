@@ -209,8 +209,8 @@ const RorDevelopment = () => {
             xs: "30px",
             sm: "30px",
             md: "45px",
-            lg: "60px",
-            xl: "60px",
+            lg: "45px",
+            xl: "45px",
          },fontFamily:"NovemberPro"}}
         >
           Ruby on Rails
@@ -219,15 +219,15 @@ const RorDevelopment = () => {
       {/* Best Ruby on Rails Development Company */}
       <Grid container spacing={2} className={styles.rubycontainer}>
         <Grid size={{xs:12,sm:12,md:6,lg:6}}>
-          <Typography className={styles.rubyTitle} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"}}> Best <span style={{color:"#650909"}}> Ruby on Rails Development </span>Company</Typography>
-          <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>Get scalable, secure, and well-supported features web applications by embracing exclusive Ruby on rails development services from InfoKoders technologies. As one of the top specialists in<b> ROR development services,</b> we have developed and delivered world-class solutions that have outshined our clients and their end-customers expectations.</Typography>
-          <Button  sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none"}}>Let's connect</Button>
+          <Typography className={styles.rubyTitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}> Best <span style={{color:"#650909"}}> Ruby on Rails Development </span>Company</Typography>
+          <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>Get scalable, secure, and well-supported features web applications by embracing exclusive Ruby on rails development services from InfoKoders technologies. As one of the top specialists in<b> ROR development services,</b> we have developed and delivered world-class solutions that have outshined our clients and their end-customers expectations.</Typography>
+          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}}>Let's connect</Button>
         </Grid>
         <Grid size={{xs:12,sm:12,md:6,lg:6}} sx={{ display:"flex",justifyContent:"center",alignItems:"center"}} >
         <Image
                   src={RorBanner}
                   alt="About Us"
-                  width={500}
+                  width={400}
                   height={300}/>
         </Grid>
       </Grid>
@@ -237,17 +237,17 @@ const RorDevelopment = () => {
               <Typography
                 className={styles.coreTitleUsp}
                 sx={{
-                  fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"
+                  fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"20px"},fontFamily:"NovemberPro"
                 }}
               >
-              Our  <span className={styles.OurUsp}>ROR development </span> solutions
+              Our ROR development solutions
               </Typography>
               <Typography
                 className={styles.coreDescriptionUsp}
                 sx={{
                   fontSize: {
-                    lg: "20px ",
-                    md: "18px ",
+                    lg: "18px ",
+                    md: "16px ",
                     sm: "18px ",
                     xs: "16px",
                   },fontFamily: "NovemberPro-Reg"
@@ -272,10 +272,10 @@ const RorDevelopment = () => {
                     className={styles.uspBoxTitle}
                     sx={{
                       fontSize: {
-                        lg: "22px ",
+                        lg: "20px ",
                         md: "20px ",
-                        sm: "22px ",
-                        xs: "18px ",
+                        sm: "20px ",
+                        xs: "20px ",
                       },fontFamily: "NovemberPro",
                     }}
                   >
@@ -285,9 +285,9 @@ const RorDevelopment = () => {
                     className={styles.uspBoxDesc}
                     sx={{
                       fontSize: {
-                        lg: "18px ",
+                        lg: "16px ",
                         md: "16px ",
-                        sm: "18px ",
+                        sm: "16px ",
                         xs: "16px ",
                       },fontFamily: "NovemberPro-Reg",
                     }}
@@ -301,25 +301,25 @@ const RorDevelopment = () => {
          {/* {/ obstacles InfoKoders /} */}
          <Grid container spacing={3} className={styles.obstaclesContainer}>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.obstaclesLeft} > 
-            <Typography className={styles.obstaclesLeftTitle}sx={{fontSize:{lg:"24px",md:"22x",sm:"24px",xs:"22px"},fontFamily:"NovemberPro"}}>Why elect <span className={styles.OurUsp}>Ruby on Rails</span> over other Cross-platform Frameworks?</Typography>
-            <Typography className={styles.obstaclesLeftDesc} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}} >Every technology and framework has its own advantages and disadvantages. The following are some advantages of using Ruby on Rails over other cross-platform frameworks:
+            <Typography className={styles.obstaclesLeftTitle}sx={{fontSize:{lg:"25px",md:"22x",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Why elect <span className={styles.OurUsp}>Ruby on Rails</span> over other Cross-platform Frameworks?</Typography>
+            <Typography className={styles.obstaclesLeftDesc} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}} >Every technology and framework has its own advantages and disadvantages. The following are some advantages of using Ruby on Rails over other cross-platform frameworks:
             </Typography>
-           <Button className={styles.obstaclesLeftbtn} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none",}}>Talk to Our ROR Experts</Button>
+           <Button className={styles.obstaclesLeftbtn} sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none",}}>Talk to Our ROR Experts</Button>
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.obstaclesRight}>
-            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
+            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
               <TripOriginIcon className={styles.obstaclesRightIcon} />Ruby on Rails is well-known for its ability to help you create scalable applications.
             </Typography >
-            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
+            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
               <TripOriginIcon className={styles.obstaclesRightIcon} /> With our development, releasing the API is a breeze.
             </Typography>
-            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
+            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
               <TripOriginIcon className={styles.obstaclesRightIcon} />RoR is an excellent choice because it allows you to create a functional mobile, web, or desktop app for your company.
             </Typography >
-            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
+            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
               <TripOriginIcon className={styles.obstaclesRightIcon}/>When you don't have much time, it saves time.
             </Typography>
-            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
+            <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
               <TripOriginIcon className={styles.obstaclesRightIcon} />It is used by many big giant companies, including Shopify, Hulu, Twitch, and others. The RoR web development framework is beneficial to them.
             </Typography>
           </Grid>
@@ -329,13 +329,13 @@ const RorDevelopment = () => {
           <Grid size={{xs:12,sm:12,md:12,lg:12}} className={styles.gridExpert} >
             <Typography className={styles.coreTitleUsp}
                 sx={{
-                  fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"
-                }}>  Are you looking for an <span className={styles.OurUsp}>RoR expert</span>to develop a user-oriented app?</Typography>
+                  fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"
+                }}>  Are you looking for an RoR expert to develop a user-oriented app?</Typography>
             <Typography className={styles.coreDescriptionUsp}
                 sx={{
                   fontSize: {
-                    lg: "20px ",
-                    md: "18px ",
+                    lg: "18px ",
+                    md: "16px ",
                     sm: "18px ",
                     xs: "16px",
                   },fontFamily: "NovemberPro-Reg"
@@ -343,11 +343,11 @@ const RorDevelopment = () => {
              
           </Grid>
           <Grid size={{xs:12,sm:12,md:12,lg:12}} className={styles.stackGrid}>
-          <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"}}>Technology Stack</Typography>
+          <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Technology Stack</Typography>
           <Typography  className={styles.coreDescriptionUsp} sx={{
                   fontSize: {
-                    lg: "20px ",
-                    md: "18px ",
+                    lg: "18px ",
+                    md: "16px ",
                     sm: "18px ",
                     xs: "16px",
                   },fontFamily: "NovemberPro-Reg"}}>Our RoR experts are well-versed in these technologies.</Typography>
@@ -355,7 +355,7 @@ const RorDevelopment = () => {
         {/* ror expert */}
         <Grid
               container
-              spacing={4}
+              spacing={2}
               className={styles.techContainer}
               sx={{ justifyContent: "center" }}
             >
@@ -370,7 +370,8 @@ const RorDevelopment = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     textAlign: "center",
-                     
+                     padding:"10px",
+
                   }}
                 >
                   <Image
@@ -381,23 +382,23 @@ const RorDevelopment = () => {
                     width={80}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"16px",md:"18px",sm:"18px",xs:"16px"}, }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},wordBreak:"break-word" }}
                   >
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
                   >
                     {item?.subtitle1}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
                   >
                      {item?.subtitle2}
                   </Typography>
                 
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
                   >
                    {item?.subtitle3}
                   </Typography>
@@ -413,17 +414,17 @@ const RorDevelopment = () => {
               <Typography
                 className={styles.coreTitleUsppartner}
                 sx={{
-                  fontSize: { lg: "24px", md: "22px ", sm: "24px", xs: "20px" },fontFamily:"NovemberPro"
+                  fontSize: { lg: "25px", md: "22px ", sm: "25px", xs: "22px" },fontFamily:"NovemberPro"
                 }}
               > Why InfoKoders technologies to be your right
-                <span className={styles.OurUsp}>Ruby on Rails</span> partner?
+                <span className={styles.OurUsp}> Ruby on Rails </span> partner?
               </Typography>
               <Typography
                 className={styles.coreDescriptionUsppartner}
                 sx={{
                   fontSize: {
-                    lg: "20px ",
-                    md: "18px ",
+                    lg: "18px ",
+                    md: "16px ",
                     sm: "18px ",
                     xs: "16px",
                   },fontFamily: "NovemberPro-Reg",
@@ -449,10 +450,10 @@ const RorDevelopment = () => {
                     className={styles.uspBoxTitle}
                     sx={{
                       fontSize: {
-                        lg: "22px ",
+                        lg: "20px ",
                         md: "20px ",
-                        sm: "22px ",
-                        xs: "18px ",
+                        sm: "20px ",
+                        xs: "20px ",
                       },fontFamily: "NovemberPro",
                     }}
                   >
@@ -462,9 +463,9 @@ const RorDevelopment = () => {
                     className={styles.uspBoxDesc}
                     sx={{
                       fontSize: {
-                        lg: "18px ",
+                        lg: "16px ",
                         md: "16px ",
-                        sm: "18px ",
+                        sm: "16px ",
                         xs: "16px ",
                       },fontFamily: "NovemberPro-Reg",
                     }}
@@ -480,26 +481,26 @@ const RorDevelopment = () => {
         <Grid container className={styles.frameworkContainer}>
           <Grid size={{xs:12,sm:12,md:12,lg:12}}>
             <Typography className={styles.coreTitleUsp}  sx={{
-                  fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"
-                }}>How <span className={styles.OurUsp}>Ruby on Rails</span> is the right framework for Startups and Enterprises?</Typography>
+                  fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"
+                }}>How Ruby on Rails is the right framework for Startups and Enterprises?</Typography>
             </Grid>
             <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.frameworkGrid}>
             <Image src={startup} alt="startup" height={80} width={60}/> 
-            <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"}}>Start-ups</Typography>
+            <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Start-ups</Typography>
             </Grid>
             <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.frameworkGrid}>
             <Image src={enterprise} alt="enterprise" height={80} width={60}/> 
-            <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"}}>Enterprises</Typography>
+            <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Enterprises</Typography>
             </Grid>
            <Grid spacing={3} container className={styles.frameworkCard}>
             {framework.map((item,index)=>(
             <Grid size={{xs:12,sm:12,md:6,lg:6}} key={index} className={styles.frameworkCardcontent}>
-              <Typography className={styles.frameworktitle} sx={{fontSize:{lg:"24px",md:"22px",sm:"24px",xs:"20px"},fontFamily:"NovemberPro"}}>{item?.title}</Typography>
+              <Typography className={styles.frameworktitle} sx={{fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},fontFamily:"NovemberPro"}}>{item?.title}</Typography>
               <Typography className={styles.frameworkdesc} sx={{
                       fontSize: {
-                        lg: "18px ",
+                        lg: "16px ",
                         md: "16px ",
-                        sm: "18px ",
+                        sm: "16px ",
                         xs: "16px ",
                       },fontFamily: "NovemberPro-Reg",
                     }}>{item?.desc}</Typography>
@@ -507,6 +508,8 @@ const RorDevelopment = () => {
             ))}
            </Grid>
           </Grid>
+         
+          
          <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true} />
          <Footer/>
     </Box>

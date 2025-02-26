@@ -129,7 +129,7 @@ const PrototypeCard = () => {
                           sm: "16px",
                           xs: "14px",
                         },
-                        fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none"
+                        fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"
                       }}
                     >
                       {item.button}
@@ -224,7 +224,7 @@ const PrototypeCard = () => {
                           sm: "16px",
                           xs: "14px",
                         },
-                        fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "none"
+                        fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"
                       }}
                     >
                       {item.button}

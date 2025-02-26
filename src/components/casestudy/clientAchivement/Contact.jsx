@@ -15,9 +15,9 @@ const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
             <Typography
               sx={{ fontFamily: "NovemberPro" }}
               fontSize={{
-                lg: isFreelance ? "25px" : "35px",
+                lg: isFreelance ? "22px" : "35px",
                 md: isFreelance ? "22px" : "26px ",
-                sm: "30px",
+                sm: "22px",
                 xs: "22px",
               }}
             >
@@ -25,7 +25,7 @@ const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
             </Typography>
             <Typography
               sx={{ fontFamily: "NovemberPro-Reg" }}
-              fontSize={{ lg: "20px", md: "16px ", sm: "18px", xs: "16px" }}
+              fontSize={{ lg: "18px", md: "16px ", sm: "18px", xs: "16px" }}
             >
               {subTitle}
             </Typography>
@@ -34,7 +34,7 @@ const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
             <Button
               sx={{
                 backgroundColor: "#fff !important",
-                marginTop: "20px",
+                marginTop: "10px",
                 color: "#333 !important",
                 justifyContent: isFreelance ? "center" : "",
               }}
