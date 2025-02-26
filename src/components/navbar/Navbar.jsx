@@ -76,10 +76,8 @@ const Navbar = () => {
   };
 
   const handlePopoverClose = () => {
-    setTimeout(() => {
       setServiceAnchorEl(null);
 
-    }, [2000]);
   };
   const toggleMobileDropdown = () => setMobileDropdownOpen(!mobileDropdownOpen);
 
@@ -106,7 +104,8 @@ const Navbar = () => {
         }}
         maxWidth="xl"
       >
-        <Toolbar disableGutters>
+        <Toolbar
+        disableGutters>
           <Link href="/" passHref>
             <Image
               src={isFixed ? logo : logo1}
@@ -233,45 +232,63 @@ const Navbar = () => {
             }}
           >
             {pages.map(({ name, path, subOptions }) => (
-              <Box key={name}>
+              <Box key={name}
+              sx={{marginTop:pathname === path || subOptions ? "5px":""}}
+              className={ pathname === path || subOptions ? "" : styles.navOption1}
+
+              >
                 {subOptions ? (
-                  <Typography
-                    sx={{
-                      my: 2,
-                      mx: 1.2,
-                      fontWeight: "bold",
-                      textDecoration: "none",
-                      fontFamily: "NovemberPro-Reg",
-                      cursor: "pointer",
-                      transition: "color 0.3s, background-color 0.3s",
-                      backgroundColor:
-                        pathname === path
-                          ? isFixed
-                            ? "#333"
-                            : "#fff"
-                          : "transparent",
-                      color:
-                        pathname === path
-                          ? isFixed
-                            ? "#fff"
-                            : "#333"
-                          : isFixed
+                  <div
+                  style={{fontWeight: "bold",
+                    textDecoration: "none",
+                    fontFamily: "NovemberPro-Reg",
+                    cursor: "pointer",
+                    transition: "color 0.3s, background-color 0.3s",
+                    backgroundColor:
+                      pathname === path
+                        ? isFixed
                           ? "#333"
-                          : "#fff",
-                      padding: pathname === path ? "10px 20px" : "5px 15px",
-                      borderRadius: pathname === path ? "5px" : "",
-                      marginTop: pathname === path ? "6px" : "10px",
+                          : "#fff"
+                        : "transparent",
+                    color:
+                      pathname === path
+                        ? isFixed
+                          ? "#fff"
+                          : "#333"
+                        : isFixed
+                        ? "#333"
+                        : "#fff",
+                    padding: pathname === path ? "10px 20px" : "5px 15px",
+                    borderRadius: pathname === path ? "5px" : "",
                     }}
-                    className={styles.navOption}
-                  >
-                    {name}{" "}
+                  className={styles.dropdown}
+                  onMouseEnter={handlePopoverOpen}
+                  onMouseLeave={handlePopoverClose}
+                >
+                  <button className={styles.dropbtn}>
+                   {name} 
+                   {/* <i className="fa fa-caret-down"></i> */}
                     <ArrowDropDownIcon
                       onMouseEnter={handlePopoverOpen}
                       onMouseLeave={handlePopoverClose}
                     />
-                  </Typography>
+                  </button>
+                  {open && (
+                    <div className={styles.dropdownContent}>
+                       
+                       {subOptions?.map((item,index)=>(
+                      <Link
+                      key={item.name}
+                      href={item?.path}>{item?.name}</Link>
+                         
+                       ))}
+                    </div>
+                  )}
+                </div>
                 ) : (
-                  <Link href={path} passHref>
+                  <Link 
+                  
+                  href={path} passHref>
                     <Typography
                       className={styles.navOption}
                       sx={{
@@ -307,44 +324,7 @@ const Navbar = () => {
                 )}
 
                 {/* Move the Popover inside the Box to avoid syntax errors */}
-                {open && subOptions && (
-                  <Popover
-                    id="service-popover"
-                    sx={{
-                      pointerEvents: "auto",
-                      minWidth: "200px", // Ensures consistent width
-                      zIndex: 9999,
-                    }}
-                    open={open}
-                    anchorEl={serviceAnchorEl}
-                    onClose={handlePopoverClose}
-                    anchorOrigin={{
-                      vertical: "bottom",
-                      horizontal: "left",
-                    }}
-                    transformOrigin={{
-                      vertical: "top",
-                      horizontal: "center",
-                    }}
-                    disableRestoreFocus
-                    disablePortal={true} // Ensures it doesn't re-position automatically
-                  >
-                    <div className={styles.dropdownMenu}>
-                      {subOptions.map((sub) => (
-                        <MenuItem
-                        sx={{fontFamily:"NovemberPro-Reg"}}
-                          key={sub.name}
-                          component={Link}
-                          href={sub.path}
-                          passHref
-                          onClick={handlePopoverClose}
-                        >
-                          {sub.name}
-                        </MenuItem>
-                      ))}
-                    </div>
-                  </Popover>
-                )}
+   
               </Box>
             ))}
           </Box>
