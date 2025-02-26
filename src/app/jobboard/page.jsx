@@ -95,7 +95,7 @@ const handleUpdate = (updatedJob) => {
               <TableHead>
                 <TableRow>
                   <TableCell><strong>Job Title</strong></TableCell>
-                  <TableCell><strong>Skills</strong></TableCell>
+                  {/* <TableCell><strong>Skills</strong></TableCell> */}
                   <TableCell><strong>No. of Positions</strong></TableCell>
 
                   <TableCell><strong>Start Date</strong></TableCell>
@@ -108,7 +108,7 @@ const handleUpdate = (updatedJob) => {
                     console.log(job,"job"),
                   <TableRow key={index}>
                     <TableCell>{job.title}</TableCell>
-                    <TableCell>{job.skills}</TableCell>
+                    {/* <TableCell>{job.skills}</TableCell> */}
                     <TableCell>{job.positions}</TableCell>
                     <TableCell>{job.openingDate}</TableCell>
                     <TableCell>{job.closingDate}</TableCell>

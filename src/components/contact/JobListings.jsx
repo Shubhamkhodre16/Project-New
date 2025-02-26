@@ -89,6 +89,7 @@
 
 "use client";
 import { useState } from "react";
+import ApplyNowPopup from "../../components/contact/ApplyNowPopup";
 import {
   Grid,
   Card,
@@ -106,6 +107,8 @@ import {
 
 const JobsListings = ({ jobs }) => {
   const [open, setOpen] = useState(false);
+  const [openApply, setOpenApply] = useState(false);
+  const handleOpenApply = () => setOpenApply(true);
   const [selectedJob, setSelectedJob] = useState(null);
 
   const handleOpen = (job) => {
@@ -155,20 +158,20 @@ const JobsListings = ({ jobs }) => {
                     minWidth: 0,
                   }}
                 >
-                  <Typography variant="h6" sx={{ fontWeight: "bold", fontFamily:"NovemberPro" }}>
+                  <Typography
+                    variant="h6"
+                    sx={{ fontWeight: "bold", fontFamily: "NovemberPro" }}
+                  >
                     {job.title}
                   </Typography>
-                  <Typography>
+                  {/* <Typography>
                     <strong>Skills Required:</strong> {job.skills}
-                  </Typography>
+                  </Typography> */}
                   <Typography>
                     <strong>No. of Positions:</strong> {job.positions}
                   </Typography>
                   <Typography>
-                    <strong>Experience:</strong>{" "}
-                    {job.experience !== "Freshers"
-                      ? `Min. 0 to ${job.experience}`
-                      : job.experience}
+                    <strong>Last Date to apply:</strong> {job.closingDate}
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -206,7 +209,7 @@ const JobsListings = ({ jobs }) => {
                       color: "#fff",
                       textTransform: "capitalize",
                     }}
-                    // onClick={() => handleOpen(job)}
+                    onClick={handleOpenApply}
                   >
                     Apply Now
                   </Button>
@@ -214,13 +217,21 @@ const JobsListings = ({ jobs }) => {
               </Card>
             </Grid>
           ))}
+          {openApply && (
+            <ApplyNowPopup open={openApply} setOpen={setOpenApply} />
+          )}
         </Grid>
       ) : (
         <Typography>No job openings available.</Typography>
       )}
 
       {/* Job Details Modal */}
-      <Dialog open={open} onClose={handleClose} fullWidth>
+      <Dialog
+        style={{ maxWidth: "1400px !important" }}
+        open={open}
+        onClose={handleClose}
+        fullWidth
+      >
         <DialogTitle
           sx={{
             textAlign: "center",
@@ -233,13 +244,38 @@ const JobsListings = ({ jobs }) => {
         <DialogContent>
           {selectedJob && (
             <div>
-              <Typography>
-                <strong>Title:</strong> {selectedJob.title}
+              <Typography sx={{ fontSize: "22px" }}>
+                <strong>{selectedJob.title}</strong>
               </Typography>
-              <Typography>
-                <strong>Description:</strong> {selectedJob.description}
-              </Typography>
-              <Typography>
+              {/* <Typography> */}
+              {/* <strong>Description:</strong> {selectedJob.description} */}
+              <Box
+                dangerouslySetInnerHTML={{ __html: selectedJob.description }}
+                sx={{
+                  lineHeight: "1.6",
+                  padding: "10px",
+                  "& ul": {
+                    listStyleType: "disc",
+                    paddingLeft: "20px",
+                  },
+                  "& li": {
+                    marginBottom: "4px",
+                  },
+                  "& h1": {
+                    fontSize: "1.6rem",
+                    fontWeight: "bold",
+                    marginBottom: "8px",
+                  },
+                  "& h2": {
+                    fontSize: "1.2rem",
+                    fontWeight: "bold",
+                    marginBottom: "6px",
+                  },
+                }}
+              />
+
+              {/* </Typography> */}
+              {/* <Typography>
                 <strong>Skills Required:</strong> {selectedJob?.skills}
               </Typography>
               <Typography>
@@ -250,7 +286,7 @@ const JobsListings = ({ jobs }) => {
                 {selectedJob.experience !== "Freshers"
                   ? `Min. 0 to ${selectedJob.experience}`
                   : selectedJob.experience}
-              </Typography>
+              </Typography> */}
 
               {/* <Typography>
                 <strong>Opening Date:</strong> {selectedJob.openingDate}

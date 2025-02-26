@@ -9,10 +9,11 @@ import {
   Modal,
   IconButton,
   Select,
-  MenuItem
+  MenuItem,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Close } from "@mui/icons-material";
+import Tiptap from "../tiptap/TipTap"; // Ensure correct import
 
 export default function EditJobPost({ open, setOpen, job, onUpdate }) {
   const [form, setForm] = useState({
@@ -24,7 +25,7 @@ export default function EditJobPost({ open, setOpen, job, onUpdate }) {
     positions: "",
     openingDate: "",
     closingDate: "",
-    experience: null
+    experience: null,
   });
 
   useEffect(() => {
@@ -64,11 +65,14 @@ export default function EditJobPost({ open, setOpen, job, onUpdate }) {
           left: "50%",
           transform: "translate(-50%, -50%)",
           bgcolor: "white",
+          overflow: "hidden",
+          overflowY: "scroll",
           boxShadow: 24,
           p: 4,
           borderRadius: 2,
           width: "50vw",
           maxWidth: 600,
+          maxHeight: 600,
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>
@@ -80,10 +84,17 @@ export default function EditJobPost({ open, setOpen, job, onUpdate }) {
 
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
           <Grid container spacing={3}>
-            <Grid size={{xs:12,sm:6}}>
-              <TextField label="Job Title" name="title" value={form.title} onChange={handleChange} required fullWidth />
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                label="Job Title"
+                name="title"
+                value={form.title}
+                onChange={handleChange}
+                required
+                fullWidth
+              />
             </Grid>
-            <Grid size={{xs:12,sm:6}}>
+            {/* <Grid size={{xs:12,sm:6}}>
               <TextField label="Skills" name="skills" value={form.skills} onChange={handleChange} required fullWidth />
             </Grid>
             <Grid size={{xs:12,sm:6}}>
@@ -132,23 +143,58 @@ export default function EditJobPost({ open, setOpen, job, onUpdate }) {
                   </MenuItem>
                 ))}
               </Select>
+            </Grid> */}
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                label="No of Positions"
+                name="positions"
+                type="number"
+                value={form.positions}
+                onChange={handleChange}
+                required
+                fullWidth
+              />
             </Grid>
-            <Grid size={{xs:12,sm:6}}>
-              <TextField label="Start Date" type="date" name="openingDate" value={form.openingDate} onChange={handleChange} required InputLabelProps={{ shrink: true }} fullWidth />
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                label="Start Date"
+                type="date"
+                name="openingDate"
+                value={form.openingDate}
+                onChange={handleChange}
+                required
+                InputLabelProps={{ shrink: true }}
+                fullWidth
+              />
             </Grid>
-            <Grid size={{xs:12,sm:6}}>
-              <TextField label="End Date" type="date" name="closingDate" value={form.closingDate} onChange={handleChange} required InputLabelProps={{ shrink: true }} fullWidth />
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                label="End Date"
+                type="date"
+                name="closingDate"
+                value={form.closingDate}
+                onChange={handleChange}
+                required
+                InputLabelProps={{ shrink: true }}
+                fullWidth
+              />
             </Grid>
-            <Grid size={{xs:12,sm:6}}>
-              <TextField label="No of Positions" name="positions" type="number" value={form.positions} onChange={handleChange} required fullWidth />
-            </Grid>
-            <Grid size={{xs:12}}>
-              <TextField label="Description" name="description" value={form.description} onChange={handleChange} required multiline rows={3} fullWidth />
+            <Grid size={{ xs: 12 }}>
+              {/* <TextField label="Description" name="description" value={form.description} onChange={handleChange} required multiline rows={3} fullWidth /> */}
+              <Tiptap
+                content={form.description}
+                setContent={(value) => setForm({ ...form, description: value })}
+              />
             </Grid>
           </Grid>
 
           <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 3 }}>
-            <Button variant="contained" color="error" onClick={handleClose} sx={{ mr: 2 }}>
+            <Button
+              variant="contained"
+              color="error"
+              onClick={handleClose}
+              sx={{ mr: 2 }}
+            >
               Cancel
             </Button>
             <Button type="submit" variant="contained" color="primary">
