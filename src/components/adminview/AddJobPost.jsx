@@ -11,8 +11,8 @@ import {
   IconButton,
   Select,
   MenuItem,
-  Grid,
 } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import { Close } from "@mui/icons-material";
 import Tiptap from "../tiptap/TipTap"; // Ensure correct import
 
@@ -98,7 +98,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
         {/* Job Form */}
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
+            <Grid size={{xs:12,sm:6}}>
               <TextField
                 label="Job Title"
                 name="title"
@@ -160,8 +160,18 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 ))}
               </Select>
             </Grid> */}
-
-            <Grid item xs={12} sm={6}>
+            <Grid size={{xs:12,sm:6}}>
+              <TextField
+                label="No of Positions"
+                name="positions"
+                type="number"
+                value={form.positions}
+                onChange={handleChange}
+                required
+                fullWidth
+              />
+            </Grid>
+            <Grid size={{xs:12,sm:6}}>
               <TextField
                 label="Start Date"
                 type="date"
@@ -173,7 +183,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid size={{xs:12,sm:6}}>
               <TextField
                 label="End Date"
                 type="date"
@@ -185,19 +195,9 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                label="No of Positions"
-                name="positions"
-                type="number"
-                value={form.positions}
-                onChange={handleChange}
-                required
-                fullWidth
-              />
-            </Grid>
+
             {/* Tiptap Editor for Description */}
-            <Grid item xs={12}>
+            <Grid size={{xs:12}}>
               <Tiptap
                 content={form.description}
                 setContent={(value) => setForm({ ...form, description: value })}

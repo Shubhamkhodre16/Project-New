@@ -1,7 +1,7 @@
 [
   {
-    "title": "RoR",
-    "description": "<ul><li><p><strong>Job Type:</strong> Hybrid<br><strong>Experience Required : </strong><em>Min. 3 <u>Years</u></em><br><strong>Skills Required : </strong>React js, <u>Node js</u>, <em>JavaScript,</em> HTML, css etc.</p></li><li><p><strong>No. of Positions : </strong>10<u> </u><strong><em><u>Positi</u></em></strong></p></li></ul>",
+    "title": "RoR Developer",
+    "description": "<h1> Job Summery</h1><ul><li><p><strong>Location : </strong>Indore</p></li><li><p><strong>Project Role :</strong> Technical Lead</p></li><li><p><strong>Skills Required :</strong> Ruby on Rails, Postgres, AWS.</p></li><li><p><strong>No. of Positions :</strong> 10</p></li><li><p><strong>Pay Range Minimum : </strong>3 LPA</p></li><li><p><strong>Pay Range Maximum :</strong> 8 LPA</p></li></ul><p></p><h2>Job Description</h2><ul><li><p><strong>Key Responsibilities</strong></p></li></ul><p>1.To be responsible for providing technical guidance / solutions ;define, advocate, and implement best practices and coding standards for the team.</p><p>2.To develop and guide the team members in enhancing their technical capabilities and increasing productivity</p><p>3.To ensure process compliance in the assigned module| and participate in technical discussions/review as a technical consultant for feasibility study</p><p>4.To prepare and submit status reports for minimizing exposure and risks on the project or closure of escalations.</p><p></p><p></p>",
     "skills": "Rails",
     "location": "On-Site",
     "positions": "10",
@@ -11,11 +11,11 @@
     "id": "6853cce4-c61c-4b93-830c-badd8169578c"
   },
   {
-    "title": "Backed Developer",
-    "description": "<ul><li><p><strong><em>Key Featurs</em></strong></p></li></ul><p><strong>sdsdsds</strong></p><ul><li><p><strong>sads</strong></p></li><li><p><strong>2sdds</strong></p></li><li><p><strong>sdddsds</strong></p></li><li><p></p></li></ul>",
+    "title": "Senior Full-Stack Developer",
+    "description": "<h1>Job Summary</h1><ul><li><p><strong>Location:</strong> Banglore</p></li><li><p><strong>Job Type: </strong>Hybrid</p></li><li><p><strong>Experience Required :</strong> min. 5 Years</p></li><li><p><strong>Skills :</strong> Project/Program Management, preferably having exposure managing mid-size.</p></li><li><p><strong>Project Role:</strong> Senior Program Manager</p></li><li><p><strong>No. of Positions :</strong> 5</p></li><li><p><strong>Pay Range Minimum:</strong> $75000</p></li><li><p><strong>Pay Range Maximum:</strong> $125000</p></li></ul><p></p><h1>Job Description :</h1><h2>About Infokoders</h2><p>Infokoders is a global technology company, spread across 60 countries, delivering industry-leading capabilities centered around digital, engineering, cloud and AI, powered by a broad portfolio of technology services and products. We work with clients across all major verticals, providing industry solutions for Financial Services, Manufacturing, Life Sciences and Healthcare, Technology and Services, Telecom and Media, Retail and CPG, and Public Services. We are powered by our people a global, diverse, multi-generational talent - representing 161 nationalities whose unique spark, perspective and boundless passion drive our culture of proactive value creation and problem-solving.<br>Our purpose is to bring together the best of technology and our people to supercharge progress for everyone, everywhere our clients, partners, their stakeholders.</p><p></p><p><strong>Key Responsibilities</strong></p><ul><li><p>To build strong relationships with key Program Partners / Stakeholders and manage their interests for smooth integration and implementation of the program and achievement of its objectives.</p></li><li><p>To optimize engagement profitability, strategically managing diverse variables, pinpointing improvement opportunities, and implementing targeted strategies to elevate overall project profitability.</p></li><li><p>To proactively identify, assess, and address risks, issues, and escalations by developing robust mitigation and contingency plans, ensuring seamless program delivery.</p></li></ul><p></p><p></p><p></p><p></p><p></p><p><br></p><p><br></p>",
     "skills": "Node js",
     "location": "On-Site",
-    "positions": "2",
+    "positions": "5",
     "openingDate": "2025-02-24",
     "closingDate": "2025-02-27",
     "experience": "Freshers",
@@ -31,27 +31,5 @@
     "closingDate": "2025-02-28",
     "experience": "2 Years",
     "id": "7a8220b9-7c49-4e4a-a462-344677e83364"
-  },
-  {
-    "title": "New Job",
-    "description": "2",
-    "skills": "bidding,trading,communication",
-    "location": "On-Site",
-    "positions": "1",
-    "openingDate": "2025-02-25",
-    "closingDate": "2025-02-28",
-    "experience": "2 Years",
-    "id": "b6720d9b-e1ce-41da-ae83-40483dae4892"
-  },
-  {
-    "title": "Editor Job",
-    "description": "<p><strong>Editor Job: </strong>this is <em>editor</em> job</p>",
-    "skills": "React Js, Next js",
-    "location": "On-Site",
-    "positions": "10",
-    "openingDate": "2025-02-25",
-    "closingDate": "2025-02-27",
-    "experience": "1 Year",
-    "id": "3fd64f7a-560b-402a-b8dd-dadf669a07ef"
   }
 ]
