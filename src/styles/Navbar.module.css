@@ -1,24 +1,24 @@
 @font-face {
   font-family: "NovemberPro";
   src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
-       url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
+  src: url("/assets/fonts/november-pro/NovemberPro.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/november-pro/NovemberPro.woff2") format("woff2"),
+    url("/assets/fonts/november-pro/NovemberPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: "NovemberPro-Reg";
   src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot");
-  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
-       url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
+  src: url("/assets/fonts/november-pro/NovemberPro-Reg.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/november-pro/NovemberPro-Reg.woff") format("woff"),
+    url("/assets/fonts/november-pro/NovemberPro-Reg.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 
 .logo {
   width: 290px;
@@ -28,6 +28,12 @@
 }
 .navOption {
   font-size: 17px;
+  padding: 9px 15px;
+}
+.navOption1 :hover {
+  background-color: #93919133;
+  border-radius: 5px;
+  padding: 9px 15px;
 }
 
 @media (max-width: 600px) {
@@ -44,7 +50,6 @@
     margin-left: 2% !important;
     min-width: 170px !important;
   }
- 
   .iconButton {
     width: 35px;
     height: 35px;
@@ -70,13 +75,13 @@
 
 @media (max-width: 1000px) {
   .navOption {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
   .navOption {
-    font-size: 14px;
+    font-size: 14px !important;
     margin-left: 10%;
     margin-right: 0px;
   }
@@ -93,4 +98,101 @@
 
 .navText {
   font-family: "NovemberPro-Reg" !important;
+}
+
+/* .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+} */
+
+/* .logoContainer {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+} */
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  border-radius: 10px;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.dropdownContent a:hover {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.icon {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar.responsive .menu {
+    display: flex;
+  }
+
+  .icon {
+    display: block;
+  }
 }
