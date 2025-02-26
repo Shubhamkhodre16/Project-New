@@ -409,4 +409,13 @@ margin-bottom: 1rem;
     font-weight: 500;
     padding: 2% 5%;
   }
+  /* End to End Full Stack Development */
+  .visionaryContainer{
+       background-color: #f3f5f5;
+       padding: 3% 8%;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+  }
   

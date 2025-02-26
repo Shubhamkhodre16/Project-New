@@ -40,6 +40,16 @@ const FullStackDevelopment = () => {
         </Grid>
        
       </Grid>
+      {/* visionary Full stack development */}
+      <Grid container className={styles.visionaryContainer}>
+        <Grid size={{xs:12,sm:12,md:12,lg:12}}>
+        <Typography>Your visionary Full stack development Service Company that meets your development needs</Typography>
+        </Grid>
+        <Grid size={{xs:12,sm:12,md:6,lg:6}}>
+          <Typography> Every company wants to accelerate its growth, and with our full-stack development services, you can accomplish that. Our full-stack developers have the extensive knowledge and experience essential to create full-fledged applications for your business.</Typography></Grid>
+          <Typography>Being a <b>best full-stack development service provider</b> we specialises in a wide range of technologies, from front end prototyping to a full set of back end services</Typography>
+         <Grid size={{xs:12,sm:12,md:6,lg:6}}></Grid>
+      </Grid>
     </Box>
   );
 };
