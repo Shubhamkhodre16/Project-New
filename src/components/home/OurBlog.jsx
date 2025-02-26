@@ -55,6 +55,7 @@ const OurBlog = () => {
             fontSize: {
               xs: "20px",
               sm: "25px",
+              md:"25px",
               lg: "30px",
             },
           }}

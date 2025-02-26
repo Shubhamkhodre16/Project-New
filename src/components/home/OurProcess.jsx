@@ -56,10 +56,10 @@ const OurProcess = () => {
       <Typography 
        sx={{
         fontSize: {
-          lg: "40px",
-          md: "35px",
-          sm: "30px",
-          xs: "25px",
+          lg: "30px",
+          md: "25px",
+          sm: "25px",
+          xs: "22px",
         },
       }}
       className={styles.processtitle}>OUR PROCESS</Typography>

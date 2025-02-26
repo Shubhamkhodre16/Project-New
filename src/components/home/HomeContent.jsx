@@ -32,8 +32,8 @@ const HomeContent = () => {
                 <Image
                   src={aboutBanner}
                   alt="About Us"
-                  width={600}
-                  height={500}
+                  width={470}
+                  height={400}
                 />
               </Grid2>
               <Grid2
@@ -43,10 +43,10 @@ const HomeContent = () => {
                   className={styles.whoTitle}
                   sx={{
                     fontSize: {
-                      lg: "40px",
-                      md: "35px",
-                      sm: "30px",
-                      xs: "25px",
+                      lg: "30px",
+                      md: "25px",
+                      sm: "25px",
+                      xs: "22px",
                     },
                   // fontFamily:"NovemberPro-Reg"
                   }}
@@ -57,10 +57,10 @@ const HomeContent = () => {
                   className={styles.whoSubTitle}
                   sx={{
                     fontSize: {
-                      lg: "35px",
-                      md: "25px",
+                      lg: "25px",
+                      md: "22px",
                       sm: "25px",
-                      xs: "20px",
+                      xs: "22px",
                     },
                   }}
                 >
@@ -119,10 +119,10 @@ const HomeContent = () => {
           <Typography className={styles.driveHeader}
              sx={{
               fontSize: {
-                lg: "35px",
-                md: "25px",
+                lg: "25px",
+                md: "22px",
                 sm: "25px",
-                xs: "20px",
+                xs: "22px",
               },
             }}
           >
@@ -132,8 +132,8 @@ const HomeContent = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: "20px",
-                md: "18px",
+                lg: "18px",
+                md: "16px",
                 sm: "18px",
                 xs: "16px",
               },

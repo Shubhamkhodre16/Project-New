@@ -92,7 +92,12 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.mainhead}
                 sx={{
-                  fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: {
+                    lg: "28px",
+                    md: "22px",
+                    sm: "25px",
+                    xs: "22px",
+                  },
                 }}
               >
                 Vision-Achieving Software, App and Web Development Company
@@ -100,7 +105,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.maindes}
                 sx={{
-                  fontSize: { lg: "24px", md: "20px ", sm: "20px", xs: "18px" },
+                  fontSize: { lg: "20px", md: "18px ", sm: "20px", xs: "18px" },
                 }}
               >
                 Pledge to outshine the businesses with customer-winning
@@ -109,7 +114,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.maindess}
                 sx={{
-                  fontSize: { lg: "20px", md: "20px ", sm: "18px", xs: "16px" },
+                  fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
                 }}
               >
                 InfoKoders technologies is a partner of innovation and a ray of
@@ -120,7 +125,7 @@ const AboutUsPart = () => {
               </Typography>
             </Grid>
             <Grid>
-              <Image src={aboutimg} alt="White Wave" width={500} height={100} />
+              <Image src={aboutimg} alt="White Wave" width={400} height={100} />
             </Grid>
           </Grid>
         </Grid>
@@ -133,7 +138,12 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.whoweHeading}
                 sx={{
-                  fontSize: { lg: "33px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: {
+                    lg: "28px",
+                    md: "22px",
+                    sm: "25px",
+                    xs: "22px",
+                  },
                 }}
               >
                 Who we are and what we do
@@ -141,7 +151,8 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.subheading}
                 sx={{
-                  fontSize: { lg: "20px", md: "20px ", sm: "18px", xs: "16px" },
+                  fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
+
                 }}
               >
                 InfoKoders technologies is an exclusive digital transformation
@@ -157,7 +168,12 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.whoweHeading}
                 sx={{
-                  fontSize: { lg: "33px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: {
+                    lg: "28px",
+                    md: "22px",
+                    sm: "25px",
+                    xs: "22px",
+                  },
                 }}
               >
                 An unbelievable story of 5+ years
@@ -165,7 +181,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.subheading}
                 sx={{
-                  fontSize: { lg: "20px", md: "20px ", sm: "18px", xs: "16px" },
+                  fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
                   paddingBottom: "10px",
                 }}
               >
@@ -184,7 +200,8 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.subheading}
                 sx={{
-                  fontSize: { lg: "20px", md: "20px ", sm: "18px", xs: "16px" },
+                  fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
+
                 }}
               >
                 {" "}
@@ -209,19 +226,19 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.ourcoreTitle}
                 sx={{
-                  fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: { lg: "30px", md: "26px ", sm: "26px", xs: "22px" },
                 }}
               >
-                <span className={styles.our}> Our</span> Core Values
+                 Our Core Values
               </Typography>
               <Typography
                 className={styles.ourcoreDescription}
                 sx={{
                   fontSize: {
-                    lg: "22px ",
-                    md: "20px ",
-                    sm: "20px ",
-                    xs: "18px",
+                    lg: "20px ",
+                    md: "18px ",
+                    sm: "18px ",
+                    xs: "16px",
                   },
                 }}
               >
@@ -240,12 +257,7 @@ const AboutUsPart = () => {
                   <Typography
                     className={styles.coreBoxTitle}
                     sx={{
-                      fontSize: {
-                        lg: "24px",
-                        md: "22px ",
-                        sm: "24px ",
-                        xs: "20px ",
-                      },
+                      fontSize:"21px",
                     }}
                   >
                     {item?.title}
@@ -253,12 +265,8 @@ const AboutUsPart = () => {
                   <Typography
                     className={styles.coreBoxDesc}
                     sx={{
-                      fontSize: {
-                        lg: "18px",
-                        md: "16px",
-                        sm: "18px",
-                        xs: "16px",
-                      },
+                      fontSize:"16px",
+
                       marginTop:"8px"
                     }}
                   >
@@ -271,7 +279,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.capabilities}
                 sx={{
-                  fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: { lg: "30px", md: "26px ", sm: "26px", xs: "22px" },
                 }}
               >
                 Number that roars our capabilities
@@ -300,12 +308,7 @@ const AboutUsPart = () => {
                   <Typography
                     className={styles.coreBox1Desc}
                     sx={{
-                      fontSize: {
-                        lg: "20px  ",
-                        md: "18px ",
-                        sm: "16px ",
-                        xs: "16px ",
-                      },
+                      fontSize:"16px"
                     }}
                   >
                     {item?.desc}
@@ -324,7 +327,8 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.coreTitleUsp}
                 sx={{
-                  fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: { lg: "30px", md: "26px ", sm: "26px", xs: "22px" },
+
                 }}
               >
                 <span className={styles.OurUsp}>Our</span> USP’s
@@ -333,10 +337,10 @@ const AboutUsPart = () => {
                 className={styles.coreDescriptionUsp}
                 sx={{
                   fontSize: {
-                    lg: "22px ",
-                    md: "20px ",
-                    sm: "20px ",
-                    xs: "18px",
+                    lg: "20px ",
+                    md: "18px ",
+                    sm: "18px ",
+                    xs: "16px",
                   },
                 }}
               >
@@ -361,27 +365,13 @@ const AboutUsPart = () => {
 
                   <Typography
                     className={styles.uspBoxTitle}
-                    sx={{
-                      fontSize: {
-                        lg: "24px ",
-                        md: "22px ",
-                        sm: "20px ",
-                        xs: "18px ",
-                      },
-                    }}
+                    fontSize="20px"
                   >
                     {item?.title}
                   </Typography>
                   <Typography
                     className={styles.uspBoxDesc}
-                    sx={{
-                      fontSize: {
-                        lg: "20px ",
-                        md: "20px ",
-                        sm: "18px ",
-                        xs: "16px ",
-                      },
-                    }}
+                    fontSize="16px"
                   >
                     {item?.description}
                   </Typography>
@@ -401,7 +391,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.visionleftTitle}
                 sx={{
-                  fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: { lg: "30px", md: "26px ", sm: "26px", xs: "22px" },
                 }}
               >
                 Our Mission & Vision
@@ -409,7 +399,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.visionLeftSubTitle}
                 sx={{
-                  fontSize: { lg: "24px", md: "20px ", sm: "20px", xs: "18px" },
+                  fontSize: { lg: "22px", md: "20px ", sm: "20px", xs: "18px" },
                 }}
               >
                 Mission
@@ -417,7 +407,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.visionDesc}
                 sx={{
-                  fontSize: { lg: "20px", md: "20px ", sm: "18px", xs: "16px" },
+                  fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
                 }}
               >
                 To disrupt the outdated processes of tech or nontech business
@@ -427,7 +417,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.visionLeftSubTitle}
                 sx={{
-                  fontSize: { lg: "24px", md: "20px ", sm: "20px", xs: "18px" },
+                  fontSize: { lg: "22px", md: "20px ", sm: "20px", xs: "18px" },
                 }}
               >
                 Vision
@@ -435,7 +425,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.visionDesc}
                 sx={{
-                  fontSize: { lg: "20px", md: "20px ", sm: "18px", xs: "16px" },
+                  fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
                 }}
               >
                 To keep up with the latest and most promising technology that
@@ -460,7 +450,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.startWorkingTitle}
                 sx={{
-                  fontSize: { lg: "35px", md: "26px ", sm: "26px", xs: "22px" },
+                  fontSize: { lg: "30px", md: "26px ", sm: "26px", xs: "22px" },
                 }}
               >
                 Start working with{" "}
@@ -471,7 +461,7 @@ const AboutUsPart = () => {
               <Typography
                 className={styles.startWorkingDesc}
                 sx={{
-                  fontSize: { lg: "24px", md: "20px ", sm: "20px", xs: "18px" },
+                  fontSize: { lg: "20px", md: "18px ", sm: "18px", xs: "16px" },
                 }}
               >
                 Look no further if you are looking for a{" "}
