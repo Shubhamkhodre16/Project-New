@@ -77,15 +77,14 @@
 
 .title1 {
   color: #fff;
-  font-size: 17px !important;
-  /* font-weight: bold; */
+  font-size: 18px !important;
   padding: 3px;
   font-family: "NovemberPro" !important;
 }
 
 .readMore {
   color: #fff;
-  font-size: 13px !important;
+  font-size: 14px !important;
   padding: 5px;
   font-family: "NovemberPro-Reg" !important;
 }
@@ -417,7 +416,7 @@
 }
 
 .cardTitle {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "NovemberPro" !important;
   margin: 15px 0 !important;
@@ -426,7 +425,7 @@
 }
 
 .description1 {
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   font-family: "NovemberPro-Reg" !important;
 }
@@ -568,6 +567,7 @@
 .slideContent {
   width: 100%;
   padding: 30px;
+  min-height: 330px;
   border-radius: 10px;
   color: #fff;
 }

@@ -104,19 +104,14 @@ const CardSection = () => {
 
                 <CardContent>
                   <Typography
-                    gutterBottom
+                   fontSize="20px"
                     className={styles.titledrive}
-                    component="div"
                   >
                     {item.title}
                   </Typography>
                   <Typography
                     className={styles.desdrive}
-                    // sx={{
-                    //   textAlign: "center",
-                    //   padding: "0 5px",
-                    //   fontSize: { xs: "14px" },
-                    // }}
+                   fontSize="16px"
                   >
                     {item.desc}
                   </Typography>

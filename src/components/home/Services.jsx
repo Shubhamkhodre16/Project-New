@@ -38,10 +38,10 @@ const Services = () => {
             // variant="h4"
             sx={{
               fontSize: {
-                lg: "35px",
-                md: "25px",
+                lg: "28px",
+                md: "22px",
                 sm: "25px",
-                xs: "20px",
+                xs: "22px",
               },
             }}
             className={styles.serviceHeader}
@@ -55,8 +55,8 @@ const Services = () => {
             // variant="body1"
             sx={{
               fontSize: {
-                lg: "20px",
-                md: "18px",
+                lg: "18px",
+                md: "16px",
                 sm: "18px",
                 xs: "16px",
               },
@@ -103,10 +103,10 @@ const Services = () => {
               // variant="body1"
               sx={{
                 fontSize: {
-                  lg: "32px",
-                  md: "23px",
-                  sm: "23px",
-                  xs: "20px",
+                  lg: "25px",
+                  md: "22px",
+                  sm: "25px",
+                  xs: "22px",
                 },
                 color: "#333",
               }}
@@ -306,10 +306,10 @@ const Services = () => {
               // variant="body1"
               sx={{
                 fontSize: {
-                  lg: "32px",
-                  md: "23px",
-                  sm: "23px",
-                  xs: "20px",
+                  lg: "25px",
+                  md: "22px",
+                  sm: "25px",
+                  xs: "22px",
                 },
                 color: "#333",
               }}
@@ -429,10 +429,10 @@ const Services = () => {
               // variant="body1"
               sx={{
                 fontSize: {
-                  lg: "32px",
-                  md: "23px",
-                  sm: "23px",
-                  xs: "20px",
+                  lg: "25px",
+                  md: "22px",
+                  sm: "25px",
+                  xs: "22px",
                 },
                 color: "#333",
               }}
@@ -574,10 +574,10 @@ const Services = () => {
               className={styles.frontendfontSize}
               sx={{
                 fontSize: {
-                  lg: "32px",
-                  md: "23px",
-                  sm: "23px",
-                  xs: "20px",
+                  lg: "25px",
+                  md: "22px",
+                  sm: "25px",
+                  xs: "22px",
                 },
                 color: "#333",
               }}

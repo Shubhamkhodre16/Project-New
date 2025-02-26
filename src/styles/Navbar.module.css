@@ -28,7 +28,7 @@
 }
 .navOption {
   font-size: 17px;
-  padding: 9px 15px;
+  padding: 9px 15px !important;
 }
 .navOption1 :hover {
   background-color: #93919133;

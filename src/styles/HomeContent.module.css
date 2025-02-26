@@ -30,6 +30,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .whoTitle {
@@ -66,17 +67,10 @@
 @media (min-width: 900px) {
   /* md */
   .whoTitle {
-    font-size: 35px;
     text-align: left;
   }
 }
 
-@media (min-width: 1200px) {
-  /* lg */
-  .whoTitle {
-    font-size: 40px;
-  }
-}
 
 /* Drive  */
 
@@ -134,12 +128,10 @@
   font-family: "NovemberPro" !important;
   font-weight: 600;
   color: #333;
-  font-size: 22px !important;
 }
 
 .desdrive {
   font-family: "NovemberPro-Reg" !important;
-  font-size: 15px;
   text-align: center;
   padding: 0 5px;
   color: #333;
@@ -174,7 +166,7 @@
 .card1SubHeader {
   font-family: "NovemberPro-Reg" !important;
   text-align: center;
-  font-size: 15px !important;
+  font-size: 16px !important;
   color: #333;
 }
 

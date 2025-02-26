@@ -77,7 +77,9 @@ const Testimonials = () => {
           textAlign="center"
           marginTop="80px"
         >
-          <Grid size={{ xs: 12, sm: 10, md: 8, lg: 6 }}>
+          <Grid size={{ xs: 12, sm: 10, md: 8, lg: 6 }}
+          sx={{marginBottom:"20px"}}
+          >
             <Typography
               sx={{
                 fontSize: {
@@ -94,8 +96,8 @@ const Testimonials = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: "20px",
-                  md: "18px",
+                  lg: "18px",
+                  md: "16px",
                   sm: "18px",
                   xs: "16px",
                 },
