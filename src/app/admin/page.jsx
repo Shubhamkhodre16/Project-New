@@ -12,7 +12,7 @@ export default function LoginPage() {
   useEffect(() => {
     // Redirect if already logged in
     if (localStorage.getItem("auth") === "true") {
-      router.push("/jobboard");
+      // router.push("/jobboard");
     }
   }, []);
 
@@ -41,7 +41,7 @@ export default function LoginPage() {
 
     if (data.success) {
       localStorage.setItem("auth", "true");
-      router.push("/jobboard");
+      // router.push("/jobboard");
     } else {
       setError(data.message);
     }
