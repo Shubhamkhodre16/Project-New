@@ -17,11 +17,11 @@ export default function Dashboard() {
   const [openEdit, setOpenEdit] = useState(false);
     const [selectedJob, setSelectedJob] = useState(null);
 
-  // useEffect(() => {
-  //   if (localStorage.getItem("auth") !== "true") {
-  //     router.push("/admin");
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (localStorage.getItem("auth") !== "true") {
+      router.push("/admin");
+    }
+  }, []);
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -39,7 +39,7 @@ export default function Dashboard() {
 
   const handleLogout = () => {
     localStorage.removeItem("auth");
-    // router.push("/admin");
+    router.push("/admin");
   };
 
   const handleEdit = (job) => {
