@@ -6,7 +6,7 @@ import AngularDevelopment from "../../../components/services/AngularDevelopment"
 import FullStackDevelopment from "../../../components/services/FullStackDevelopment";
 import AWSDevelopment from  "../../../components/services/AWSDevelopment";
 import HerokuDevelopment from "../../../components/services/HerokuDevelopment";
-
+import UiDevelopment from "../../../components/services/UiDevelopment";
 const Page = ({ params }) => {
   if (params?.slug === "ror") {
     return <RorDevelopment />;
@@ -18,6 +18,8 @@ const Page = ({ params }) => {
     return <AngularDevelopment/>
   }else if (params?.slug === "fullstack"){
     return <FullStackDevelopment/>
+  }else if (params?.slug === "ui"){
+     return <UiDevelopment/>
   }else if (params?.slug === "aws"){
     return <AWSDevelopment/>
   }else if (params?.slug === "heroku"){

@@ -42,6 +42,10 @@ const Navbar = () => {
           name: " End to End Full Stack Development",
           path: "/services/fullstack",
         },
+        {
+          name:" Ui/Ux",
+          path:"/services/ui"
+        },
         { name: " AWS", path: "/services/aws" },
         { name: " Heroku", path: "/services/heroku" },
       ],
