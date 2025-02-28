@@ -114,7 +114,7 @@ const CaseStudy = () => {
         <Navbar />
         <Typography
           textAlign={{ xs: "center", sm: "center", md: "left" }}
-          fontSize={{ xs: "35px", md: "50px" }}
+          fontSize={{ xs: "30px",sm:"30px", md: "45px",lg:"45px" }}
           className={styles.case}
         sx={{fontFamily:"NovemberPro"}}
         >
@@ -227,7 +227,7 @@ const CaseStudy = () => {
                           : card.title}
                       </Typography>
                       <Typography
-                      sx={{fontFamily:"NovemberPro-Reg", fontSize: "14px"}}
+                      sx={{fontFamily:"NovemberPro-Reg", fontSize: "16px"}}
                       className={styles.CaseStudySubTitle}> 
                         {card.description.length > 170
                           ? `${card.description.slice(0, 170)}...`

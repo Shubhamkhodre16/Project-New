@@ -13,7 +13,7 @@ const Features = ({ isBiodiversity = false, featuresData }) => {
           <Grid textAlign="center">
             <Typography
               sx={{ color: "#333" }}
-              fontSize={{ lg: "35px", md: "26px ", sm: "26px", xs: "22px",fontFamily:"NovemberPro" }}
+              fontSize={{ lg: "25px", md: "22px ", sm: "25px", xs: "22px",fontFamily:"NovemberPro" }}
               className={styles.solutionHeading}
             >
               {isBiodiversity ? "Product Highlights" : "Features"}
@@ -40,9 +40,9 @@ const Features = ({ isBiodiversity = false, featuresData }) => {
                 }}
               >
                 <Image
-                  style={{ width: "30%" }}
-                  src={DataBackup}
-                  alt=""
+                  style={{ width: "20%" }}
+                  src={item?.image}
+                  alt="images"
                   height={80}
                   width={60}
                 />
@@ -51,7 +51,7 @@ const Features = ({ isBiodiversity = false, featuresData }) => {
                 <Typography
                   sx={{
                     color: "#333",
-                    fontSize: "22px",
+                    fontSize: "20px",
                     fontFamily: "NovemberPro",
                     fontWeight: "bold",
                   }}

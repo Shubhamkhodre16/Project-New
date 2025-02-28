@@ -61,7 +61,7 @@ const Biodiversity = () => {
   const productData = [
     {
       title: "Client and Product Goals",
-      des: "",
+      // des: "",
       subTitle:
         "A UK based Client came up with the innovative mission of developing an incredible Biodiversity data collection platform for instructing the decision-makers about geographic information of global biodiversity.",
       buttonText: "Successfully mirrored the Vision into Reality",
@@ -70,21 +70,25 @@ const Biodiversity = () => {
   ];
   const featuresData = [
     {
+       image:"/assets/img/Proficiency.gif",
       des: "Data Search Service for easily collecting authoritative Global biodiversity Info",
       subDes:
         "This is one of the most demanding functionality of the platform that facilities the users to obtain the biodiversity report of a specific country in required form as PDF document, raw data in CSV format, and map files. The Report templates consist of a simple proximity report, a World bank group risk report, and a freshwater report",
     },
     {
+      image:"/assets/img/socialnoetwork.gif",
       des: "Access and Download service",
       subDes:
         "Users can gain the information of the three datasets through GIS download services. The data can be retrieved in two forms one as global downloads and another possible way is by selecting smaller areas to download.",
     },
     {
+      image:"/assets/img/mobileapp.gif",
       des: "Quick visual screening of critical biodiversity",
       subDes:
         "It is rooted with the world’s most authoritative global biodiversity datasets that direct the users to make the correct decisions in policy and practice. Enter the location by applying several filters and seize the productive details.",
     },
     {
+      image:"/assets/img/railsmvp.gif",
       des: "Subscription plan",
       subDes:
         "Depending on the users or organization necessities, they can select relevant plans like Free, Basic, Pro, and enterprise by analysing the features and functionalities in each plan.",
@@ -132,7 +136,7 @@ const Biodiversity = () => {
               md: "30px",
               lg: "35px",
               xl: "35px",},
-            fontFamily:"NovemberPro",
+            fontFamily:"NovemberPro-Reg",
              paddingRight: "5% !important",
             textAlign:{ xs: "center", sm: "center", md: "right", lg: "right"}, }}
           >

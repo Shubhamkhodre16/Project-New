@@ -18,7 +18,7 @@ const Page = ({ params }) => {
     return <AngularDevelopment/>
   }else if (params?.slug === "fullstack"){
     return <FullStackDevelopment/>
-  }else if (params?.slug === "ui"){
+  }else if (params?.slug === "Ui"){
      return <UiDevelopment/>
   }else if (params?.slug === "aws"){
     return <AWSDevelopment/>

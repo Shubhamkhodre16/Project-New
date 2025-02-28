@@ -64,7 +64,7 @@ const DigitalPayments = () => {
       subTitle:
         "Digital payments are accelerating the entrepreneur’s profitability by facilitating them to carry out financial transactions with customers, suppliers, and the governments in a more effective, safer, and cheaper way.",
       des: "The smart way is more favorable for women entrepreneurs encouraging them to take greater control over income, smoothly benefiting the entire household especially children With a bright intention to bring awareness about the importance of digital payments, an ambitious client addressed his valuable motive of improvising the platform and making it bug-free and user friendly.",
-      buttonText: "Transformed the Vision into Reality",
+      buttonText: "Perfectly remodeled the platform.",
       imageSrc: "/assets/img/mactablet.png",
     },
   ];
@@ -72,15 +72,19 @@ const DigitalPayments = () => {
 
   const featuresData = [
     {
+      image:"/assets/img/payment.gif",
       des: "The platform provides advisory services to member priorities for digital payments",
     },
     {
+      image:"/assets/img/socialnoetwork.gif",
       des: "Share action-oriented research and foster peer learning",
     },
     {
+      image:"/assets/img/global.gif",
       des: "Conduct advocacy at a national, regional, and global level",
     },
     {
+      image:"/assets/img/mobileapp.gif",
       des: "Provide awareness of digital payments through content sharing",
     },
   ];
@@ -102,11 +106,11 @@ const DigitalPayments = () => {
             className={styles.imageTitle}
            sx={{
             fontSize:{
-              xs: "23px",
-              sm: "22px",
+              xs: "25px",
+              sm: "35px",
               md: "25px",
-              lg: "30px",
-              xl: "30px",
+              lg: "35px",
+              xl: "35px",
               fontFamily:"NovemberPro",}}}
           >
             Digital Payments
@@ -114,12 +118,12 @@ const DigitalPayments = () => {
           <Typography
             className={styles.imageSubTitle}
             sx={{fontSize:{
-              xs: "23px",
-              sm: "25px",
-              md: "30px",
-              lg: "35px",
-              xl: "35px",
-              fontFamily:"NovemberPro"},}}
+              xs: "22px",
+              sm: "30px",
+              md: "22px",
+              lg: "30px",
+              xl: "30px",
+              fontFamily:"NovemberPro-Reg"},}}
           >
             A serviceable platform providing awareness of digital payments
           </Typography>

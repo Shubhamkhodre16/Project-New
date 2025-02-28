@@ -30,7 +30,7 @@ const ProductGoals = ({ productData }) => {
             <Grid size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
               <Typography
                 sx={{fontFamily:"NovemberPro"}}
-                fontSize={{ lg: "35px", md: "26px ", sm: "30px", xs: "22px" }}
+                fontSize={{ lg: "25px", md: "22px ", sm: "25px", xs: "22px" }}
                 className={styles.productHeading}
               >
                 {item?.title}
@@ -50,7 +50,7 @@ const ProductGoals = ({ productData }) => {
                 {item?.des}
               </Typography>
               <Button
-                sx={{ backgroundColor: "#333",fontFamily:"NovemberPro-Reg", textTransform:"capitalize" }}
+                sx={{ backgroundColor: "#333",fontFamily:"NovemberPro-Reg", textTransform:"capitalize",fontSize:{lg:"14px",md:"14px",sm:"14px",xs:"14px"} }}
                 className={styles.productButton}
                 variant="contained"
               >

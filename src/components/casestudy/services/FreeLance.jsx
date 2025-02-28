@@ -91,11 +91,11 @@ const FreeLance = () => {
             className={styles.imageTitle}
            sx={{
             fontSize:{
-              xs: "23px",
-              sm: "22px",
+              xs: "25px",
+              sm: "35px",
               md: "25px",
-              lg: "30px",
-              xl: "30px",
+              lg: "35px",
+              xl: "35px",
             },
             fontFamily:"NovemberPro",
             paddingRight: "5% !important",
@@ -107,13 +107,13 @@ const FreeLance = () => {
             className={styles.imageSubTitle}
             sx={{ paddingRight: "5% !important", 
             fontSize:{
-              xs: "23px",
-              sm: "25px",
-              md: "30px",
-              lg: "35px",
-              xl: "35px",
+              xs: "22px",
+              sm: "30px",
+              md: "22px",
+              lg: "30px",
+              xl: "30px",
             },
-            fontFamily:"NovemberPro",
+            fontFamily:"NovemberPro-Reg",
             textAlign:{ xs: "center", sm: "center", md: "right", lg: "right"}, }}
           >
             A full fledged freelance platform connecting project owners and

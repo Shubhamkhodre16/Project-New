@@ -72,29 +72,34 @@ const PlatForm = () => {
 
   const featuresData = [
     {
+      image:"/assets/img/clock.gif",
       des: "Stay up to date",
       subDes:
         "The portal provides quick access to favorite championship, table standing, and complete fixtures so that the user doesn’t miss any match moment",
     },
     {
+      image:"/assets/img/mobileapp.gif",
       des: "Simple and Handy user interface",
       subDes:
         "Clean, Minimal, and attractive user interface that reflects game reviews and summary of football matches.",
     },
     {
+      image:"/assets/img/dribble.gif",
       des: "Fixture tracker",
       subDes:
         "Empower the football fans to track the team’s progress by switching between player and upcoming fixture.",
     },
     {
+      image:"/assets/img/teammember.gif",
       des: "Discover all leagues",
       subDes:
         "Users can be updated about all the upcoming leagues by accessing this feature",
     },
     {
-      des: "Discover all leagues",
+      image:"/assets/img/Proficiency.gif",
+      des: " Live Games",
       subDes:
-        "Users can be updated about all the upcoming leagues by accessing this feature",
+        "Live on the pitch with your favorite team by viewing the live scores and player performance in an Ongoing football match.",
     },
   ];
 
