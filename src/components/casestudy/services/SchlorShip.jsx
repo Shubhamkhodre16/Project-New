@@ -67,7 +67,7 @@ const Schlorship = () => {
       title: "Client and Product Goals",
       subTitle: "",
       des: " A Minneapolis-based start-up wished to eradicate the student’s financial struggle in an educational realm by taking the advantage of new-age technologies. He narrated his entire vision of building an online scholarship management platform for revolutionizing the process school is paid, helping deserving students, and effective management of award programs.",
-      buttonText: "Perfectly Remodeled The Platform.",
+      buttonText: "Transformed the Vision into Reality",
       imageSrc: "/assets/img/laptopMobile.png",
     },
   ];
@@ -85,23 +85,23 @@ const Schlorship = () => {
           <Typography
             className={styles.imageTitle}
             sx={{fontFamily:"NovemberPro", fontSize:{
-              xs: "23px",
-              sm: "22px",
+              xs: "25px",
+              sm: "35px",
               md: "25px",
-              lg: "30px",
-              xl: "30px",
+              lg: "35px",
+              xl: "35px",
             }}}
           >
             Case Study
           </Typography>
           <Typography
             className={styles.imageSubTitle}
-            sx={{fontFamily:"NovemberPro", fontSize:{
-              xs: "23px",
-              sm: "25px",
-              md: "30px",
-              lg: "35px",
-              xl: "35px",
+            sx={{fontFamily:"NovemberPro-Reg", fontSize:{
+              xs: "22px",
+              sm: "30px",
+              md: "22px",
+              lg: "30px",
+              xl: "30px",
             }}}
           >
             A Online Scholarship Management Platform - fulfilling Educational

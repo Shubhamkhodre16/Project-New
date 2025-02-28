@@ -15,28 +15,34 @@ const ClientAchivement = ({
 }) => {
   const techStack = [
     {
+      image:"/assets/img/gathering.gif",
       title: "Frontend",
       subtle: "ReactJs/NextJS",
     },
     {
+      image:"/assets/img/railsmvp.gif",
       title: "Backend",
       subtle: "Ruby on Rails",
     },
     {
+      image:"/assets/img/agiledevelopment.gif",
       title: "Database",
       subtle: "Salesforce",
     },
   ];
   const projectInsight = [
     {
+      image:"/assets/img/clock.gif",
       title: "Time Duration",
       subtle: "1 year followed by maintenance and future upgrades",
     },
     {
+      image:"/assets/img/timeduration.gif",
       title: "Estimate hours",
       subtle: "3000 man-hours",
     },
     {
+      image:"/assets/img/ondemand.gif",
       title: "Team size",
       subtle:
         "7 (Business analyst, Project manager, UI/UX designer, Front end developer, Back end developer(2), Testers)",
@@ -52,13 +58,13 @@ const ClientAchivement = ({
           <Grid>
             <Typography
               className={styles.achivetitle}
-              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px"}}}
+              sx={{fontFamily:"NovemberPro",fontSize:{ lg: "25px", md: "22px ", sm: "25px", xs: "22px"}}}
             >
               Client Achievement
             </Typography>
             <Typography
               className={styles.achiveSubtitle}
-              sx={{fontFamily:"NovemberPro-Reg",fontSize:{  lg: "24px", md: "20px ", sm: "20px", xs: "18px"}}}
+              sx={{fontFamily:"NovemberPro-Reg",fontSize:{  lg: "18px", md: "16px ", sm: "18px", xs: "16px"}}}
             >
               {clientSubTitle}
             </Typography>
@@ -87,7 +93,7 @@ const ClientAchivement = ({
                   />
                 </span>
                 <Typography
-                  sx={{ marginTop: "20px", fontFamily: "NovemberPro-Reg", fontSize:{ xs: "16px", sm: "16px", md: "16px", lg: "18px" } }}
+                  sx={{ marginTop: "20px", fontFamily: "NovemberPro-Reg", fontSize:{ xs: "16px", sm: "18px", md: "16px", lg: "18px" } }}
                 >
                   {data}
                 </Typography>
@@ -99,7 +105,7 @@ const ClientAchivement = ({
           <Grid className={styles.techMain}>
             <Grid className={styles.techHeading}>
               <Typography
-                sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px"}}}
+                sx={{fontFamily:"NovemberPro",fontSize:{ lg: "25px", md: "22px ", sm: "25px", xs: "22px"}}}
                 className={styles.techHeading}
               >
                 Integrated tech Stack
@@ -126,18 +132,18 @@ const ClientAchivement = ({
                 >
                   <Image
                     style={{ width: "40%" }}
-                    src={DataBackup}
-                    alt=""
+                    src={item?.image}
+                    alt="images"
                     height={80}
                     width={60}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro" }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:"20px" }}
                   >
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize: "22px" }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize: "16px" }}
                   >
                     {item?.subtle}
                   </Typography>
@@ -151,7 +157,7 @@ const ClientAchivement = ({
           <Grid className={styles.techMain}>
             <Grid className={styles.techHeading}>
               <Typography
-                sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "26px", xs: "22px"}}}
+                sx={{fontFamily:"NovemberPro",fontSize:{ lg: "25px", md: "22px ", sm: "25px", xs: "22px"}}}
                 className={styles.techHeading}
               >
                 Project Insights
@@ -172,9 +178,9 @@ const ClientAchivement = ({
                   }}
                 >
                   <Image
-                    style={{ width: "45%" }}
-                    src={DataBackup}
-                    alt=""
+                    style={{ width: "40%" }}
+                    src={item?.image}
+                    alt="images"
                     height={80}
                     width={60}
                   />
@@ -184,7 +190,7 @@ const ClientAchivement = ({
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize: "18px" }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize: "16px" }}
                   >
                     {item?.subtle}
                   </Typography>

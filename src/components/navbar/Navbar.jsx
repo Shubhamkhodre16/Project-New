@@ -44,7 +44,7 @@ const Navbar = () => {
         },
         {
           name:" Ui/Ux",
-          path:"/services/ui"
+          path:"/services/Ui"
         },
         { name: " AWS", path: "/services/aws" },
         { name: " Heroku", path: "/services/heroku" },

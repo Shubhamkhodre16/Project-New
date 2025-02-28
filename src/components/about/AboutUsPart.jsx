@@ -9,8 +9,7 @@ import Image from "next/image";
 import CardMedia from "@mui/material/CardMedia";
 import Footer from "../footer/Footer";
 import vissionandmission from "../../../public/assets/img/vissionandmission.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import TripOriginIcon from '@mui/icons-material/TripOrigin';
 const AboutUsPart = () => {
   const coreValues = [
     {
@@ -185,10 +184,7 @@ const AboutUsPart = () => {
                   paddingBottom: "10px",
                 }}
               >
-                <FontAwesomeIcon
-                  icon={faCircleDot}
-                  className={styles.adjustIcon}
-                />{" "}
+               <TripOriginIcon className={styles.obstaclesRightIcon} />
                 Since day one we measure our success with our client success,
                 have faith in our kick-butt skills, and swear by the computer
                 code. Shaping out an exclusive digital solution is not our work,
@@ -204,11 +200,7 @@ const AboutUsPart = () => {
 
                 }}
               >
-                {" "}
-                <FontAwesomeIcon
-                  icon={faCircleDot}
-                  className={styles.adjustIcon}
-                />{" "}
+                 <TripOriginIcon className={styles.obstaclesRightIcon} />
                 Our ultimate focus is on client satisfaction which has been the
                 key differentiator for our company. Our inquisitive nature and
                 creativity ensure that we never become stagnant in our approach

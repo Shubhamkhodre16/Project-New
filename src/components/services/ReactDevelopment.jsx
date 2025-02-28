@@ -4,6 +4,7 @@ import { Typography, Box,CardMedia,Button } from "@mui/material";
 import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import Link from "next/link";
 const ReactDevelopment = () => {
   const cards=[
     {
@@ -11,24 +12,28 @@ const ReactDevelopment = () => {
       title:"Custom Development",
       desc:" We build customized matching solutions up to your enterprise and project needs. After investigating your business goals and objectives, our team makes tailors feature-rich native applications for a larger audience and provides a better user experience. ",
       button:"More Details",
+      path: "/custom",
     },
     {
       image:"/assets/img/agiledevelopment.gif",
       title:"UX/UI Development",
       desc:"Our expertise and technology evolves continuously with new tools, frameworks and libraries along with a plethora of options for marketers and entrepreneurs. React JS is the best platform to develop UIs for mobile and web apps both without bugs and reading facilitation.",
       button:"More Details",
+       path:"/uidevelop"
     },
     {
       image:"/assets/img/agiledevelopment.gif",
       title:"Integration & Migration",
       desc:"We provide hassle-free migration services to adjust your offering to new market demands, updates and cloud integration. Our experts help you to migrate your existing website with multi-platform support without affecting your business cycle.",
       button:"More Details",
+      path:"/integration"
     },
     {
       image:"/assets/img/agiledevelopment.gif",
       title:"Maintenance & Upgradation",
       desc:"Our React development services offer all essential maintenance services and take care of browser security updates. We are always ready to take challenges based on customer marketing strategies to increase user satisfaction levels.",
-      button:"More Details"
+      button:"More Details",
+      path:"/maintenance"
     }
   ]
   return (
@@ -106,7 +111,9 @@ const ReactDevelopment = () => {
                   >
                     {item?.desc.length>170 ?`${item?.desc.slice(0,170)}...`:item.desc}
                   </Typography>
+                  <Link href={`/reactt/${item.path}`} passHref>
                   <Button sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily:"NovemberPro-Reg",cursor:"pointer",padding:"8px 18px",border:"1px solid transparent",color:"#ffffff",backgroundColor:"#333",margin:"1rem 0 1rem 0",textTransform:"none"}}>{item?.button}</Button>
+                  </Link>
                 </Grid>
               ))}
             </Grid>

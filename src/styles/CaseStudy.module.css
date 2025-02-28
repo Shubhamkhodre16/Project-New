@@ -304,7 +304,6 @@
 
 .imageTitle {
   color: #650909;
-  font-family: "NovemberPro";
   padding-top: 250px;
   padding-bottom: 20px;
   padding-left: 9%;
@@ -313,7 +312,6 @@
 .imageSubTitle {
   color: #fff;
   padding: 0 30% 0 9%;
-  font-family: "NovemberPro";
   opacity: 0.9;
 }
 

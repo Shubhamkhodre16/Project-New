@@ -60,7 +60,14 @@ const PrototypeCard = () => {
             <Grid className={styles.PrototypeCard}>
               <Grid
                 size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
-                className={styles.leftCard}
+                className={styles.leftCard}  
+                sx={{
+                order: {
+                  xs: index % 2 === 0 ? 2 : 1, 
+                  sm: index % 2 === 0 ? 2 : 1, 
+                  md: 1, 
+                  lg: 1, 
+                },}}
               >
                 {index % 2 === 0 ? (
                   <>
@@ -68,9 +75,9 @@ const PrototypeCard = () => {
                       className={styles.leftCardTitle}
                       sx={{
                         fontSize: {
-                          lg: "24px",
+                          lg: "25px",
                           md: "22px",
-                          sm: "24px",
+                          sm: "25px",
                           xs: "22px",
                         },
                         fontFamily:"NovemberPro"
@@ -83,7 +90,7 @@ const PrototypeCard = () => {
                       sx={{
                         fontSize: {
                           lg: "18px",
-                          md: "16px ",
+                          md: "16px",
                           sm: "18px",
                           xs: "16px",
                         },
@@ -125,7 +132,7 @@ const PrototypeCard = () => {
                       sx={{
                         fontSize: {
                           lg: "16px",
-                          md: "16px ",
+                          md: "14px ",
                           sm: "16px",
                           xs: "14px",
                         },
@@ -147,7 +154,14 @@ const PrototypeCard = () => {
               </Grid>
               <Grid
                 size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
-                className={styles.rightCard}
+                className={styles.rightCard} 
+                sx={{
+                  order: {
+                    xs: index % 2 === 0 ?  1: 2, 
+                    sm: index % 2 === 0 ? 1 : 2, 
+                    md: 1, 
+                    lg: 1, 
+                  },}}
               >
                 {index % 2 === 0 ? (
                   <Image
@@ -164,9 +178,9 @@ const PrototypeCard = () => {
                       className={styles.leftCardTitle}
                       sx={{
                         fontSize: {
-                          lg: "24px",
+                          lg: "25px",
                           md: "22px",
-                          sm: "24px",
+                          sm: "25px",
                           xs: "22px",
                         },
                         fontFamily:"NovemberPro"
@@ -220,7 +234,7 @@ const PrototypeCard = () => {
                       sx={{
                         fontSize: {
                           lg: "16px",
-                          md: "16px",
+                          md: "14px",
                           sm: "16px",
                           xs: "14px",
                         },

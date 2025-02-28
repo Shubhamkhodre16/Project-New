@@ -60,6 +60,7 @@ const Carousel = ({ data, isStartup = false }) => {
                 style={{
                   width: isStartup ? "100%" : "auto",
                   color: isStartup ? "rgb(183 46 52)" : "inherit",
+                  fontSize:isStartup ? "35px" :"",
                   opacity: isStartup ? 0.8 : 1,
                   fontFamily: "NovemberPro",
                 }}
@@ -71,8 +72,8 @@ const Carousel = ({ data, isStartup = false }) => {
                 fontSize={{xs:"16px",sm:"16px",md:"20px",lg:"22px"}}
                 style={{
                   opacity: isStartup ? 0.9 : 1,
-                  fontSize: isStartup ? "35px" : "",
-                  fontFamily: isStartup ? "NovemberPro" : "NovemberPro-Reg",
+                   fontSize: isStartup ? "30px" : "",
+                  fontFamily: isStartup ? "NovemberPro-Reg" : "NovemberPro-Reg",
                   marginTop: isStartup ? "15px" : "",
                   marginBottom:"15px"
                 }}

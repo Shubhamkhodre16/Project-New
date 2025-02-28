@@ -19,7 +19,7 @@ const Portal = () => {
         >
           <Grid size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
             <Typography
-            sx={{fontFamily:"NovemberPro",fontSize:{ lg: "35px", md: "26px ", sm: "30px", xs: "22px" }}}
+            sx={{fontFamily:"NovemberPro",fontSize:{ lg: "25px", md: "22px ", sm: "25px", xs: "22px" }}}
               className={styles.productHeading}
             >
               Working of the Portal:
@@ -57,7 +57,7 @@ const Portal = () => {
             size={{ xs: 12, sm: 12, md: 6, xl: 6 }}
             className={styles.productData}
           >
-            <Image src={twoMobile} alt="White Wave" width={450} height={100} />
+            <Image  src={twoMobile} alt="White Wave" width={400} height={100} />
           </Grid>
         </Grid>
       </Box>
