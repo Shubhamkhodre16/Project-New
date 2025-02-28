@@ -25,14 +25,14 @@ const Footer = () => {
   ];
 
   const services = [
-    { href: "/", label: "Ruby on Rails" },
-    { href: "/blog", label: "React JS" },
-    { href: "/caseStudies", label: "Node JS" },
-    { href: "", label: "Angular JS" },
-    { href: "", label: "End to End Full Stack Development" },
-    { href: "", label: "UI/UX" },
-    { href: "", label: "AWS" },
-    { href: "", label: "Heroku" },
+    { href: "/services/ror", label: "Ruby on Rails" },
+    { href: "/services/react", label: "React JS" },
+    { href: "/services/node", label: "Node JS" },
+    { href: "/services/angular", label: "Angular JS" },
+    { href: "/services/fullstack", label: "End to End Full Stack Development" },
+    { href: "/services/UI/UX", label: "UI/UX" },
+    { href: "/services/aws", label: "AWS" },
+    { href: "/services/heroku", label: "Heroku" },
   ];
   return (
     <section>
