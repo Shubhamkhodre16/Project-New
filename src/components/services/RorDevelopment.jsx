@@ -506,7 +506,7 @@ const RorDevelopment = () => {
             ))}
            </Grid>
           </Grid>
-         <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true} />
+         <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true}  />
          <Footer/>
     </Box>
   );
