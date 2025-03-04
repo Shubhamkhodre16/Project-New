@@ -10,7 +10,6 @@ import Portal from "../clientAchivement/Portals";
 import Features from "../clientAchivement/Features";
 import Contact from "../clientAchivement/Contact";
 import Footer from "../../footer/Footer";
-
 const FreeLance = () => {
   const CarouselData = [
     {
@@ -75,14 +74,11 @@ const FreeLance = () => {
     "Small to big organizations are using this platform for getting access to a large number of talent pools.",
   ];
   const clientSubTitle = "";
-
   const contactTitle =
     "Willing to build a profit-generating freelancing portal with high-tech features?";
   const contactSubTitle =
     "Get the innovative Freelancing app development plan from InfoKoders technologies experts";
-
   return (
-    <>
       <Box>
         {/* Header and image  */}
         <Grid id="carousel" className={styles.backgroundFreelance}>
@@ -121,7 +117,7 @@ const FreeLance = () => {
           </Typography>
         </Grid>
         <ProductGoals productData={productData} />
-        <Solutions CarouselData={CarouselData} solutionTitle={solutionTitle} />
+        <Solutions CarouselData={CarouselData} solutionTitle={solutionTitle} isFreelance={true}/>
         {/* <Portal /> */}
         {/* Client Achivement  */}
         {/* <ClientAchivement
@@ -136,8 +132,6 @@ const FreeLance = () => {
         />
         <Footer />
       </Box>
-    </>
   );
 };
-
 export default FreeLance;

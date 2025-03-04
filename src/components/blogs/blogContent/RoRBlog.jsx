@@ -65,34 +65,35 @@ const page = () => {
     },
   ];
   const fontSizeTitle={
-    lg:"30px",md:"26px",sm:"26px",xs:"22px"
+    lg:"25px",md:"22px",sm:"25px",xs:"22px"
   }
   const fontSizeDesc={
-    lg: "18px", md: "18px ", sm: "18px", xs: "16px"
+    lg: "18px", md: "16px ", sm: "18px", xs: "16px"
   }
   const fontSizeCardTitle={
-    lg: "24px", md: "22px", sm: "22px", xs: "20px"
+    lg: "20px", md: "20px", sm: "20px", xs: "20px"
   }
   const fontSizeCardSubTitle={
-     lg: "22px", md: "22px", sm: "20px", xs: "18px" 
+     lg: "20px", md: "20px", sm: "20px", xs: "20px" 
   }
   const fontSizeCardDes={
-    lg: "18px", md: "16px", sm: "16px", xs: "16px"
+    lg: "16px", md: "16px", sm: "16px", xs: "16px"
   }
   return (
-    <>
       <Box className={styles.rorContainer}>
         <Grid id="carousel" className={styles.backgroundRor}>
           <Grid>
             <Navbar />
             <Typography
-              className={styles.imageSubTitle} sx={{textAlign:"center"}}
-              fontSize={{
-                xs: "23px",
-                sm: "25px",
+              className={styles.imageSubTitle} 
+              sx={{
+                 textAlign:"center",
+                fontSize:{
+                xs: "22px",
+                sm: "22px",
                 md: "30px",
-                lg: "35px",
-                xl: "35px",
+                lg: "30px",
+                xl: "30px",},fontFamily:"NovemberPro"
               }}
             >
               A Online Scholarship Management Platform - fulfilling Educational
@@ -117,20 +118,21 @@ const page = () => {
           <Typography className={styles.howRorTitle}
             sx={{
               fontSize:fontSizeTitle,
+              fontFamily:"NovemberPro"
             }}
           >
             How Ruby on rails (ROR) is the best choice to build your project in
             2021
           </Typography>
           <Typography
-          sx={{fontSize:fontSizeDesc}}
+          sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
             className={styles.howRorDesc}
           >
             In most cases, our clients often take an interest in technologies we
             set to use in their projects.
           </Typography>
           <Typography
-            sx={{fontSize:fontSizeDesc}}
+            sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
             className={styles.howRorDesc}
           >
             Nevertheless, we must assert that it's your right to choose the best
@@ -141,7 +143,7 @@ const page = () => {
             most popular server-side web framework.
           </Typography>
           <Typography
-            sx={{fontSize:fontSizeDesc}}
+            sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
             className={styles.howRorDesc}
           >
             So how is it a good choice for your project? The answer to your
@@ -160,34 +162,34 @@ const page = () => {
           </Grid>
         <Grid className={styles.whatRorcontainer}>
           <Typography
-            sx={{fontSize:fontSizeTitle}}
+            sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}}
             className={styles.whatRorTitle}
           >
             What is Ruby on Rails?
           </Typography>
           <Typography className={styles.whatRorDesc}
             
-            sx={{ fontSize:fontSizeDesc}}
+            sx={{ fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
           >
             ROR is open-source software with a model–view–controller (MVC)
             framework written and interpreted in the Ruby programming language.
           </Typography>
           <Typography
             className={styles.whatRorDesc}
-            sx={{ fontSize:fontSizeDesc}}
+            sx={{ fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
           >
             Ruby on rails was originally invented by David Heinemeier Hansson in
             2004.
           </Typography>
           <Typography
                className={styles.whatRorDesc}
-               sx={{ fontSize:fontSizeDesc}}
+               sx={{ fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
           >
             This is a combination of HTML, JavaScript and CSS.
           </Typography>
           <Typography
             className={styles.whatRorDesc}
-            sx={{fontSize:fontSizeDesc}}
+            sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}
           >
             Ruby is used to building web pages, web applications and providing
             web default services.
@@ -197,14 +199,15 @@ const page = () => {
             <Typography 
               className={styles.goodChoiceTitle}
               sx={{
-                fontSize:fontSizeTitle
+                fontSize:fontSizeTitle,
+                fontFamily:"NovemberPro"
               }}
             >
               How ROR is a good choice for any project?
             </Typography>
             <Typography
               className={styles.goodChoiceDesc}
-              sx={{ fontSize:fontSizeDesc }}
+              sx={{ fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg" }}
             >
               Ruby on Rail is still in the game. No matter how many websites
               will publish or applications may develop, even so, ROR will never
@@ -212,7 +215,7 @@ const page = () => {
             </Typography>
             <Typography
               className={styles.goodChoiceDesc}
-              sx={{ fontSize:fontSizeDesc }}
+              sx={{ fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg" }}
             >
               By the means of different platforms, ROR has made our life easy,
               quicker and hassle-free. Let's leap into the working of
@@ -224,7 +227,6 @@ const page = () => {
             container
             spacing={3}
             className={styles.goodchoiceContainer}
-            
           >
             {/* Left Card */}
             {goodChoiceData?.map((item, index) => (
@@ -251,7 +253,7 @@ const page = () => {
                 <Typography
                   className={styles.CardTitle}
                   sx={{
-                    fontSize:fontSizeCardTitle,
+                    fontSize:fontSizeCardTitle,fontFamily:"NovemberPro"
                   }}
                 >
                   {item?.title}
@@ -259,7 +261,7 @@ const page = () => {
                 <Typography
                    className={styles.subTitle}
                   sx={{
-                    fontSize:fontSizeCardSubTitle,
+                    fontSize:fontSizeCardSubTitle,fontFamily:"NovemberPro"
                   }}
                 >
                   {item?.subTitle}
@@ -267,7 +269,7 @@ const page = () => {
                 <Typography 
                 className={styles.des}
                   sx={{
-                    fontSize:fontSizeCardDes,
+                    fontSize:fontSizeCardDes,fontFamily:"NovemberPro-Reg"
                   }}
                 >
                   {item?.des}
@@ -275,7 +277,7 @@ const page = () => {
                 <Typography
                    className={styles.subTitle}
                   sx={{
-                   fontSize: fontSizeCardSubTitle,
+                   fontSize: fontSizeCardSubTitle,fontFamily:"NovemberPro"
                   }}
                 >
                   {item?.subTitles2}
@@ -283,27 +285,27 @@ const page = () => {
                 <Typography
                  className={styles.des}
                   sx={{
-                    fontSize:fontSizeCardDes,
+                    fontSize:fontSizeCardDes,fontFamily:"NovemberPro-Reg"
                   }}
                 >
                   {item?.des2}
                 </Typography>
               </Grid>
             ))}
-            <Typography className={styles.CardEnd} sx={{ fontSize:fontSizeDesc }}>That's how ROR helps in delivering a successful project without any flaws.</Typography>
+            <Typography className={styles.CardEnd} sx={{ fontSize:fontSizeDesc,fontFamily: "NovemberPro-Reg" }}>That's how ROR helps in delivering a successful project without any flaws.</Typography>
           </Grid>
           <Grid className={styles.conclusionRor}>
             <Typography
               className={styles.conclusionTitle}
               sx={{
-                fontSize:fontSizeTitle,
+                fontSize:fontSizeTitle,fontFamily:"NovemberPro"
               }}
             >
               Conclusion
             </Typography>
             <Typography
              className={styles.conclusionDes}
-              sx={{ fontFamily: fontSizeDesc }}
+              sx={{ fontSize: fontSizeDesc,fontFamily:"NovemberPro-Reg" }}
             >
               Ruby on rails is constructed on MVC architecture and holds varied
               advantages. Without any doubt, it is the most important technology
@@ -314,7 +316,7 @@ const page = () => {
             </Typography>
             <Typography
               className={styles.conclusionDes}
-              sx={{ fontFamily: fontSizeDesc }}
+              sx={{ fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg" }}
             >
               An eye on Ruby on Rails development company? Hold your takeaway in
               this and begin with a new innovative strategy of Ruby on Rails.
@@ -325,7 +327,6 @@ const page = () => {
           </Grid>
         <Footer />
       </Box>
-    </>
   );
 };
 export default page;

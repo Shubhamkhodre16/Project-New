@@ -12,7 +12,7 @@ const CustomDevelopment = () => {
       desc:"Our team ensures compatibility, platform support, and code reusability with the primary benefits of the application framework for both IOS and Android systems."
     },
     {
-      image:"/assets/img/barchart.gif",
+      image:"/assets/img/quality.gif",
       title:"Native Development",
       desc:"Native JS development with the transformation of React code and provision of excellent native features to accelerate your business scaling."
     },
@@ -73,7 +73,6 @@ const CustomDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
@@ -109,5 +108,4 @@ const CustomDevelopment = () => {
     </Box>
   )
 }
-
 export default CustomDevelopment

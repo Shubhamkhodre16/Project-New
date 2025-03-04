@@ -1,14 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box,Button,CardMedia } from "@mui/material";
 import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 import Image from "next/image";
 import awecontent from '../../../public/assets/img/awscontent.png'
-import DataBackup from '../../../public/assets/img/DataBackup.gif'
 import Footer from "../footer/Footer";
 import Contact from "../casestudy/clientAchivement/Contact";
+import ContactUsModal from "../contact/ContactUsModal";
 const AWSDevelopment = () => {
+  const[open,setOpen]=useState(false);
   const services=[
     {
       image:"/assets/img/gathering.gif",
@@ -96,22 +98,22 @@ const AWSDevelopment = () => {
   ]
   const Reliable=[
     {
-        image:"",
+        image:"/assets/img/payment.gif",
         title:"Highly cost-effective",
         desc:"With AWS, you need to pay for the compute power, storage, and other resources that you use, with no long-term contracts or up-front commitments.",   
     },
     {
-      image:"",
+      image:"/assets/img/Proficiency.gif",
       title:"Reliability",
       desc:"AWS provides the benefit of a scalable, reliable, and secure global computing infrastructure, serving as Amazon's virtual backbone.",
     },
     {
-      image:"",
+      image:"/assets/img/gathering.gif",
       title:"Simple to Use",
       desc:"AWS enables application providers, ISVs, and vendors to host applications quickly and securely.",
     },
     {
-      image:"",
+      image:"/assets/img/mobileapp.gif",
       title:"Secure",
       desc:"AWS employs a start-to-end approach to infrastructure security and hardening, including physical, operational, and software safeguards."
     }
@@ -174,7 +176,8 @@ const AWSDevelopment = () => {
           <Typography className={styles.rubyTitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}> <span className={styles.OurUsp}>AWS Development</span> Company</Typography>
            <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg",fontWeight:"bold"}}>Reinforce your Business with our lucrative AWS development services</Typography>
           <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>Securely host your business on Amazon web services (AWS), a powerful cloud computing platform offering impeccable services for storage, security, networking, remote computing, and more. InfoKoders technologies is admired among clients as a reliable partner in AWS development, management, optimization, automation, and deployment.</Typography>
-          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}}>Get Top-level AWS services </Button>
+          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}} onClick={()=>setOpen(true)}>Get Top-level AWS services </Button>
+          {open && <ContactUsModal open={open} setOpen={setOpen}/>}
         </Grid>
       <Grid size={{xs:12,sm:12,md:6,lg:6}} sx={{ display:"flex",justifyContent:"center",alignItems:"center"}} >
         <Image
@@ -295,18 +298,18 @@ const AWSDevelopment = () => {
                   }}
                 >
                   <Image
-                    src={DataBackup}
-                    alt=""
+                    src={item?.image}
+                    alt="reliable"
                     height={80}
                     width={80}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"}, }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},color:"#333333" }}
                   >
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},color:"#333333" }}
                   >
                     {item?.desc}
                   </Typography>

@@ -4,13 +4,12 @@ import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 import styles from "../../styles/HomeContent.module.css";
-
 const Industry = () => {
   const industry = [
     {
       title: "01",
       name: "Retail & eCommerce",
-      image: "/assets/img/shoppingcart.gif",
+      image: "/assets/img/eccomerce.gif"
     },
     {
       title: "02",
@@ -53,9 +52,7 @@ const Industry = () => {
       image: "/assets/img/ondemand.gif",
     },
   ];
-
   return (
-    <>
       <Box className={styles.industryBackground}>
         <Grid className={styles.industryContainer}>
           <Typography
@@ -95,8 +92,6 @@ const Industry = () => {
           </Grid>
         </Grid>
       </Box>
-    </>
   );
 };
-
 export default Industry;

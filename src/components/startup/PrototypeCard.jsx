@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2"; 
 import styles from "../../styles/Startup.module.css";
+import ContactUsModal from "../contact/ContactUsModal";
 const PrototypeCard = () => {
+  const[open,setOpen]=useState(false);
   const cardData = [
     {
       title: "Building a Product prototype",
@@ -137,10 +139,11 @@ const PrototypeCard = () => {
                           xs: "14px",
                         },
                         fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"
-                      }}
+                      }} onClick={()=>setOpen(true)}
                     >
                       {item.button}
                     </Button>
+                    {open && <ContactUsModal open={open} setOpen={setOpen}/>}
                   </>
                 ) : (
                   <Image
@@ -239,10 +242,11 @@ const PrototypeCard = () => {
                           xs: "14px",
                         },
                         fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"
-                      }}
+                      }} onClick={()=>setOpen(true)}
                     >
                       {item.button}
                     </Button>
+                    {open && <ContactUsModal open={open} setOpen={setOpen}/>}
                   </>
                 )}
               </Grid>
@@ -252,5 +256,4 @@ const PrototypeCard = () => {
       </Grid>
   );
 };
-
 export default PrototypeCard;

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box, Button, CardMedia } from "@mui/material";
 import styles from "../../styles/Services.module.css";
@@ -6,12 +7,13 @@ import Navbar from "../navbar/Navbar";
 import Image from "next/image";
 import RorBanner from "../../../public/assets/img/ror-banner.png";
 import TripOriginIcon from '@mui/icons-material/TripOrigin';
-import DataBackup from '../../../public/assets/img/DataBackup.gif'
-import startup from '../../../public/assets/img/startupror.gif'
-import enterprise from '../../../public/assets/img/enterprises.gif'
+import enter from '../../../public/assets/img/enter.gif'
+import upstart from '../../../public/assets/img/upstart.gif'
 import Contact from '../casestudy/clientAchivement/Contact'
 import Footer from "../footer/Footer";
+import ContactUsModal from "../contact/ContactUsModal";
 const RorDevelopment = () => {
+  const[open,setOpen]=useState(false);
   const uspValues=[
     {
       title:"Rails application Migration",
@@ -86,37 +88,35 @@ const RorDevelopment = () => {
     {
       title:"Quality Assurance",
       desc:"Even a single bug in the software will irritate your customers. As a result, we have a dedicated team of quality analysts who conduct mobile app testing to ensure that all aspects of functionality and features are met. We also ensure that the application runs smoothly across all platforms. If our analysts discover any flaws, they remove them and retest the software until it is completely bug-free.",
-      image:"/assets/img/barchart.gif"
+      image:"/assets/img/quality.gif"
     },
     {
       title:"Deployment Product",
       desc:"This is the end process of the app development process. We will deploy and launch your application on your server, making it available for download by your end-users. We take care of the entire implementation phase with the utmost security here. Our technical team also offers 3-months of support even after the product is delivered to ensure that your business runs smoothly.",
       image:"/assets/img/deploypro.gif"
     }
-
-    
   ]
   const techStack=[
     {
-      image:"",
+      image:"/assets/img/mobileapp.gif",
       title:"Mobile",
       subtitle1:"Rails 6.0.0.rcl",
       subtitle2:"Ruby 2.6.3"
     },
     {
-      image:"",
+      image:"/assets/img/agiledevelopment.gif",
       title:"Database",
       subtitle1:"PostgresqlMysql",
       subtitle2:"MongoDBDynamoDB",
     },
     {
-      image:"",
+      image:"/assets/img/reduction.gif",
       title:"Authentication/Authorization",
       subtitle1:"Devise",
       subtitle2:"Oauth",
     },
     {
-      image:"",
+      image:"/assets/img/payment.gif",
       title:"Payment Gateways",
       subtitle1:"Stripe",
       subtitle2:"Braintree",
@@ -145,7 +145,7 @@ const RorDevelopment = () => {
       desc:"We guarantee that any licenses or patterns we use for your project will not be reused for another project.",
     },
     {
-      image:"/assets/img/barchart.gif",
+      image:"/assets/img/quality.gif",
       title:"Work of High Quality",
       desc:"We have been committed to quality work for many years, which is why we use best practices and deliver excellent apps to you.",
     },
@@ -221,8 +221,9 @@ const RorDevelopment = () => {
         <Grid size={{xs:12,sm:12,md:6,lg:6}}>
           <Typography className={styles.rubyTitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}> Best <span style={{color:"#650909"}}> Ruby on Rails Development </span>Company</Typography>
           <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>Get scalable, secure, and well-supported features web applications by embracing exclusive Ruby on rails development services from InfoKoders technologies. As one of the top specialists in<b> ROR development services,</b> we have developed and delivered world-class solutions that have outshined our clients and their end-customers expectations.</Typography>
-          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}}>Let's connect</Button>
-        </Grid>
+          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}} onClick={()=>setOpen(true)}>Let's connect</Button>
+           {open && <ContactUsModal open={open} setOpen={setOpen} />}
+         </Grid>
         <Grid size={{xs:12,sm:12,md:6,lg:6}} sx={{ display:"flex",justifyContent:"center",alignItems:"center"}} >
         <Image
                   src={RorBanner}
@@ -304,7 +305,8 @@ const RorDevelopment = () => {
             <Typography className={styles.obstaclesLeftTitle}sx={{fontSize:{lg:"25px",md:"22x",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Why elect <span className={styles.OurUsp}>Ruby on Rails</span> over other Cross-platform Frameworks?</Typography>
             <Typography className={styles.obstaclesLeftDesc} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}} >Every technology and framework has its own advantages and disadvantages. The following are some advantages of using Ruby on Rails over other cross-platform frameworks:
             </Typography>
-           <Button className={styles.obstaclesLeftbtn} sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none",}}>Talk to Our ROR Experts</Button>
+           <Button className={styles.obstaclesLeftbtn} sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none",}} onClick={()=>setOpen(true)}>Talk to Our ROR Experts</Button>
+           {open && <ContactUsModal open={open} setOpen={setOpen}/>}
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.obstaclesRight}>
             <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
@@ -340,7 +342,6 @@ const RorDevelopment = () => {
                     xs: "16px",
                   },fontFamily: "NovemberPro-Reg"
                 }}>We offer a complimentary consultation. Reflect us on your RoR mobility app idea, and our tech team will analyze your business process and recommend the best solution.</Typography>
-             
           </Grid>
           <Grid size={{xs:12,sm:12,md:12,lg:12}} className={styles.stackGrid}>
           <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Technology Stack</Typography>
@@ -371,38 +372,36 @@ const RorDevelopment = () => {
                     alignItems: "center",
                     textAlign: "center",
                      padding:"10px",
-
                   }}
                 >
                   <Image
                     // style={{ width: "40%" }}
-                    src={DataBackup}
+                    src={item?.image}
                     alt=""
                     height={80}
                     width={80}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},wordBreak:"break-word" }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},wordBreak:"break-word",color:"#333333" }}
                   >
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},color:"#333333" }}
                   >
                     {item?.subtitle1}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},color:"#333333" }}
                   >
                      {item?.subtitle2}
                   </Typography>
                 
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},color:"#333333" }}
                   >
                    {item?.subtitle3}
                   </Typography>
-                
                 </Grid>
               ))}
             </Grid>
@@ -445,7 +444,6 @@ const RorDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
@@ -485,11 +483,11 @@ const RorDevelopment = () => {
                 }}>How Ruby on Rails is the right framework for Startups and Enterprises?</Typography>
             </Grid>
             <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.frameworkGrid}>
-            <Image src={startup} alt="startup" height={80} width={60}/> 
+            <Image src={upstart} alt="startup" height={80} width={60}/> 
             <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Start-ups</Typography>
             </Grid>
             <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.frameworkGrid}>
-            <Image src={enterprise} alt="enterprise" height={80} width={60}/> 
+            <Image src={enter} alt="enterprise" height={80} width={60}/> 
             <Typography className={styles.coreTitleUsp} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Enterprises</Typography>
             </Grid>
            <Grid spacing={3} container className={styles.frameworkCard}>
@@ -508,8 +506,6 @@ const RorDevelopment = () => {
             ))}
            </Grid>
           </Grid>
-         
-          
          <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true} />
          <Footer/>
     </Box>

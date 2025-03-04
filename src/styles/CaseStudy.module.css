@@ -303,7 +303,7 @@
 }
 
 .imageTitle {
-  color: #650909;
+  color: rgb(183, 46, 52);
   padding-top: 250px;
   padding-bottom: 20px;
   padding-left: 9%;
@@ -402,3 +402,34 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
+
+/* solution freelance part */
+.freeContainer{
+  padding-top: 3%;
+}
+/* .client{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+} */
+.freetitle{
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  }
+  .freeDesc{
+    margin-bottom: 1rem;
+    color:#ffffff;
+    line-height: 1.5;
+    }
+    /* .freeBox{
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      margin: 2% 0 ;
+      text-align: center;
+      padding: 10px 0;
+    } */
+

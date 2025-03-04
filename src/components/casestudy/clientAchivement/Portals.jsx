@@ -4,10 +4,8 @@ import Grid from "@mui/material/Grid2";
 import { Typography, Box, Button } from "@mui/material";
 import Image from "next/image";
 import twoMobile from "../../../../public/assets/img/twoMobile.png";
-
 const Portal = () => {
   return (
-    <>
       <Box
         sx={{ background: "#f8f9fd !important" }}
         className={styles.productMain}
@@ -57,12 +55,10 @@ const Portal = () => {
             size={{ xs: 12, sm: 12, md: 6, xl: 6 }}
             className={styles.productData}
           >
-            <Image  src={twoMobile} alt="White Wave" width={400} height={100} />
+            <Image src={twoMobile} alt="White Wave" width={400} height={100} />
           </Grid>
         </Grid>
       </Box>
-    </>
   );
 };
-
 export default Portal;

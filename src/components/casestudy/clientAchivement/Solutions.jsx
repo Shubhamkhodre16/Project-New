@@ -8,29 +8,25 @@ import { Typography, Box } from "@mui/material";
 import AdjustOutlinedIcon from "@mui/icons-material/AdjustOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Image from "next/image";
-
+import { userAgent } from "next/server";
 const Solutions = ({
   solutionTitle = "",
   CarouselData,
   isDigital = false,
   isPlatform = false,
   isBiodiversity = false,
-  
+  isFreelance=false,
 }) => {
   const [slideIndex, setSlideIndex] = useState(0);
-
   const totalSlides = Math.ceil(CarouselData.length / 2); // Show two slides at a time
-
   const nextSlide = () => setSlideIndex((prev) => (prev + 1) % totalSlides);
   // const prevSlide = () =>
   //   setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   // const goToSlide = (index) => setSlideIndex(index);
-
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, []);
-
   const specilityLeft = [
     "Client",
     "Recommender User",
@@ -44,9 +40,47 @@ const Solutions = ({
     "Team Member",
     "University staff",
   ];
-
+  const clientApp=[
+    {
+      title:"1. Posting Jobs and Hiring Personnel",
+      desc:"Project owners can submit their projects by highlighting all the details like project name, category, budget, project description, deadline, and all the necessary files and wait for proposals from freelancers from different parts of the world"
+    },
+    {
+      title:"2. Analyse the proposals and choose the perfect match",
+      desc:"Attentively clients can check out and compare quotes offered by diverse professionals. Before shortlisting the candidates they can go through their complete profiles and learn about their portfolios, success stories, client ratings, and more."
+    },
+    {
+      title:"3. Access the bids and pick the relevant one",
+      desc:"Clients can pick out the suitable cloud experts (Freelancers) depending on crucial factors like qualifications, experience, knowledge, overall cost, and time frame"
+    },
+    {
+      title:"4. Connect with freelancers via chat",
+      desc:"The feature enables the project owners to contact the professionals and provide the details via chat. It makes the job interview process much easier."
+    },
+    {
+      title:"5. Pay securely",
+      desc:"Project managers can pay the hired cloud expert on an hourly or fixed price basis and as soon as after the payment they can obtain invoicing that helps them to keep track of transaction history"
+    }
+  ]
+  const Freelancers=[
+    {
+      title:"1. In detail profile creation",
+      desc:"Freelancers can build impressive profiles by providing the details of complete work history, work portfolio, and the skills"
+    },
+    {
+      title:"2. Search the skill suitable project",
+      desc:"With this feature, a job seeker can find the variety of the projects or jobs posted by the clients and choose the relevant one that suits their skills and compensation requirements."
+    },
+    {
+      title:"3. Start working",
+      desc:"Once the clients select the required professionals, they can deeply discuss the project goals and start to work. Both the client and freelancer securely exchange digital data, share opinions and do a lot more things."
+    },
+    {
+      title:"4. In-app Payment",
+      desc:"Freelancers get paid as per their convenience as the platform supports multiple payment methods such as Paypal, Wire Transfer, direct deposit, and more"
+    }
+  ]
   return (
-    <>
       <Box className={styles.solutionsMain}>
         <Grid className={styles.solutionContainer}>
           <Grid>
@@ -91,14 +125,40 @@ const Solutions = ({
                   fontFamily:"NovemberPro-Reg",
                 }}
               >
-                <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
-                  <Typography sx={{fontFamily:"NovemberPro-Reg"}}>User (Individual/ Organization) Panel</Typography>
+                <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }} sx={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",}}>
+                  <Image src="/assets/img/user.png" alt="user" width={80} height={60}/>
+                  <Typography sx={{ fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg",marginTop:"20px"}}>User (Individual/ Organization) Panel</Typography>
                 </Grid>
-                <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>Admin Panel</Grid>
+                <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }} sx={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",}}>
+                  <Image src="/assets/img/admin.png" alt="admin panel" width={80} height={60}/>
+                 <Typography sx={{ fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg",marginTop:"20px"}}>  Admin Panel</Typography>
+                  </Grid>
               </Grid>
             )}
           </Grid>
-          {isDigital || isPlatform || isBiodiversity ? (
+          {isFreelance && (
+           <Grid container spacing={3} className={styles.freeContainer} >
+             <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.client}>
+             <Typography className={styles.freetitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}} >Key Features of Clients application</Typography>
+            {clientApp?.map((item,index)=>(
+            <Grid  key={index}>
+                <Typography className={styles.freetitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>{item?.title}</Typography>
+                <Typography className={styles.freeDesc} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>{item?.desc}</Typography>
+              </Grid>
+              ))}
+              </Grid>
+               <Grid className={styles.client} size={{xs:12,sm:12,md:6,lg:6}}>
+              <Typography className={styles.freetitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}} >Key Features of Freelancers</Typography>
+              {Freelancers?.map((item,index)=>(
+              <Grid  key={index}  >
+                <Typography className={styles.freetitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>{item?.title}</Typography>
+               <Typography className={styles.freeDesc} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>{item?.desc}</Typography>
+           </Grid>
+         ))}
+           </Grid>
+           </Grid>
+          )}
+          {isDigital || isPlatform || isBiodiversity ||isFreelance ? (
             ""
           ) : (
             <Grid
@@ -232,7 +292,6 @@ const Solutions = ({
               {Array.from({ length: totalSlides }).map((_, index) => {
                 const firstItem = index * 2;
                 const secondItem = firstItem + 1;
-
                 return (
                   <Box
                     key={index}
@@ -270,8 +329,6 @@ const Solutions = ({
           </Grid>
         </Grid>
       </Box>
-    </>
   );
 };
-
 export default Solutions;

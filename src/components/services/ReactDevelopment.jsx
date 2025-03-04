@@ -8,14 +8,14 @@ import Link from "next/link";
 const ReactDevelopment = () => {
   const cards=[
     {
-      image:"/assets/img/agiledevelopment.gif",
+      image:"/assets/img/gathering.gif",
       title:"Custom Development",
       desc:" We build customized matching solutions up to your enterprise and project needs. After investigating your business goals and objectives, our team makes tailors feature-rich native applications for a larger audience and provides a better user experience. ",
       button:"More Details",
       path: "/custom",
     },
     {
-      image:"/assets/img/agiledevelopment.gif",
+      image:"/assets/img/mobileapp.gif",
       title:"UX/UI Development",
       desc:"Our expertise and technology evolves continuously with new tools, frameworks and libraries along with a plethora of options for marketers and entrepreneurs. React JS is the best platform to develop UIs for mobile and web apps both without bugs and reading facilitation.",
       button:"More Details",
@@ -29,7 +29,7 @@ const ReactDevelopment = () => {
       path:"/integration"
     },
     {
-      image:"/assets/img/agiledevelopment.gif",
+      image:"/assets/img/reduction.gif",
       title:"Maintenance & Upgradation",
       desc:"Our React development services offer all essential maintenance services and take care of browser security updates. We are always ready to take challenges based on customer marketing strategies to increase user satisfaction levels.",
       button:"More Details",
@@ -84,7 +84,6 @@ const ReactDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
@@ -121,5 +120,4 @@ const ReactDevelopment = () => {
     </Box>
   );
 };
-
 export default ReactDevelopment;

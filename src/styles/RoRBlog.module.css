@@ -18,7 +18,6 @@
 }
 .imageSubTitle {
   color: #fff;
-  font-family: "NovemberPro";
   padding-top: 250px;
   padding-bottom: 20px;
   opacity: 0.9;
@@ -30,10 +29,9 @@
   background-repeat: no-repeat;
 }
 .howRorTitle {
-  font-family: "NovemberPro";
   font-weight: bold;
   line-height: 1.2;
-  color: #181836;
+  color: #333333;
   margin-bottom: .5rem;
   text-align: center;
 }
@@ -42,7 +40,6 @@
   color: #333;
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
   text-align: center;
 }
 .codeImg {
@@ -59,10 +56,9 @@
   color: #333;
 }
 .whatRorTitle{
-  font-family: "NovemberPro";
   font-weight: bold;
   line-height: 1.2;
-  color: #181836;
+  color: #333333;
   margin-bottom: .5rem;
   text-align: center;
 }
@@ -71,17 +67,15 @@
   color: #333;
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
   text-align: center;
 }
 .howRorCard {
   padding: 2% 8% ;
 }
 .goodChoiceTitle{
-  font-family: "NovemberPro";
   font-weight: bold;
   line-height: 1.2;
-  color: #181836;
+  color: #333333;
   margin-bottom: .5rem;
   text-align: left;
 }
@@ -90,7 +84,6 @@
   color: #333;
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
   text-align: left  ;
 }
 .goodchoiceContainer{
@@ -103,16 +96,15 @@
   padding: 2% 0 ;
 }
 .CardTitle{
-  font-family: NovemberPro;
+  
   font-weight: 500;
   text-align: center;
-  color: #212529;
+  color: #333333;
   line-height: 1.2;
   padding:0 5%; 
   margin-bottom: .5rem;   
 }
 .subTitle{
-  font-family: NovemberPro;
   letter-spacing: 2px;
   font-weight: 500;
   line-height: 1;
@@ -121,7 +113,6 @@
   text-align: center;
 }
 .des{
-  font-family: NovemberPro-Reg;
   padding: 1% 6%;
   text-align: center;
   color:#333;
@@ -132,23 +123,20 @@
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #212529;
-  font-family: NovemberPro-Reg;
+  color: #333333;
 }
 .conclusionRor {
   padding: 3% 0 3% 0;
 }
 .conclusionTitle{
-  font-family: NovemberPro;
   font-weight: bold;
   line-height: 1.2x;
-  color: #181836;
+  color: #333333;
   margin-bottom: .5rem;
   text-align: center;
 }
 .conclusionDes{
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
   color:#333;
   line-height: 1.5;
   padding: 0 8%;
@@ -174,7 +162,6 @@
 }
 .imageSubTitleReactNative {
   color: #fff;
-  font-family: "NovemberPro";
   padding-top: 250px;
   padding-bottom: 20px;
   opacity: 0.9;
@@ -192,10 +179,9 @@
   flex-direction: column;
 }
 .gameChangerTitle{
-  font-family: NovemberPro;
   font-weight: bold;
   line-height: 1.2;
-  color: #181836;
+  color: #333333;
   margin-bottom: .5rem;
 }
 .gameChangerDes{
@@ -203,27 +189,9 @@
   color: #333;
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
 }
 .gameChangerButton{
   cursor: pointer;
-  padding: 8px 18px;
-  border: 1px solid transparent;
-  color: #ffffff;
-  background-color: #181836;
-  margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
-  text-transform: none;
-}
-.gameChangerButton:hover{
-  cursor: pointer;
-  padding: 8px 18px;
-  border: 1px solid #181836;
-  background-color: #ffffff;
-  color: #181836;
-  margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
-  text-transform: none;
 }
 /* what is react native */
 .reactnative{
@@ -269,12 +237,11 @@
   font-weight: 500;
   margin-bottom: 0.5rem;
   line-height: 1.2;
-  font-family: NovemberPro;
+  color: #333333;
 }
 .uspBoxDesc {
   color: #333333;
   line-height: 1.5;
-  font-family: NovemberPro-Reg;
 }
 /* Big firms that have reshaped with React Native Development */
 .reshaped{
@@ -285,10 +252,9 @@
     flex-direction: column;
 }
 .reshapedtitle{
-  font-family: NovemberPro;
   font-weight: bold;
   line-height: 1.2;
-  color: #181836;
+  color: #333333;
   margin-bottom: 1.5rem;
 }
 .reshapedContent{
@@ -301,33 +267,29 @@
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-family: NovemberPro;
 }
 .reshapedContentLeftDesc{
   padding: 10px 0 0 0;
   color:#333;
   line-height: 1.5;
-  font-family: NovemberPro-Reg;
 }
 .reshapedContentRight{
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-family: NovemberPro;
-  color:#212529;
+  color:#333333;
   text-align: left;
 }
 .reshapedContentRightDesc{
   padding:10px 0 0 0;
   color:#333;
   line-height: 1.5;
-  font-family:NovemberPro-Reg ;
   text-align: left;
   margin: 0 15px;
 }
 .reshapedContentLeftDescIcon{
   padding-right: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 /* conclusions  */
 .conclusion{
@@ -337,10 +299,9 @@
   text-align: center;
 }
 .conclusionReact{
-  font-family: NovemberPro;
   font-weight: bold;
   line-height: 1.2;
-  color: #181836;
+  color: #333333;
   padding:0 0 10px 0;
 }
 .conclusionReactDesc{
@@ -348,7 +309,6 @@
   color: #333;
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-family: NovemberPro-Reg;
 }
 
 

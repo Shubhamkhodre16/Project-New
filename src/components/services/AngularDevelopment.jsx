@@ -4,7 +4,6 @@ import { Typography, Box } from "@mui/material";
 import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
-
 const AngularDevelopment = () => {
   return (
     <Box>
@@ -30,13 +29,11 @@ const AngularDevelopment = () => {
           <Typography className={styles.angularTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>As the business environment continues to grow competitive with each passing day, you need to materialize your business concepts into successful web endeavors that efficiently utilizes various customization options. AngularJS lets you do exactly that. With our diverse AngularJS development services, InfoKoders Technilogies will help you build scalable, flexible and interactive web designs and applications that efficiently cater to your business needs.</Typography>
         </Grid>
         <Grid size={{xs:12,sm:12,md:6,lg:6}}>
-         <Typography className={styles.angularTitleRight} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}> AngularJS is a structured, client-side Javascript MVC framework. As a powerful and flexible JavaScript framework, it helps in building fast real-time solutions for enterprises. Widely used for browser-based application development and responsive website development, it is maintained by Google. AngularJS augments web-based applications and helps in building single-page applications with MVC (model view controller) capability. If you need responsive websites or web or mobile applications, AngularJS development can offer you flexible apps with high-end user experience.</Typography>
+         <Typography className={styles.angularTitleRight} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg",marginTop:"40px"}}> AngularJS is a structured, client-side Javascript MVC framework. As a powerful and flexible JavaScript framework, it helps in building fast real-time solutions for enterprises. Widely used for browser-based application development and responsive website development, it is maintained by Google. AngularJS augments web-based applications and helps in building single-page applications with MVC (model view controller) capability. If you need responsive websites or web or mobile applications, AngularJS development can offer you flexible apps with high-end user experience.</Typography>
         </Grid>
-
       </Grid>
       <Footer/>
     </Box>
   );
 };
-
 export default AngularDevelopment;
