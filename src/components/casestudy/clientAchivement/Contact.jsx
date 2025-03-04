@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "../../../styles/CaseStudy.module.css";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box, Button } from "@mui/material";
+import ContactUsModal from "../../contact/ContactUsModal";
 const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
+  const[open,setOpen]=useState(false)
   return (
       <Box className={styles.contactMain}>
         <Grid
@@ -39,12 +42,13 @@ const Contact = ({ title = "", subTitle = "", isFreelance = false }) => {
                 justifyContent: isFreelance ? "center" : "",
               }}
               className={styles.productButton}
-              variant="contained"
+              variant="contained" onClick={()=>setOpen(true)}
             >
               Contact Now
             </Button>
           </Grid>
         </Grid>
+        {open && <ContactUsModal open={open} setOpen={setOpen}/>}
       </Box>
   );
 };
