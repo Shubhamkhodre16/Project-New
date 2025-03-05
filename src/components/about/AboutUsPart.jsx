@@ -25,7 +25,6 @@ const AboutUsPart = () => {
       desc: "The ability to think outside the box consistently, even when it borders on the bizarre, is how the world revolutionize.",
     },
   ];
-
   const coreStats = [
     {
       value: "5+",
@@ -35,7 +34,6 @@ const AboutUsPart = () => {
     { value: "100+", desc: "Software designed, developed, and deployed" },
     { value: "100%", desc: "Customer satisfaction" },
   ];
-
   const uspValues = [
     {
       title: "Proficiency",
@@ -47,7 +45,7 @@ const AboutUsPart = () => {
       title: "Standard process-oriented",
       description:
         "We use high-end processes for each task while keeping an overall view of the projects in mind.",
-      image: "./assets/img/standardprocess.gif",
+      image: "./assets/img/gathering.gif",
     },
     {
       title: "No unexpected Results",
@@ -74,9 +72,7 @@ const AboutUsPart = () => {
       image: "./assets/img/teammember.gif",
     },
   ];
-
   return (
-    
       <Box>
         <Grid id="carousel" className={styles.background}>
           <Navbar />
@@ -128,9 +124,7 @@ const AboutUsPart = () => {
             </Grid>
           </Grid>
         </Grid>
-
         {/* Who we section */}
-
         <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }} className={styles.whowe}>
           <Grid className={styles.whoContainer}>
             <Grid className={styles.whoweLeft}>
@@ -151,7 +145,6 @@ const AboutUsPart = () => {
                 className={styles.subheading}
                 sx={{
                   fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
-
                 }}
               >
                 InfoKoders technologies is an exclusive digital transformation
@@ -197,7 +190,6 @@ const AboutUsPart = () => {
                 className={styles.subheading}
                 sx={{
                   fontSize: { lg: "18px", md: "16px ", sm: "18px", xs: "16px" },
-
                 }}
               >
                  <TripOriginIcon className={styles.obstaclesRightIcon} />
@@ -209,9 +201,7 @@ const AboutUsPart = () => {
             </Grid>
           </Grid>
         </Grid>
-
         {/* Core value Section  */}
-
         <Grid className={styles.coreMain}>
           <Grid className={styles.coreContainer}>
             <Grid className={styles.coreQuote}>
@@ -258,7 +248,6 @@ const AboutUsPart = () => {
                     className={styles.coreBoxDesc}
                     sx={{
                       fontSize:"16px",
-
                       marginTop:"8px"
                     }}
                   >
@@ -310,9 +299,7 @@ const AboutUsPart = () => {
             </Grid>
           </Grid>
         </Grid>
-
         {/* Our Usps  */}
-
         <Grid>
           <Grid className={styles.uspContainer}>
             <Grid className={styles.coreQuote}>
@@ -320,7 +307,6 @@ const AboutUsPart = () => {
                 className={styles.coreTitleUsp}
                 sx={{
                   fontSize: { lg: "30px", md: "26px ", sm: "26px", xs: "22px" },
-
                 }}
               >
                 <span className={styles.OurUsp}>Our</span> USP’s
@@ -354,7 +340,6 @@ const AboutUsPart = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     fontSize="20px"
@@ -372,7 +357,6 @@ const AboutUsPart = () => {
             </Grid>
           </Grid>
         </Grid>
-
         {/* Our Vision and Mission  */}
         <Grid className={styles.whowe}>
           <Grid container className={styles.visionMissonContainer}>
@@ -405,7 +389,6 @@ const AboutUsPart = () => {
                 To disrupt the outdated processes of tech or nontech business
                 with innovative and modern solutions.
               </Typography>
-
               <Typography
                 className={styles.visionLeftSubTitle}
                 sx={{
@@ -464,11 +447,8 @@ const AboutUsPart = () => {
           </Grid>
         </Grid>
         {/* Our Footer  */}
-
         <Footer />
       </Box>
-    
   );
 };
-
 export default AboutUsPart;

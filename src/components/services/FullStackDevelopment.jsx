@@ -1,14 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box,Button,Card,CardMedia,CardContent} from "@mui/material";
 import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 import Image from "next/image";
 import fullstack from '../../../public/assets/img/fullstack.png' 
-import { title } from "process";
-import shadows from "@mui/material/styles/shadows";
 import Footer from "../footer/Footer";
+import ContactUsModal from "../contact/ContactUsModal";
 const FullStackDevelopment = () => {
+  const[open,setOpen]=useState(false);
   const visionaryCard=[
     {
       image:"/assets/img/global.gif",
@@ -84,7 +85,7 @@ const FullStackDevelopment = () => {
       desc:"As full-stack development is made with many handy components, project development is much faster.",
     },
     {
-      image:"/assets/img/barchart.gif",
+      image:"/assets/img/quality.gif",
       title:"Highly scalable",
       desc:"We are notable for providing durable full stack development solutions that are capable of handling heavy application loads.",
     },
@@ -157,7 +158,6 @@ const FullStackDevelopment = () => {
       title:"Continuing support and Maintenance",
       desc:"Our communication does not end once the project is completed as we believe in maintaining long-term relationships with our cherished clients. We offer ongoing support and maintenance to our clients as needed."
     }
-
   ]
   const databases=[
     {
@@ -221,9 +221,9 @@ const FullStackDevelopment = () => {
         <Grid size={{xs:12,sm:12,md:6,lg:6}}>
           <Typography className={styles.rubyTitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}> Scaling up the businesses with our full Stack Development Services</Typography>
           <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>Harness the end-end possibilities of our full-stack development services and achieve quality rich, unbeatable mobile or web apps that meet and greets your business goals. InfoKoders technologies is been esteemed as a <b> top full stack development company</b> for delivering a comprehensive gamut of cutting edge front-end and back-end development solutions.</Typography>
-          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}}>Get in touch</Button>
+          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}} onClick={()=>setOpen(true)}>Get in touch</Button>
+         {open && <ContactUsModal open={open} setOpen={setOpen}/>}
         </Grid>
-       
       </Grid>
       {/* visionary Full stack development */}
       <Grid container spacing={2} className={styles.visionaryContainer}>
@@ -363,7 +363,6 @@ const FullStackDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
@@ -486,7 +485,6 @@ const FullStackDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{

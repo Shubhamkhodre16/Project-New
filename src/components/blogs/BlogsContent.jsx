@@ -11,7 +11,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Footer from "../footer/Footer";
 import Link from "next/link";
-
 const BlogsContent = () => {
   const blogsData = [
     {
@@ -31,14 +30,14 @@ const BlogsContent = () => {
     },
   ];
   return (
-    <>
       <Box>
         <Grid id="carousel" className={styles.blogBackground}>
           <Navbar />
           <Typography
-            textAlign={{ xs: "center", sm: "center", md: "left" }}
-            fontSize={{ xs: "35px", md: "50px" }}
-            sx={{ fontFamily: "NovemberPro" }}
+           sx={{
+           textAlign:{ xs: "center", sm: "center", md: "left" },
+            fontSize:{ xs: "30px",sm:"30px", md: "45px",lg:"45px"},
+             fontFamily: "NovemberPro" }}
             className={styles.case}
           >
             Blogs
@@ -87,7 +86,7 @@ const BlogsContent = () => {
                           : card.title}
                       </Typography>
                       <Typography
-                        sx={{ fontFamily: "NovemberPro-Reg", fontSize: "14px" }}
+                        sx={{ fontFamily: "NovemberPro-Reg", fontSize: "16px" }}
                         className={styles.CaseStudySubTitle}
                       >
                         {card.description.length > 170
@@ -95,7 +94,6 @@ const BlogsContent = () => {
                           : card.description}
                       </Typography>
                     </CardContent>
-
                     <CardActions
                       sx={{ paddingBottom: "15px", paddingLeft: "15px" }}
                     >
@@ -105,7 +103,7 @@ const BlogsContent = () => {
                             color: "#fff",
                             backgroundColor: "#333",
                             textTransform: "capitalize",
-                            fontFamily: "NovemberPro",
+                            fontFamily: "NovemberPro-Reg",
                           }}
                           variant="contained"
                           size="medium"
@@ -122,8 +120,6 @@ const BlogsContent = () => {
         </Grid>
         <Footer />
       </Box>
-    </>
   );
 };
-
 export default BlogsContent;

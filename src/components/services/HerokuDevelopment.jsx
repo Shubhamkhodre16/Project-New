@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box,Button,CardMedia } from "@mui/material";
 import Image from "next/image";
@@ -6,9 +7,10 @@ import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 import awecontent from '../../../public/assets/img/awscontent.png'
 import Footer from "../footer/Footer";
-import DataBackup from "../../../public/assets/img/DataBackup.gif"
 import Contact from "../casestudy/clientAchivement/Contact";
+import ContactUsModal from "../contact/ContactUsModal";
 const HerokuDevelopment = () => {
+  const[open,setOpen]=useState(false);
   const servicesCard=[
     {
       image:"/assets/img/railsmvp.gif",
@@ -52,17 +54,17 @@ const HerokuDevelopment = () => {
   ]
   const solution=[
     {
-      image:"",
+      image:"/assets/img/quality.gif",
       title:"Start-ups",
       desc:"When you elect InfoKoders technologies as your desired Heroku app development company, your startup is going to get apps to market quickly while remaining lean, efficient, and development-focused.",
     },
     {
-      image:"",
+      image:"/assets/img/gathering.gif",
       title:"Enterprises",
       desc:"Our proficient and certified Heroku developers meet the requirements of your large organization and deliver high-performance apps, offering enterprise-grade auditing, support, and scalability."
     },
     {
-      image:"",
+      image:"/assets/img/customersupport.gif",
       title:"Agencies",
       desc:"Quickly grow your business by accessing our proficient Heroku development solutions. A Single comprehensive platform, Heroku, enable us to deliver apps with great transparency and provides control over time and cost.",
     }
@@ -135,7 +137,8 @@ const HerokuDevelopment = () => {
       <Grid size={{xs:12,sm:12,md:6,lg:6}}>
           <Typography className={styles.rubyTitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Experience the Perks of Heroku Platform with a reliable <span className={styles.OurUsp}>Heroku</span> partner</Typography>
           <Typography className={styles.rubySubtitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily: "NovemberPro-Reg"}}>Invest in our <b>Heroku app development services</b> and leverage modern architectures, innovative quickly and scalable applications hosted on a powerful cloud platform- I,e Heroku</Typography>
-          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"13px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}}>Transform your business destiny with us</Button>
+          <Button  sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"13px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"}} onClick={()=>setOpen(true)}>Transform your business destiny with us</Button>
+          {open && <ContactUsModal open={open} setOpen={setOpen}/>}
         </Grid>
       <Grid size={{xs:12,sm:12,md:6,lg:6}} sx={{ display:"flex",justifyContent:"center",alignItems:"center"}} >
         <Image
@@ -280,18 +283,18 @@ const HerokuDevelopment = () => {
                 >
                   <Image
                     // style={{ width: "40%" }}
-                    src={DataBackup}
-                    alt=""
+                    src={item?.image}
+                    alt="solutions"
                     height={80}
                     width={80}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"}, }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},color:"#333333" }}
                   >
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},color:"#333333" }}
                   >
                     {item?.desc}
                   </Typography>
@@ -350,7 +353,6 @@ const HerokuDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
@@ -417,12 +419,10 @@ const HerokuDevelopment = () => {
               </Grid>
             ))}
             </Grid>
-           
           </Grid>
           <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true}/>
       <Footer/>
     </Box>
   );
 };
-
 export default HerokuDevelopment;

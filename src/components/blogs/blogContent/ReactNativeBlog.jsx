@@ -8,8 +8,7 @@ import Navbar from "../../navbar/Navbar";
 import Footer from "../../footer/Footer";
 import CardMedia from "@mui/material/CardMedia";
 import reactnative from "../../../../public/assets/img/reactnativeblog.png"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import TripOriginIcon from '@mui/icons-material/TripOrigin';
 const ReactNativeBlog = () => {
   const ReactNativeCard=[
     {
@@ -54,31 +53,31 @@ const ReactNativeBlog = () => {
     }
   ]
   const fontSizeTitle={
-      lg:"30px",md:"26px",sm:"26px",xs:"22px",
+      lg:"25px",md:"22px",sm:"25px",xs:"22px",
   }
   const fontSizeDesc={
-     lg:"22px",md:"20px",sm:"20px",xs:"18px",
+     lg:"18px",md:"16px",sm:"18px",xs:"16px",
   }
   const fontBigFirm={
-      lg:"26px",md:"24px",sm:"24px",xs:"20px",
+      lg:"25px",md:"22px",sm:"25px",xs:"22px",
   }
   const paddingBigFirm={
       lg:"45px",md:"20px",sm:"10px",xs:"10px",
   }
   return (
-    <>
       <Box className={styles.rorContainer}>
         <Grid id="carousel" className={styles.backgroundReact}>
           <Grid>
             <Navbar />
             <Typography
               className={styles.imageSubTitleReactNative}
-              fontSize={{
-                xs: "28px",
-                sm: "30px",
-                md: "35px",
-                lg: "45px",
-                xl: "45px",
+              sx={{
+                fontSize:{
+                xs: "22px",
+                sm: "22px",
+                md: "30px",
+                lg: "30px",
+                xl: "30px",},fontFamily:"NovemberPro"
               }}
               textAlign="center"
             >
@@ -103,53 +102,53 @@ const ReactNativeBlog = () => {
         {/* How React Native can be a game-changer to your business? */}
         <Grid container className={styles.gameChanger}>
           <Grid size={{xs:12,sm:12,md:12,lg:12}} className={styles.gameChangerGrid}>
-            <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle}}>How React Native can be a game-changer to your business?</Typography>
-            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc}} >
+            <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}}>How React Native can be a game-changer to your business?</Typography>
+            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}} >
                     “Put effort in making one best code and apply it anywhere”- this wise mindset is
                      being applied in every goal-centric business since Facebook was made out from
                      React Native one of the leading open-source networks from 2015. 
             </Typography>
-            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc}}>
+            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>
                      The technology's concept- to reach as many users as possible with a single
                      codebase, was not a new novel. For the first time, though, the native experience
                      was taken into account. Simply put, RN mobile apps maintain the user interface
                      and behavior of the platform on which they operate.
             </Typography>
-            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc}}>
+            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>
                      React Native has become the only framework of choice for millions of enterprises,
                      from startups to big giants like Instagram, Skype, Uber, Walmart, Coinbase, and,
                      of course, Facebook, due to its outstanding capability to deliver a native look
                      and feel.In this blog, we'll look at the big benefits of React Native frameworks, and how
                      it’s going to turn out to be a big hit to your business.
             </Typography>
-            <Button className={styles.gameChangerButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"}}}>Let’s begin with a base</Button>
+            <Button className={styles.gameChangerButton} sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"14px"}, padding: "8px 18px",border: "1px solid transparent",color:" #ffffff",backgroundColor: "#333333",marginBottom: "1rem",textTransform: "none",fontFamily:"NovemberPro-Reg"}}>Let’s begin with a base</Button>
           </Grid>
         </Grid>
         {/* What is React Native? */}
         <Grid container className={styles.reactnative}>
         <Grid size={{xs:12,sm:12,md:12,lg:12}} className={styles.reactnativeGrid}>
-          <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle}}>What is React Native?</Typography>
-          <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc}}>React Native is a framework that makes time taking and big app development processes effortless by enabling you to build both android and iOS apps with a single code base.  In simple terms, you need to <b>hire both ios app developers and android app developers</b> if you desire for huge customer base on both android and iOS platforms. That’s where React Native comes out to be the boon, giving you the power to win two platforms with one solidified code that too by hiring dedicated <b>React Native developers</b> from successful <b>React Native app development companies.</b> </Typography>
+          <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}}>What is React Native?</Typography>
+          <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>React Native is a framework that makes time taking and big app development processes effortless by enabling you to build both android and iOS apps with a single code base.  In simple terms, you need to <b>hire both ios app developers and android app developers</b> if you desire for huge customer base on both android and iOS platforms. That’s where React Native comes out to be the boon, giving you the power to win two platforms with one solidified code that too by hiring dedicated <b>React Native developers</b> from successful <b>React Native app development companies.</b> </Typography>
           </Grid>
         </Grid>
         {/* In terms of market share and Stats */}
         <Grid container spacing={3} className={styles.marketShare}>
           <Grid size={{xs:12,sm:12,md:6,lg:6}}>
-            <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle}}>In terms of market share and Stats, where does React native take the stand?</Typography>
-            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc}}>The popularity of react-native versus all other frameworks is clearly visible on the below graph. Here's an example, based on Google Trends:</Typography>
-            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc}}>React Native is an open-source framework owning supporters from huge communities. This innovative framework, unlike other hybrid apps, is focused on mobile platforms. The framework which is based on the JavaScript library, allows you to construct a single JavaScript codebase that incorporates on a variety of mobile devices (iOS, Android & Windows).</Typography>
+            <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}}>In terms of market share and Stats, where does React native take the stand?</Typography>
+            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>The popularity of react-native versus all other frameworks is clearly visible on the below graph. Here's an example, based on Google Trends:</Typography>
+            <Typography className={styles.gameChangerDes} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>React Native is an open-source framework owning supporters from huge communities. This innovative framework, unlike other hybrid apps, is focused on mobile platforms. The framework which is based on the JavaScript library, allows you to construct a single JavaScript codebase that incorporates on a variety of mobile devices (iOS, Android & Windows).</Typography>
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}}>
             <Grid className={styles.marketShareGrid}>
             <Image src={reactnative}  alt="reactNative Blog" />
             </Grid>
-            <Typography className={styles.gameChangerDes} sx={{fontSize:{lg:"20px",md:"18px",sm:"18px",xs:"18px"}}}>According to the bi-annual Developer Economics survey, JavaScript is used by more than 9.7 million developers. Another report backs up the previous assertion. The results from Stack Overflow Developer Survey 2021, React native is ranked 6th with 14.51 percent of the votes cast. Considering the professional aspect, and React Native comes in fifth with 16.48 percent.</Typography>
+            <Typography className={styles.gameChangerDes} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px",fontFamily:"NovemberPro-Reg"}}}>According to the bi-annual Developer Economics survey, JavaScript is used by more than 9.7 million developers. Another report backs up the previous assertion. The results from Stack Overflow Developer Survey 2021, React native is ranked 6th with 14.51 percent of the votes cast. Considering the professional aspect, and React Native comes in fifth with 16.48 percent.</Typography>
           </Grid>
         </Grid>
         {/* Why React Native? */}
         <Grid container  className={`${styles.whyReactNative} ${styles.Nativecard}`}>
           <Grid size={{xs:12,sm:12,md:12,lg:12}}>
-        <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle}}>Why React Native?</Typography>
+        <Typography className={styles.gameChangerTitle} sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}}>Why React Native?</Typography>
          </Grid>
              <Grid container spacing={4}  >
               {ReactNativeCard?.map((item, index) => (
@@ -166,7 +165,7 @@ const ReactNativeBlog = () => {
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
-                      fontSize: fontSizeDesc
+                      fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},fontFamily:"NovemberPro"
                     }}
                   >
                     {item?.title}
@@ -179,7 +178,7 @@ const ReactNativeBlog = () => {
                         md: "16px ",
                         sm: "16px ",
                         xs: "16px ",
-                      },
+                      },fontFamily:"NovemberPro-Reg"
                     }}
                   >
                     {item?.desc}
@@ -190,58 +189,54 @@ const ReactNativeBlog = () => {
         </Grid>
         {/* reshaped */}
         <Grid container className={styles.reshaped}> 
-          <Typography className={styles.reshapedtitle} sx={{fontSize:fontSizeTitle}}>Big firms that have reshaped with React Native Development</Typography>
+          <Typography className={styles.reshapedtitle} sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}}>Big firms that have reshaped with React Native Development</Typography>
           {/* Walmart */}
         <Grid container spacing={3} className={styles.reshapedContent}>
            <Grid size={{xs:12,sm:12,md:6,lg:6}}  >
-            <Typography className={styles.reshapedContentLeft} sx={{fontSize:fontBigFirm}}>Walmart</Typography>
-            <Typography className={styles.reshapedContentLeftDesc} sx={{fontSize:fontSizeDesc}}>Walmart was one of the prior companies to use React Native Development. Walmart has demonstrated its inventive spirit by including Node.js into their stack. After a few years, it was renamed React Native. Walmart heightened up the app's performance on both iOS and Android by using fewer resources and completing it in less time. The mobile app developers' talents and experience were exploited across several enterprises, with 96 percent of the codebase shared between platforms.</Typography>
+            <Typography className={styles.reshapedContentLeft} sx={{fontSize:fontBigFirm,fontFamily:"NovemberPro"}}>Walmart</Typography>
+            <Typography className={styles.reshapedContentLeftDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>Walmart was one of the prior companies to use React Native Development. Walmart has demonstrated its inventive spirit by including Node.js into their stack. After a few years, it was renamed React Native. Walmart heightened up the app's performance on both iOS and Android by using fewer resources and completing it in less time. The mobile app developers' talents and experience were exploited across several enterprises, with 96 percent of the codebase shared between platforms.</Typography>
           </Grid> 
            <Grid size={{xs:12,sm:12,md:6,lg:6}} >
-            <Typography className={styles.reshapedContentRight} sx={{fontSize:fontBigFirm}}>The Reality of Walmart taking up React Native</Typography>
-            <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc}}> <FontAwesomeIcon className={styles.reshapedContentLeftDescIcon}
-                  icon={faCircleDot}
+            <Typography className={styles.reshapedContentRight} sx={{fontSize:fontBigFirm,fontFamily:"NovemberPro"}}>The Reality of Walmart taking up React Native</Typography>
+            <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}> <TripOriginIcon  className={styles.reshapedContentLeftDescIcon}
                 />Walmart is strongly seeking to become the largest internet store in the world. The corporation wants to undertake a bold step with substantial risk to achieve a competitive advantage since it has high expectations. They experiment with new technologies in order to find attractive methods to improve the consumer experience.</Typography>
-            <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc}}> <FontAwesomeIcon className={styles.reshapedContentLeftDescIcon}
-                  icon={faCircleDot}
+            <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}> <TripOriginIcon className={styles.reshapedContentLeftDescIcon}
                 />As a result, React Native provides excellent performance, which is nearly identical to native apps, as well as flawless animations.</Typography>
            </Grid>
            </Grid> 
            {/* Bloomberg */}
            <Grid container spacing={3} className={styles.reshapedContent}>
            <Grid size={{xs:12,sm:12,md:6,lg:6}}  >
-           <Typography className={styles.reshapedContentLeft} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm}}>Bloomberg</Typography>
-          <Typography className={styles.reshapedContentLeftDesc} sx={{fontSize:fontSizeDesc}}>Bloomberg's new version of the mobile app for iOS and Android provides customers with a streamlined, interactive experience that includes easy-to-find tailored content, videos, and live feeds from Bloomberg's Media. The company used a proprietary mobile app development platform to create the app. React Native was used by a development team to produce an app that fulfilled the promise of cross-platform development.</Typography>
+           <Typography className={styles.reshapedContentLeft} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm,fontFamily:"NovemberPro"}}>Bloomberg</Typography>
+          <Typography className={styles.reshapedContentLeftDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>Bloomberg's new version of the mobile app for iOS and Android provides customers with a streamlined, interactive experience that includes easy-to-find tailored content, videos, and live feeds from Bloomberg's Media. The company used a proprietary mobile app development platform to create the app. React Native was used by a development team to produce an app that fulfilled the promise of cross-platform development.</Typography>
            </Grid>
            <Grid size={{xs:12,sm:12,md:6,lg:6}} >
-           <Typography className={styles.reshapedContentRight} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm}}>The Reality of Bloomberg taking up React Native</Typography>
-           <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc}}><FontAwesomeIcon className={styles.reshapedContentLeftDescIcon}  icon={faCircleDot}/> "We had to move the entire organization to React Native for the consumer mobile app," stated Gabriel Lew, a senior application engineer at Bloomberg who spearheaded the development team's effort. </Typography>
-           <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc}}><FontAwesomeIcon className={styles.reshapedContentLeftDescIcon}  icon={faCircleDot}/> React Native speeds up the introduction of new product features by automating code refreshes. Rather than recompiling, the app just reloads. </Typography>
+           <Typography className={styles.reshapedContentRight} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm,fontFamily:"NovemberPro"}}>The Reality of Bloomberg taking up React Native</Typography>
+           <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}><TripOriginIcon className={styles.reshapedContentLeftDescIcon}  /> "We had to move the entire organization to React Native for the consumer mobile app," stated Gabriel Lew, a senior application engineer at Bloomberg who spearheaded the development team's effort. </Typography>
+           <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}><TripOriginIcon className={styles.reshapedContentLeftDescIcon} /> React Native speeds up the introduction of new product features by automating code refreshes. Rather than recompiling, the app just reloads. </Typography>
          </Grid>
         </Grid>
         {/* Instagram */}
         <Grid container spacing={3} className={styles.reshapedContent}>
            <Grid size={{xs:12,sm:12,md:6,lg:6}}  >
-           <Typography className={styles.reshapedContentLeft} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm}}>Instagram</Typography>
-          <Typography className={styles.reshapedContentLeftDesc} sx={{fontSize:fontSizeDesc}}>nstagram took on the challenge of integrating React Native into their existing native app, starting with the most basic view. There was no need to construct navigation infrastructure because the UI was relatively simple in the Push notification view that was built as a Web View.</Typography>
+           <Typography className={styles.reshapedContentLeft} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm,fontFamily:"NovemberPro"}}>Instagram</Typography>
+          <Typography className={styles.reshapedContentLeftDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}>Instagram took on the challenge of integrating React Native into their existing native app, starting with the most basic view. There was no need to construct navigation infrastructure because the UI was relatively simple in the Push notification view that was built as a Web View.</Typography>
            </Grid>
            <Grid size={{xs:12,sm:12,md:6,lg:6}} >
-           <Typography className={styles.reshapedContentRight} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm}}>The Reality of Instagram taking up React Native</Typography>
-           <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc}}><FontAwesomeIcon className={styles.reshapedContentLeftDescIcon}  icon={faCircleDot}/> The Instagram development team claims to have increased developer velocity significantly. Between 85 and 99 percent of the code in Android and iOS apps were shared. The team completes the project in less time than it would have taken them to develop native solutions.  </Typography>
+           <Typography className={styles.reshapedContentRight} sx={{fontSize:fontBigFirm,paddingTop:paddingBigFirm,fontFamily:"NovemberPro"}}>The Reality of Instagram taking up React Native</Typography>
+           <Typography className={styles.reshapedContentRightDesc} sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}}><TripOriginIcon className={styles.reshapedContentLeftDescIcon}  /> The Instagram development team claims to have increased developer velocity significantly. Between 85 and 99 percent of the code in Android and iOS apps were shared. The team completes the project in less time than it would have taken them to develop native solutions.  </Typography>
          </Grid>
         </Grid>
         </Grid>
         {/* Conclusion */}
         <Grid container className={styles.conclusion} >
           <Grid size={{xs:12,sm:12,md:12,lg:12}}>
-            <Typography className={styles.conclusionReact} sx={{fontSize:fontSizeTitle}} >Conclusion</Typography>
-            <Typography className={styles.conclusionReactDesc}  sx={{fontSize:fontSizeDesc}} >Among all other cross-platform frameworks, React Native offers the best and most effective performance. This technology gives apps a native look and feel. React Native is, without a doubt, superior to and distinct from other similar platforms. It's a fantastic framework that's simple to understand and use, with good speed and a user interface that's equivalent to native apps. Furthermore, some technology experts believe that react native apps are the way of the future for hybrid mobile apps. Overall, it's a win-win condition for businesses looking to please clients on a low budget.  Before deciding to choose to react-native framework it’s imperative to get associated with reliable <b>react native app development companies</b> like <b>InfoKoders technologies</b> owning the dedicated, passionate, and enthusiastic react native developers. </Typography>
+            <Typography className={styles.conclusionReact} sx={{fontSize:fontSizeTitle,fontFamily:"NovemberPro"}} >Conclusion</Typography>
+            <Typography className={styles.conclusionReactDesc}  sx={{fontSize:fontSizeDesc,fontFamily:"NovemberPro-Reg"}} >Among all other cross-platform frameworks, React Native offers the best and most effective performance. This technology gives apps a native look and feel. React Native is, without a doubt, superior to and distinct from other similar platforms. It's a fantastic framework that's simple to understand and use, with good speed and a user interface that's equivalent to native apps. Furthermore, some technology experts believe that react native apps are the way of the future for hybrid mobile apps. Overall, it's a win-win condition for businesses looking to please clients on a low budget.  Before deciding to choose to react-native framework it’s imperative to get associated with reliable <b>react native app development companies</b> like <b>InfoKoders technologies</b> owning the dedicated, passionate, and enthusiastic react native developers. </Typography>
           </Grid>
         </Grid>
         <Footer />
       </Box>
-    </>
   );
 };
-
 export default ReactNativeBlog;

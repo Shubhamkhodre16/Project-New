@@ -3,10 +3,7 @@ import styles from "../../../styles/CaseStudy.module.css";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box } from "@mui/material";
 import Image from "next/image";
-import brightness from "../../../../public/assets/img/arrow-right.svg";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
-import DataBackup from "../../../../public/assets/img/DataBackup.gif";
-
 const ClientAchivement = ({
   isSchlorship = false,
   clientSubTitle = "",
@@ -49,7 +46,6 @@ const ClientAchivement = ({
     },
   ];
   return (
-    <>
       <Box
         sx={{ marginBottom: isSchlorship ? "100px" : "" }}
         className={styles.mainAchivement}
@@ -101,7 +97,6 @@ const ClientAchivement = ({
             ))}
           </Grid>
           {/* Integrated tech Stack */}
-
           <Grid className={styles.techMain}>
             <Grid className={styles.techHeading}>
               <Typography
@@ -131,11 +126,11 @@ const ClientAchivement = ({
                   }}
                 >
                   <Image
-                    style={{ width: "40%" }}
+                   // style={{ width: "40%" }}
                     src={item?.image}
                     alt="images"
-                    height={80}
-                    width={60}
+                    height={90}
+                    width={90}
                   />
                   <Typography
                     sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:"20px" }}
@@ -151,9 +146,7 @@ const ClientAchivement = ({
               ))}
             </Grid>
           </Grid>
-
           {/* Project Insights  */}
-
           <Grid className={styles.techMain}>
             <Grid className={styles.techHeading}>
               <Typography
@@ -178,11 +171,11 @@ const ClientAchivement = ({
                   }}
                 >
                   <Image
-                    style={{ width: "40%" }}
+                   // style={{ width: "40%" }}
                     src={item?.image}
                     alt="images"
-                    height={80}
-                    width={60}
+                    height={90}
+                    width={90}
                   />
                   <Typography
                     sx={{ marginBottom: "5px", fontFamily: "NovemberPro", fontSize:"20px" }}
@@ -190,7 +183,7 @@ const ClientAchivement = ({
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize: "16px" }}
+                    sx={{fontFamily: "NovemberPro-Reg", fontSize: "16px" }}
                   >
                     {item?.subtle}
                   </Typography>
@@ -200,8 +193,6 @@ const ClientAchivement = ({
           </Grid>
         </Grid>
       </Box>
-    </>
   );
 };
-
 export default ClientAchivement;

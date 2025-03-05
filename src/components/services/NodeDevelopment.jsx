@@ -1,14 +1,16 @@
-import React from "react";
+"use client"
+import React,{useState} from "react";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box,Button,CardMedia } from "@mui/material";
 import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
 import TripOriginIcon from '@mui/icons-material/TripOrigin';
 import Image from "next/image";
-import DataBackup from '../../../public/assets/img/DataBackup.gif'
 import Footer from "../footer/Footer";
 import Contact from "../casestudy/clientAchivement/Contact";
+import ContactUsModal from "../contact/ContactUsModal"
 const NodeDevelopment = () => {
+  const [open, setOpen] = useState(false);
   const nodecard=[
     {
          image:"/assets/img/ondemand.gif",
@@ -40,7 +42,6 @@ const NodeDevelopment = () => {
       title:"Nodejs Mobile app development",
       desc:"Enhance your mobile app downloads with our ultra-modern Nodje mobile app development services. When it comes to developing Nodejs based mobile applications, you will be thrilled for taking up the app development solutions from our gem mobile app developers as they have crossed all the rough roads in the development space.",
     }
-
   ]
   const Process=[
     {
@@ -66,22 +67,22 @@ const NodeDevelopment = () => {
   ]
   const project=[
     {
-      image:"",
+      image:"/assets/img/payment.gif",
       title:"Fixed price model",
       desc:"Ideal for small to medium-sized Node.JS projects. Under this model, customers can pay a fixed price for all milestone deliverables i.e for the complete project.",
     },
     {
-      image:"",
+      image:"/assets/img/clock.gif",
       title:"Time and Material Model",
       desc:"Best for Node.JS outsourcing projects with flexible and changing requirements. The customer is billed based on the team's monthly efforts and time.",
     },
     {
-      image:"",
+      image:"/assets/img/quality.gif",
       title:"SLA/Milestone based Model",
       desc:"When you need to hire Node.JS developers for an iterative and process-oriented project with well-defined internal and external milestones, this model is highly suited to one",
     },
     {
-      image:"",
+      image:"/assets/img/customersupport.gif",
       title:"Build Your Team",
       desc:"This model allows you to hire world-class, best-of-breed, and highly skilled Node.JS coders exactly when and where you need them.",
     }
@@ -143,7 +144,8 @@ const NodeDevelopment = () => {
             <Typography className={styles.obstaclesLeftTitle}sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Achieve Unbeatable <span className={styles.OurUsp}>Nodejs Development</span> Services</Typography>
             <Typography className={styles.obstaclesLeftDesc} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}} >Leverage user-friendly and exceptional android and ios apps by gaining exclusive <b>Node js development solutions</b> from a reputable partner, InfoKoders technologies. If you are aiming for function-rich, scalable, and secure web and mobile applications then fortunately you are at the right place to get served.
             </Typography>
-           <Button className={styles.obstaclesLeftbtn} sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"13px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "capitalize",}}>Consult for ultimate Nodejs based apps</Button>
+           <Button className={styles.obstaclesLeftbtn} sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"13px"},fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",textTransform: "capitalize",marginTop:"1rem"}} onClick={() => setOpen(true)}>Consult for ultimate Nodejs based apps</Button>
+            {open && <ContactUsModal open={open} setOpen={setOpen} />}
           </Grid>
           <Grid size={{xs:12,sm:12,md:6,lg:6}} className={styles.obstaclesRightNode}>
             <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
@@ -205,7 +207,7 @@ const NodeDevelopment = () => {
                         md: "20px ",
                         sm: "20px ",
                         xs: "20px ",
-                      },fontFamily: "NovemberPro",
+                      },fontFamily: "NovemberPro",marginBottom:"20px"
                     }}
                   >
                     {item?.title}
@@ -251,7 +253,7 @@ const NodeDevelopment = () => {
                     md: "20px ",
                     sm: "20px ",
                     xs: "20px",
-                  },fontFamily: "NovemberPro"}}> {item?.title}</Typography>
+                  },fontFamily: "NovemberPro",marginBottom:"1rem"}}> {item?.title}</Typography>
               <Typography className={styles.obstaclesLeftDesc} sx={{
                   fontSize: {
                     lg: "16px ",
@@ -262,7 +264,6 @@ const NodeDevelopment = () => {
               </Grid>
             ))}
             </Grid>
-           
           </Grid>
            {/* Hire Project-Based Nodejs Developers under our flexible engagements models */}
            <Grid container className={styles.containerExpert}>
@@ -305,18 +306,18 @@ const NodeDevelopment = () => {
                 >
                   <Image
                     // style={{ width: "40%" }}
-                    src={DataBackup}
+                    src={item?.image}
                     alt=""
                     height={80}
                     width={80}
                   />
                   <Typography
-                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"}, }}
+                    sx={{ marginBottom: "5px", fontFamily: "NovemberPro",fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},color:"#333333" }}
                   >
                     {item?.title}
                   </Typography>
                   <Typography
-                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"}, }}
+                    sx={{ fontFamily: "NovemberPro-Reg", fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"16px"},color:"#333333" }}
                   >
                     {item?.desc}
                   </Typography>
@@ -369,7 +370,6 @@ const NodeDevelopment = () => {
                     component="img"
                     image={item?.image}
                   />
-
                   <Typography
                     className={styles.uspBoxTitle}
                     sx={{
@@ -401,10 +401,9 @@ const NodeDevelopment = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true}/>
+        <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true} />
         <Footer/>
     </Box>
   );
 };
-
 export default NodeDevelopment;
