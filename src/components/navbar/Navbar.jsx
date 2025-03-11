@@ -24,7 +24,6 @@ import Link from "next/link";
 import styles from "../../styles/Navbar.module.css";
 import logo from "../../../public/assets/img/logo-color.png";
 import logo1 from "../../../public/assets/img/logo.png";
-
 const Navbar = () => {
   const pages = [
     { name: "Home", path: "/" },
@@ -59,15 +58,13 @@ const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
   const [serviceAnchorEl, setServiceAnchorEl] = useState(null);
   const pathname = usePathname(); // Get the current route
+  // console.log(pathname.startsWith("/studies"),"dfds")
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       setIsFixed(window.scrollY > 0);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -78,15 +75,11 @@ const Navbar = () => {
   const handlePopoverOpen = (event) => {
     setServiceAnchorEl(event.currentTarget);
   };
-
   const handlePopoverClose = () => {
       setServiceAnchorEl(null);
-
   };
   const toggleMobileDropdown = () => setMobileDropdownOpen(!mobileDropdownOpen);
-
   const open = Boolean(serviceAnchorEl);
-
   return (
     <AppBar
       sx={{
@@ -167,11 +160,22 @@ const Navbar = () => {
               >
                 {pages.map(
                   ({ name, path, subOptions }) => (
+                    
                     (
                       <Box key={name}>
                         {subOptions ? (
                           <ListItem onClick={toggleMobileDropdown}>
-                            <ListItemText primary={name} />
+                            <ListItemText primary={name}  
+                            sx={{
+                            backgroundColor: pathname.startsWith("/services") 
+                            ? "#333"  
+                           : "transparent",
+                           color: pathname.startsWith("/services") 
+                            ? "#fff"   
+                            : "#333",
+                          padding: "10px 20px",
+                          borderRadius: "10px",}}
+                />
                             <ArrowDropDownIcon />
                           </ListItem>
                         ) : (
@@ -187,15 +191,15 @@ const Navbar = () => {
                               <ListItemText
                                 sx={{
                                   backgroundColor:
-                                    pathname === path
-                                      ? "#181836"
+                                    pathname === path ||(path === "/studies" && pathname.startsWith("/studies"))
+                                      ? "#333"
                                       : "transparent",
-                                  color: pathname === path ? "#fff" : "#333",
+                                  color: pathname === path ||(path === "/studies" && pathname.startsWith("/studies"))? "#fff" : "#333",
                                   padding:
                                     pathname === path
                                       ? "10px 20px"
                                       : "5px 15px",
-                                  borderRadius: pathname === path ? "10px" : "",
+                                  borderRadius: pathname === path||(path ==="/studies" && pathname.startsWith("/studies")) ? "10px" : "",
                                 }}
                                 primary={name}
                                 className={styles.navText}
@@ -239,31 +243,37 @@ const Navbar = () => {
               <Box key={name}
               sx={{marginTop:pathname === path || subOptions ? "5px":""}}
               className={ pathname === path || subOptions ? "" : styles.navOption1}
-
               >
-                {subOptions ? (
+                {subOptions ? 
+                (
                   <div
-                  style={{fontWeight: "bold",
+                  style={{
+                    fontWeight: "bold",
                     textDecoration: "none",
                     fontFamily: "NovemberPro-Reg",
                     cursor: "pointer",
                     transition: "color 0.3s, background-color 0.3s",
                     backgroundColor:
-                      pathname === path
-                        ? isFixed
-                          ? "#333"
-                          : "#fff"
-                        : "transparent",
+                      // pathname === path
+                      //   ? isFixed
+                      //     ? "#333"
+                      //     : "#fff"
+                      //   : "transparent",
+                     pathname.startsWith("/services")?(isFixed?"#333":"#fff"):"transparent",
                     color:
-                      pathname === path
-                        ? isFixed
-                          ? "#fff"
-                          : "#333"
-                        : isFixed
-                        ? "#333"
-                        : "#fff",
-                    padding: pathname === path ? "10px 20px" : "5px 15px",
-                    borderRadius: pathname === path ? "5px" : "",
+                      // pathname === path
+                      //   ? isFixed
+                      //     ? "#fff"
+                      //     : "#333"
+                      //   : isFixed
+                      //   ? "#333"
+                      //   : "#fff",
+                      pathname.startsWith("/services")?(isFixed?"#fff":"#333"):isFixed?"#333":"#fff",
+                    padding: pathname === path ? "10px 20px" : "3px 0 0 0 ",
+                    // borderRadius: pathname === path ? "5px" : "",
+                    // padding: pathname.startsWith("/services") ? "10px 20px" : "5px 15px",
+                    borderRadius: pathname===path ? "5px" : "5px",
+                    
                     }}
                   className={styles.dropdown}
                   onMouseEnter={handlePopoverOpen}
@@ -279,19 +289,16 @@ const Navbar = () => {
                   </button>
                   {open && (
                     <div className={styles.dropdownContent}>
-                       
                        {subOptions?.map((item,index)=>(
                       <Link
                       key={item.name}
                       href={item?.path}>{item?.name}</Link>
-                         
                        ))}
                     </div>
                   )}
                 </div>
                 ) : (
                   <Link 
-                  
                   href={path} passHref>
                     <Typography
                       className={styles.navOption}
@@ -304,12 +311,14 @@ const Navbar = () => {
                         cursor: "pointer",
                         transition: "color 0.3s, background-color 0.3s",
                         backgroundColor:
+                        path ==="/studies"&& pathname.startsWith("/studies")? isFixed?"#333":"#fff":
                           pathname === path
                             ? isFixed
                               ? "#333"
                               : "#fff"
                             : "transparent",
                         color:
+                        path ==="/studies" && pathname.startsWith("/studies")?isFixed?"#fff":"#333":
                           pathname === path
                             ? isFixed
                               ? "#fff"
@@ -317,8 +326,8 @@ const Navbar = () => {
                             : isFixed
                             ? "#333"
                             : "#fff",
-                        padding: pathname === path ? "10px 20px" : "5px 15px",
-                        borderRadius: pathname === path ? "5px" : "",
+                        padding: pathname === path  ? "10px 20px" : "5px 15px",
+                        borderRadius: pathname === path || path ==="/studies"&& pathname.startsWith("/studies") ? "5px" : "",
                         marginTop: pathname === path ? "6px" : "10px",
                       }}
                     >
@@ -326,9 +335,7 @@ const Navbar = () => {
                     </Typography>
                   </Link>
                 )}
-
                 {/* Move the Popover inside the Box to avoid syntax errors */}
-   
               </Box>
             ))}
           </Box>
@@ -337,5 +344,4 @@ const Navbar = () => {
     </AppBar>
   );
 };
-
 export default Navbar;

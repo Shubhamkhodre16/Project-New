@@ -185,10 +185,10 @@ const Prototype = () => {
             <TripOriginIcon className={styles.obstaclesRightIcon} />Software development cost
             </Typography >
             <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
-            <TripOriginIcon className={styles.obstaclesRightIcon} /> Slow or bugs loaded product development
+            <TripOriginIcon className={styles.obstaclesRightIcon} />Slow or bugs loaded product development
             </Typography>
             <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
-            <TripOriginIcon className={styles.obstaclesRightIcon} /> Unsystematic software development process
+            <TripOriginIcon className={styles.obstaclesRightIcon} />Unsystematic software development process
             </Typography >
             <Typography className={styles.obstaclesRightTitle} sx={{fontSize:{lg:"18px",md:"16px",sm:"18px",xs:"16px"},fontFamily:"NovemberPro-Reg"}}>
             <TripOriginIcon className={styles.obstaclesRightIcon} />Lack of knowledgeable software engineers

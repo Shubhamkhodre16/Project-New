@@ -106,7 +106,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
-
 .backgroundUi{
   position: relative;
   width: 100%;
@@ -369,9 +368,39 @@ margin-bottom: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
+/* react */
+.reactProcessContainer{
+  padding: 4% 8%;
+ background-color: #f3f3f5;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.reactProcessTitle{
+  color:#333;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.reactdevelopment{
+  border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 25px 27px 25px 27px;
+    /* text-align: center; */
+    background-color: #ffffff;
+    box-shadow: "0px 4px 20px rgba(0, 0, 0, 0.3)";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 /* Angular */
 .angularContainer{
-  padding: 4% 8%;
+  padding: 4% 8% ;
+  background-image: url('/assets/img/rorcontent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .angularintro{
   margin-bottom: .5rem;
@@ -388,6 +417,72 @@ margin-bottom: 1rem;
   line-height: 1.5;
   color: #333;
   margin-top: 35px;
+}
+/* AngularJS Development Company */
+/* .angularContainercontent{
+  padding: 4% 8% ;
+} */
+.angularContent{
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1rem;
+}
+/* Our AngularJS Development Services */
+.cardsProcessangular{
+  border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 25px 27px 25px 27px;
+    /* text-align: center; */
+    box-shadow: "0px 4px 20px rgba(0, 0, 0, 0.3)",
+}
+/* industries we serve */
+.industries{
+  padding:  2%  8% 0 8%;
+  background-color: #f3f5f5;
+}
+.industriesCard{
+  padding: 2% 8%;
+  background-color: #f3f5f5;
+}
+.industriesGrid{
+  background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+.Industriestitle{
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* development */
+.development{
+  padding: 3% 8%;
+}
+.developmentCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 20px 25px;
+}
+.developmentCard:hover{
+  border-color: #ebebeb;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.developmentdesc{
+  margin-bottom: 1rem;
+  color:#333;
+  line-height: 1.5;
+  text-align: center;
 }
 /* React */
 .cardsReact{
@@ -549,3 +644,66 @@ margin-bottom: 1rem;
     color:#ffffff;
     line-height: 1.5;
     }
+    /* ui/ux development */
+   .uiContent{
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    text-align: center;
+   } 
+  .uiintro{
+   margin-bottom: .5rem;
+   font-weight: bold;
+   line-height: 1.2;
+   text-transform: capitalize;
+   color:#f3f3f3;
+   text-align: center;
+  }
+  .ProcessContainerDesign{
+    padding: 3% 8%;
+    background-color: #333;
+  }
+  .DesignTitle{
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .DesignDesc{
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .DesignBox{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .infoCon{
+    padding: 3% 8%;
+    background-color: #f3f3f5;
+  }
+  .infoConTitle{
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .infoCards{
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
