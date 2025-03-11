@@ -8,6 +8,7 @@ import Image from "next/image";
 import fullstack from '../../../public/assets/img/fullstack.png' 
 import Footer from "../footer/Footer";
 import ContactUsModal from "../contact/ContactUsModal";
+import Contact from "../casestudy/clientAchivement/Contact";
 const FullStackDevelopment = () => {
   const[open,setOpen]=useState(false);
   const visionaryCard=[
@@ -191,6 +192,8 @@ const FullStackDevelopment = () => {
       desc:"Express is a prominent framework for developing flexible web applications. It supports HTTP requests from the web and mobile app users, as well as the views returned in the response.",
     }
   ]
+  const contactTitle="Looking to build striking web and mobile apps with full-stack technologies?"
+  const contactSubtitle="Rightly associate with InfoKoders technologies and achieve customer winning full stack development solutions"
   return (
     <Box>
       <Grid id="carousel" className={styles.backgroundFullStack}>
@@ -588,27 +591,7 @@ const FullStackDevelopment = () => {
           ))}
         </Grid>
       </Grid>
-      {/* Looking to build striking web and mobile apps with full-stack technologies? */}
-      <Grid container className={styles.stackContainer}>
-        <Grid size={{xs:12,sm:12,md:12,lg:12}} className={styles.stackContent}>
-          <Typography className={styles.visionaryTitle}  sx={{
-              fontSize: {
-                lg: "25px",
-                md: "22px",
-                sm: "25px",
-                xs: "22px",
-              },fontFamily: "NovemberPro"
-            }}>Looking to build striking web and mobile apps with full-stack technologies?</Typography>
-          <Typography className={styles.visionaryDesc}  sx={{
-              fontSize: {
-                lg: "18px",
-                md: "16px",
-                sm: "18px",
-                xs: "16px",
-              },fontFamily:"NovemberPro-Reg"
-            }}>Rightly associate with InfoKoders technologies and achieve customer winning full stack development solutions</Typography>
-        </Grid>
-      </Grid>
+      <Contact title={contactTitle} subTitle={contactSubtitle} isFreelance={true}  />
       <Footer/>
     </Box>
   );

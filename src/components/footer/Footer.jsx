@@ -12,9 +12,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import logo from "../../../public/assets/img/logo.png";
-
 import Image from "next/image";
-
 const Footer = () => {
   const goTo = [
     { href: "/", label: "Home" },
@@ -23,14 +21,13 @@ const Footer = () => {
     { href: "", label: "Mission & Vision" },
     { href: "", label: "Client Testimonial" },
   ];
-
   const services = [
     { href: "/services/ror", label: "Ruby on Rails" },
     { href: "/services/react", label: "React JS" },
     { href: "/services/node", label: "Node JS" },
     { href: "/services/angular", label: "Angular JS" },
     { href: "/services/fullstack", label: "End to End Full Stack Development" },
-    { href: "/services/UI/UX", label: "UI/UX" },
+    { href: "/services/Ui", label: "UI/UX" },
     { href: "/services/aws", label: "AWS" },
     { href: "/services/heroku", label: "Heroku" },
   ];
@@ -69,14 +66,12 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-
               {/* Logo Section */}
               <li className="pt-7">
                 <Link href="/" passHref>
                   <Image src={logo} alt="logo" className={styles.logo} />
                 </Link>
               </li>
-
               {/* Footer Text */}
               <li className="pt-3">
                 <Typography
@@ -110,9 +105,7 @@ const Footer = () => {
               ))}
             </ul>
           </Grid>
-
           {/* Enquires  */}
-
           <Grid size={{ xs: 12, sm: 12, md: 6, lg: 4 }}>
             <Typography variant="h6" className={styles.subHead}>
               Business Enquires
@@ -180,5 +173,4 @@ const Footer = () => {
     </section>
   );
 };
-
 export default Footer;

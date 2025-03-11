@@ -84,7 +84,7 @@ const Industry = () => {
                   width={70}
                   height={60}
                 />
-                <Typography className={styles.industryName}>
+                <Typography className={styles.industryName} sx={{fontSize:{lg:"20px",md:"20px",sm:"20px",xs:"20px"},fontFamily:"NovemberPro"}}>
                   {item?.name}
                 </Typography>
               </Grid>
