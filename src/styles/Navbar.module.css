@@ -124,13 +124,14 @@
 }
 .dropdown {
   position: relative;
+  margin-top: 5px;
 }
 .dropbtn {
   background: none;
   border: none;
   cursor: pointer;
   font-size: 17px;
-  padding: 10px 15px;
+  padding: 9px 15px;
 }
 .dropdownContent {
   position: absolute;
