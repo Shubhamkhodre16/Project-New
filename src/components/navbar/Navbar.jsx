@@ -33,8 +33,8 @@ const Navbar = () => {
       name: "Services",
       path: "/services",
       subOptions: [
-        { name: " Ruby on Rails", path: "/services/ror"},
-        { name: "  React JS", path: "/services/react"},
+        { name: " Ruby on Rails", path: "/services/ror" },
+        { name: "  React JS", path: "/services/react" },
         { name: " Node JS", path: "/services/node" },
         { name: " Angulars JS", path: "/services/angular" },
         {
@@ -42,8 +42,8 @@ const Navbar = () => {
           path: "/services/fullstack",
         },
         {
-          name:" Ui/Ux",
-          path:"/services/Ui"
+          name: " Ui/Ux",
+          path: "/services/Ui",
         },
         { name: " AWS", path: "/services/aws" },
         { name: " Heroku", path: "/services/heroku" },
@@ -61,6 +61,18 @@ const Navbar = () => {
   // console.log(pathname.startsWith("/studies"),"dfds")
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 900) {
+        setDrawerOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+  useEffect(() => {
     const handleScroll = () => {
       setIsFixed(window.scrollY > 0);
     };
@@ -76,7 +88,7 @@ const Navbar = () => {
     setServiceAnchorEl(event.currentTarget);
   };
   const handlePopoverClose = () => {
-      setServiceAnchorEl(null);
+    setServiceAnchorEl(null);
   };
   const toggleMobileDropdown = () => setMobileDropdownOpen(!mobileDropdownOpen);
   const open = Boolean(serviceAnchorEl);
@@ -101,8 +113,7 @@ const Navbar = () => {
         }}
         maxWidth="xl"
       >
-        <Toolbar
-        disableGutters>
+        <Toolbar disableGutters>
           <Link href="/" passHref>
             <Image
               src={isFixed ? logo : logo1}
@@ -132,7 +143,6 @@ const Navbar = () => {
             >
               <MenuIcon className={styles.iconButtonMenu} />
             </IconButton>
-
             {/* Drawer Sidebar */}
             <Drawer
               PaperProps={{ sx: { width: "300px" } }}
@@ -154,77 +164,96 @@ const Navbar = () => {
                   <CloseIcon sx={{ margin: "12px", marginLeft: "60px" }} />
                 </span>
               </Box>
-
               <List
                 sx={{ margin: "20px", fontSize: "16px", fontWeight: "bold" }}
               >
-                {pages.map(
-                  ({ name, path, subOptions }) => (
-                    
-                    (
-                      <Box key={name}>
-                        {subOptions ? (
-                          <ListItem onClick={toggleMobileDropdown}>
-                            <ListItemText primary={name}  
+                {pages.map(({ name, path, subOptions }) => (
+                  <Box key={name}>
+                    {subOptions ? (
+                      <ListItem onClick={toggleMobileDropdown}>
+                        <ListItemText
+                          primary={name}
+                          sx={{
+                            backgroundColor: pathname.startsWith("/services")
+                              ? "#333"
+                              : "transparent",
+                            color: pathname.startsWith("/services")
+                              ? "#fff"
+                              : "#333",
+                            padding: "10px 20px",
+                            borderRadius: "10px",
+                            "& .MuiTypography-root": {
+                              fontFamily: "NovemberPro-Reg ",
+                            },
+                          }}
+                        />
+                        <ArrowDropDownIcon />
+                      </ListItem>
+                    ) : (
+                      <ListItem key={name} onClick={handleCloseDrawer}>
+                        <Link
+                          href={path}
+                          passHref
+                          style={{
+                            textDecoration: "none",
+                            color: "inherit",
+                          }}
+                        >
+                          <ListItemText
                             sx={{
-                            backgroundColor: pathname.startsWith("/services") 
-                            ? "#333"  
-                           : "transparent",
-                           color: pathname.startsWith("/services") 
-                            ? "#fff"   
-                            : "#333",
-                          padding: "10px 20px",
-                          borderRadius: "10px",}}
-                />
-                            <ArrowDropDownIcon />
-                          </ListItem>
-                        ) : (
-                          <ListItem key={name} onClick={handleCloseDrawer}>
-                            <Link
-                              href={path}
-                              passHref
-                              style={{
-                                textDecoration: "none",
-                                color: "inherit",
+                              backgroundColor:
+                                pathname === path ||
+                                (path === "/studies" &&
+                                  pathname.startsWith("/studies"))
+                                  ? "#333"
+                                  : "transparent",
+                              color:
+                                pathname === path ||
+                                (path === "/studies" &&
+                                  pathname.startsWith("/studies"))
+                                  ? "#fff"
+                                  : "#333",
+                              padding:
+                                pathname === path ? "10px 20px" : "5px 15px",
+                              borderRadius:
+                                pathname === path ||
+                                (path === "/studies" &&
+                                  pathname.startsWith("/studies"))
+                                  ? "10px"
+                                  : "",
+                              "& .MuiTypography-root": {
+                                fontFamily: "NovemberPro-Reg ",
+                              },
+                            }}
+                            primary={name}
+                            className={styles.navText}
+                          />
+                        </Link>
+                      </ListItem>
+                    )}
+                    {mobileDropdownOpen && subOptions && (
+                      <List sx={{ pl: 4 }}>
+                        {subOptions.map((sub) => (
+                          <ListItem
+                            key={sub.name}
+                            component={Link}
+                            href={sub.path}
+                            onClick={handleCloseDrawer}
+                          >
+                            <ListItemText
+                              primary={sub.name}
+                              sx={{
+                                "& .MuiTypography-root": {
+                                  fontFamily: "NovemberPro-Reg ",
+                                },
                               }}
-                            >
-                              <ListItemText
-                                sx={{
-                                  backgroundColor:
-                                    pathname === path ||(path === "/studies" && pathname.startsWith("/studies"))
-                                      ? "#333"
-                                      : "transparent",
-                                  color: pathname === path ||(path === "/studies" && pathname.startsWith("/studies"))? "#fff" : "#333",
-                                  padding:
-                                    pathname === path
-                                      ? "10px 20px"
-                                      : "5px 15px",
-                                  borderRadius: pathname === path||(path ==="/studies" && pathname.startsWith("/studies")) ? "10px" : "",
-                                }}
-                                primary={name}
-                                className={styles.navText}
-                              />
-                            </Link>
+                            />
                           </ListItem>
-                        )}
-                        {mobileDropdownOpen && subOptions && (
-                          <List sx={{ pl: 4 }}>
-                            {subOptions.map((sub) => (
-                              <ListItem
-                                key={sub.name}
-                                component={Link}
-                                href={sub.path}
-                                onClick={handleCloseDrawer}
-                              >
-                                <ListItemText primary={sub.name} />
-                              </ListItem>
-                            ))}
-                          </List>
-                        )}
-                      </Box>
-                    )
-                  )
-                )}
+                        ))}
+                      </List>
+                    )}
+                  </Box>
+                ))}
               </List>
             </Drawer>
           </Box>
@@ -240,66 +269,80 @@ const Navbar = () => {
             }}
           >
             {pages.map(({ name, path, subOptions }) => (
-              <Box key={name}
-              sx={{marginTop:pathname === path || subOptions ? "5px":""}}
-              className={ pathname === path || subOptions ? "" : styles.navOption1}
+              <Box
+                key={name}
+                sx={{ marginTop: pathname === path || subOptions ? "5px" : "" }}
+                className={
+                  pathname === path ||
+                  subOptions ||
+                  pathname.startsWith("/studies/services")
+                    ? ""
+                    : styles.navOption1
+                }
               >
-                {subOptions ? 
-                (
+                {subOptions ? (
                   <div
-                  style={{
-                    fontWeight: "bold",
-                    textDecoration: "none",
-                    fontFamily: "NovemberPro-Reg",
-                    cursor: "pointer",
-                    transition: "color 0.3s, background-color 0.3s",
-                    backgroundColor:
-                      // pathname === path
-                      //   ? isFixed
-                      //     ? "#333"
-                      //     : "#fff"
-                      //   : "transparent",
-                     pathname.startsWith("/services")?(isFixed?"#333":"#fff"):"transparent",
-                    color:
-                      // pathname === path
-                      //   ? isFixed
-                      //     ? "#fff"
-                      //     : "#333"
-                      //   : isFixed
-                      //   ? "#333"
-                      //   : "#fff",
-                      pathname.startsWith("/services")?(isFixed?"#fff":"#333"):isFixed?"#333":"#fff",
-                    padding: pathname === path ? "10px 20px" : "3px 0 0 0 ",
-                    // borderRadius: pathname === path ? "5px" : "",
-                    // padding: pathname.startsWith("/services") ? "10px 20px" : "5px 15px",
-                    borderRadius: pathname===path ? "5px" : "5px",
-                    
+                    style={{
+                      fontWeight: "bold",
+                      textDecoration: "none",
+                      fontFamily: "NovemberPro-Reg",
+                      cursor: "pointer",
+                      transition: "color 0.3s, background-color 0.3s",
+                      backgroundColor:
+                        // pathname === path
+                        //   ? isFixed
+                        //     ? "#333"
+                        //     : "#fff"
+                        //   : "transparent",
+                        pathname.startsWith("/services")
+                          ? isFixed
+                            ? "#333"
+                            : "#fff"
+                          : "transparent",
+                      color:
+                        // pathname === path
+                        //   ? isFixed
+                        //     ? "#fff"
+                        //     : "#333"
+                        //   : isFixed
+                        //   ? "#333"
+                        //   : "#fff",
+                        pathname.startsWith("/services")
+                          ? isFixed
+                            ? "#fff"
+                            : "#333"
+                          : isFixed
+                          ? "#333"
+                          : "#fff",
+                      padding: pathname === path ? "10px 20px" : " ",
+                      // borderRadius: pathname === path ? "5px" : "",
+                      // padding: pathname.startsWith("/services") ? "10px 20px" : "5px 15px",
+                      borderRadius: pathname === path ? "5px" : "5px",
                     }}
-                  className={styles.dropdown}
-                  onMouseEnter={handlePopoverOpen}
-                  onMouseLeave={handlePopoverClose}
-                >
-                  <button className={styles.dropbtn}>
-                   {name} 
-                   {/* <i className="fa fa-caret-down"></i> */}
-                    <ArrowDropDownIcon
-                      onMouseEnter={handlePopoverOpen}
-                      onMouseLeave={handlePopoverClose}
-                    />
-                  </button>
-                  {open && (
-                    <div className={styles.dropdownContent}>
-                       {subOptions?.map((item,index)=>(
-                      <Link
-                      key={item.name}
-                      href={item?.path}>{item?.name}</Link>
-                       ))}
-                    </div>
-                  )}
-                </div>
+                    className={styles.dropdown}
+                    onMouseEnter={handlePopoverOpen}
+                    onMouseLeave={handlePopoverClose}
+                  >
+                    <button className={styles.dropbtn}>
+                      {name}
+                      {/* <i className="fa fa-caret-down"></i> */}
+                      <ArrowDropDownIcon
+                        onMouseEnter={handlePopoverOpen}
+                        onMouseLeave={handlePopoverClose}
+                      />
+                    </button>
+                    {open && (
+                      <div className={styles.dropdownContent}>
+                        {subOptions?.map((item, index) => (
+                          <Link key={item.name} href={item?.path}>
+                            {item?.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ) : (
-                  <Link 
-                  href={path} passHref>
+                  <Link href={path} passHref>
                     <Typography
                       className={styles.navOption}
                       sx={{
@@ -311,23 +354,34 @@ const Navbar = () => {
                         cursor: "pointer",
                         transition: "color 0.3s, background-color 0.3s",
                         backgroundColor:
-                        path ==="/studies"&& pathname.startsWith("/studies")? isFixed?"#333":"#fff":
-                          pathname === path
+                          path === "/studies" && pathname.startsWith("/studies")
+                            ? isFixed
+                              ? "#333"
+                              : "#fff"
+                            : pathname === path
                             ? isFixed
                               ? "#333"
                               : "#fff"
                             : "transparent",
                         color:
-                        path ==="/studies" && pathname.startsWith("/studies")?isFixed?"#fff":"#333":
-                          pathname === path
+                          path === "/studies" && pathname.startsWith("/studies")
+                            ? isFixed
+                              ? "#fff"
+                              : "#333"
+                            : pathname === path
                             ? isFixed
                               ? "#fff"
                               : "#333"
                             : isFixed
                             ? "#333"
                             : "#fff",
-                        padding: pathname === path  ? "10px 20px" : "5px 15px",
-                        borderRadius: pathname === path || path ==="/studies"&& pathname.startsWith("/studies") ? "5px" : "",
+                        padding: pathname === path ? "10px 20px" : "5px 15px",
+                        borderRadius:
+                          pathname === path ||
+                          (path === "/studies" &&
+                            pathname.startsWith("/studies"))
+                            ? "5px"
+                            : "",
                         marginTop: pathname === path ? "6px" : "10px",
                       }}
                     >

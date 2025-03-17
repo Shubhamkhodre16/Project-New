@@ -346,7 +346,7 @@ const AngularDevelopment = () => {
         {/* Our Development Process */}
         <Grid container className={styles.development}>
           <Grid size={{xs:12,sm:12,md:12,lg:12}}>
-            <Typography className={styles.Industriestitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro"}}>Our Development Process</Typography>
+            <Typography className={styles.Industriestitle} sx={{fontSize:{lg:"25px",md:"22px",sm:"25px",xs:"22px"},fontFamily:"NovemberPro",marginBottom:"3rem"}}>Our Development Process</Typography>
           </Grid>
           <Grid container spacing={3} >
           {development?.map((item,index)=>(

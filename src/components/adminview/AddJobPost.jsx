@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import {
   Container,
@@ -15,7 +14,6 @@ import {
 import Grid from "@mui/material/Grid2";
 import { Close } from "@mui/icons-material";
 import Tiptap from "../tiptap/TipTap"; // Ensure correct import
-
 export default function AddJobPost({ setOpen, open, setJobs }) {
   const [form, setForm] = useState({
     title: "",
@@ -27,7 +25,6 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
     closingDate: "",
     experience: "",
   });
-
   const fetchJobs = async () => {
     const response = await fetch("/api/getjobs", { cache: "no-store" });
     if (response.ok) {
@@ -37,13 +34,10 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
       console.error("Failed to fetch jobs");
     }
   };
-
   const handleClose = () => setOpen(false);
-
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("/api/savejob", {
@@ -51,7 +45,6 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     });
-
     if (response.ok) {
       setForm({
         title: "",
@@ -67,7 +60,6 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
       handleClose(); // Close modal after success
     }
   };
-
   return (
     <Modal open={open} onClose={handleClose}>
       <Box
@@ -94,11 +86,10 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
             <Close />
           </IconButton>
         </Box>
-
         {/* Job Form */}
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
           <Grid container spacing={2}>
-            <Grid size={{xs:12,sm:6}}>
+            <Grid size={{ xs: 12, sm: 6 }}>
               <TextField
                 label="Job Title"
                 name="title"
@@ -118,7 +109,6 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-
             <Grid item xs={12} sm={6}>
               <Select
                 name="location"
@@ -139,7 +129,6 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 ))}
               </Select>
             </Grid>
-
             <Grid item xs={12} sm={6}>
               <Select
                 name="experience"
@@ -160,7 +149,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 ))}
               </Select>
             </Grid> */}
-            <Grid size={{xs:12,sm:6}}>
+            <Grid size={{ xs: 12, sm: 6 }}>
               <TextField
                 label="No of Positions"
                 name="positions"
@@ -171,7 +160,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid size={{xs:12,sm:6}}>
+            <Grid size={{ xs: 12, sm: 6 }}>
               <TextField
                 label="Start Date"
                 type="date"
@@ -183,7 +172,7 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-            <Grid size={{xs:12,sm:6}}>
+            <Grid size={{ xs: 12, sm: 6 }}>
               <TextField
                 label="End Date"
                 type="date"
@@ -195,16 +184,14 @@ export default function AddJobPost({ setOpen, open, setJobs }) {
                 fullWidth
               />
             </Grid>
-
             {/* Tiptap Editor for Description */}
-            <Grid size={{xs:12}}>
+            <Grid size={{ xs: 12 }}>
               <Tiptap
                 content={form.description}
                 setContent={(value) => setForm({ ...form, description: value })}
               />
             </Grid>
           </Grid>
-
           {/* Buttons */}
           <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 3 }}>
             <Button

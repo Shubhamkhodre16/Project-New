@@ -9,44 +9,43 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import rightarrow from "../../../public/assets/img/arrow-right.svg";
 import styles from "../../styles/HomeContent.module.css";
-
 const CardSection = () => {
   const cardData = [
     {
       image: "/assets/img/ror-min.png",
       title: " ROR Development",
       desc: "We are saving the applications that are not meant to go off the rails. Let’s get your business on track",
-      path:"/services/ror"
+      path: "/services/ror",
     },
     {
       image: "/assets/img/react-min.png",
       title: " React JS Development",
       desc: " Speeding up the development process with react js enables the delivery of feature-rich and user-friendly apps",
-      path:"/services/react"
-    },
-    {
-      image: "/assets/img/amazon-min.png",
-      title: " Amazon Services",
-      desc: " Providing all the spheres of cloud services with a true revolutionary approach to cloud computing known as AWS",
-      path:"/services/aws"
+      path: "/services/react",
     },
     {
       image: "/assets/img/node-min.png",
       title: "Node Development",
       desc: "Creating a real-time application, an IoT device, or a high-traffic website through Node.js,a choice for lower development costs",
-      path:"/services/node"
-    },
-    {
-      image: "/assets/img/heroku-min.png",
-      title: " Heroku Development",
-      desc: " Availing the Heroku (Paas) platform for building, running, and operating applications securely in the cloud",
-      path:"/services/heroku"
+      path: "/services/node",
     },
     {
       image: "/assets/img/angular-min.png",
       title: "Angular Development",
       desc: "The innovations in the digital space today are making lives easier and faster and leaving customers with more choices",
-      path:"/services/angular"
+      path: "/services/angular",
+    },
+    {
+      image: "/assets/img/amazon-min.png",
+      title: " Amazon Services",
+      desc: " Providing all the spheres of cloud services with a true revolutionary approach to cloud computing known as AWS",
+      path: "/services/aws",
+    },
+    {
+      image: "/assets/img/heroku-min.png",
+      title: " Heroku Development",
+      desc: " Availing the Heroku (Paas) platform for building, running, and operating applications securely in the cloud",
+      path: "/services/heroku",
     },
   ];
   return (
@@ -65,7 +64,6 @@ const CardSection = () => {
                   maxHeight: 395,
                   minHeight: 200,
                   // minWidth:200,
-
                   borderRadius: "18px",
                   border: "1px solid transparent ",
                   transition: "border 0.3s ease",
@@ -101,18 +99,11 @@ const CardSection = () => {
                     />
                   </Box>
                 </Link>
-
                 <CardContent>
-                  <Typography
-                   fontSize="20px"
-                    className={styles.titledrive}
-                  >
+                  <Typography fontSize="20px" className={styles.titledrive}>
                     {item.title}
                   </Typography>
-                  <Typography
-                    className={styles.desdrive}
-                   fontSize="16px"
-                  >
+                  <Typography className={styles.desdrive} fontSize="16px">
                     {item.desc}
                   </Typography>
                   <Typography
@@ -135,5 +126,4 @@ const CardSection = () => {
     </>
   );
 };
-
 export default CardSection;
