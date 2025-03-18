@@ -350,7 +350,7 @@ const AboutUsPart = () => {
         </Grid>
       </Grid>
       {/* Our Vision and Mission  */}
-      <Grid className={styles.whowe}>
+      <Grid className={styles.whowe} id="mission">
         <Grid container className={styles.visionMissonContainer}>
           <Grid size={{ xs: 12, sm: 12, lg: 6 }} className={styles.visionLeft}>
             <Typography

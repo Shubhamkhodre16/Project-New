@@ -15,19 +15,19 @@ import logo from "../../../public/assets/img/logo.png";
 import Image from "next/image";
 const Footer = () => {
   const goTo = [
-    { href: "/", label: "Home" },
+    // { href: "/", label: "Home" },
     { href: "/blog", label: "Blogs" },
-    { href: "/studies", label: "Case Studies" },
-    { href: "", label: "Mission & Vision" },
-    { href: "", label: "Client Testimonial" },
+    // { href: "/studies", label: "Case Studies" },
+    { href: "/about#mission", label: "Mission & Vision" },
+    { href: "/#client", label: "Client Testimonial" },
   ];
   const services = [
     { href: "/services/ror", label: "Ruby on Rails" },
-    { href: "/services/react", label: "React JS" },
-    { href: "/services/node", label: "Node JS" },
-    { href: "/services/angular", label: "Angular JS" },
-    { href: "/services/fullstack", label: "End to End Full Stack Development" },
-    { href: "/services/Ui", label: "UI/UX" },
+    { href: "/services/reactjs", label: "React JS" },
+    { href: "/services/nodejs", label: "Node JS" },
+    { href: "/services/angularjs", label: "Angular JS" },
+    { href: "/services/fullstackdevelopment", label: "End to End Full Stack Development" },
+    { href: "/services/uiuxdevelopment", label: "UI/UX" },
     { href: "/services/aws", label: "AWS" },
     { href: "/services/heroku", label: "Heroku" },
   ];
@@ -47,13 +47,13 @@ const Footer = () => {
           spacing={4}
         >
           {/* Go To  */}
-          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 4 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 4 }} >
             <Typography
               sx={{ marginLeft: "8px" }}
               variant="h6"
               className={styles.subHead}
             >
-              Go to
+             Quick Links
             </Typography>
             <ul className={styles.ui}>
               {goTo.map((link, index) => (
@@ -124,7 +124,7 @@ const Footer = () => {
                   <span>
                     <LocalPhoneIcon sx={{ fontSize: "large" }} />
                   </span>{" "}
-                  +91 07314105427
+                  +91 - 07314105427
                 </Link>
               </li>
             </ul>
@@ -149,7 +149,7 @@ const Footer = () => {
                   <span>
                     <LocalPhoneIcon sx={{ fontSize: "large" }} />
                   </span>{" "}
-                  +91 07314105427
+                  +91 - 07314105427
                 </Link>
               </li>
               <li style={{ marginLeft: "10px " }} className="pt-4">

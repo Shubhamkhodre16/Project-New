@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { Typography, Box, CardContent } from "@mui/material";
-import Grid2 from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 import aboutBanner from "../../../public/assets/img/ror-banner.png";
-import CardSection from "../../app/career/CardSection";
+import CardSection from "../../app/careers/CardSection";
 import Card from "@mui/material/Card";
 import Link from "next/link";
 import Divider from "@mui/material/Divider";
@@ -15,9 +15,8 @@ const HomeContent = () => {
   return (
     <>
       {/* Who We Are  section */}
-
       <Box>
-        <Grid2
+        <Grid
           sx={{
             backgroundImage: "url(assets/img/bg-shape1-home5.png)",
             backgroundPosition: "center right",
@@ -26,17 +25,17 @@ const HomeContent = () => {
             marginY: "20px",
           }}
         >
-          <Grid2 className={styles.whoweContainer}>
-            <Grid2 container spacing={5}>
-              <Grid2 className={styles.whoweImage} size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
+          <Grid className={styles.whoweContainer}>
+            <Grid container spacing={5}>
+              <Grid className={styles.whoweImage} size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Image
                   src={aboutBanner}
                   alt="About Us"
                   width={470}
                   height={400}
                 />
-              </Grid2>
-              <Grid2
+              </Grid>
+              <Grid
                  textAlign={{sm:"center", md:"left" }}
               size={{ xs: 12, sm: 12, md: 6, xl: 6 }}>
                 <Typography
@@ -106,16 +105,14 @@ const HomeContent = () => {
                   from our long-standing expertise and imagine the endless
                   digital possibilities.
                 </Typography>
-              </Grid2>
-            </Grid2>
-          </Grid2>
-        </Grid2>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
       </Box>
-
       {/* //How We Drive Business? */}
-
-      <Grid2 container className={styles.driveContent}>
-        <Grid2 sx={{ textAlign: "center", padding: "0 10%" }}>
+      <Grid container className={styles.driveContent}>
+        <Grid sx={{ textAlign: "center", padding: "0 10%" }}>
           <Typography className={styles.driveHeader}
              sx={{
               fontSize: {
@@ -128,7 +125,6 @@ const HomeContent = () => {
           >
             How We Drive Business?
           </Typography>
-
           <Typography
             sx={{
               fontSize: {
@@ -144,12 +140,12 @@ const HomeContent = () => {
             next-gen analytics and effectively transform your business
             operations.
           </Typography>
-        </Grid2>
-      </Grid2>
+        </Grid>
+      </Grid>
       {/* card section */}
       <CardSection />
       {/*Our key Morals that draw your trust*/}
-      <Grid2
+       <Grid
         className={styles.keybackground}
         sx={{
           backgroundImage: "url(assets/img/bg-shape1-home5.png)",
@@ -158,7 +154,7 @@ const HomeContent = () => {
           marginTop: "5px",
         }}
       >
-        <Grid2
+        <Grid
           container
           spacing={3}
           className={styles.keyMoaral}
@@ -168,7 +164,7 @@ const HomeContent = () => {
             marginY: { lg: "40px", md: "30px", sm: "0px", xs: "6px" },
           }}
         >
-          <Grid2
+          <Grid
             size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
             sx={{ marginTop: "62px" }}
           >
@@ -190,7 +186,7 @@ const HomeContent = () => {
                 lineHeight: "1.5",
                 marginLeft:"18px",
                 fontSize: { lg: "18px", md: "16px", sm: "15px", xs: "14px" },
-                marginBottom: "28px",
+                marginBottom: "40px",
                 textAlign: { lg: "left", sm: "center", xs: "center" },
               }}
             >
@@ -227,6 +223,7 @@ const HomeContent = () => {
               />
               <Box sx={{paddingRight:"5px"}}   className={styles.fontSty}>
                 <ul>
+
                   <Box sx={{ fontSize: "24px" }}>
                     {" "}
                     <li>30 +</li>
@@ -351,8 +348,8 @@ const HomeContent = () => {
                 </ul>
               </Box>
             </Box>
-          </Grid2>
-          <Grid2
+          </Grid>
+          <Grid
             size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
             sx={{ marginTop: "70px" }}
           >
@@ -447,7 +444,6 @@ const HomeContent = () => {
                   // paddingY: "23px",
                   minHeight: "387.5px",
                   maxHeight: "410px",
-
                   marginX: { sm: "20px", xs: "20px", lg: "10px" },
                 }}
               >
@@ -494,8 +490,8 @@ const HomeContent = () => {
                 </CardContent>
               </Card>
             </Box>
-          </Grid2>
-          <Grid2
+          </Grid>
+          <Grid
             size={{ xs: 12, sm: 6, md: 6, lg: 3 }}
             sx={{ marginTop: "70px" }}
           >
@@ -637,13 +633,12 @@ const HomeContent = () => {
                 </CardContent>
               </Card>
             </Box>
-          </Grid2>
-        </Grid2>
-      </Grid2>
+          </Grid>
+        </Grid>
+      </Grid> 
       {/* Industries we serve */}
       <Industry />
     </>
   );
 };
-
 export default HomeContent;
