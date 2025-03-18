@@ -5,9 +5,9 @@ import MaintenanceUpgradation from '../../../../components/services/reactservice
 import UiuxDevelopment from '../../../../components/services/reactservices/UiuxDevelopment'
 const page = ({params}) => {
   console.log(params,"params");
- if(params?.slug=="custom"){
+ if(params?.slug=="customdevelopment"){
     return <CustomDevelopment/>
- }else if(params?.slug=="uidevelop"){
+ }else if(params?.slug=="uiuxdevelopment"){
     return <UiuxDevelopment/>
  }else if(params?.slug=="integration"){
    return <IntegrationMigration/>

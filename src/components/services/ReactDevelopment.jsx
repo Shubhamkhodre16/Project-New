@@ -18,14 +18,14 @@ const ReactDevelopment = () => {
       title: "Custom Development",
       desc: " We build customized matching solutions up to your enterprise and project needs. After investigating your business goals and objectives, our team makes tailors feature-rich native applications for a larger audience and provides a better user experience. ",
       button: "More Details",
-      path: "/custom",
+      path: "/customdevelopment",
     },
     {
       image: "/assets/img/mobileapp.gif",
       title: "UX/UI Development",
       desc: "Our expertise and technology evolves continuously with new tools, frameworks and libraries along with a plethora of options for marketers and entrepreneurs. React JS is the best platform to develop UIs for mobile and web apps both without bugs and reading facilitation.",
       button: "More Details",
-      path: "/uidevelop",
+      path: "/uiuxdevelopment",
     },
     {
       image: "/assets/img/agiledevelopment.gif",
@@ -322,7 +322,7 @@ const ReactDevelopment = () => {
                 ? `${item?.desc.slice(0, 170)}...`
                 : item.desc}
             </Typography>
-            <Link href={`/services/reactt/${item.path}`} passHref>
+            <Link href={`/services/reactjs/${item.path}`} passHref>
               <Button
                 sx={{
                   fontSize: { lg: "16px", md: "14px", sm: "16px", xs: "14px" },

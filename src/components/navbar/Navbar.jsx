@@ -28,30 +28,30 @@ const Navbar = () => {
   const pages = [
     { name: "Home", path: "/" },
     { name: "About us", path: "/about" },
-    { name: "Case Studies", path: "/studies" },
     {
       name: "Services",
       path: "/services",
       subOptions: [
         { name: " Ruby on Rails", path: "/services/ror" },
-        { name: "  React JS", path: "/services/react" },
-        { name: " Node JS", path: "/services/node" },
-        { name: " Angulars JS", path: "/services/angular" },
+        { name: "  React JS", path: "/services/reactjs" },
+        { name: " Node JS", path: "/services/nodejs" },
+        { name: " Angulars JS", path: "/services/angularjs" },
         {
           name: " End to End Full Stack Development",
-          path: "/services/fullstack",
+          path: "/services/fullstackdevelopment",
         },
         {
           name: " Ui/Ux",
-          path: "/services/Ui",
+          path: "/services/uiuxdevelopment",
         },
         { name: " AWS", path: "/services/aws" },
         { name: " Heroku", path: "/services/heroku" },
       ],
     },
+    { name: "Case Studies", path: "/studies" },
     // { name: "Blog", path: "/blog" },
     { name: "Start Up", path: "/startup" },
-    { name: "Careers", path: "/career" },
+    { name: "Careers", path: "/careers" },
     { name: "Contact Us", path: "/contact" },
   ];
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -326,10 +326,10 @@ const Navbar = () => {
                     <button className={styles.dropbtn}>
                       {name}
                       {/* <i className="fa fa-caret-down"></i> */}
-                      <ArrowDropDownIcon
+                      {/* <ArrowDropDownIcon
                         onMouseEnter={handlePopoverOpen}
                         onMouseLeave={handlePopoverClose}
-                      />
+                      /> */}
                     </button>
                     {open && (
                       <div className={styles.dropdownContent}>

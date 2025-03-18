@@ -68,7 +68,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%" }} id="client">
         <Grid
           container
           spacing={4}

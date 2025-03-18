@@ -168,10 +168,10 @@ const JobsListings = ({ jobs }) => {
                     <strong>Skills Required:</strong> {job.skills}
                   </Typography> */}
                   <Typography>
-                    <strong>No. of Positions:</strong> {job.positions}
+                    <strong>No. of Openings:</strong> {job.positions}
                   </Typography>
                   <Typography>
-                    <strong>Last Date to apply:</strong> {job.closingDate}
+                    <strong>Apply Before:</strong> {job.closingDate}
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -217,9 +217,7 @@ const JobsListings = ({ jobs }) => {
               </Card>
             </Grid>
           ))}
-          {openApply && (
-            <ApplyNowPopup open={openApply} setOpen={setOpenApply} />
-          )}
+         
         </Grid>
       ) : (
         <Typography>No job openings available.</Typography>
@@ -292,7 +290,7 @@ const JobsListings = ({ jobs }) => {
                 <strong>Opening Date:</strong> {selectedJob.openingDate}
               </Typography> */}
               <Typography>
-                <strong>Last Date to apply:</strong> {selectedJob.closingDate}
+                <strong> Apply Before:</strong> {selectedJob.closingDate}
               </Typography>
             </div>
           )}

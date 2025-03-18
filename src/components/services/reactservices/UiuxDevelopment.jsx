@@ -48,7 +48,7 @@ const UiDevelopment = () => {
             fontFamily: "NovemberPro",
           }}
         >
-          UX/UI Development
+          UI/UX Development
         </Typography>
       </Grid>
       <Grid>

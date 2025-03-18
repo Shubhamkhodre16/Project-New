@@ -10,15 +10,15 @@ import UiDevelopment from "../../../components/services/UiDevelopment";
 const Page = ({ params }) => {
   if (params?.slug === "ror") {
     return <RorDevelopment />;
-  } else if (params?.slug === "react"){
+  } else if (params?.slug === "reactjs"){
     return <ReactDevelopment/>
-  }else if (params?.slug === "node"){
+  }else if (params?.slug === "nodejs"){
     return <NodeDevelopment/>
-  }else if (params?.slug === "angular"){
+  }else if (params?.slug === "angularjs"){
     return <AngularDevelopment/>
-  }else if (params?.slug === "fullstack"){
+  }else if (params?.slug === "fullstackdevelopment"){
     return <FullStackDevelopment/>
-  }else if (params?.slug === "Ui"){
+  }else if (params?.slug === "uiuxdevelopment"){
      return <UiDevelopment/>
   }else if (params?.slug === "aws"){
     return <AWSDevelopment/>

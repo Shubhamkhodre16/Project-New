@@ -23,7 +23,7 @@ export default function Home() {
       backgroundImage: "url(/assets/img/web-technology.svg)",
       des: "For offering enhanced user experience and result-oriented solutions we are having unmat capabilities. A team of experienced web developers at InfoKoders technologies works dedicatedly to produce web solutions that can help to grow your business.",
       button: "Read More",
-      path:"/services/react"
+      path:"/services/reactjs"
     },
     {
       title: "We are start-up uplifters",
@@ -39,7 +39,7 @@ export default function Home() {
       backgroundImage: "url(/assets/img/right.png)",
       des: "InfoKoders technologies is admired as a leading software Development Company for exceeding business goals consistently thereby offering end-to-end web, mobile, and software development services.",
       button: "Technologize with us",
-       path:"/services/fullstack"
+       path:"/services/fullstackdevelopment"
     },
     {
       title: "Online Scholarship Management Platform",
@@ -63,7 +63,7 @@ export default function Home() {
       backgroundImage: "url(/assets/img/right2.png)",
       des: "We follow Agile Development Process, which enables us to deliver the project with the highest quality and a solid product.App development takes time, but by using agile development methodologies, our full-stack web developers make it look easy.",
       button: "Read More",
-      path:"/services/fullstack"
+      path:"/services/fullstackdevelopment"
     },
   ];
   return (
