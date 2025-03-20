@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <div>
       <header>
-        <title>InfoKoders Technologies</title>
+        <title> Best Ruby On Rails Development Company | InfoKoders Technologies</title>
         <meta
           name="description"
           content="Contact us form for Next.js project"
