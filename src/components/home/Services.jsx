@@ -1,30 +1,32 @@
 "use client";
 import React from "react";
-import Grid2 from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid2";
 import { Typography, Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import angular from "../../../public/assets/img/angular-icon.png";
-import VuejsIcon from "../../../public/assets/img/vuejsIcon.png";
-import TypeScript from "../../../public/assets/img/typescript.png";
-import ReactIcon from "../../../public/assets/img/reactjs.png";
-import HTML5 from "../../../public/assets/img/html.png";
-import JavaScript from "../../../public/assets/img/javascripts.jpg";
-import nodejs from "../../../public/assets/img/node-js.png";
-import RoR from "../../../public/assets/img/roricon.png";
-import mongo from "../../../public/assets/img/mongoDbIcon.png";
-import postsql from "../../../public/assets/img/postsql.png";
-import Redis from "../../../public/assets/img/redis.png";
-import awsCloudServices from "../../../public/assets/img/awsCloudServices.png";
-import GoogleCloudServices from "../../../public/assets/img/GoogleService.png";
-import DigitalOcean from "../../../public/assets/img/Digital Ocean.png";
-import herokuicon from "../../../public/assets/img/herokuIcons.png";
-import engineYard from "../../../public/assets/img/engine.png";
+import angularjs from "../../../public/assets/img/angularcolor.png";
+import nextjs from "../../../public/assets/img/nextjscolor.png";
+import VuejsIcon from "../../../public/assets/img/vuejscolor.png";
+import TypeScript from "../../../public/assets/img/typescriptcolor.png";
+import reacticon from "../../../public/assets/img/reactcolor.png";
+import HTML5 from "../../../public/assets/img/htmlcolor.png";
+import JavaScript from "../../../public/assets/img/javascriptcolor.png";
+import nodejs from "../../../public/assets/img/nodejscolor.png";
+import RoR from "../../../public/assets/img/rorcolor.png";
+import mongo from "../../../public/assets/img/mongodbcolor.png";
+import postsql from "../../../public/assets/img/postgrecolor.png";
+import Redis from "../../../public/assets/img/rediscolor.png";
+import awsCloudServices from "../../../public/assets/img/awscolor.png";
+import GoogleCloudServices from "../../../public/assets/img/googlecloudcolor.png";
+import DigitalOcean from "../../../public/assets/img/digitaloceancolor.jpg";
+import herokuicon from "../../../public/assets/img/herokucolor.png";
+import engineYard from "../../../public/assets/img/engineyardcolor.jpg";
+import mysql from "../../../public/assets/img/mysqllogo.png";
 import styles from "../../styles/Home.module.css";
 const Services = () => {
   return (
     <>
-      <Grid2
+      <Grid
         container
         sx={{
           display: "flex",
@@ -33,7 +35,7 @@ const Services = () => {
           // marginY: "30px",
         }}
       >
-        <Grid2 sx={{ textAlign: "center", padding: "3% 5%"}}>
+        <Grid sx={{ textAlign: "center", padding: "3% 5%" }}>
           <Typography
             // variant="h4"
             sx={{
@@ -68,10 +70,9 @@ const Services = () => {
             Associate with InfoKoders technologies, handpick your tech team, and
             achieve short and long-term business objectives.
           </Typography>
-        </Grid2>
-      </Grid2>
-
-      <Grid2
+        </Grid>
+      </Grid>
+      <Grid
         container
         spacing={3}
         sx={{
@@ -83,7 +84,7 @@ const Services = () => {
           paddingRight: "3.3%",
         }}
       >
-        <Grid2
+        <Grid
           size={{ xs: 12, md: 6 }}
           sx={{
             padding: "20px",
@@ -94,7 +95,7 @@ const Services = () => {
             justifyContent: "center",
           }}
         >
-          <Grid2
+          <Grid
             textAlign={{ xs: "center", sm: "center", md: "left", lg: "left" }}
             size={{ xs: 12, md: 6 }}
           >
@@ -129,12 +130,16 @@ const Services = () => {
             </Typography>
             <Link
               href="/contact"
-              style={{ color: "#650909", textDecoration: "underline", fontFamily:"NovemberPro-Reg" }}
+              style={{
+                color: "#650909",
+                textDecoration: "underline",
+                fontFamily: "NovemberPro-Reg",
+              }}
             >
               Own your team
             </Link>
-          </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -149,52 +154,56 @@ const Services = () => {
               <span
                 style={{
                   textAlign: "center",
-                  marginBottom: "10px",
+                  marginBottom: "8px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
-                  src={angular}
+                  src={nextjs}
                   style={{
-                    border: "1px dotted #333",
-                    borderRadius: "50%",
+                    // border: "1px dotted #333",
+                    // borderRadius: "50%",
                     padding: "10px",
-                    marginBottom: "10px",
+                    marginBottom: "6px",
                   }}
                   width={70}
                   height={70}
                   alt="angular"
                 />
-                Angular
+                Next Js
               </span>
-
               <span
                 style={{
                   textAlign: "center",
-                  marginBottom: "10px",
+                  marginBottom: "3pxpx",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
-                  src={VuejsIcon}
+                  src={angularjs}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
+                    // border: "1px dotted #333",
+                    // borderRadius: "50%",
                     padding: "10px",
-                    marginBottom: "10px",
+                    marginBottom: "2px",
                   }}
                   width={70}
                   height={70}
-                  alt="Vue.js"
+                  alt="angular"
                 />
-                Vue.js
+                Angular Js
               </span>
-              <span style={{ textAlign: "center", fontSize: "14px" }}>
+
+              <span
+                style={{ textAlign: "center", fontSize: "14px", color: "#333" }}
+              >
                 <Image
                   src={TypeScript}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
                   }}
@@ -205,8 +214,8 @@ const Services = () => {
                 TypeScript
               </span>
             </Box>
-          </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -223,13 +232,14 @@ const Services = () => {
                   textAlign: "center",
                   marginBottom: "10px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
-                  src={ReactIcon}
+                  src={reacticon}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
                     padding: "10px",
                     marginBottom: "10px",
                   }}
@@ -237,44 +247,45 @@ const Services = () => {
                   height={70}
                   alt="REactjs"
                 />
-                React
+                React Js
               </span>
-
               <span
                 style={{
                   textAlign: "center",
-                  marginBottom: "10px",
+                  marginBottom: "3px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
-                  src={HTML5}
+                  src={VuejsIcon}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
                     marginBottom: "10px",
+                    padding: "10px",
                   }}
-                  width={70}
-                  height={70}
-                  alt="HTML5"
+                  width={60}
+                  height={60}
+                  alt="Vue.js"
                 />
-                HTML5
+                Vue Js
               </span>
               <span
                 style={{
                   textAlign: "center",
                   marginBottom: "10px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={JavaScript}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
                     padding: "10px",
-                    marginBottom: "10px",
+                    marginBottom: "8px",
                     minHeight: "70px",
                     minWidth: "70px",
                   }}
@@ -285,11 +296,11 @@ const Services = () => {
                 JavaScript
               </span>
             </Box>
-          </Grid2>
-        </Grid2>
-        <Grid2
-        container
-          size={{ xs: 12, md: 6 , lg:6 }}
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          size={{ xs: 12, md: 6, lg: 6 }}
           textAlign={{ xs: "center", sm: "center", md: "left", lg: "left" }}
           sx={{
             padding: "20px",
@@ -297,10 +308,10 @@ const Services = () => {
             borderRadius: "8px",
             // flexDirection: { sm: "column", md: "row", xs: "column", xl: "row" },
             justifyContent: "center",
-            paddingX:"40px"
+            paddingX: "40px",
           }}
         >
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Typography
               className={styles.frontendfontSize}
               // variant="body1"
@@ -333,18 +344,22 @@ const Services = () => {
             </Typography>
             <Link
               href="/contact"
-              style={{ color: "#650909", textDecoration: "underline" }}
+              style={{
+                color: "#650909",
+                textDecoration: "underline",
+                fontFamily: "NovemberPro-Reg",
+              }}
             >
               Own your team
             </Link>
-          </Grid2>
-          <Grid2
+          </Grid>
+          <Grid
             container
-            size={{ xs: 6, sm:6,  md: 6 }}
+            size={{ xs: 6, sm: 6, md: 6 }}
             spacing={2}
             justifyContent="center"
           >
-            <Grid2 size={{xs:6, md:6}} >
+            <Grid size={{ xs: 6, md: 6 }}>
               <Box
                 className={styles.devlopOpt}
                 sx={{
@@ -356,22 +371,27 @@ const Services = () => {
                 <Image
                   src={nodejs}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
-                    marginBottom: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "5px",
+                    marginBottom: "2px",
                   }}
                   width={70}
                   height={70}
                   alt="nodejs"
                 />
-                <span style={{ textAlign: "center", fontSize: "14px" }}>
-                  Node.js
+                <span
+                  style={{
+                    textAlign: "center",
+                    fontSize: "14px",
+                    color: "#333",
+                  }}
+                >
+                  Node Js
                 </span>
               </Box>
-            </Grid2>
-
-            <Grid2 size={{xs:6, sm:6, md:6}} >
+            </Grid>
+            <Grid size={{ xs: 6, sm: 6, md: 6 }}>
               <Box
                 className={styles.devlopOpt}
                 sx={{
@@ -382,24 +402,30 @@ const Services = () => {
                 <Image
                   src={RoR}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "2px",
                     marginBottom: "10px",
                   }}
                   width={70}
                   height={70}
                   alt="ROR"
                 />
-                <span style={{ textAlign: "center", fontSize: "14px" }}>
-                  ROR
+                <span
+                  style={{
+                    textAlign: "center",
+                    fontSize: "14px",
+                    color: "#333",
+                  }}
+                >
+                  Ruby on Rails
                 </span>
               </Box>
-            </Grid2>
-          </Grid2>
-        </Grid2>
-      </Grid2>
-      <Grid2
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid
         container
         spacing={3}
         sx={{
@@ -411,7 +437,7 @@ const Services = () => {
           paddingRight: "3.3%",
         }}
       >
-        <Grid2
+        <Grid
           size={{ xs: 12, md: 6 }}
           textAlign={{ xs: "center", sm: "center", md: "left", lg: "left" }}
           sx={{
@@ -423,7 +449,7 @@ const Services = () => {
             justifyContent: "center",
           }}
         >
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Typography
               className={styles.frontendfontSize}
               // variant="body1"
@@ -456,12 +482,16 @@ const Services = () => {
             </Typography>
             <Link
               href="/contact"
-              style={{ color: "#650909", textDecoration: "underline" }}
+              style={{
+                color: "#650909",
+                textDecoration: "underline",
+                fontFamily: "NovemberPro-Reg",
+              }}
             >
               Own your team
             </Link>
-          </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -478,15 +508,16 @@ const Services = () => {
                   textAlign: "center",
                   marginBottom: "10px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={mongo}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
-                    marginBottom: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "2px",
+                    marginBottom: "6px",
                   }}
                   width={70}
                   height={70}
@@ -494,22 +525,22 @@ const Services = () => {
                 />
                 MongoDB
               </span>
-
               <span
                 style={{
                   textAlign: "center",
                   marginBottom: "10px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={postsql}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
                     minHeight: "70px",
                     minWidth: "70px",
-                    marginBottom: "10px",
+                    marginBottom: "6px",
                     padding: "10px",
                   }}
                   width={70}
@@ -519,8 +550,8 @@ const Services = () => {
                 PostgreSQL
               </span>
             </Box>
-          </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -537,15 +568,17 @@ const Services = () => {
                   textAlign: "center",
                   marginBottom: "10px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={Redis}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "2px",
                     marginBottom: "10px",
+                    marginTop: "18px",
                   }}
                   width={70}
                   height={70}
@@ -553,10 +586,34 @@ const Services = () => {
                 />
                 Redis
               </span>
+              <span
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  fontSize: "14px",
+                  color: "#333",
+                }}
+              >
+                <Image
+                  src={mysql}
+                  style={{
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    minHeight: "70px",
+                    minWidth: "70px",
+                    marginBottom: "8px",
+                    padding: "3px",
+                  }}
+                  width={70}
+                  height={70}
+                  alt="PostgreSQL"
+                />
+                MySQL
+              </span>
             </Box>
-          </Grid2>
-        </Grid2>
-        <Grid2
+          </Grid>
+        </Grid>
+        <Grid
           size={{ xs: 12, md: 6 }}
           textAlign={{ xs: "center", sm: "center", md: "left", lg: "left" }}
           sx={{
@@ -568,7 +625,7 @@ const Services = () => {
             justifyContent: "center",
           }}
         >
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Typography
               // variant="body1"
               className={styles.frontendfontSize}
@@ -601,12 +658,16 @@ const Services = () => {
             </Typography>
             <Link
               href="/contact"
-              style={{ color: "#650909", textDecoration: "underline" }}
+              style={{
+                color: "#650909",
+                textDecoration: "underline",
+                fontFamily: "NovemberPro-Reg",
+              }}
             >
               Own your team
             </Link>
-          </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -626,14 +687,15 @@ const Services = () => {
                   textAlign: "center",
                   paddingBottom: "22px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={awsCloudServices}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "15px",
                     marginBottom: "10px",
                     minHeight: "70px",
                     minWidth: "70px",
@@ -652,15 +714,16 @@ const Services = () => {
                   textAlign: "center",
                   paddingBottom: "22px",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={DigitalOcean}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
-                    marginBottom: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "2px",
+                    marginBottom: "5px",
                     minHeight: "70px",
                     minWidth: "70px",
                   }}
@@ -670,36 +733,9 @@ const Services = () => {
                 />
                 Digital Ocean
               </span>
-
-              <span
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  textAlign: "center",
-                  paddingBottom: "22px",
-                  fontSize: "14px",
-                }}
-              >
-                <Image
-                  src={engineYard}
-                  style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
-                    marginBottom: "10px",
-                    minHeight: "70px",
-                    minWidth: "70px",
-                  }}
-                  width={70}
-                  height={70}
-                  alt="Engine Yard"
-                />
-                Engine Yard
-              </span>
             </Box>
-          </Grid2>
-          <Grid2 size={{ xs: 12, md: 3 }}>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Box
               className={styles.devlopOpt}
               sx={{
@@ -718,16 +754,15 @@ const Services = () => {
                   textAlign: "center",
                   alignItems: "center",
                   fontSize: "14px",
-                  paddingBottom: "22px",
-
+                  color: "#333",
                 }}
               >
                 <Image
                   src={GoogleCloudServices}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "2px",
                     marginBottom: "10px",
                     minHeight: "70px",
                     minWidth: "70px",
@@ -745,15 +780,16 @@ const Services = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   fontSize: "14px",
+                  color: "#333",
                 }}
               >
                 <Image
                   src={herokuicon}
                   style={{
-                    border: "1px dotted  #333",
-                    borderRadius: "50%",
-                    padding: "10px",
-                    marginBottom:"10px",
+                    // border: "1px dotted  #333",
+                    // borderRadius: "50%",
+                    padding: "15px",
+                    marginBottom: "3px",
                     minHeight: "60px",
                     minWidth: "60px",
                   }}
@@ -764,11 +800,10 @@ const Services = () => {
                 Heroku
               </span>
             </Box>
-          </Grid2>
-        </Grid2>
-      </Grid2>
+          </Grid>
+        </Grid>
+      </Grid>
     </>
   );
 };
-
 export default Services;

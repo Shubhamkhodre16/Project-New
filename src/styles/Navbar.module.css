@@ -19,7 +19,7 @@
   font-style: normal;
 }
 .logo {
-  width: 290px;
+  width: 180px;
   height: 38px;
   margin-top: 3%;
   margin-left: 10%;
@@ -30,7 +30,7 @@
 }
 .navOption1 :hover {
   background-color: #ffffff;
-    color: #333;
+  color: #333;
   border-radius: 5px;
   padding: 9px 15px;
 }
@@ -72,12 +72,18 @@
   .navOption {
     font-size: 14px !important;
   }
+  .dropbtn {
+    font-size: 14px !important;
+  }
 }
 @media (max-width: 1260px) {
   .navOption {
     font-size: 14px !important;
     margin-left: 10%;
     margin-right: 0px;
+  }
+  .dropbtn {
+    font-size: 14px !important;
   }
   .navAlign {
     margin-right: 0px;

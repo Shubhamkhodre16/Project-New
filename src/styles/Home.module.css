@@ -4,7 +4,7 @@
 
 .blogContainer {
   padding: 0 7%;
-  margin: 150px 0 80px 0;
+  margin: 60px 0 80px 0;
 }
 .blogContainer2 {
   width: 100%;
@@ -786,6 +786,7 @@
 }
 .serviceSubHeader {
   font-family: "NovemberPro-Reg" !important;
+  color: #333;
 }
 .frontendfontSize {
   font-family: "NovemberPro" !important;
@@ -796,6 +797,7 @@
 .frontDesfontSize {
   font-family: "NovemberPro-Reg" !important;
   margin-bottom: 10px;
+  color: #333;
 }
 .devlopOpt {
   font-family: "NovemberPro-Reg";

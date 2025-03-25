@@ -95,6 +95,16 @@ const RorDevelopment = () => {
       desc: "This is the end process of the app development process. We will deploy and launch your application on your server, making it available for download by your end-users. We take care of the entire implementation phase with the utmost security here. Our technical team also offers 3-months of support even after the product is delivered to ensure that your business runs smoothly.",
       image: "/assets/img/deploypro.gif",
     },
+    {
+      title: "AI-Powered RoR Solutions",
+      desc: "Integrate AI and machine learning capabilities into your Ruby on Rails app to gain insights, automate processes, and enhance user experiences. From recommendation engines to predictive analytics, we empower your app with next-gen intelligence.",
+      image: "/assets/img/reusable.gif",
+    },
+    {
+      title: "Microservices Architecture",
+      desc: "Break down your monolithic app into smaller, independent services. We design microservices-based RoR architectures that boost scalability, improve performance, and allow faster feature updates without downtime.",
+      image: "/assets/img/reduction.gif",
+    },
   ];
   const techStack = [
     {
@@ -218,6 +228,23 @@ const RorDevelopment = () => {
           }}
         >
           Ruby on Rails
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          Get scalable, secure, and well-supported features web applications by
+          embracing exclusive Ruby on rails development services from InfoKoders
+          technologies.
         </Typography>
       </Grid>
       {/* Best Ruby on Rails Development Company */}
@@ -495,7 +522,7 @@ const RorDevelopment = () => {
             process and recommend the best solution.
           </Typography>
         </Grid>
-        <Grid
+        {/* <Grid
           size={{ xs: 12, sm: 12, md: 12, lg: 12 }}
           className={styles.stackGrid}
         >
@@ -522,9 +549,9 @@ const RorDevelopment = () => {
           >
             Our RoR experts are well-versed in these technologies.
           </Typography>
-        </Grid>
+        </Grid> */}
         {/* ror expert */}
-        <Grid
+        {/* <Grid
           container
           spacing={2}
           className={styles.techContainer}
@@ -591,7 +618,7 @@ const RorDevelopment = () => {
               </Typography>
             </Grid>
           ))}
-        </Grid>
+        </Grid> */}
       </Grid>
       {/* Ruby on Rails partner? */}
       <Grid>

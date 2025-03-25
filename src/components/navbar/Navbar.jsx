@@ -15,6 +15,7 @@ import {
   Menu,
   MenuItem,
   Popover,
+  Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -37,29 +38,51 @@ const Navbar = () => {
         { name: " Node JS", path: "/services/nodejs" },
         { name: " Angulars JS", path: "/services/angularjs" },
         {
-          name: " End to End Full Stack Development",
+          name: "Full Stack Development",
           path: "/services/fullstackdevelopment",
         },
         {
-          name: " Ui/Ux",
+          name: "UI/UX Development",
           path: "/services/uiuxdevelopment",
         },
         { name: " AWS", path: "/services/aws" },
         { name: " Heroku", path: "/services/heroku" },
       ],
     },
+    
     { name: "Case Studies", path: "/studies" },
     // { name: "Blog", path: "/blog" },
     { name: "Start Up", path: "/startup" },
-    { name: "Careers", path: "/careers" },
-    { name: "Contact Us", path: "/contact" },
+    { name: "Careers", path: "/career" },
+    {
+      name: "Hire Developers",
+      path: "/hire",
+      subOptions: [
+        { name: " Hire Ruby on Rails Developers", path: "/hire/ror" },
+        { name: " Hire React JS Developers", path: "/hire/reactjs" },
+        { name:"Hire Full Stack Developers",path:"/hiredevelopers/fullstack"},
+        { name: " Hire Node JS Developers", path: "/hiredevelopers/nodejs" },
+        { name: "Hire Heroku Developers", path: "/hiredevelopers/heroku" },
+        {
+          name: " Hire Mean Stack Developers",
+          path: "/hiredevelopers/meanstack",
+        },
+        {
+          name: "Hire MERN Stack Developers",
+          path: "/hiredevelopers/mernstack",
+        },
+        { name: " Hire Mobile App Developers", path: "/hiredevelopers/mobileapp" },
+      ],
+    },
+    // { name: "Contact Us", path: "/contact" },
   ];
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
   const [serviceAnchorEl, setServiceAnchorEl] = useState(null);
   const pathname = usePathname(); // Get the current route
   // console.log(pathname.startsWith("/studies"),"dfds")
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  // const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState({});
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 900) {
@@ -84,13 +107,16 @@ const Navbar = () => {
   const handleOpenDrawer = () => setDrawerOpen(true);
   const handleCloseDrawer = () => setDrawerOpen(false);
   // const [activeSubOptions, setActiveSubOptions] = useState(null);
-  const handlePopoverOpen = (event) => {
-    setServiceAnchorEl(event.currentTarget);
+  // const handlePopoverOpen = (event) => {
+  //   setServiceAnchorEl(event.currentTarget);
+  // };
+  // const handlePopoverClose = () => {
+  //   setServiceAnchorEl(null);
+  // };
+  // const toggleMobileDropdown = () => setMobileDropdownOpen(!mobileDropdownOpen);
+  const toggleDropdown = (dropdownName) => {
+    setOpenDropdown((prev) => ({...prev , [dropdownName]:!prev[dropdownName]}));
   };
-  const handlePopoverClose = () => {
-    setServiceAnchorEl(null);
-  };
-  const toggleMobileDropdown = () => setMobileDropdownOpen(!mobileDropdownOpen);
   const open = Boolean(serviceAnchorEl);
   return (
     <AppBar
@@ -170,14 +196,14 @@ const Navbar = () => {
                 {pages.map(({ name, path, subOptions }) => (
                   <Box key={name}>
                     {subOptions ? (
-                      <ListItem onClick={toggleMobileDropdown}>
+                      <ListItem onClick={()=>toggleDropdown(name)}>
                         <ListItemText
                           primary={name}
                           sx={{
-                            backgroundColor: pathname.startsWith("/services")
+                            backgroundColor: pathname.startsWith(path)
                               ? "#333"
                               : "transparent",
-                            color: pathname.startsWith("/services")
+                            color: pathname.startsWith(path)
                               ? "#fff"
                               : "#333",
                             padding: "10px 20px",
@@ -231,7 +257,7 @@ const Navbar = () => {
                         </Link>
                       </ListItem>
                     )}
-                    {mobileDropdownOpen && subOptions && (
+                    {openDropdown[name] && (
                       <List sx={{ pl: 4 }}>
                         {subOptions.map((sub) => (
                           <ListItem
@@ -255,6 +281,9 @@ const Navbar = () => {
                   </Box>
                 ))}
               </List>
+              <Link href="/contact" passHref>
+              <Button sx={{fontSize:"16px", textTransform:"capitalize",fontWeight:"700",padding:"7px 15px",margin:"9px 35px 0 35px",fontFamily:"NovemberPro-Reg", color:"#fff", backgroundColor:"#ff2e2e"}}>Contact </Button>
+              </Link>
             </Drawer>
           </Box>
           {/* Desktop Navigation */}
@@ -283,7 +312,7 @@ const Navbar = () => {
                 {subOptions ? (
                   <div
                     style={{
-                      fontWeight: "bold",
+                      fontWeight: "700",
                       textDecoration: "none",
                       fontFamily: "NovemberPro-Reg",
                       cursor: "pointer",
@@ -294,7 +323,7 @@ const Navbar = () => {
                         //     ? "#333"
                         //     : "#fff"
                         //   : "transparent",
-                        pathname.startsWith("/services")
+                        pathname.startsWith(path)
                           ? isFixed
                             ? "#333"
                             : "#fff"
@@ -307,7 +336,7 @@ const Navbar = () => {
                         //   : isFixed
                         //   ? "#333"
                         //   : "#fff",
-                        pathname.startsWith("/services")
+                        pathname.startsWith(path)
                           ? isFixed
                             ? "#fff"
                             : "#333"
@@ -320,8 +349,8 @@ const Navbar = () => {
                       borderRadius: pathname === path ? "5px" : "5px",
                     }}
                     className={styles.dropdown}
-                    onMouseEnter={handlePopoverOpen}
-                    onMouseLeave={handlePopoverClose}
+                    onMouseEnter={() => toggleDropdown(name, true)}
+                    onMouseLeave={() => toggleDropdown(name, false)}
                   >
                     <button className={styles.dropbtn}>
                       {name}
@@ -331,7 +360,7 @@ const Navbar = () => {
                         onMouseLeave={handlePopoverClose}
                       /> */}
                     </button>
-                    {open && (
+                    {openDropdown[name] && (
                       <div className={styles.dropdownContent}>
                         {subOptions?.map((item, index) => (
                           <Link key={item.name} href={item?.path}>
@@ -388,12 +417,20 @@ const Navbar = () => {
                       {name}
                     </Typography>
                   </Link>
+                  
                 )}
                 {/* Move the Popover inside the Box to avoid syntax errors */}
+               
               </Box>
+              
             ))}
+            <Link href="/contact" passHref>
+             <Button   sx={{fontSize:"17px", textTransform:"capitalize",fontWeight:"700",padding:"7px 15px",margin:"9px 0 0 10px",fontFamily:"NovemberPro-Reg", color:"#fff", backgroundColor:"#ff2e2e"}}>Contact </Button>
+             </Link>
           </Box>
+          
         </Toolbar>
+       
       </Container>
     </AppBar>
   );

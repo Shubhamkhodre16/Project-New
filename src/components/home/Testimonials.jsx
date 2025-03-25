@@ -75,7 +75,7 @@ const Testimonials = () => {
           justifyContent="center"
           alignItems="center"
           textAlign="center"
-          marginTop="80px"
+          marginTop="50px"
         >
           <Grid size={{ xs: 12, sm: 10, md: 8, lg: 6 }}
           sx={{marginBottom:"20px"}}

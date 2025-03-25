@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Button, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2"; 
+import Grid from "@mui/material/Grid2";
 import styles from "../../styles/Startup.module.css";
 import ContactUsModal from "../contact/ContactUsModal";
 const PrototypeCard = () => {
-  const[open,setOpen]=useState(false);
+  const [open, setOpen] = useState(false);
   const cardData = [
     {
       title: "Building a Product prototype",
@@ -56,204 +56,224 @@ const PrototypeCard = () => {
     },
   ];
   return (
-      <Grid container spacing={3} className={styles.cardContainer}>
-        {cardData.map((item, index) => (
-          <div key={index}>
-            <Grid className={styles.PrototypeCard}>
-              <Grid
-                size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
-                className={styles.leftCard}  
-                sx={{
+    <Grid container spacing={3} className={styles.cardContainer}>
+      {cardData.map((item, index) => (
+        <div key={index}>
+          <Grid className={styles.PrototypeCard}>
+            <Grid
+              size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
+              className={styles.leftCard}
+              sx={{
                 order: {
-                  xs: index % 2 === 0 ? 2 : 1, 
-                  sm: index % 2 === 0 ? 2 : 1, 
-                  md: 1, 
-                  lg: 1, 
-                },}}
-              >
-                {index % 2 === 0 ? (
-                  <>
-                    <Typography
-                      className={styles.leftCardTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "25px",
-                          md: "22px",
-                          sm: "25px",
-                          xs: "22px",
-                        },
-                        fontFamily:"NovemberPro"
-                      }}
-                    >
-                      {item.title}
-                    </Typography>
-                    <Typography
-                      className={styles.leftCardSubTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "18px",
-                          md: "16px",
-                          sm: "18px",
-                          xs: "16px",
-                        },
-                        fontFamily:"NovemberPro-Reg"
-                      }}
-                    >
-                      {item.subtitle}
-                    </Typography>
-                    <Typography
-                      className={styles.leftCardSubTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "18px",
-                          md: "16px ",
-                          sm: "18px",
-                          xs: "16px",
-                        },
-                        fontFamily:"NovemberPro-Reg"
-                      }}
-                    >
-                      {item.subtitle2}
-                    </Typography>
-                    <Typography
-                      className={styles.leftCardSubTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "18px",
-                          md: "16px ",
-                          sm: "18px",
-                          xs: "16px",
-                        },
-                        fontFamily:"NovemberPro-Reg"
-                      }}
-                    >
-                      {item.subtitle3}
-                    </Typography>
-                    <Button
-                      className={styles.PrototypeButton}
-                      sx={{
-                        fontSize: {
-                          lg: "16px",
-                          md: "14px ",
-                          sm: "16px",
-                          xs: "14px",
-                        },
-                        fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"
-                      }} onClick={()=>setOpen(true)}
-                    >
-                      {item.button}
-                    </Button>
-                    {open && <ContactUsModal open={open} setOpen={setOpen}/>}
-                  </>
-                ) : (
-                  <Image
-                    src={item.image}
-                    className={styles.LeftImage}
-                    alt="not found"
-                    width={600}
-                    height={300}
-                  />
-                )}
-              </Grid>
-              <Grid
-                size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
-                className={styles.rightCard} 
-                sx={{
-                  order: {
-                    xs: index % 2 === 0 ?  1: 2, 
-                    sm: index % 2 === 0 ? 1 : 2, 
-                    md: 1, 
-                    lg: 1, 
-                  },}}
-              >
-                {index % 2 === 0 ? (
-                  <Image
-                    className={styles.rightImage}
-                    src={item.image}
-                    alt="not found"
-                    width={600}
-                    height={300}
-                  />
-                ) : (
-                  <>
-                    {" "}
-                    <Typography
-                      className={styles.leftCardTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "25px",
-                          md: "22px",
-                          sm: "25px",
-                          xs: "22px",
-                        },
-                        fontFamily:"NovemberPro"
-                      }}
-                    >
-                      {item.title}
-                    </Typography>
-                    <Typography
-                      className={styles.leftCardSubTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "18px",
-                          md: "16px ",
-                          sm: "18px",
-                          xs: "16px",
-                        },
-                        fontFamily:"NovemberPro-Reg"
-                      }}
-                    >
-                      {item.subtitle}
-                    </Typography>
-                    <Typography
-                      className={styles.leftCardSubTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "18px",
-                          md: "16px ",
-                          sm: "18px",
-                          xs: "16px",
-                        },
-                        fontFamily:"NovemberPro-Reg"
-                      }}
-                    >
-                      {item.subtitle2}
-                    </Typography>
-                    <Typography
-                      className={styles.leftCardSubTitle}
-                      sx={{
-                        fontSize: {
-                          lg: "18px",
-                          md: "16px ",
-                          sm: "18px",
-                          xs: "16px",
-                        },
-                        fontFamily:"NovemberPro-Reg"
-                      }}
-                    >
-                      {item.subtitle3}
-                    </Typography>
-                    <Button
-                      sx={{
-                        fontSize: {
-                          lg: "16px",
-                          md: "14px",
-                          sm: "16px",
-                          xs: "14px",
-                        },
-                        fontFamily: "NovemberPro-Reg",cursor:"pointer",padding: "8px 18px",border: "1px solid transparent",color:"#ffffff",backgroundColor: "#333",marginBottom: "1rem",marginTop:"1rem",textTransform: "none"
-                      }} onClick={()=>setOpen(true)}
-                    >
-                      {item.button}
-                    </Button>
-                    {open && <ContactUsModal open={open} setOpen={setOpen}/>}
-                  </>
-                )}
-              </Grid>
+                  xs: index % 2 === 0 ? 2 : 1,
+                  sm: index % 2 === 0 ? 2 : 1,
+                  md: 1,
+                  lg: 1,
+                },
+              }}
+            >
+              {index % 2 === 0 ? (
+                <>
+                  <Typography
+                    className={styles.leftCardTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "25px",
+                        md: "22px",
+                        sm: "25px",
+                        xs: "22px",
+                      },
+                      fontFamily: "NovemberPro",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    className={styles.leftCardSubTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "18px",
+                        md: "16px",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                    }}
+                  >
+                    {item.subtitle}
+                  </Typography>
+                  <Typography
+                    className={styles.leftCardSubTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "18px",
+                        md: "16px ",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                    }}
+                  >
+                    {item.subtitle2}
+                  </Typography>
+                  <Typography
+                    className={styles.leftCardSubTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "18px",
+                        md: "16px ",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                    }}
+                  >
+                    {item.subtitle3}
+                  </Typography>
+                  <Button
+                    className={styles.PrototypeButton}
+                    sx={{
+                      fontSize: {
+                        lg: "16px",
+                        md: "14px ",
+                        sm: "16px",
+                        xs: "14px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                      cursor: "pointer",
+                      padding: "8px 18px",
+                      border: "1px solid transparent",
+                      color: "#ffffff",
+                      backgroundColor: "#333",
+                      marginBottom: "1rem",
+                      marginTop: "1rem",
+                      textTransform: "none",
+                    }}
+                    onClick={() => setOpen(true)}
+                  >
+                    {item.button}
+                  </Button>
+                  {open && <ContactUsModal open={open} setOpen={setOpen} />}
+                </>
+              ) : (
+                <Image
+                  src={item.image}
+                  className={styles.LeftImage}
+                  alt="not found"
+                  width={600}
+                  height={300}
+                />
+              )}
             </Grid>
-          </div>
-        ))}
-      </Grid>
+            <Grid
+              size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
+              className={styles.rightCard}
+              sx={{
+                order: {
+                  xs: index % 2 === 0 ? 1 : 2,
+                  sm: index % 2 === 0 ? 1 : 2,
+                  md: 1,
+                  lg: 1,
+                },
+              }}
+            >
+              {index % 2 === 0 ? (
+                <Image
+                  className={styles.rightImage}
+                  src={item.image}
+                  alt="not found"
+                  width={600}
+                  height={300}
+                />
+              ) : (
+                <>
+                  {" "}
+                  <Typography
+                    className={styles.leftCardTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "25px",
+                        md: "22px",
+                        sm: "25px",
+                        xs: "22px",
+                      },
+                      fontFamily: "NovemberPro",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    className={styles.leftCardSubTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "18px",
+                        md: "16px ",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                    }}
+                  >
+                    {item.subtitle}
+                  </Typography>
+                  <Typography
+                    className={styles.leftCardSubTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "18px",
+                        md: "16px ",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                    }}
+                  >
+                    {item.subtitle2}
+                  </Typography>
+                  <Typography
+                    className={styles.leftCardSubTitle}
+                    sx={{
+                      fontSize: {
+                        lg: "18px",
+                        md: "16px ",
+                        sm: "18px",
+                        xs: "16px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                    }}
+                  >
+                    {item.subtitle3}
+                  </Typography>
+                  <Button
+                    sx={{
+                      fontSize: {
+                        lg: "16px",
+                        md: "14px",
+                        sm: "16px",
+                        xs: "14px",
+                      },
+                      fontFamily: "NovemberPro-Reg",
+                      cursor: "pointer",
+                      padding: "8px 18px",
+                      border: "1px solid transparent",
+                      color: "#ffffff",
+                      backgroundColor: "#333",
+                      marginBottom: "1rem",
+                      marginTop: "1rem",
+                      textTransform: "none",
+                    }}
+                    onClick={() => setOpen(true)}
+                  >
+                    {item.button}
+                  </Button>
+                  {open && <ContactUsModal open={open} setOpen={setOpen} />}
+                </>
+              )}
+            </Grid>
+          </Grid>
+        </div>
+      ))}
+    </Grid>
   );
 };
 export default PrototypeCard;

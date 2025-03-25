@@ -18,6 +18,14 @@ export default function Home() {
       path:"/services/ror"
     },
     {
+      title:"Hire Skilled Software Developers with InfoKoders technologies",
+      backgroundColor:"#0c5e66",
+      backgroundImage:"url(/assets/img/hire.png",
+      des:"Looking for expert software developers? InfoKoders technologies connects you with top talent to help you build and scale your tech team efficiently. Find the right developers for your business today!",
+      button:"Get free consulation",
+      path:"/contact",
+    },
+    {
       title: "Web Development",
       backgroundColor: "#340F3D",
       backgroundImage: "url(/assets/img/web-technology.svg)",

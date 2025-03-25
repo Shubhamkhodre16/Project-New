@@ -64,6 +64,10 @@ const NodeDevelopment = () => {
       title: "Support",
       desc: 'Following go-live, "the end of the beginning begins" with ongoing monitoring and debugging to ensure proper operation.',
     },
+    {
+      title: "Blueprint & Strategy",
+      desc: "Our team outlines a comprehensive project roadmap — including timelines, technology stack, and resource planning — to ensure smooth execution.",
+    },
   ];
   const project = [
     {
@@ -140,6 +144,23 @@ const NodeDevelopment = () => {
           }}
         >
           Node Js Development
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          Leverage user-friendly and exceptional android and ios apps by gaining
+          exclusive Node js development solutions from a reputable partner,
+          InfoKoders technologies.
         </Typography>
       </Grid>
       {/* achieve Unbeatable nodejs development  services */}
@@ -494,7 +515,7 @@ const NodeDevelopment = () => {
       </Grid>
       {/* Nodejs Development Crew */}
       <Grid>
-        <Grid className={styles.rubypartnerContainer}>
+        <Grid className={styles.nodePartnerContainer}>
           <Grid className={styles.coreQuote}>
             <Typography
               className={styles.coreTitleUsppartner}

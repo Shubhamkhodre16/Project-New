@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "../../../styles/CaseStudy.module.css";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box } from "@mui/material";
@@ -10,7 +11,6 @@ import Portal from "../clientAchivement/Portals";
 import Features from "../clientAchivement/Features";
 import Contact from "../clientAchivement/Contact";
 import Footer from "../../footer/Footer";
-
 const Schlorship = () => {
   const clientData = [
     "Financial awards are being offered by big giant organizations: Taco Bell Foundation, the Houstan Livestock Show and Rodeo, Land O Lakes, TB12 Foundation, and The University of Alaska.",

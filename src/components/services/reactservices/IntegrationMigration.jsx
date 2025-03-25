@@ -31,6 +31,11 @@ const IntegrationMigration = () => {
       title: "Scalable Solutions",
       desc: "Post-migration, we ensure that your infrastructure is highly scalable and able to handle increased traffic, so your business can grow without limitations.",
     },
+    {
+      image: "/assets/img/railapp.gif",
+      title: "Built-in Security Enhancements",
+      desc: "React supports secure coding practices, helping protect against common vulnerabilities like XSS (Cross-Site Scripting) and data breaches.",
+    },
   ];
   return (
     <Box>
@@ -49,6 +54,24 @@ const IntegrationMigration = () => {
           }}
         >
           Integration & Migration
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          We provide hassle-free migration services to adjust your offering to
+          new market demands, updates and cloud integration. Our experts help
+          you to migrate your existing website with multi-platform support
+          without affecting your business cycle.
         </Typography>
       </Grid>
       {/* Benefits and Features */}

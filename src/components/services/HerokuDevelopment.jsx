@@ -37,6 +37,11 @@ const HerokuDevelopment = () => {
       title: "Heroku support and Maintenance",
       desc: "InfoKoders technologies’s dedicated Heroku developers, business analysts, and administrators are always ready to ensure the stability and rapid emergence of your Heroku solution. We provide administrative assistance through Heroku support and maintenance services.",
     },
+    {
+      image: "/assets/img/reusable.gif",
+      title: "Heroku Connect",
+      desc: "Seamlessly sync your Heroku apps with Salesforce using Heroku Connect. We ensure smooth data synchronization, empowering your business to harness customer insights in real time. With optimized performance and robust data handling, we make sure your data flows securely and efficiently between platforms.",
+    },
   ];
   const platform = [
     {
@@ -133,6 +138,23 @@ const HerokuDevelopment = () => {
           }}
         >
           Heroku
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          Invest in our Heroku app development services and leverage modern
+          architectures, innovative quickly and scalable applications hosted on
+          a powerful cloud platform- I,e Heroku
         </Typography>
       </Grid>
       {/* Experience the Perks of Heroku Platform with a reliable Heroku partner */}

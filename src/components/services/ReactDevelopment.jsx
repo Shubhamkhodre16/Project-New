@@ -18,28 +18,28 @@ const ReactDevelopment = () => {
       title: "Custom Development",
       desc: " We build customized matching solutions up to your enterprise and project needs. After investigating your business goals and objectives, our team makes tailors feature-rich native applications for a larger audience and provides a better user experience. ",
       button: "More Details",
-      path: "/customdevelopment",
+      path: "customdevelopment",
     },
     {
       image: "/assets/img/mobileapp.gif",
       title: "UX/UI Development",
       desc: "Our expertise and technology evolves continuously with new tools, frameworks and libraries along with a plethora of options for marketers and entrepreneurs. React JS is the best platform to develop UIs for mobile and web apps both without bugs and reading facilitation.",
       button: "More Details",
-      path: "/uiuxdevelopment",
+      path: "uiuxdevelopment",
     },
     {
       image: "/assets/img/agiledevelopment.gif",
       title: "Integration & Migration",
       desc: "We provide hassle-free migration services to adjust your offering to new market demands, updates and cloud integration. Our experts help you to migrate your existing website with multi-platform support without affecting your business cycle.",
       button: "More Details",
-      path: "/integration",
+      path: "integration",
     },
     {
       image: "/assets/img/reduction.gif",
       title: "Maintenance & Upgradation",
       desc: "Our React development services offer all essential maintenance services and take care of browser security updates. We are always ready to take challenges based on customer marketing strategies to increase user satisfaction levels.",
       button: "More Details",
-      path: "/maintenance",
+      path: "maintenance",
     },
   ];
   const services = [
@@ -67,6 +67,11 @@ const ReactDevelopment = () => {
       image: "/assets/img/ondemand.gif",
       title: "Strong Community & Ecosystem",
       desc: "ReactJS is backed by Facebook and a large global community, ensuring continuous improvements and a vast library of tools.",
+    },
+    {
+      image: "/assets/img/reusable.gif",
+      title: "Cross-Platform Compatibility",
+      desc: "Why build separate apps for web and mobile? With ReactJS and React Native, you can share business logic between platforms, accelerating development while ensuring a consistent user experience across devices.",
     },
   ];
   const Process = [
@@ -120,6 +125,11 @@ const ReactDevelopment = () => {
       image: "/assets/img/railapp.gif",
       title: "Full-Cycle Development",
       desc: "From planning and design to development, testing, and maintenance—we handle everything end-to-end.",
+    },
+    {
+      image: "/assets/img/railsmvp.gif",
+      title: "Performance-Optimized Applications",
+      desc: "We prioritize speed and efficiency from the ground up, optimizing both frontend and backend to ensure lightning-fast load times and seamless user experiences.",
     },
   ];
   const development = [

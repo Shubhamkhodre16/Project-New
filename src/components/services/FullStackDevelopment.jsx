@@ -46,9 +46,14 @@ const FullStackDevelopment = () => {
   ];
   const fullstackdata = [
     {
-      image: "/assets/img/reactnativefull.png",
-      title: "React Native",
-      des: "React, a JavaScript library enables the creation of high-quality user interfaces. React.js development is popular because it enables excellent server and client-side rendering. Leverage our phenomenal react native app development services with user-friendly features and functionalities accomplishing your business vision",
+      image:"/assets/img/ror-min.png",
+      title:"Ruby on Rails",
+      des:"Ruby on Rails is a powerful backend framework that accelerates development with clean, maintainable code. It’s ideal for building scalable, data-driven web applications, enabling faster MVP launches and feature-rich, production-ready solutions with ease."
+    },
+    {
+      image: "/assets/img/react-min.png",
+      title: "React.js",
+      des: "React.js, a leading frontend JavaScript library, delivers dynamic, high-performance user interfaces. Its component-based architecture ensures fast rendering, reusable code, and seamless user experiences across web and mobile applications.",
     },
     {
       image: "/assets/img/node-min.png",
@@ -56,19 +61,14 @@ const FullStackDevelopment = () => {
       des: "Node.js is possibly the best platform for rapidly creating a network of scalable applications. It is designed to be a workhorse for developers due to its cross-browser environment. Our knowledgeable Node.js developers help you to stay on top of competitors by unleashing you with mind-blowing web development solutions.",
     },
     {
+      image: "/assets/img/angularjs.png",
+      title: "Angular js",
+      des: "AngularJS is popular due to the versatility it provides for all types of web app development requirements. With AngularJS, we help you to create flexible and easy-to-use a browser, mobile, and web-based apps with wonderful features and functionalities.",
+    },
+    {
       image: "/assets/img/phpfull.png",
       title: "PHP",
       des: "Standout exclusive in your competitive business space by accessing our exceptional Php development services. PHP is used to create dynamic web pages due to its simplified programming. We precisely use this server-side scripting language for web development that creates robust back-end systems.",
-    },
-    {
-      image: "/assets/img/dotnetfull.png",
-      title: ".Net stack",
-      des: ".NET Stack is a server-side, cross-platform framework specially used for custom application development. By combining the comprehensive frameworks of the .Net stack, our developers empower you with remarkable cross-platform applications that lead to achieve high success in the development world",
-    },
-    {
-      image: "/assets/img/angularfull.png",
-      title: "Angular js",
-      des: "AngularJS is popular due to the versatility it provides for all types of web app development requirements. With AngularJS, we help you to create flexible and easy-to-use a browser, mobile, and web-based apps with wonderful features and functionalities.",
     },
     {
       image: "/assets/img/javafull.png",
@@ -102,6 +102,11 @@ const FullStackDevelopment = () => {
       title: "Extremely secure",
       desc: "This technology is based on secure architecture, making it robust and reliable.",
     },
+    {
+      image:"/assets/img/gathering.gif",
+      title:"Enhanced Performance",
+      desc:"By optimizing both frontend and backend components, full-stack development delivers lightning-fast performance, ensuring a seamless user experience."
+    }
   ];
   const industry = [
     {
@@ -169,6 +174,11 @@ const FullStackDevelopment = () => {
   ];
   const databases = [
     {
+      image: "/assets/img/postgreysqldata.png",
+      title: "PostgreSQL",
+      desc: "PostgreSQL is a sophisticated database system that is well-known for its extensibility and compliance. InfoKoders technologies developers primly consider this versatile framework because of its capability to handle both single- and multi-user systems. Furthermore, a large number of users can access the system at the same time.",
+    },
+    {
       image: "/assets/img/mongodb.png",
       title: "MongoDB",
       desc: "MongoDB is a cross-platform database that is well-suited for cloud data distribution. We perfectly specialized to use the NoSQL-based, multi-purpose, document-oriented framework that is ideal for full-stack development.",
@@ -179,25 +189,17 @@ const FullStackDevelopment = () => {
       desc: "Popular relational database, MySQL, developed by Oracle that is popular among developers due to its fast speed and small size. Our developers specifically use MySQL for web development in Drupal, WordPress, and Joomla!.",
     },
     {
-      image: "/assets/img/ror-min.png",
-      title: "Ruby on Rails",
-      desc: "Rails is the ideal server-side application for creating web applications that follow the MVC (Model-View-Controller) design pattern. We mostly use this it to create web applications that are database-supported, and it allows our developers to create apps more quickly and effectively",
+      image:"/assets/img/redisDatabase.png",
+      title:"Redis",
+      desc:"Redis is an open-source, in-memory data structure store, widely known for its lightning-fast performance and versatility. Our developers leverage Redis to build high-performance applications, utilizing its support for caching, real-time analytics, session management, and message brokering — ensuring low-latency and optimized data handling."
     },
     {
       image: "/assets/img/nosqldata.png",
       title: "NoSQL Development",
       desc: "NoSQL is a nonrelational database management system mainly utilized by our developers for its massive storage capacity. It is highly scalable and can handle large amounts of unstructured, structured, and semi-structured data.",
     },
-    {
-      image: "/assets/img/postgreysqldata.png",
-      title: "PostgreSQL",
-      desc: "PostgreSQL is a sophisticated database system that is well-known for its extensibility and compliance. InfoKoders technologies developers primly consider this versatile framework because of its capability to handle both single- and multi-user systems. Furthermore, a large number of users can access the system at the same time.",
-    },
-    {
-      image: "/assets/img/expressdata.png",
-      title: "Express",
-      desc: "Express is a prominent framework for developing flexible web applications. It supports HTTP requests from the web and mobile app users, as well as the views returned in the response.",
-    },
+   
+  
   ];
   const contactTitle =
     "Looking to build striking web and mobile apps with full-stack technologies?";
@@ -222,6 +224,21 @@ const FullStackDevelopment = () => {
         >
           End to End Full Stack Development
         </Typography>
+         <Typography
+                  className={styles.imageSubTitle}
+                  sx={{
+                    fontSize: {
+                      xs: "18px",
+                      sm: "18px",
+                      md: "20px",
+                      lg: "25px",
+                      xl: "25px",
+                    },
+                    fontFamily: "NovemberPro-Reg",
+                  }}
+                >
+                  InfoKoders technologies is been esteemed as a top full stack development company for delivering a comprehensive gamut of cutting edge front-end and back-end development solutions.
+                </Typography>
       </Grid>
       {/* Scaling up the bussiness */}
       <Grid container spacing={2} className={styles.rubycontainer}>
@@ -707,7 +724,7 @@ const FullStackDevelopment = () => {
             Our Database offering
           </Typography>
         </Grid>
-        <Grid container className={styles.cardContainer} spacing={5}>
+        <Grid container className={styles.cardDatabaseContainer} spacing={5}>
           {databases?.map((item, index) => (
             <Grid
               className={styles.cardClass}

@@ -31,6 +31,11 @@ const CustomDevelopment = () => {
       title: "High user experience and revenue",
       desc: "Builds customized plugins and extensions for the client to create strong building blocks and open new revenue opportunities for business.",
     },
+    {
+      image: "/assets/img/gathering.gif",
+      title: "Lightning-Fast Performance",
+      desc: "React's virtual DOM ensures faster updates and smooth rendering, delivering a snappy, seamless user experience — even for high-traffic applications.",
+    },
   ];
   return (
     <Box>
@@ -49,6 +54,24 @@ const CustomDevelopment = () => {
           }}
         >
           Custom Development
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          We build customized matching solutions up to your enterprise and
+          project needs. After investigating your business goals and objectives,
+          our team makes tailors feature-rich native applications for a larger
+          audience and provides a better user experience.
         </Typography>
       </Grid>
       {/* Benefits and Features */}

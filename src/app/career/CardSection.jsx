@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Grid2 from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid2";
 import { Box, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import Link from "next/link";
@@ -51,9 +51,9 @@ const CardSection = () => {
   return (
     <>
       <Box>
-        <Grid2 container className={styles.cardContainer} spacing={5}>
+        <Grid container className={styles.cardContainer} spacing={5}>
           {cardData?.map((item, index) => (
-            <Grid2
+            <Grid
               className={styles.cardClass}
               key={index}
               size={{ xs: 12, lg: 4, md: 6, sm: 12 }}
@@ -68,7 +68,6 @@ const CardSection = () => {
                   border: "1px solid transparent ",
                   transition: "border 0.3s ease",
                   paddingBottom: "40px",
-
                   "&:hover": {
                     borderColor: " #ebebeb",
                     boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)",
@@ -119,9 +118,9 @@ const CardSection = () => {
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid2>
+            </Grid>
           ))}
-        </Grid2>
+        </Grid>
       </Box>
     </>
   );

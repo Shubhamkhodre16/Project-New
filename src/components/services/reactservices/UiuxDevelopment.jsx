@@ -31,6 +31,11 @@ const UiDevelopment = () => {
       title: "Boosts Developer Productivity",
       desc: "Updates frequently and modifies components in the next stages by eliminating additional development costs and boosting productivity.",
     },
+    {
+      image: "/assets/img/reusable.gif",
+      title: "Cross-Platform Compatibility",
+      desc: "Write once, run anywhere! React’s versatility allows seamless development across web, mobile, and even desktop platforms with frameworks like React Native and Electron.",
+    },
   ];
   return (
     <Box>
@@ -49,6 +54,25 @@ const UiDevelopment = () => {
           }}
         >
           UI/UX Development
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          Our expertise and technology evolves continuously with new tools,
+          frameworks and libraries along with a plethora of options for
+          marketers and entrepreneurs. React JS is the best platform to develop
+          UIs for mobile and web apps both without bugs and reading
+          facilitation.
         </Typography>
       </Grid>
       <Grid>

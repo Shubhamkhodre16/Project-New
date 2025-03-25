@@ -1,11 +1,13 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "../../../styles/CaseStudy.module.css";
 import Grid from "@mui/material/Grid2";
 import { Typography, Box, Button } from "@mui/material";
 import Image from "next/image";
 import laptopMobile from "../../../../public/assets/img/laptopMobile.png";
-
+import ContactUsModal from "../../contact/ContactUsModal";
 const ProductGoals = ({ productData }) => {
+  const[open,setOpen]=useState(false);
   return (
     <>
       <Box className={styles.productMain}>
@@ -52,10 +54,11 @@ const ProductGoals = ({ productData }) => {
               <Button
                 sx={{ backgroundColor: "#333",fontFamily:"NovemberPro-Reg", textTransform:"capitalize",fontSize:{lg:"14px",md:"14px",sm:"14px",xs:"14px"} }}
                 className={styles.productButton}
-                variant="contained"
+                variant="contained" onClick={()=>setOpen(true)}
               >
                 {item?.buttonText}
               </Button>
+               {open && <ContactUsModal open={open} setOpen={setOpen} />}
             </Grid>
           </Grid>
         ))}

@@ -304,5 +304,4 @@ const JobsListings = ({ jobs }) => {
     </Box>
   );
 };
-
 export default JobsListings;

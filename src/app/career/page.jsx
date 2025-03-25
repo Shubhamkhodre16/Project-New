@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import ResumeForm from "../../components/contact/ResumeForm";
 import JobListings from '../../components/contact/JobListings';
 import Footer from '../../components/footer/Footer';
-
 const page = () => {
   return (
     <div>
@@ -14,5 +13,4 @@ const page = () => {
     </div>
   )
 }
-
 export default page

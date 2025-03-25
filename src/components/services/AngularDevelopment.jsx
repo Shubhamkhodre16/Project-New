@@ -38,6 +38,11 @@ const AngularDevelopment = () => {
       title: "Backed by Google & a Strong Community",
       desc: "AngularJS is supported by Google and has an extensive developer community, ensuring long-term support, regular updates, and a vast ecosystem of plugins and tools.",
     },
+    {
+      image: "/assets/img/reusable.gif",
+      title: "Robust Security & Reliability",
+      desc: "Our applications are fortified with the latest security protocols, ensuring data protection, secure transactions, and uninterrupted performance.",
+    },
   ];
   const Process = [
     {
@@ -90,6 +95,11 @@ const AngularDevelopment = () => {
       image: "/assets/img/Proficiency.gif",
       title: "Full-Cycle Development",
       desc: "From planning and design to development, testing, and maintenance, we handle everything end-to-end. ",
+    },
+    {
+      image: "/assets/img/railsmvp.gif",
+      title: "Rapid Deployment & Scaling",
+      desc: "We streamline development cycles for faster go-to-market while ensuring your solution is fully scalable for future growth.",
     },
   ];
   const Industry = [
@@ -171,6 +181,25 @@ const AngularDevelopment = () => {
           }}
         >
           AngularJS Development
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          At InfoKoders, we offer top-notch AngularJS development services to
+          build highly interactive, scalable, and feature-rich web applications.
+          As a powerful JavaScript framework maintained by Google, AngularJS
+          provides a robust foundation for dynamic web applications with
+          seamless user experiences.
         </Typography>
       </Grid>
       {/* <Grid container spacing={3} className={styles.angularContainer}>
