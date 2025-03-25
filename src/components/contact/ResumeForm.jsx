@@ -129,7 +129,7 @@ const ResumeForm = () => {
     <Box sx={{ marginBottom: "30px" }}>
       <Grid container className={styles.backgroundCareer}>
         <Navbar />
-        {/* <Typography
+        <Typography
           className={styles.imageTitle}
           sx={{
             fontSize: "45px",
@@ -139,7 +139,7 @@ const ResumeForm = () => {
           }}
         >
           Join Our Team
-        </Typography> */}
+        </Typography>
       </Grid>
       
       <Grid container justifyContent="center" sx={{ padding: "3% 10%" }}>

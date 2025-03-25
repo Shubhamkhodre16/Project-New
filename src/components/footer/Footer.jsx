@@ -124,7 +124,7 @@ const Footer = () => {
                   <span>
                     <LocalPhoneIcon sx={{ fontSize: "large" }} />
                   </span>{" "}
-                  +91 - 07314105427
+                  +91 - 0731 - 4105427
                 </Link>
               </li>
             </ul>
@@ -149,7 +149,7 @@ const Footer = () => {
                   <span>
                     <LocalPhoneIcon sx={{ fontSize: "large" }} />
                   </span>{" "}
-                  +91 - 07314105427
+                  +91 - 0731 - 4105427
                 </Link>
               </li>
               <li style={{ marginLeft: "10px " }} className="pt-4">

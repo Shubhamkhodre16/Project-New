@@ -37,6 +37,11 @@ const UiDevelopment = () => {
       title: "Boosts Developer Productivity",
       desc: "Updates frequently and modifies components in the next stages by eliminating additional development costs and boosting productivity.",
     },
+    {
+      image:"/assets/img/teammember.gif",
+      title:"Personalized User Experiences",
+      desc:"Designs tailored to user preferences and behavior, enhancing engagement and satisfaction."
+    }
   ];
   const services = [
     {
@@ -132,6 +137,11 @@ const UiDevelopment = () => {
       title: "Custom Digital Products",
       desc: "Tailored UI/UX solutions for unique business needs.",
     },
+    {
+      image: "/assets/img/reusable.gif",
+      title: "AR/VR Interface Design",
+      desc: "Immersive interfaces tailored for augmented and virtual reality experiences.",
+    },
   ];
   const infoCon = [
     {
@@ -159,6 +169,11 @@ const UiDevelopment = () => {
       title: "End-to-End Solutions ",
       desc: "From research and design to testing and post-launch improvements, we handle every aspect of UI/UX design.",
     },
+    {
+      image: "/assets/img/reusable.gif",
+      title: "Security-First Approach",
+      desc: "We prioritize data privacy and user protection, incorporating secure design principles into every project.",
+    },
   ];
   const contactTitle = "Let’s Build Something Amazing Together!";
   const contactSubtitle =
@@ -180,6 +195,24 @@ const UiDevelopment = () => {
           }}
         >
           UI/UX Development
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          At InfoKoders, we craft intuitive and visually appealing user
+          interfaces that enhance user engagement and satisfaction. Our UI/UX
+          Development Services focus on creating seamless, user-centric digital
+          experiences that drive conversions and business growth.
         </Typography>
       </Grid>
       {/* UI/UX Development Company */}
@@ -523,7 +556,7 @@ const UiDevelopment = () => {
       </Grid>
       {/* Benefits and Features */}
       <Grid>
-        <Grid className={styles.rubypartnerContainer}>
+        <Grid className={styles.nodePartnerContainer}>
           <Grid className={styles.coreQuote}>
             <Typography
               className={styles.coreTitleUsppartner}

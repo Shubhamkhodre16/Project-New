@@ -25,7 +25,5 @@ const Page = ({ params }) => {
   }else if (params?.slug === "heroku"){
     return <HerokuDevelopment/>
   }
-
 };
-
 export default Page;

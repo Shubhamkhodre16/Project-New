@@ -28,7 +28,7 @@ const OurCaseStudies = () => {
 
   return (
     <Box className={styles.blogContainer2}>
-      <Grid className={styles.blogContainer1}>
+      <Grid className={styles.blogContainer1} >
         <Grid>
           <Typography
             className={styles.blogHeader}

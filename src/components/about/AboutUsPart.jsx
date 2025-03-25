@@ -27,7 +27,7 @@ const AboutUsPart = () => {
   ];
   const coreStats = [
     {
-      value: "5+",
+      value: "10+",
       desc: "Years of experience in Software development and technologies",
     },
     { value: "50+", desc: "Software engineers and technical staff" },
@@ -167,7 +167,7 @@ const AboutUsPart = () => {
                 },
               }}
             >
-              An unbelievable story of 5+ years
+              An unbelievable story of 10+ years
             </Typography>
             <Typography
               className={styles.subheading}

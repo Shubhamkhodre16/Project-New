@@ -31,6 +31,11 @@ const MaintenanceUpgradation = () => {
       title: "Round-the-Clock Support",
       desc: "Our team offers round-the-clock support to resolve any technical issues and ensure your platform is always running smoothly, giving you peace of mind.",
     },
+    {
+      image: "/assets/img/railapp.gif",
+      title: "Performance Optimization",
+      desc: "We continuously monitor and optimize your website’s speed and performance to deliver lightning-fast load times and a seamless user experience.",
+    },
   ];
   return (
     <Box>
@@ -49,6 +54,24 @@ const MaintenanceUpgradation = () => {
           }}
         >
           Maintenance & Upgradation
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          Our React development services offer all essential maintenance
+          services and take care of browser security updates. We are always
+          ready to take challenges based on customer marketing strategies to
+          increase user satisfaction levels.
         </Typography>
       </Grid>
       {/* Benefits and Features */}

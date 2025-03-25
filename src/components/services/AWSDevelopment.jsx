@@ -37,6 +37,11 @@ const AWSDevelopment = () => {
       title: "Implementation and Migration",
       desc: "Migrating your business to the AWS platform is a worthy decision for your business — and even smarter is selecting a partner who can assure you with smooth migration and implementation process. Our passionate team of Amazon AWS development experts provides flawless transitions that enhance user experience and support business objectives such as enterprise cloud adoption and CloudOps by leveraging AWS' technology stack for reliable, secure solutions.",
     },
+    {
+      image:"/assets/img/reusable.gif",
+      title:"Cloud Architecture Design",
+      desc:"We build resilient, scalable, and high-performance cloud architectures tailored to your business needs. From microservices to serverless solutions, we ensure optimal resource utilization and cost-efficiency on AWS. Our experts design fault-tolerant systems with auto-scaling capabilities to handle unpredictable workloads seamlessly. We also ensure disaster recovery and high availability, keeping your operations running smoothly around the clock."
+    }
   ];
   const Technologies = [
     {
@@ -95,6 +100,10 @@ const AWSDevelopment = () => {
       image: "/assets/img/awstechnologies14.png",
       title: "Amazon DynamoDB",
     },
+    {
+      image: "/assets/img/awstechnologies9.png",
+      title:"Amazon RDS"
+    }
   ];
   const Reliable = [
     {
@@ -172,6 +181,23 @@ const AWSDevelopment = () => {
           }}
         >
           AWS Development
+        </Typography>
+        <Typography
+          className={styles.imageSubTitle}
+          sx={{
+            fontSize: {
+              xs: "18px",
+              sm: "18px",
+              md: "20px",
+              lg: "25px",
+              xl: "25px",
+            },
+            fontFamily: "NovemberPro-Reg",
+          }}
+        >
+          InfoKoders technologies is admired among clients as a reliable partner
+          in AWS development, management, optimization, automation, and
+          deployment.
         </Typography>
       </Grid>
       {/* AWS Development Company */}

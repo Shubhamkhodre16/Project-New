@@ -69,7 +69,7 @@ const Carousel = ({ data, isStartup = false }) => {
               </Typography>
               <Typography
                 className={styles.description}
-                fontSize={{xs:"16px",sm:"16px",md:"20px",lg:"22px"}}
+                fontSize={{xs:"16px",sm:"16px",md:"20px",lg:"24px"}}
                 style={{
                   opacity: isStartup ? 0.9 : 1,
                    fontSize: isStartup ? "30px" : "",
