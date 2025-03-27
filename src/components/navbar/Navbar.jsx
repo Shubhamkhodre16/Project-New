@@ -54,26 +54,21 @@ const Navbar = () => {
     // { name: "Blog", path: "/blog" },
     { name: "Start Up", path: "/startup" },
     { name: "Careers", path: "/career" },
-    {
-      name: "Hire Developers",
-      path: "/hire",
-      subOptions: [
-        { name: " Hire Ruby on Rails Developers", path: "/hire/ror" },
-        { name: " Hire React JS Developers", path: "/hire/reactjs" },
-        { name:"Hire Full Stack Developers",path:"/hiredevelopers/fullstack"},
-        { name: " Hire Node JS Developers", path: "/hiredevelopers/nodejs" },
-        { name: "Hire Heroku Developers", path: "/hiredevelopers/heroku" },
-        {
-          name: " Hire Mean Stack Developers",
-          path: "/hiredevelopers/meanstack",
-        },
-        {
-          name: "Hire MERN Stack Developers",
-          path: "/hiredevelopers/mernstack",
-        },
-        { name: " Hire Mobile App Developers", path: "/hiredevelopers/mobileapp" },
-      ],
-    },
+    // {
+    //   name: "Hire Developers",
+    //   path: "/hire",
+    //   subOptions: [
+    //     { name: " Hire Ruby on Rails Developers", path: "/hire/ror" },
+    //     { name: " Hire React JS Developers", path: "/hire/reactjs" },
+    //     { name:"Hire Full Stack Developers",path:"/hire/fullstackdevelopment"},
+    //     { name: " Hire Node JS Developers", path: "/hire/nodejs" },
+    //     { name: "Hire Heroku Developers", path: "/hiredevelopers/heroku" },
+    //     {
+    //       name: "Hire MERN Stack Developers",
+    //       path: "/hiredevelopers/mernstack",
+    //     },
+    //   ],
+    // },
     // { name: "Contact Us", path: "/contact" },
   ];
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -425,7 +420,7 @@ const Navbar = () => {
               
             ))}
             <Link href="/contact" passHref>
-             <Button   sx={{fontSize:"17px", textTransform:"capitalize",fontWeight:"700",padding:"7px 15px",margin:"9px 0 0 10px",fontFamily:"NovemberPro-Reg", color:"#fff", backgroundColor:"#ff2e2e"}}>Contact </Button>
+             <Button   sx={{fontSize:{lg:"16px",md:"14px",sm:"16px",xs:"14px"}, textTransform:"capitalize",fontWeight:"700",padding:"7px 15px",margin:"9px 0 0 10px",fontFamily:"NovemberPro-Reg", color:"#fff", backgroundColor:"#ff2e2e"}}>Contact </Button>
              </Link>
           </Box>
           
