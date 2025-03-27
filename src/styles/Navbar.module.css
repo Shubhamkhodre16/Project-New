@@ -19,13 +19,13 @@
   font-style: normal;
 }
 .logo {
-  width: 180px;
+  width: 250px;
   height: 38px;
   margin-top: 3%;
   margin-left: 10%;
 }
 .navOption {
-  font-size: 17px;
+  font-size: 16px;
   padding: 9px 15px !important;
 }
 .navOption1 :hover {
@@ -137,7 +137,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 16px;
   padding: 9px 15px;
 }
 .dropdownContent {

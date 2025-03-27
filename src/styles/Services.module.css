@@ -765,3 +765,12 @@ margin-right: auto;
 text-align: center;
 padding: 2% 8% 5% 8%
 }
+.hirepart{
+  text-transform: capitalize;
+  color: #333;
+}
+.keyquality{
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
+}

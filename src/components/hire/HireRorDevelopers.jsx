@@ -184,8 +184,8 @@ const HireRorDevelopers = () => {
   const handleTabChange = (event, newValue) => setActiveTab(newValue);
   const tabContent = [
     "Hire the top ROR developers in Bangalore India to create custom web apps from the ground up, ensuring that they suit the needs and specifications of a business. They can create applications with e-commerce, content management, social networking, and other features.",
-    "Hire the top ROR developers in Bangalore India to create custom web apps from the ground up, ensuring that they suit the needs and specifications of a business. They can create applications with e-commerce, content management, social networking, and other features.",
-    "Hire the top ROR developers in Bangalore India to create custom web apps from the ground up, ensuring that they suit the needs and specifications of a business. They can create applications with e-commerce, content management, social networking, and other features.",
+    "Our E-commerce solution supports businesses of all sizes — from small stores to large-scale marketplaces. Scale effortlessly with multi-store capabilities, international shipping, and multi-currency support.",
+    "Ensure top-notch performance and scalability to handle millions of users with cloud-based infrastructure, load balancing, and optimized databases.",
     "Our ROR experts can create unique CMS solutions to assist organizations in easily managing and updating their website content.",
     "The RoR developers we hire for you are highly talented and enable you the top-notch mobile applications that are tailored for multiple devices and platforms, ensuring that they are user-friendly and accessible on the go.",
     "Our approved RoR Developers team serves new businesses and enterprises with tailor-made custom services. Our committed team of ROR experts has successfully translated game-changing product concepts into feasible software solutions. Our highly competent and experienced Ruby on Rails developers will provide long-term consistency.",
@@ -413,7 +413,7 @@ const HireRorDevelopers = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Project description"
+                  placeholder="Message "
                   multiline
                   rows={2.5}
                   variant="standard"
@@ -498,6 +498,7 @@ const HireRorDevelopers = () => {
             sx={{
               fontSize: { lg: "18px", md: "16px", sm: "18px", xs: "16px" },
               fontFamily: "NovemberPro-Reg",
+              marginBottom: "1rem",
             }}
           >
             One of the top resource onboarding companies, InfoKoders
@@ -553,10 +554,11 @@ const HireRorDevelopers = () => {
       <Grid className={styles.growth}>
         <Grid className={styles.coreQuote}>
           <Typography
-            className={styles.coreTitleUsppartner}
+            className={styles.hirepart}
             sx={{
               fontSize: { lg: "25px", md: "22px ", sm: "25px", xs: "22px" },
               fontFamily: "NovemberPro",
+              marginBottom: "1rem",
             }}
           >
             {" "}
@@ -603,6 +605,7 @@ const HireRorDevelopers = () => {
                     xs: "20px ",
                   },
                   fontFamily: "NovemberPro",
+                  marginBottom: "1rem",
                 }}
               >
                 {item?.title}
@@ -632,7 +635,7 @@ const HireRorDevelopers = () => {
             sx={{
               fontSize: { lg: "25px", md: "22px", sm: "25px", xs: "22px" },
               fontFamily: "NovemberPro",
-              paddingBottom: "20px",
+              MarginBottom: "1rem",
             }}
           >
             Role and Responsibilities of ROR developer
@@ -672,6 +675,7 @@ const HireRorDevelopers = () => {
               fontSize: { lg: "25px", md: "22px", sm: "25px", xs: "22px" },
               fontFamily: "NovemberPro",
               textAlign: "center",
+              marginBottom: "1rem",
             }}
           >
             Top
@@ -681,7 +685,7 @@ const HireRorDevelopers = () => {
           <Box
             sx={{
               display: "flex",
-              height: "400px",
+              height: "800px",
               border: "1px solid #ddd",
               borderRadius: "8px",
               overflow: "hidden",
@@ -689,12 +693,12 @@ const HireRorDevelopers = () => {
           >
             <Tabs
               orientation="vertical"
-              variant="scrollable"
+              variant="standard"
               value={activeTab}
               onChange={handleTabChange}
               sx={{
                 // borderRight: "1px solid #ddd",
-                width: { lg: "300px", md: "300px", sm: "250px", xs: "100px" },
+                width: { lg: "300px", md: "300px", sm: "250px", xs: "120px" },
                 // backgroundColor: "#f4f4f4"
               }}
             >
@@ -769,7 +773,7 @@ const HireRorDevelopers = () => {
             sx={{
               fontSize: { lg: "25px", md: "22px", sm: "25px", xs: "22px" },
               fontFamily: "NovemberPro",
-              paddingBottom: "20px",
+              marginBottom: "1rem",
             }}
           >
             Why Choose InfoKoders Technologies to Hire ROR developers in India?
@@ -867,6 +871,7 @@ const HireRorDevelopers = () => {
             sx={{
               fontSize: { lg: "18px", md: "16px", sm: "18px", xs: "16px" },
               fontFamily: "NovemberPro-Reg",
+              marginBottom: "1rem",
             }}
           >
             If you’re looking for a reliable and cost-effective way to hire an
@@ -1024,7 +1029,7 @@ const HireRorDevelopers = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Project description"
+                  placeholder="Message"
                   multiline
                   rows={2.5}
                   variant="standard"

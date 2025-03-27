@@ -231,7 +231,7 @@ const HomeContent = () => {
                   sm: "30px",
                   xs: "30px",
                 },
-                marginTop: { md: "25px" },
+                marginTop: { md: "25px",lg:"15px",sm:"25px",xs:"25px" },
                 textAlign: "center",
               }}
             >
