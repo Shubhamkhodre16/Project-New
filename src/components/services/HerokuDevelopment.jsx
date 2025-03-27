@@ -5,7 +5,7 @@ import { Typography, Box, Button, CardMedia } from "@mui/material";
 import Image from "next/image";
 import styles from "../../styles/Services.module.css";
 import Navbar from "../navbar/Navbar";
-import awecontent from "../../../public/assets/img/awscontent.png";
+import aweExper from "../../../public/assets/img/awsExper.png";
 import Footer from "../footer/Footer";
 import Contact from "../casestudy/clientAchivement/Contact";
 import ContactUsModal from "../contact/ContactUsModal";
@@ -208,7 +208,7 @@ const HerokuDevelopment = () => {
             alignItems: "center",
           }}
         >
-          <Image src={awecontent} alt="fullstack" width={500} height={300} />
+          <Image src={aweExper} alt="fullstack" width={500} height={300} />
         </Grid>
       </Grid>
       {/* Our Heroku Development Services */}
